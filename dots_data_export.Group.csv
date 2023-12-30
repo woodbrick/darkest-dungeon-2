@@ -189,7 +189,7 @@ element_end
 element_start,skill_large_blight_dot,Dot
 m_Type,blight,
 m_Tags,blight,dot,dmgdot,
-m_DurationAmount,3,
+m_DurationAmount,6,
 m_DurationType,performer_turn_start,
 effects,health_damage_4,
 m_IgnoreFriendlyDealtModifications,True,
@@ -213,7 +213,7 @@ element_end
 element_start,skill_massive_blight_dot,Dot
 m_Type,blight,
 m_Tags,blight,dot,dmgdot,
-m_DurationAmount,3,
+m_DurationAmount,6,
 m_DurationType,performer_turn_start,
 effects,health_damage_6,
 m_IgnoreFriendlyDealtModifications,True,
