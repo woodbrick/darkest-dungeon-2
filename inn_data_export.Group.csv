@@ -15,6 +15,7 @@ m_QuirkGenerationChance,
 m_QuirkGenerationAmount,
 m_QuirkGenerationTags,pos_inn_rare,,neg_inn_rare,,pos_inn_normal,,neg_inn_normal,0,
 m_ActorDataPathChangeCostId,inn_change_actor_data_path_valley,
+m_IgnoreVisitAllAchievement,True,
 element_end
 element_start,valley,Inn
 m_NumberOfBiomeChoices,2,

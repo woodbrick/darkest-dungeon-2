@@ -9,6 +9,7 @@ m_IsBattleComplete,True,
 m_IsHealthless,True,
 m_IsStallCounted,True,
 m_TokenViewValid,False,
+m_IsCombatHoverable,False,
 summon_any_conditions,hero_party_has_flagellant,
 element_end
 element_start,shared_death_headstone,ActorDataStats

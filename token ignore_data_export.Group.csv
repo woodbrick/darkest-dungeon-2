@@ -128,7 +128,7 @@ m_IsVisible,True,
 element_end
 element_start,til_failure_ultimate,TokenIgnore
 m_IgnoredTokenTypes,forced_target,
-m_IgnoredTokenIds,block,block_plus,dodge,dodge_plus,strength,crit,weak,vulnerable,
+m_IgnoredTokenIds,block,block_plus,dodge,dodge_plus,strength,crit,weak,vulnerable,blind,
 element_end
 element_start,til_dot_bomb,TokenIgnore
 m_IgnoredTokenIds,strength,weak,vulnerable,block,block_plus,crit,

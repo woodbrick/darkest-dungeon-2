@@ -72,7 +72,7 @@ m_AverageRankIgnored,False,
 m_IsForced,True,
 m_IsBlockPass,True,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
-token_ignores,til_piercing,
+token_ignores,til_piercing,til_ignore_block,
 m_Tags,melee,noalt,barricade_spearman_thrust_combo,
 m_IsTokenViewVisible,False,
 m_IsStallInvalidating,False,
@@ -82,7 +82,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,4,2,0.2,
 element_end
 element_start,barricade_spearman_thrust_combo,ActorDataEffects
-target_effects,end_combo,
+target_effects,end_combo,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
 performer_effects,move_forward_1,
 element_end
 element_start,barricade_spearman_spear_throw,ActorDataSkill

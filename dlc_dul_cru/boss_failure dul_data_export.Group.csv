@@ -42,9 +42,9 @@ m_IsStallInvalidating,False,
 element_end
 element_start,failure_dul_attack,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,1,0.05,
+add_stats,4,1,0.05,
 element_end
 element_start,failure_dul_attack,ActorDataEffects
 target_effects,stress_damage_1,
-performer_effects,failure_stacking_dmg_buff_e,failure_stacking_crit_buff_e,move_forward_1,
+performer_effects,failure_stacking_dmg_buff_e,failure_stacking_crit_buff_e,move_forward_3,
 element_end

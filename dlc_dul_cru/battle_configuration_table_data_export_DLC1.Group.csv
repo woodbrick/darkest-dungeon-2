@@ -34,7 +34,7 @@ m_tags,
 m_conditions,crusader_quest_complete+herostory_CRU_05,
 element_end
 element_start,military_region_2,BattleConfigurationTable
-m_chances,3,1,
+m_chances,2,1,
 m_ids,warlord_easy,warlord_hard,
 m_types,sub_table,sub_table,
 m_tags,
