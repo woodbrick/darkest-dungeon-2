@@ -99,6 +99,7 @@ m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 m_Tags,melee,dul_thrust,
+performer_buffs,combo_damage_boost_50pct,
 m_IsStallInvalidating,True,
 element_end
 element_start,dul_thrust,ActorDataStats
@@ -107,6 +108,7 @@ add_stats,7,2,0.05,
 element_end
 element_start,dul_thrust,ActorDataEffects
 performer_effects,move_back_1_if_defensive,move_forward_1_if_aggressive,
+target_effects,end_combo,
 element_end
 element_start,dul_thrust_u,ActorDataSkill
 m_IsFriendly,False,
@@ -117,6 +119,7 @@ m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 m_Tags,melee,dul_thrust,
+performer_buffs,combo_damage_boost_50pct,
 m_ConditionIdOverride,dul_thrust,
 m_SkillHistoryIdOverride,dul_thrust,
 m_IsStallInvalidating,True,
@@ -129,6 +132,7 @@ element_end
 element_start,dul_thrust_u,ActorDataEffects
 performer_effects,move_back_1_if_defensive,move_forward_1_if_aggressive,
 performer_after_target_effects,dul_touche_set_stance_rank_1,dul_touche_set_stance_rank_2,dul_touche_set_stance_rank_3,dul_touche_set_stance_rank_4,
+target_effects,end_combo,
 element_end
 element_start,dul_thrust_u,Unlock
 m_RequirementIds,dul_thrust,
@@ -195,7 +199,6 @@ element_end
 element_start,dul_disengage,ActorDataEffects
 target_effects,move_pull_1_if_defensive,move_knockback_1_if_aggressive,remove_1_riposte_hidden,
 performer_after_target_effects,dul_set_stance_defensive,add_1_dodge,
-performer_effects,move_backward_1,
 element_end
 element_start,dul_disengage_u,ActorDataSkill
 m_IsFriendly,False,
@@ -218,7 +221,6 @@ element_end
 element_start,dul_disengage_u,ActorDataEffects
 target_effects,move_pull_2_if_defensive,move_knockback_2_if_aggressive,remove_1_riposte_hidden,
 performer_after_target_effects,dul_set_stance_defensive,add_1_dodge_plus,
-performer_effects,move_backward_1,
 element_end
 element_start,dul_disengage_u,Unlock
 m_RequirementIds,dul_disengage,
@@ -241,7 +243,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,6,2,0.1,
 element_end
 element_start,dul_flick,ActorDataEffects
-target_effects,dul_flick_ignored_token_remove_1_dodge,dul_flick_ignored_token_remove_1_dodge_plus,dul_flick_ignored_token_remove_1_block,dul_flick_ignored_token_remove_1_block_plus,
+target_effects,skill_dot_medium_bleed,dul_flick_ignored_token_remove_1_dodge,dul_flick_ignored_token_remove_1_dodge_plus,dul_flick_ignored_token_remove_1_block,dul_flick_ignored_token_remove_1_block_plus,
 element_end
 element_start,dul_flick_u,ActorDataSkill
 m_IsFriendly,False,
@@ -264,7 +266,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,8,2,0.15,
 element_end
 element_start,dul_flick_u,ActorDataEffects
-target_effects,dul_flick_ignored_token_remove_1_dodge,dul_flick_ignored_token_remove_1_dodge_plus,dul_flick_ignored_token_remove_1_block,dul_flick_ignored_token_remove_1_block_plus,
+target_effects,skill_dot_large_bleed,dul_flick_ignored_token_remove_1_dodge,dul_flick_ignored_token_remove_1_dodge_plus,dul_flick_ignored_token_remove_1_block,dul_flick_ignored_token_remove_1_block_plus,
 element_end
 element_start,dul_flick_u,Unlock
 m_RequirementIds,dul_flick,
