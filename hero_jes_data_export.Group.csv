@@ -400,7 +400,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_battle_ballad_u,ActorDataEffects
-target_effects,move_forward_1,add_2_strength,add_1_crit_15pct,remove_all_combo_visible,
+target_effects,move_forward_1,add_2_strength,add_1_crit,remove_all_combo_visible,
 element_end
 element_start,jes_battle_ballad_u,Unlock
 m_RequirementIds,jes_battle_ballad,
