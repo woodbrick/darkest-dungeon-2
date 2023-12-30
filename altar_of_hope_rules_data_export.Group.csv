@@ -1,0 +1,5 @@
+element_start,altar_of_hope,Rules
+m_MemoryLootTableIds,MEMORIES_TABLE,MEMORIES_TABLE,MEMORIES_TABLE_2,MEMORIES_TABLE_3,MEMORIES_TABLE_4,MEMORIES_TABLE_5,
+m_SkipIntroProfileValueType,candles,
+m_SkipIntroProfileValue,12,
+element_end

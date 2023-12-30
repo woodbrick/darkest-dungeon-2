@@ -1,0 +1,8 @@
+element_start,recruit_hero,NarrationType
+m_chance,1,
+element_end
+element_start,recruit_random_hero,NarrationType
+m_chance,0.6,
+m_occurrenceTypes,node,
+m_maxOccurrences,2,
+element_end

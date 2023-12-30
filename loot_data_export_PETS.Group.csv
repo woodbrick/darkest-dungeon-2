@@ -1,0 +1,16 @@
+element_start,PET_RANDOM,LootTable
+m_chances,1,1,1,1,1,1,1,1,1,1,
+m_qtys,1,1,1,1,1,1,1,1,1,1,
+m_ids,pet_wolf,pet_snake,pet_owl,pet_rabbit,pet_slime,pet_shrieker,pet_carrion_eater,pet_croc,pet_tick,pet_shambler,
+m_types,item,item,item,item,item,item,item,item,item,item,
+m_tags,
+m_conditions,
+element_end
+element_start,SC_PET_TICK_LOOT,LootTable
+m_chances,1,
+m_qtys,1,
+m_ids,the_blood,
+m_types,item,
+m_tags,
+m_conditions,
+element_end

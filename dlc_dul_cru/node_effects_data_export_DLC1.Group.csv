@@ -1,0 +1,5 @@
+element_start,remove_crusader_helmet_b,RunLevel
+element_end
+element_start,remove_crusader_helmet_b,ActorDataEffects
+node_execute_started_effects,remove_quest_trophy_crusader_helmet_b,
+element_end

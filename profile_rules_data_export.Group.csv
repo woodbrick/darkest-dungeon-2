@@ -1,0 +1,5 @@
+element_start,profile,Rules
+m_maxNumProfiles,10,
+m_LegacyXpProfileValueType,candles,
+m_LegacyXpProfileValueAmount,20,
+element_end

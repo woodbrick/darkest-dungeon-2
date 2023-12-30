@@ -1,0 +1,6 @@
+element_start,deaths_door,ActorStatus
+enter_effects,add_2_weak_deaths_door,
+element_end
+element_start,deaths_door,ActorDataExternalBuffs
+buffs,debuff_deaths_door_spd,
+element_end

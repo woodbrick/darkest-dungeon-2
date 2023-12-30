@@ -1,0 +1,13 @@
+element_start,til_ignore_block_if_aggressive_stance,TokenIgnore
+m_IgnoredTokenIds,block,block_plus,
+all_conditions,performer_has_aggressive_stance,
+element_end
+element_start,til_ignore_dodge_if_defensive_stance,TokenIgnore
+m_IgnoredTokenIds,dodge,dodge_plus,
+all_conditions,performer_has_defensive_stance,
+m_IsVisible,True,
+element_end
+element_start,til_dul_2_flick,TokenIgnore
+m_IgnoredTokenIds,dul_2_defensive_immunity,dul_2_aggressive_immunity,dul_2_dodge_defensive,dul_2_dodge_aggressive,
+m_IsVisible,True,
+element_end

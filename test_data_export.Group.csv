@@ -1,0 +1,10 @@
+element_start,candles_over_0,Condition
+m_ConditionType,profile_value,
+m_ConditionString,candles,
+m_ConditionNumber,0,
+m_ConditionNumberType,GREATER_THAN,
+element_end
+element_start,add_end_round_turn,Effect
+m_AddTurn,1,
+m_IsAddTurnEndRound,True,
+element_end

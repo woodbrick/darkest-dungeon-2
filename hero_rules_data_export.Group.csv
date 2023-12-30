@@ -1,0 +1,8 @@
+element_start,hero,Rules
+m_TrinketNumberOfSlots,4,
+trinket_slot_unlocks,
+m_MemoryNumberOfSlots,5,
+m_CureQuirkByTagCosts,disease,6,
+m_RemoveQuirkByTagCosts,negative,8,positive,8,
+m_LockQuirkByTagCosts,positive,16,
+element_end

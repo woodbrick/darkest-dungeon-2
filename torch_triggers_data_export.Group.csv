@@ -1,0 +1,5 @@
+element_start,hero_death,TorchTrigger
+m_Type,DEATH,
+m_Tags,hero,
+m_TorchChange,-5,
+element_end
