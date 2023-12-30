@@ -93,7 +93,7 @@ m_IsAlwaysEquipped,True,
 element_end
 element_start,run_searing_strike,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,1,2,
+launch_ranks,1,2,3,
 target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
@@ -104,14 +104,14 @@ m_IsStallInvalidating,True,
 element_end
 element_start,run_searing_strike,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,4,3,0.1,
 element_end
 element_start,run_searing_strike,ActorDataEffects
 target_effects,combo_dot_large_burn,no_combo_dot_small_burn,end_combo,
 element_end
 element_start,run_searing_strike_u,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,1,2,
+launch_ranks,1,2,3,
 target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
@@ -379,7 +379,7 @@ m_Tags,run_run_and_hide,
 m_IsStallInvalidating,False,
 element_end
 element_start,run_run_and_hide,ActorDataEffects
-performer_effects,add_2_stealth,move_backward_1,
+performer_effects,add_2_stealth,add_2_dodge,move_backward_1,
 element_end
 element_start,run_run_and_hide_u,ActorDataSkill
 m_IsFriendly,True,
@@ -396,7 +396,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,run_run_and_hide_u,ActorDataEffects
-performer_effects,hot_heal_medium,add_2_stealth,move_backward_1,
+performer_effects,hot_heal_medium,add_2_stealth,add_2_dodge,move_backward_1,
 element_end
 element_start,run_run_and_hide_u,Unlock
 m_RequirementIds,run_run_and_hide,

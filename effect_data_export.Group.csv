@@ -8577,10 +8577,10 @@ all_conditions,performer_has_less_than_2_unchecked_power,
 element_end
 element_start,occ_wyrd_reconstruction_uc_heal,Effect
 m_Chance,1,
-m_HealthHealPercent,0.25,
+m_HealthHealPercent,0.11,
 m_CritChance,1,
 m_CritMultiplier,1,
-m_HealthHealPercentRange,0.5,
+m_HealthHealPercentRange,0.33,
 all_conditions,performer_has_2_plus_unchecked_power,
 m_IsVisible,False,
 element_end
@@ -8589,7 +8589,7 @@ m_Chance,1,
 m_HealthHealPercent,0.25,
 m_CritChance,1,
 m_CritMultiplier,1,
-m_HealthHealPercentRange,0.75,
+m_HealthHealPercentRange,0.5,
 all_conditions,performer_has_2_plus_unchecked_power,
 m_IsVisible,False,
 element_end
