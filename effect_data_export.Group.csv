@@ -8740,7 +8740,7 @@ m_DotAddAmount,1,
 element_end
 element_start,occ_wyrd_reconstruction_heal,Effect
 m_Chance,1,
-m_HealthHealPercent,0,
+m_HealthHealPercent,0.11,
 m_CritChance,0.05,
 m_CritMultiplier,1,
 m_HealthHealPercentRange,0.33,
@@ -8748,7 +8748,7 @@ all_conditions,performer_has_less_than_2_unchecked_power,
 element_end
 element_start,occ_wyrd_reconstruction_heal_u,Effect
 m_Chance,1,
-m_HealthHealPercent,0,
+m_HealthHealPercent,0.25,
 m_CritChance,0.1,
 m_CritMultiplier,1,
 m_HealthHealPercentRange,0.5,
