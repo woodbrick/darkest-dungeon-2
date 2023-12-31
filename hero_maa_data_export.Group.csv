@@ -112,7 +112,7 @@ element_end
 element_start,maa_crush_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,2,
-target_ranks,1,2,3,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -125,7 +125,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_crush_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,2,0.1,
+add_stats,8,4,0.2,
 element_end
 element_start,maa_crush_u,ActorDataEffects
 target_effects,end_combo,
@@ -240,7 +240,7 @@ m_Tags,maa_defender,
 m_IsStallInvalidating,False,
 element_end
 element_start,maa_defender,ActorDataEffects
-performer_effects,add_2_block,
+performer_effects,add_2_block,add_1_riposte,
 target_effects,add_2_guard,
 element_end
 element_start,maa_defender_u,ActorDataSkill
@@ -259,7 +259,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_defender_u,ActorDataEffects
-performer_effects,add_2_block_plus,
+performer_effects,add_2_block_plus,add_1_riposte,
 target_effects,add_3_guard,
 element_end
 element_start,maa_defender_u,Unlock
