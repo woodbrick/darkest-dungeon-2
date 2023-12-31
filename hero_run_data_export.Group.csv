@@ -147,7 +147,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,run_ransack,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,4,3,0.1,
 element_end
 element_start,run_ransack,ActorDataEffects
 target_effects,move_pull_1,end_combo,
@@ -173,10 +173,10 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,run_ransack_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.2,
+add_stats,6,4,0.3,
 element_end
 element_start,run_ransack_u,ActorDataEffects
-target_effects,move_pull_2,end_combo,
+target_effects,move_pull_1,end_combo,
 target_neighbor_random_effects,runaway_combo_fire_spread,
 performer_effects,move_forward_1,
 actor_effect_triggers,run_combo_neighbor_burn,
@@ -572,6 +572,7 @@ add_stats,
 element_end
 element_start,run_hearthlight,ActorDataEffects
 target_effects,remove_all_stealth,
+friendly_team_effects,remove_all_blind,
 element_end
 element_start,run_hearthlight_u,ActorDataSkill
 m_IsFriendly,False,
@@ -595,7 +596,7 @@ add_stats,
 element_end
 element_start,run_hearthlight_u,ActorDataEffects
 target_effects,remove_all_stealth,
-friendly_team_effects,remove_all_blind,
+friendly_team_effects,remove_all_blind,stress_heal_1,
 element_end
 element_start,run_hearthlight_u,Unlock
 m_RequirementIds,run_hearthlight,
