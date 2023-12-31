@@ -447,7 +447,7 @@ m_tags,
 m_conditions,
 element_end
 element_start,military_region_2,BattleConfigurationTable
-m_chances,36,
+m_chances,17,
 m_ids,military_mashes,
 m_types,sub_table,
 m_tags,
