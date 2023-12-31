@@ -105,7 +105,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_chop,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,6,0.1,
+add_stats,8,5,0.05,
 element_end
 element_start,lep_chop,ActorDataEffects
 performer_effects,leper_self_blind_chance,
@@ -129,7 +129,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_chop_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,10,0.1,
+add_stats,10,8,0.1,
 element_end
 element_start,lep_chop_u,ActorDataEffects
 performer_effects,leper_self_blind_chance_u,

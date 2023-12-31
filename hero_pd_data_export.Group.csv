@@ -197,7 +197,7 @@ key_map,
 add_stats,
 element_end
 element_start,pd_blinding_gas,ActorDataEffects
-target_effects,prime_combo_25pct,add_1_blind,
+target_effects,prime_combo_33pct,add_1_blind,
 element_end
 element_start,pd_blinding_gas_u,ActorDataSkill
 m_IsFriendly,False,
@@ -219,7 +219,7 @@ key_map,
 add_stats,
 element_end
 element_start,pd_blinding_gas_u,ActorDataEffects
-target_effects,prime_combo_33pct,add_1_blind,add_1_daze,
+target_effects,prime_combo_50pct,add_1_blind,add_1_daze,
 element_end
 element_start,pd_blinding_gas_u,Unlock
 m_RequirementIds,pd_blinding_gas,
@@ -284,7 +284,7 @@ m_Tags,heal,surgeon,pd_battlefield_medicine,
 m_IsStallInvalidating,False,
 element_end
 element_start,pd_battlefield_medicine,ActorDataEffects
-target_effects,heal_20pct_target_threshold_high,remove_all_bleed,remove_all_blight,remove_all_burn,
+target_effects,heal_25pct,remove_all_bleed,remove_all_blight,remove_all_burn,
 element_end
 element_start,pd_battlefield_medicine_u,ActorDataSkill
 m_IsFriendly,True,
@@ -303,7 +303,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,pd_battlefield_medicine_u,ActorDataEffects
-target_effects,heal_25pct_target_threshold_high,remove_all_bleed,remove_all_blight,remove_all_burn,
+target_effects,heal_33pct,remove_all_bleed,remove_all_blight,remove_all_burn,
 performer_after_target_effects,remove_all_bleed,remove_all_blight,remove_all_burn,
 element_end
 element_start,pd_battlefield_medicine_u,Unlock
@@ -315,8 +315,8 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
-m_Cooldown,1,
+m_IsMultiHit,True,
+m_Cooldown,2,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -333,7 +333,7 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
+m_IsMultiHit,True,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
