@@ -140,7 +140,7 @@ element_end
 element_start,hel_iron_swan,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,
-target_ranks,4,
+target_ranks,3,4,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -155,7 +155,7 @@ element_end
 element_start,hel_iron_swan_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,
-target_ranks,4,
+target_ranks,3,4,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -366,7 +366,7 @@ element_end
 element_start,hel_bleed_out,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,
-target_ranks,1,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -388,7 +388,7 @@ element_end
 element_start,hel_bleed_out_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,
-target_ranks,1,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -497,7 +497,7 @@ element_end
 element_start,hel_howling_end,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,2,
-target_ranks,1,2,
+target_ranks,1,2,3,
 m_IsMultiHit,False,
 m_Cooldown,2,
 m_CanBeRiposted,True,
@@ -518,7 +518,7 @@ element_end
 element_start,hel_howling_end_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,2,
-target_ranks,1,2,
+target_ranks,1,2,3,
 m_IsMultiHit,False,
 m_Cooldown,2,
 m_CanBeRiposted,True,
