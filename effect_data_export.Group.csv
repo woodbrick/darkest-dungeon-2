@@ -8964,7 +8964,7 @@ all_conditions,performer_has_coughing_fit_token,
 element_end
 element_start,pd_indiscriminate_science_heal,Effect
 m_Chance,1,
-m_HealthHealPercent,0.1,
+m_HealthHealPercent,0.2,
 m_CritChance,0.05,
 m_CritMultiplier,0.5,
 m_IsVisible,False,
