@@ -99,12 +99,12 @@ m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 m_Tags,melee,dul_thrust,
-performer_buffs,combo_crit_100pct,
+performer_buffs,combo_damage_boost_50pct,
 m_IsStallInvalidating,True,
 element_end
 element_start,dul_thrust,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,2,0.05,
+add_stats,5,2,0.2,
 element_end
 element_start,dul_thrust,ActorDataEffects
 performer_effects,move_back_1_if_defensive,move_forward_1_if_aggressive,
@@ -119,7 +119,7 @@ m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 m_Tags,melee,dul_thrust,
-performer_buffs,combo_crit_100pct,
+performer_buffs,combo_damage_boost_50pct,
 m_ConditionIdOverride,dul_thrust,
 m_SkillHistoryIdOverride,dul_thrust,
 m_IsStallInvalidating,True,
@@ -127,7 +127,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_thrust_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,9,2,0.1,
+add_stats,7,2,0.4,
 element_end
 element_start,dul_thrust_u,ActorDataEffects
 performer_effects,move_back_1_if_defensive,move_forward_1_if_aggressive,
@@ -335,7 +335,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,dul_the_boot,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.05,
+add_stats,6,3,0.05,
 element_end
 element_start,dul_the_boot,ActorDataEffects
 target_effects,move_knockback_2,
@@ -359,7 +359,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_the_boot_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,3,0.15,
+add_stats,8,3,0.15,
 element_end
 element_start,dul_the_boot_u,ActorDataEffects
 target_effects,prime_combo,move_knockback_3,
@@ -558,7 +558,8 @@ m_Tags,dul_preparation,
 m_IsStallInvalidating,False,
 element_end
 element_start,dul_preparation,ActorDataEffects
-performer_effects,add_1_crit,add_1_speed,
+performer_effects,add_1_strength,add_1_speed,
+target_effects,add_1_dodge,
 performer_after_target_effects,dul_set_stance_aggressive,dul_set_stance_aggressive_p1_hidden,dul_set_stance_aggressive_p2_hidden,
 element_end
 element_start,dul_preparation_u,ActorDataSkill
@@ -576,7 +577,8 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_preparation_u,ActorDataEffects
-performer_effects,add_1_crit,add_1_speed,dul_preparation_def_stance_buff_e,add_1_crit_if_aggressive,
+performer_effects,add_2_strength,add_1_speed,dul_preparation_def_stance_buff_e,add_1_crit_if_aggressive,
+target_effects,add_1_dodge_plus,
 performer_after_target_effects,dul_set_stance_aggressive,dul_set_stance_aggressive_p1_hidden,dul_set_stance_aggressive_p2_hidden,
 element_end
 element_start,dul_preparation_u,Unlock
@@ -873,7 +875,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,dul_touche_p2,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,1,0.05,
+add_stats,6,1,0.15,
 element_end
 element_start,dul_touche_p2,ActorDataEffects
 target_effects,add_1_weak_if_performer_defensive,add_1_vulnerable_if_performer_aggressive,
@@ -894,7 +896,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_touche_p2_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,2,0.1,
+add_stats,7,2,0.3,
 element_end
 element_start,dul_touche_p2_u,ActorDataEffects
 target_effects,add_1_weak_if_performer_defensive,add_1_vulnerable_if_performer_aggressive,
@@ -942,11 +944,11 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_disengage_p2_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.1,
+add_stats,7,2,0.1,
 element_end
 element_start,dul_disengage_p2_u,ActorDataEffects
 target_effects,combo_add_2_blind_if_performer_defensive,prime_combo_if_performer_aggressive,remove_1_riposte_hidden,end_combo_if_performer_defensive,
-performer_after_target_effects,dul_set_stance_defensive_p2,add_1_dodge,
+performer_after_target_effects,dul_set_stance_defensive_p2,add_1_dodge_plus,
 performer_effects,move_backward_1,
 element_end
 element_start,dul_disengage_p2_u,Unlock
@@ -969,7 +971,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,dul_the_boot_p2,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.05,
+add_stats,6,3,0.05,
 element_end
 element_start,dul_the_boot_p2,ActorDataEffects
 target_effects,move_knockback_2,combo_add_1_stun,end_combo,
@@ -991,7 +993,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_the_boot_p2_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,3,0.15,
+add_stats,8,3,0.15,
 element_end
 element_start,dul_the_boot_p2_u,ActorDataEffects
 target_effects,move_knockback_2,combo_add_1_stun_if_performer_defensive,prime_combo_if_performer_aggressive,end_combo_if_performer_defensive,
