@@ -303,7 +303,7 @@ m_IsFriendlySelfTargetValid,True,
 launch_ranks,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,True,
-m_Cooldown,4,
+m_Cooldown,3,
 m_AnyConditionIds,target_has_dmgdot_hidden,target_is_stunned_or_dazed_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -537,7 +537,7 @@ m_Tags,ves_sanctuary,
 m_IsStallInvalidating,False,
 element_end
 element_start,ves_sanctuary,ActorDataEffects
-target_effects,add_2_guard,
+target_effects,add_2_guard,stress_heal_1_target_at_threshold,
 performer_effects,add_2_block,
 element_end
 element_start,ves_sanctuary,Unlock
@@ -704,7 +704,7 @@ m_SkillHistoryIdOverride,ves_sanctuary,
 m_IsStallInvalidating,False,
 element_end
 element_start,ves_sanctuary_p1,ActorDataEffects
-target_effects,add_2_guard,
+target_effects,add_1_guard,stress_heal_1,
 performer_effects,add_2_block,
 element_end
 element_start,ves_sanctuary_p1_u,ActorDataSkill
@@ -723,7 +723,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,ves_sanctuary_p1_u,ActorDataEffects
-target_effects,add_3_guard,
+target_effects,add_2_guard,stress_heal_1,
 performer_effects,add_1_block_plus,add_1_block,
 element_end
 element_start,ves_sanctuary_p1_u,Unlock
@@ -736,7 +736,7 @@ m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Cooldown,5,
+m_Cooldown,4,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,

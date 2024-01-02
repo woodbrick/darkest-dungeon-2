@@ -752,7 +752,7 @@ performer_effects,stress_heal_1,
 element_end
 element_start,dul_again_p1_u,ActorDataSkill
 m_IsFriendly,True,
-launch_ranks,3,4,
+launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
 m_Cooldown,3,
@@ -775,7 +775,7 @@ m_CostId,hero_skill_upgrade,
 element_end
 element_start,dul_ruthless_instruction_p1,ActorDataSkill
 m_IsFriendly,True,
-launch_ranks,3,4,
+launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
 m_Cooldown,1,
