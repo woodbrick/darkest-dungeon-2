@@ -238,6 +238,9 @@ add_stats,4,2,0.05,
 element_end
 element_start,hwm_grapeshot_blast,Unlock
 element_end
+element_start,hwm_grapeshot_blast,ActorDataEffects
+target_effects,dot_small_burn,
+element_end
 element_start,hwm_grapeshot_blast_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
@@ -259,6 +262,9 @@ element_end
 element_start,hwm_grapeshot_blast_u,Unlock
 m_RequirementIds,hwm_grapeshot_blast,
 m_CostId,hero_skill_upgrade,
+element_end
+element_start,hwm_grapeshot_blast_u,ActorDataEffects
+target_effects,dot_medium_burn,
 element_end
 element_start,hwm_tracking_shot,ActorDataSkill
 m_IsFriendly,False,

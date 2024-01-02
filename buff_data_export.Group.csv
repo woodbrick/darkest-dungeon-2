@@ -6773,7 +6773,7 @@ m_ConditionId,skill_is_ranged,
 element_end
 element_start,path_buff_hwy_yellowhand_ranged_dmg_down,ActorDataStats
 key_map,health_damage_dealt_percent,
-add_stats,-0.75,
+add_stats,-0.25,
 element_end
 element_start,path_buff_jes_intermezzo_lasting_bleed,Buff
 m_DurationType,performer_turn_end,
