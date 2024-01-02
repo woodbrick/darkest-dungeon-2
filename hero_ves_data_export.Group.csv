@@ -43,7 +43,7 @@ m_EquippedCombatSkillLimit,5,
 element_end
 element_start,vestal,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,41,2,10,1,1,0.1,0.67,
+add_stats,46,3,10,1,1,0.1,0.67,
 sub_stat,resistance,stun,0.2,
 sub_stat,resistance,blight,0.2,
 sub_stat,resistance,bleed,0.2,
@@ -106,7 +106,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,ves_mace_bash,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.05,
+add_stats,6,2,0.1,
 element_end
 element_start,ves_mace_bash,ActorDataEffects
 performer_after_target_effects,ves_pay_conviction_cost,
@@ -132,7 +132,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,ves_mace_bash_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,2,0.1,
+add_stats,8,2,0.2,
 element_end
 element_start,ves_mace_bash_u,ActorDataEffects
 performer_after_target_effects,ves_pay_conviction_cost,
@@ -155,7 +155,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,ves_hand_of_light,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,1,0.05,
+add_stats,4,1,0.1,
 element_end
 element_start,ves_hand_of_light,ActorDataEffects
 performer_effects,add_1_strength,add_1_block,
@@ -176,7 +176,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,ves_hand_of_light_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,1,0.05,
+add_stats,5,1,0.1,
 element_end
 element_start,ves_hand_of_light_u,ActorDataEffects
 performer_effects,add_1_strength,add_1_block,
@@ -190,7 +190,9 @@ element_start,ves_illumination,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
+m_IsMultiHit,True,
+m_Cooldown,3,
+m_AnyConditionIds,target_has_any_dodge_hidden,target_has_stealth_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 token_ignores,til_unavoidable,til_ignore_dodge,til_ignore_stealth,til_nondamaging_attack,til_ignore_crit,
@@ -208,7 +210,8 @@ element_start,ves_illumination_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
+m_IsMultiHit,True,
+m_Cooldown,2,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 token_ignores,til_unavoidable,til_ignore_dodge,til_ignore_stealth,til_nondamaging_attack,til_ignore_crit,
@@ -243,7 +246,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,ves_judgement,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.05,
+add_stats,5,2,0.1,
 element_end
 element_start,ves_judgement,ActorDataEffects
 target_effects,ves_judgement_burn,
@@ -266,7 +269,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,ves_judgement_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,3,0.05,
+add_stats,6,3,0.1,
 element_end
 element_start,ves_judgement_u,ActorDataEffects
 target_effects,ves_judgement_burn_u,
@@ -281,7 +284,7 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,True,
 launch_ranks,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
+m_IsMultiHit,True,
 m_Cooldown,1,
 m_AnyConditionIds,target_has_dmgdot_hidden,target_is_stunned_or_dazed_hidden,
 m_AverageRankIgnored,False,
@@ -299,8 +302,8 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,True,
 launch_ranks,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
-m_Cooldown,1,
+m_IsMultiHit,True,
+m_Cooldown,3,
 m_AnyConditionIds,target_has_dmgdot_hidden,target_is_stunned_or_dazed_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -323,7 +326,7 @@ m_IsFriendlySelfTargetValid,True,
 launch_ranks,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Cooldown,2,
+m_Cooldown,3,
 m_AllConditionIds,target_meets_heal_threshold_low,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -405,7 +408,7 @@ m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Cooldown,3,
+m_Cooldown,2,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -421,7 +424,7 @@ m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Cooldown,3,
+m_Cooldown,1,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -534,7 +537,7 @@ m_Tags,ves_sanctuary,
 m_IsStallInvalidating,False,
 element_end
 element_start,ves_sanctuary,ActorDataEffects
-target_effects,add_2_guard,
+target_effects,add_2_guard,stress_heal_1_target_at_threshold,
 performer_effects,add_2_block,
 element_end
 element_start,ves_sanctuary,Unlock
@@ -576,7 +579,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,ves_act_out_enemy,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.05,
+add_stats,5,2,0.1,
 element_end
 element_start,ves_act_out_enemy,ActorDataEffects
 performer_after_target_effects,heal_10pct,
@@ -595,7 +598,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,ves_act_out_friendly,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.05,
+add_stats,5,2,0.1,
 element_end
 element_start,ves_hand_of_light_p1,ActorDataSkill
 m_IsFriendly,False,
@@ -612,7 +615,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,ves_hand_of_light_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,1,0.05,
+add_stats,3,1,0.1,
 element_end
 element_start,ves_hand_of_light_p1,ActorDataEffects
 performer_effects,add_1_strength,add_1_block,
@@ -633,7 +636,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,ves_hand_of_light_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,1,0.05,
+add_stats,3,1,0.1,
 element_end
 element_start,ves_hand_of_light_p1_u,ActorDataEffects
 performer_effects,add_1_strength,add_1_block,
@@ -701,7 +704,7 @@ m_SkillHistoryIdOverride,ves_sanctuary,
 m_IsStallInvalidating,False,
 element_end
 element_start,ves_sanctuary_p1,ActorDataEffects
-target_effects,add_2_guard,
+target_effects,add_1_guard,stress_heal_1,
 performer_effects,add_2_block,
 element_end
 element_start,ves_sanctuary_p1_u,ActorDataSkill
@@ -720,7 +723,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,ves_sanctuary_p1_u,ActorDataEffects
-target_effects,add_3_guard,
+target_effects,add_2_guard,stress_heal_1,
 performer_effects,add_1_block_plus,add_1_block,
 element_end
 element_start,ves_sanctuary_p1_u,Unlock
@@ -733,7 +736,7 @@ m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Cooldown,5,
+m_Cooldown,4,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -751,7 +754,7 @@ m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Cooldown,5,
+m_Cooldown,3,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -792,7 +795,7 @@ m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Cooldown,5,
+m_Cooldown,3,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -863,7 +866,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,ves_hand_of_light_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,1,0.05,
+add_stats,3,1,0.1,
 element_end
 element_start,ves_hand_of_light_p3,ActorDataEffects
 performer_effects,add_1_strength,
@@ -884,7 +887,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,ves_hand_of_light_p3_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,1,0.05,
+add_stats,3,1,0.1,
 element_end
 element_start,ves_hand_of_light_p3_u,ActorDataEffects
 performer_effects,add_1_strength,
@@ -900,6 +903,7 @@ launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
 m_Cooldown,1,
+m_AllConditionIds,target_has_positive_tokens_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 token_ignores,til_unavoidable,til_ignore_dodge,til_ignore_stealth,til_nondamaging_attack,til_ignore_crit,
@@ -921,6 +925,7 @@ launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
 m_Cooldown,1,
+m_AllConditionIds,target_has_positive_tokens_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 token_ignores,til_unavoidable,til_ignore_dodge,til_ignore_stealth,til_nondamaging_attack,til_ignore_crit,
@@ -956,7 +961,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,ves_judgement_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.05,
+add_stats,5,2,0.1,
 element_end
 element_start,ves_judgement_p3,ActorDataEffects
 target_effects,ves_judgement_p3_weak,ves_judgement_p3_vuln,
@@ -978,7 +983,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,ves_judgement_p3_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,3,0.05,
+add_stats,6,3,0.1,
 element_end
 element_start,ves_judgement_p3_u,ActorDataEffects
 target_effects,ves_judgement_p3_weak_u,ves_judgement_p3_vuln_u,
