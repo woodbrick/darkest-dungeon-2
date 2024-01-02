@@ -44,7 +44,7 @@ m_QuirkContainerId,crusader_quirk_container,
 element_end
 element_start,crusader,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,40,2,10,1,1,0.1,0.67,
+add_stats,50,3,10,1,1,0.1,0.67,
 sub_stat,resistance,stun,0.3,
 sub_stat,resistance,blight,0.1,
 sub_stat,resistance,bleed,0.3,
@@ -106,7 +106,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,cru_smite,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.05,
+add_stats,7,2,0.1,
 element_end
 element_start,cru_smite,ActorDataEffects
 target_effects,end_combo,
@@ -128,7 +128,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_smite_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,2,0.1,
+add_stats,9,2,0.2,
 element_end
 element_start,cru_smite_u,ActorDataEffects
 target_effects,end_combo,
@@ -150,7 +150,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,cru_stunning_blow,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.05,
+add_stats,5,2,0.1,
 element_end
 element_start,cru_stunning_blow,ActorDataEffects
 target_effects,combo_add_1_stun,end_combo,
@@ -171,7 +171,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_stunning_blow_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.1,
+add_stats,6,2,0.2,
 element_end
 element_start,cru_stunning_blow_u,ActorDataEffects
 target_effects,combo_add_1_stun,remove_all_strength,remove_all_crit,end_combo,
@@ -193,7 +193,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,cru_holy_lance,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,3,0.1,
+add_stats,6,3,0.2,
 element_end
 element_start,cru_holy_lance,ActorDataEffects
 target_effects,skill_dot_small_burn,
@@ -217,7 +217,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_holy_lance_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,4,0.15,
+add_stats,7,4,0.3,
 element_end
 element_start,cru_holy_lance_u,ActorDataEffects
 target_effects,skill_dot_medium_burn,prime_combo,
@@ -240,7 +240,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,cru_zealous_accusation,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,1,0.05,
+add_stats,3,1,0.1,
 element_end
 element_start,cru_zealous_accusation,ActorDataEffects
 target_effects,skill_dot_small_burn,prime_combo_25pct,
@@ -261,7 +261,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_zealous_accusation_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,1,0.05,
+add_stats,4,1,0.1,
 element_end
 element_start,cru_zealous_accusation_u,ActorDataEffects
 target_effects,skill_dot_medium_burn,prime_combo_33pct,
@@ -443,7 +443,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,cru_reap,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,1,0.05,
+add_stats,6,1,0.1,
 element_end
 element_start,cru_reap,ActorDataEffects
 target_effects,cru_reap_heal_debuff_e,
@@ -466,7 +466,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_reap_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.05,
+add_stats,7,2,0.1,
 element_end
 element_start,cru_reap_u,ActorDataEffects
 target_effects,cru_reap_u_heal_debuff_e,end_combo,
@@ -569,7 +569,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,cru_act_out_enemy,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,3,0.05,
+add_stats,5,3,0.1,
 element_end
 element_start,cru_act_out_friendly,ActorDataSkill
 m_IsFriendly,True,
@@ -585,7 +585,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,cru_act_out_friendly,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,3,0.05,
+add_stats,5,3,0.1,
 element_end
 element_start,cru_smite_p1,ActorDataSkill
 m_IsFriendly,False,
@@ -604,10 +604,10 @@ m_IsStallInvalidating,True,
 element_end
 element_start,cru_smite_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.05,
+add_stats,7,2,0.1,
 element_end
 element_start,cru_smite_p1,ActorDataEffects
-on_kill_as_performer_to_performer_effects,stress_heal_1_target_not_corpse,
+on_kill_as_performer_to_performer_effects,stress_heal_1,
 element_end
 element_start,cru_smite_p1_u,ActorDataSkill
 m_IsFriendly,False,
@@ -627,10 +627,10 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_smite_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,3,0.1,
+add_stats,9,3,0.2,
 element_end
 element_start,cru_smite_p1_u,ActorDataEffects
-on_kill_as_performer_to_performer_effects,stress_heal_2_target_not_corpse,
+on_kill_as_performer_to_performer_effects,stress_heal_2,
 element_end
 element_start,cru_smite_p1_u,Unlock
 m_RequirementIds,cru_smite_p1,
@@ -653,7 +653,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,cru_reap_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,1,0.05,
+add_stats,6,1,0.1,
 element_end
 element_start,cru_reap_p1,ActorDataEffects
 target_effects,cru_reap_heal_debuff_e,
@@ -676,11 +676,11 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_reap_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.05,
+add_stats,7,2,0.1,
 element_end
 element_start,cru_reap_p1_u,ActorDataEffects
 target_effects,cru_reap_u_heal_debuff_e,
-on_kill_as_performer_to_performer_effects,add_1_strength_target_not_corpse,
+on_kill_as_performer_to_performer_effects,add_1_strength,
 element_end
 element_start,cru_reap_p1_u,Unlock
 m_RequirementIds,cru_reap_p1,
@@ -738,7 +738,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,cru_smite_p2,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.05,
+add_stats,7,2,0.1,
 element_end
 element_start,cru_smite_p2,ActorDataEffects
 performer_per_target_effects,combo_stress_heal_1,
@@ -760,7 +760,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_smite_p2_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,3,0.05,
+add_stats,9,3,0.1,
 element_end
 element_start,cru_smite_p2_u,ActorDataEffects
 performer_per_target_effects,combo_stress_heal_2,
@@ -863,7 +863,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,cru_zealous_accusation_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,1,0.05,
+add_stats,3,1,0.1,
 element_end
 element_start,cru_zealous_accusation_p3,ActorDataEffects
 target_effects,skill_dot_small_burn,prime_combo_25pct,
@@ -884,7 +884,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_zealous_accusation_p3_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,1,0.05,
+add_stats,4,1,0.1,
 element_end
 element_start,cru_zealous_accusation_p3_u,ActorDataEffects
 target_effects,skill_dot_medium_burn,prime_combo_33pct,

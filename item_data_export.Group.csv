@@ -1,6 +1,6 @@
 element_start,candles,Item
 m_type,currency,
-m_maxQty,4,
+m_maxQty,8,
 m_RunEndGameScorePerQty,1,
 m_combinable,True,
 sub_type,profile,
@@ -12,7 +12,7 @@ m_buyCostId,
 element_end
 element_start,gold,Item
 m_type,currency,
-m_maxQty,40,
+m_maxQty,80,
 m_combinable,True,
 sub_type,relics,
 m_usedInCombat,False,
@@ -24,7 +24,7 @@ element_end
 element_start,city_books,Item
 m_type,currency,
 m_tags,faction,
-m_maxQty,40,
+m_maxQty,80,
 m_combinable,True,
 sub_type,faction,
 m_usedInCombat,False,
@@ -36,7 +36,7 @@ element_end
 element_start,farm_spoons,Item
 m_type,currency,
 m_tags,faction,
-m_maxQty,40,
+m_maxQty,80,
 m_combinable,True,
 sub_type,faction,
 m_usedInCombat,False,
@@ -48,7 +48,7 @@ element_end
 element_start,forest_medals,Item
 m_type,currency,
 m_tags,faction,
-m_maxQty,40,
+m_maxQty,80,
 m_combinable,True,
 sub_type,faction,
 m_usedInCombat,False,
@@ -60,7 +60,7 @@ element_end
 element_start,cave_dirt,Item
 m_type,currency,
 m_tags,faction,
-m_maxQty,40,
+m_maxQty,80,
 m_combinable,True,
 sub_type,faction,
 m_usedInCombat,False,
@@ -72,7 +72,7 @@ element_end
 element_start,coast_starfish,Item
 m_type,currency,
 m_tags,faction,
-m_maxQty,40,
+m_maxQty,80,
 m_combinable,True,
 sub_type,faction,
 m_usedInCombat,False,
@@ -84,7 +84,7 @@ element_end
 element_start,valley_baubles,Item
 m_type,currency,
 m_tags,faction,
-m_maxQty,40,
+m_maxQty,80,
 m_combinable,True,
 sub_type,faction,
 m_usedInCombat,False,
@@ -96,7 +96,7 @@ element_end
 element_start,ablative_powders,Item
 m_type,combat,
 m_tags,powder,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -113,7 +113,7 @@ element_end
 element_start,adrenaline_tonic,Item
 m_type,combat,
 m_tags,restorative,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -130,7 +130,7 @@ element_end
 element_start,antivenom,Item
 m_type,combat,
 m_tags,concoction,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -147,7 +147,7 @@ element_end
 element_start,bandages,Item
 m_type,combat,
 m_tags,woven,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -164,7 +164,7 @@ element_end
 element_start,bear_trap,Item
 m_type,combat,
 m_tags,trap,serrated,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -181,7 +181,7 @@ element_end
 element_start,bone_saw,Item
 m_type,combat,
 m_tags,serrated,weapon,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -198,7 +198,7 @@ element_end
 element_start,burn_salve,Item
 m_type,combat,
 m_tags,concoction,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -215,7 +215,7 @@ element_end
 element_start,crows_feet,Item
 m_type,combat,
 m_tags,trap,serrated,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -232,7 +232,7 @@ element_end
 element_start,chalk_dust,Item
 m_type,combat,
 m_tags,powder,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -249,7 +249,7 @@ element_end
 element_start,clotting_powders,Item
 m_type,combat,
 m_tags,powder,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -266,7 +266,7 @@ element_end
 element_start,death_cap_spores,Item
 m_type,combat,
 m_tags,noxious,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -283,7 +283,7 @@ element_end
 element_start,fire_bomb,Item
 m_type,combat,
 m_tags,explosive,flammable,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -300,7 +300,7 @@ element_end
 element_start,fire_grenade,Item
 m_type,combat,
 m_tags,explosive,flammable,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -317,7 +317,7 @@ element_end
 element_start,fishermans_net,Item
 m_type,combat,
 m_tags,woven,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -334,7 +334,7 @@ element_end
 element_start,healing_consumable_1,Item
 m_type,combat,
 m_tags,restorative,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -351,7 +351,7 @@ element_end
 element_start,healing_consumable_2,Item
 m_type,combat,
 m_tags,restorative,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -367,7 +367,7 @@ m_ItemQty,12,
 element_end
 element_start,holy_water,Item
 m_type,combat,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -384,7 +384,7 @@ element_end
 element_start,ichor_bomb,Item
 m_type,combat,
 m_tags,explosive,noxious,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -401,7 +401,7 @@ element_end
 element_start,invigorating_intoxicant,Item
 m_type,combat,
 m_tags,restorative,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -418,7 +418,7 @@ element_end
 element_start,laudanum,Item
 m_type,combat,
 m_tags,concoction,
-m_maxQty,4,
+m_maxQty,8,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -435,7 +435,7 @@ element_end
 element_start,medicinal_herbs,Item
 m_type,combat,
 m_tags,restorative,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -452,7 +452,7 @@ element_end
 element_start,neutralizing_powders,Item
 m_type,combat,
 m_tags,powder,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -469,7 +469,7 @@ element_end
 element_start,noisemaker,Item
 m_type,combat,
 m_tags,contraption,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -485,7 +485,7 @@ m_ItemQty,6,
 element_end
 element_start,oil_flask,Item
 m_type,combat,
-m_maxQty,4,
+m_maxQty,8,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -502,7 +502,7 @@ element_end
 element_start,otherworldly_fragment,Item
 m_type,combat,
 m_tags,flammable,noxious,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -519,7 +519,7 @@ element_end
 element_start,pouch_of_lye,Item
 m_type,combat,
 m_tags,powder,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -535,7 +535,7 @@ m_ItemQty,6,
 element_end
 element_start,pustule_salve,Item
 m_type,combat,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -552,7 +552,7 @@ element_end
 element_start,pyrotechnic_dazzler,Item
 m_type,combat,
 m_tags,contraption,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -569,7 +569,7 @@ element_end
 element_start,rag,Item
 m_type,combat,
 m_tags,woven,
-m_maxQty,4,
+m_maxQty,8,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -586,7 +586,7 @@ element_end
 element_start,scrap_grenade,Item
 m_type,combat,
 m_tags,trap,serrated,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -603,7 +603,7 @@ element_end
 element_start,shimmering_powder,Item
 m_type,combat,
 m_tags,powder,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -619,7 +619,7 @@ m_ItemQty,6,
 element_end
 element_start,shred_of_decency,Item
 m_type,combat,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -635,7 +635,7 @@ m_ItemQty,12,
 element_end
 element_start,single_leech,Item
 m_type,combat,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -652,7 +652,7 @@ element_end
 element_start,smelling_salts,Item
 m_type,combat,
 m_tags,restorative,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -669,7 +669,7 @@ element_end
 element_start,smoke_bomb,Item
 m_type,combat,
 m_tags,contraption,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -685,7 +685,7 @@ m_ItemQty,6,
 element_end
 element_start,space_dust,Item
 m_type,combat,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -702,7 +702,7 @@ element_end
 element_start,spiked_ball,Item
 m_type,combat,
 m_tags,trap,serrated,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -718,7 +718,7 @@ m_ItemQty,12,
 element_end
 element_start,spring_water,Item
 m_type,combat,
-m_maxQty,3,
+m_maxQty,6,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -735,7 +735,7 @@ element_end
 element_start,stimulants,Item
 m_type,combat,
 m_tags,restorative,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -751,7 +751,7 @@ m_ItemQty,6,
 element_end
 element_start,the_blood,Item
 m_type,combat,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -768,7 +768,7 @@ element_end
 element_start,thunderclap_grenade,Item
 m_type,combat,
 m_tags,contraption,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -785,7 +785,7 @@ element_end
 element_start,torch_consumable,Item
 m_type,combat,
 m_tags,flammable,
-m_maxQty,4,
+m_maxQty,8,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -803,7 +803,7 @@ element_end
 element_start,toxic_ichor,Item
 m_type,combat,
 m_tags,noxious,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -820,7 +820,7 @@ element_end
 element_start,toxic_spores,Item
 m_type,combat,
 m_tags,explosive,noxious,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -836,7 +836,7 @@ m_ItemQty,12,
 element_end
 element_start,trephine_bur,Item
 m_type,combat,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -852,7 +852,7 @@ m_ItemQty,6,
 element_end
 element_start,war_horn,Item
 m_type,combat,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -869,7 +869,7 @@ element_end
 element_start,makeshift_javelin,Item
 m_type,combat,
 m_tags,weapon,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -885,7 +885,7 @@ m_ItemQty,100,
 element_end
 element_start,wilburs_flag,Item
 m_type,combat,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -901,7 +901,7 @@ m_ItemQty,100,
 element_end
 element_start,unnatural_pigment,Item
 m_type,combat,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,True,
@@ -917,7 +917,7 @@ m_ItemQty,100,
 element_end
 element_start,armor_repair_kit,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -934,7 +934,7 @@ m_ItemQty,8,
 element_end
 element_start,blasphemous_idol,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -954,7 +954,7 @@ element_end
 element_start,book_bawdy_tales,Item
 m_type,rest,
 m_tags,book,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -972,7 +972,7 @@ element_end
 element_start,book_desert,Item
 m_type,rest,
 m_tags,book,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -990,7 +990,7 @@ element_end
 element_start,book_insults,Item
 m_type,rest,
 m_tags,book,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1008,7 +1008,7 @@ element_end
 element_start,book_poetry,Item
 m_type,rest,
 m_tags,book,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1027,7 +1027,7 @@ m_ItemQty,16,
 element_end
 element_start,boxing_gloves,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1047,7 +1047,7 @@ element_end
 element_start,calming_incense,Item
 m_type,rest,
 m_tags,poultice,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1064,7 +1064,7 @@ m_ItemQty,8,
 element_end
 element_start,candles_and_chocolate,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1084,7 +1084,7 @@ element_end
 element_start,clarifying_poultice,Item
 m_type,rest,
 m_tags,poultice,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1102,7 +1102,7 @@ element_end
 element_start,clotting_poultice,Item
 m_type,rest,
 m_tags,poultice,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1119,7 +1119,7 @@ m_ItemQty,8,
 element_end
 element_start,dart_board,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1138,7 +1138,7 @@ m_ItemQty,12,
 element_end
 element_start,drum,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1157,7 +1157,7 @@ element_start,food_1,Item
 m_type,rest,
 m_tags,food,food_1,
 m_useTagLimit,1,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1176,7 +1176,7 @@ element_start,food_2,Item
 m_type,rest,
 m_tags,food,food_2,
 m_useTagLimit,1,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1195,7 +1195,7 @@ element_start,food_3,Item
 m_type,rest,
 m_tags,food,food_3,
 m_useTagLimit,1,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1214,7 +1214,7 @@ element_start,food_4,Item
 m_type,rest,
 m_tags,food,food_4,
 m_useTagLimit,1,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1233,7 +1233,7 @@ element_start,food_5,Item
 m_type,rest,
 m_tags,food,food_5,
 m_useTagLimit,1,
-m_maxQty,4,
+m_maxQty,8,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1252,7 +1252,7 @@ element_start,tinned_preserves,Item
 m_type,rest,
 m_tags,food,tinned_preserves,
 m_useTagLimit,1,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1269,7 +1269,7 @@ m_ItemQty,100,
 element_end
 element_start,holy_beads,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1289,7 +1289,7 @@ element_end
 element_start,impermeable_poultice,Item
 m_type,rest,
 m_tags,poultice,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1306,7 +1306,7 @@ m_ItemQty,8,
 element_end
 element_start,medicinal_leeches,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1324,7 +1324,7 @@ m_ItemQty,35,
 element_end
 element_start,meditative_totem,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1341,7 +1341,7 @@ m_ItemQty,12,
 element_end
 element_start,mop,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1361,7 +1361,7 @@ element_end
 element_start,nightshade_concoction,Item
 m_type,rest,
 m_tags,concoction,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1378,7 +1378,7 @@ m_ItemQty,12,
 element_end
 element_start,orbitoclast,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1395,7 +1395,7 @@ m_ItemQty,35,
 element_end
 element_start,pipeweed,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1413,7 +1413,7 @@ m_ItemQty,8,
 element_end
 element_start,playing_cards,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1433,7 +1433,7 @@ element_end
 element_start,restorative_herbs,Item
 m_type,rest,
 m_tags,restorative,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1452,7 +1452,7 @@ element_start,roast_pig,Item
 m_type,rest,
 m_tags,roast_pig,
 m_useTagLimit,1,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1471,7 +1471,7 @@ element_end
 element_start,songbook_amorous,Item
 m_type,rest,
 m_tags,book,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1491,7 +1491,7 @@ element_end
 element_start,songbook_morose,Item
 m_type,rest,
 m_tags,book,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1511,7 +1511,7 @@ element_end
 element_start,songbook_rousing,Item
 m_type,rest,
 m_tags,book,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1529,7 +1529,7 @@ element_end
 element_start,soothing_poultice,Item
 m_type,rest,
 m_tags,poultice,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1546,7 +1546,7 @@ m_ItemQty,8,
 element_end
 element_start,speed_bag,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1565,7 +1565,7 @@ element_start,stew,Item
 m_type,rest,
 m_tags,food,stew,
 m_useTagLimit,1,
-m_maxQty,4,
+m_maxQty,8,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1583,7 +1583,7 @@ element_end
 element_start,stimulating_poultice,Item
 m_type,rest,
 m_tags,poultice,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1600,7 +1600,7 @@ m_ItemQty,8,
 element_end
 element_start,stitching_kit,Item
 m_type,rest,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1617,7 +1617,7 @@ m_ItemQty,12,
 element_end
 element_start,the_wine,Item
 m_type,rest,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1636,7 +1636,7 @@ m_ItemQty,16,
 element_end
 element_start,tug_rope,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1654,7 +1654,7 @@ element_end
 element_start,wax_innoculant,Item
 m_type,rest,
 m_tags,restorative,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1671,7 +1671,7 @@ m_ItemQty,8,
 element_end
 element_start,whetstone,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1689,7 +1689,7 @@ element_end
 element_start,whiskey_barrel,Item
 m_type,rest,
 m_tags,whiskey,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1709,7 +1709,7 @@ element_end
 element_start,whiskey_bottle,Item
 m_type,rest,
 m_tags,whiskey,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1729,7 +1729,7 @@ element_end
 element_start,whiskey_flask,Item
 m_type,rest,
 m_tags,whiskey,
-m_maxQty,2,
+m_maxQty,4,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1746,7 +1746,7 @@ m_ItemQty,8,
 element_end
 element_start,whittling_tools,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1763,7 +1763,7 @@ m_ItemQty,8,
 element_end
 element_start,wild_tea,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,True,
 m_usedInCombat,False,
@@ -1780,7 +1780,7 @@ m_ItemQty,12,
 element_end
 element_start,oddly_tuned_lute,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,False,
 sub_type,hero,
@@ -1800,7 +1800,7 @@ m_ItemQty,100,
 element_end
 element_start,morbid_joke,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,False,
 sub_type,hero,
@@ -1822,7 +1822,7 @@ m_ItemQty,100,
 element_end
 element_start,improvised_strategy,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,False,
 sub_type,hero,
@@ -1842,7 +1842,7 @@ m_ItemQty,100,
 element_end
 element_start,experimental_remedy,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,False,
 sub_type,hero,
@@ -1863,7 +1863,7 @@ m_ItemQty,100,
 element_end
 element_start,precious_collection,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,False,
 sub_type,hero,
@@ -1884,7 +1884,7 @@ m_ItemQty,100,
 element_end
 element_start,tar_filled_colambre,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,False,
 sub_type,hero,
@@ -1904,7 +1904,7 @@ m_ItemQty,100,
 element_end
 element_start,guided_meditation,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,False,
 sub_type,hero,
@@ -1925,7 +1925,7 @@ m_ItemQty,100,
 element_end
 element_start,the_very_best,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,False,
 sub_type,hero,
@@ -1945,7 +1945,7 @@ m_ItemQty,100,
 element_end
 element_start,war_paint,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,False,
 sub_type,hero,
@@ -1965,7 +1965,7 @@ m_ItemQty,100,
 element_end
 element_start,holy_hymnal,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,False,
 sub_type,hero,
@@ -1985,7 +1985,7 @@ m_ItemQty,100,
 element_end
 element_start,pain_box,Item
 m_type,rest,
-m_maxQty,1,
+m_maxQty,2,
 m_DiscardGameScorePerQty,1,
 m_combinable,False,
 sub_type,hero,
@@ -2005,7 +2005,7 @@ m_ItemQty,100,
 element_end
 element_start,spider_gland,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2017,7 +2017,7 @@ m_buyCostId,
 element_end
 element_start,spider_appendage,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2029,7 +2029,7 @@ m_buyCostId,
 element_end
 element_start,worm_slime,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2041,7 +2041,7 @@ m_buyCostId,
 element_end
 element_start,dog_teeth,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2053,7 +2053,7 @@ m_buyCostId,
 element_end
 element_start,worm_secretion,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2065,7 +2065,7 @@ m_buyCostId,
 element_end
 element_start,dog_blood,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2077,7 +2077,7 @@ m_buyCostId,
 element_end
 element_start,locked_strongbox,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2089,7 +2089,7 @@ m_buyCostId,
 element_end
 element_start,hero_bones_01,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2101,7 +2101,7 @@ m_buyCostId,
 element_end
 element_start,hero_bones_02,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2114,7 +2114,7 @@ m_buyCostId,
 element_end
 element_start,hero_bones_03,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2127,7 +2127,7 @@ m_buyCostId,
 element_end
 element_start,hero_bones_01_valley,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2140,7 +2140,7 @@ m_buyCostId,
 element_end
 element_start,hero_bones_02_valley,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2153,7 +2153,7 @@ m_buyCostId,
 element_end
 element_start,hero_bones_03_valley,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2166,7 +2166,7 @@ m_buyCostId,
 element_end
 element_start,puzzling_trapezohedron,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
@@ -2178,7 +2178,7 @@ m_buyCostId,
 element_end
 element_start,physicians_guild_seal,Item
 m_type,currency,
-m_maxQty,1,
+m_maxQty,2,
 m_combinable,False,
 sub_type,deliverable,
 m_possessionLimit,1,
