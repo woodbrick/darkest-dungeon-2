@@ -42,7 +42,7 @@ m_EquippedCombatSkillLimit,5,
 element_end
 element_start,highwayman,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,40,6,10,1,1,0.1,0.67,
+add_stats,35,5,10,1,1,0.1,0.67,
 sub_stat,resistance,stun,0.3,
 sub_stat,resistance,blight,0.3,
 sub_stat,resistance,bleed,0.3,
@@ -105,7 +105,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,hwm_wicked_slice,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.1,
+add_stats,4,4,0.15,
 element_end
 element_start,hwm_wicked_slice_u,ActorDataSkill
 m_IsFriendly,False,
@@ -125,7 +125,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_wicked_slice_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,4,0.2,
+add_stats,6,3,0.2,
 element_end
 element_start,hwm_wicked_slice_u,Unlock
 m_RequirementIds,hwm_wicked_slice,
@@ -144,7 +144,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,hwm_pistol_shot,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,3,3,0.1,
 element_end
 element_start,hwm_pistol_shot,ActorDataEffects
 target_effects,combo_add_1_daze,end_combo,
@@ -165,7 +165,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_pistol_shot_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.15,
+add_stats,4,4,0.15,
 element_end
 element_start,hwm_pistol_shot_u,ActorDataEffects
 target_effects,combo_add_1_stun,end_combo,
@@ -187,7 +187,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,hwm_point_blank_shot,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,6,0.1,
+add_stats,6,6,0.1,
 element_end
 element_start,hwm_point_blank_shot,ActorDataEffects
 target_effects,move_knockback_1,prime_combo,
@@ -211,7 +211,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_point_blank_shot_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,12,6,0.2,
+add_stats,10,3,0.15,
 element_end
 element_start,hwm_point_blank_shot_u,ActorDataEffects
 target_effects,move_knockback_1,prime_combo,
@@ -234,7 +234,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,hwm_grapeshot_blast,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.05,
+add_stats,2,2,0.05,
 element_end
 element_start,hwm_grapeshot_blast,Unlock
 element_end
@@ -254,7 +254,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_grapeshot_blast_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,2,0.1,
+add_stats,4,2,0.1,
 element_end
 element_start,hwm_grapeshot_blast_u,Unlock
 m_RequirementIds,hwm_grapeshot_blast,
@@ -306,7 +306,7 @@ element_end
 element_start,hwm_duelists_advance,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
-target_ranks,1,2,
+target_ranks,1,2,3,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -316,7 +316,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,hwm_duelists_advance,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.05,
+add_stats,3,2,0.05,
 element_end
 element_start,hwm_duelists_advance,ActorDataEffects
 performer_effects,add_2_riposte,move_forward_1,
@@ -324,7 +324,7 @@ element_end
 element_start,hwm_duelists_advance_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
-target_ranks,1,2,
+target_ranks,1,2,3,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -337,7 +337,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_duelists_advance_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,2,0.1,
+add_stats,4,2,0.1,
 element_end
 element_start,hwm_duelists_advance_u,ActorDataEffects
 performer_effects,add_3_riposte,add_1_dodge,move_forward_1,
@@ -359,7 +359,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,hwm_open_vein,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.05,
+add_stats,3,2,0.05,
 element_end
 element_start,hwm_open_vein,ActorDataEffects
 target_effects,combo_skill_dot_large_bleed,no_combo_skill_dot_small_bleed,end_combo,
@@ -382,7 +382,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_open_vein_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,2,0.1,
+add_stats,4,2,0.1,
 element_end
 element_start,hwm_open_vein_u,ActorDataEffects
 target_effects,combo_skill_dot_massive_bleed,no_combo_skill_dot_medium_bleed,end_combo,
@@ -442,7 +442,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,hwm_double_tap,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.05,
+add_stats,4,4,0.05,
 element_end
 element_start,hwm_double_tap,Unlock
 element_end
@@ -464,7 +464,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_double_tap_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,3,0.05,
+add_stats,6,3,0.05,
 element_end
 element_start,hwm_double_tap_u,Unlock
 m_RequirementIds,hwm_double_tap,
@@ -532,7 +532,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,hwm_double_cross,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.05,
+add_stats,2,2,0.05,
 element_end
 element_start,hwm_double_cross,ActorDataEffects
 target_effects,add_1_vulnerable,
@@ -556,7 +556,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_double_cross_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.05,
+add_stats,3,2,0.05,
 element_end
 element_start,hwm_double_cross_u,ActorDataEffects
 target_effects,add_2_vulnerable,
@@ -580,7 +580,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,hwm_riposte,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,2,0.1,
+add_stats,4,2,0.1,
 element_end
 element_start,hwm_riposte,ActorDataEffects
 target_effects,prime_combo_33pct,
@@ -599,7 +599,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,hwm_act_out_enemy,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.05,
+add_stats,3,3,0.05,
 element_end
 element_start,hwm_act_out_enemy,ActorDataEffects
 target_effects,prime_combo_33pct,
@@ -618,7 +618,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,hwm_act_out_friendly,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.05,
+add_stats,3,3,0.05,
 element_end
 element_start,hwm_act_out_friendly,ActorDataEffects
 target_effects,prime_combo_33pct,

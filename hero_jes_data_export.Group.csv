@@ -43,7 +43,7 @@ m_EquippedCombatSkillLimit,5,
 element_end
 element_start,jester,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,34,5,10,1,1,0.1,0.67,
+add_stats,29,4,10,1,1,0.1,0.67,
 sub_stat,resistance,stun,0.2,
 sub_stat,resistance,blight,0.2,
 sub_stat,resistance,bleed,0.2,
@@ -104,7 +104,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,jes_razors_wit,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,3,3,0.1,
 element_end
 element_start,jes_razors_wit,ActorDataEffects
 target_effects,prime_combo,
@@ -126,7 +126,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_razors_wit_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,3,0.15,
+add_stats,4,3,0.15,
 element_end
 element_start,jes_razors_wit_u,ActorDataEffects
 performer_effects,add_1_dodge,move_forward_1,
@@ -149,7 +149,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,jes_fade_to_black,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,3,3,0.1,
 element_end
 element_start,jes_fade_to_black,ActorDataEffects
 target_effects,add_1_blind,
@@ -171,7 +171,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_fade_to_black_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,3,0.15,
+add_stats,4,3,0.15,
 element_end
 element_start,jes_fade_to_black_u,ActorDataEffects
 target_effects,prime_combo,add_1_blind,
@@ -194,7 +194,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,jes_harvest,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.05,
+add_stats,2,2,0.05,
 element_end
 element_start,jes_harvest,ActorDataEffects
 target_effects,skill_dot_small_bleed,prime_combo_25pct,
@@ -217,7 +217,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_harvest_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,1,0.05,
+add_stats,3,1,0.05,
 element_end
 element_start,jes_harvest_u,ActorDataEffects
 target_effects,skill_dot_medium_bleed,prime_combo_33pct,
@@ -239,7 +239,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,jes_slice_off,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.05,
+add_stats,3,3,0.05,
 element_end
 element_start,jes_slice_off,ActorDataEffects
 target_effects,skill_dot_medium_bleed,
@@ -260,7 +260,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_slice_off_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,3,0.1,
+add_stats,4,3,0.1,
 element_end
 element_start,jes_slice_off_u,ActorDataEffects
 target_effects,skill_dot_medium_bleed,add_1_vulnerable,
@@ -284,7 +284,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,jes_finale,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,6,0.1,
+add_stats,6,6,0.1,
 element_end
 element_start,jes_finale,ActorDataEffects
 performer_effects,add_1_vulnerable_nr,add_1_daze_nr,move_backward_3,
@@ -310,7 +310,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_finale_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,12,3,0.2,
+add_stats,10,3,0.2,
 element_end
 element_start,jes_finale_u,ActorDataEffects
 performer_effects,add_1_vulnerable_nr,add_1_daze_nr,move_backward_3,
@@ -382,7 +382,7 @@ m_Tags,intermezzo,intermezzo_ballad,jes_battle_ballad,
 m_IsStallInvalidating,False,
 element_end
 element_start,jes_battle_ballad,ActorDataEffects
-target_effects,move_forward_1,add_2_strength,
+target_effects,move_forward_1,add_1_strength,
 element_end
 element_start,jes_battle_ballad_u,ActorDataSkill
 m_IsFriendly,True,
@@ -400,7 +400,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_battle_ballad_u,ActorDataEffects
-target_effects,move_forward_1,add_2_strength,add_1_crit,remove_all_combo_visible,
+target_effects,move_forward_1,add_1_strength,add_1_crit_15pct,remove_all_combo_visible,
 element_end
 element_start,jes_battle_ballad_u,Unlock
 m_RequirementIds,jes_battle_ballad,
@@ -419,7 +419,7 @@ m_Tags,intermezzo,intermezzo_ballad,jes_play_me_out,
 m_IsStallInvalidating,False,
 element_end
 element_start,jes_play_me_out,ActorDataEffects
-target_effects,move_backward_1,add_2_block,
+target_effects,move_backward_1,add_1_block,
 element_end
 element_start,jes_play_me_out,Unlock
 element_end
@@ -439,7 +439,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_play_me_out_u,ActorDataEffects
-target_effects,move_backward_1,add_2_block_plus,remove_all_combo_visible,
+target_effects,move_backward_1,add_1_block_plus,remove_all_combo_visible,
 element_end
 element_start,jes_play_me_out_u,Unlock
 m_RequirementIds,jes_play_me_out,
@@ -588,7 +588,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,jes_act_out_enemy,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,3,3,0.1,
 element_end
 element_start,jes_act_out_friendly,ActorDataSkill
 m_IsFriendly,True,
@@ -604,5 +604,5 @@ m_IsStallInvalidating,False,
 element_end
 element_start,jes_act_out_friendly,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,3,3,0.1,
 element_end

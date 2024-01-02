@@ -43,7 +43,7 @@ m_EquippedCombatSkillLimit,5,
 element_end
 element_start,occultist,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,36,6,10,1,1,0.1,0.67,
+add_stats,31,5,10,1,1,0.1,0.67,
 sub_stat,resistance,stun,0.2,
 sub_stat,resistance,blight,0.3,
 sub_stat,resistance,bleed,0.3,
@@ -104,7 +104,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,occ_sacrificial_stab,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.15,
+add_stats,3,3,0.15,
 element_end
 element_start,occ_sacrificial_stab,ActorDataEffects
 target_effects,end_combo,
@@ -128,7 +128,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,occ_sacrificial_stab_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.2,
+add_stats,4,4,0.2,
 element_end
 element_start,occ_sacrificial_stab_u,ActorDataEffects
 target_effects,end_combo,
@@ -152,7 +152,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,occ_abyssal_artillery,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.05,
+add_stats,3,3,0.05,
 element_end
 element_start,occ_abyssal_artillery,ActorDataEffects
 target_effects,prime_combo_25pct,
@@ -173,7 +173,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,occ_abyssal_artillery_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,3,0.1,
+add_stats,4,3,0.1,
 element_end
 element_start,occ_abyssal_artillery_u,ActorDataEffects
 target_effects,prime_combo_33pct,occ_unchecked_power_stun,
@@ -332,7 +332,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,occ_daemons_pull,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,3,0.05,
+add_stats,2,3,0.05,
 element_end
 element_start,occ_daemons_pull,ActorDataEffects
 target_effects,move_pull_2,prime_combo,
@@ -355,7 +355,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,occ_daemons_pull_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.05,
+add_stats,3,3,0.05,
 element_end
 element_start,occ_daemons_pull_u,ActorDataEffects
 target_effects,move_pull_3,prime_combo,occ_unchecked_power_stun,
@@ -379,7 +379,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,occ_binding_shadows,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,3,3,0.1,
 element_end
 element_start,occ_binding_shadows,ActorDataEffects
 performer_effects,add_1_unchecked_power_50pct,
@@ -403,7 +403,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,occ_binding_shadows_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.15,
+add_stats,4,4,0.15,
 element_end
 element_start,occ_binding_shadows_u,ActorDataEffects
 performer_effects,add_1_unchecked_power_66pct,
@@ -427,7 +427,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,occ_withering_malediction,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,1,0.05,
+add_stats,1,1,0.05,
 element_end
 element_start,occ_withering_malediction,ActorDataEffects
 target_effects,occ_malediction_debuff_e,
@@ -452,7 +452,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,occ_withering_malediction_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,1,0.05,
+add_stats,2,1,0.05,
 element_end
 element_start,occ_withering_malediction_u,ActorDataEffects
 target_effects,occ_malediction_u_debuff_e,
@@ -476,7 +476,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,occ_anamnesis,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,1,0.05,
+add_stats,1,1,0.05,
 element_end
 element_start,occ_anamnesis,ActorDataEffects
 target_effects,skill_dot_medium_bleed,
@@ -501,7 +501,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,occ_anamnesis_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.05,
+add_stats,1,2,0.05,
 element_end
 element_start,occ_anamnesis_u,ActorDataEffects
 target_effects,skill_dot_large_bleed,
@@ -526,7 +526,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,occ_the_burning_stars,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,10,8,0.1,
+add_stats,8,8,0.1,
 element_end
 element_start,occ_the_burning_stars,ActorDataEffects
 target_effects,prime_combo,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
@@ -552,7 +552,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,occ_the_burning_stars_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,14,6,0.15,
+add_stats,12,6,0.15,
 element_end
 element_start,occ_the_burning_stars_u,ActorDataEffects
 target_effects,prime_combo,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
@@ -619,7 +619,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,occ_act_out_enemy,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.15,
+add_stats,3,3,0.15,
 element_end
 element_start,occ_act_out_friendly,ActorDataSkill
 m_IsFriendly,True,
@@ -635,5 +635,5 @@ m_IsStallInvalidating,False,
 element_end
 element_start,occ_act_out_friendly,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.15,
+add_stats,3,3,0.15,
 element_end

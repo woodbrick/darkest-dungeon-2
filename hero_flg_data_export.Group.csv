@@ -43,7 +43,7 @@ m_EquippedCombatSkillLimit,5,
 element_end
 element_start,flagellant,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,55,4,10,1,1,0.1,0.67,
+add_stats,50,3,10,1,1,0.1,0.67,
 sub_stat,resistance,stun,0.3,
 sub_stat,resistance,blight,0.5,
 sub_stat,resistance,bleed,0.2,
@@ -106,7 +106,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,flg_punish,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,3,3,0.05,
 element_end
 element_start,flg_punish,ActorDataEffects
 target_effects,skill_dot_medium_blight,end_combo,
@@ -129,7 +129,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_punish_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.2,
+add_stats,4,4,0.1,
 element_end
 element_start,flg_punish_u,ActorDataEffects
 target_effects,skill_dot_large_blight,end_combo,
@@ -153,7 +153,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,flg_rain_of_sorrows,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,1,0.1,
+add_stats,2,1,0.05,
 element_end
 element_start,flg_rain_of_sorrows,ActorDataEffects
 target_effects,skill_dot_small_blight,end_combo,
@@ -178,7 +178,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_rain_of_sorrows_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,1,0.2,
+add_stats,3,1,0.1,
 element_end
 element_start,flg_rain_of_sorrows_u,ActorDataEffects
 target_effects,skill_dot_medium_blight,end_combo,
@@ -205,7 +205,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,flg_exsanguinate,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.1,
+add_stats,4,4,0.05,
 element_end
 element_start,flg_exsanguinate,ActorDataEffects
 target_effects,skill_dot_large_blight,end_combo,
@@ -233,7 +233,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_exsanguinate_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,4,0.1,
+add_stats,6,4,0.05,
 element_end
 element_start,flg_exsanguinate_u,ActorDataEffects
 target_effects,skill_dot_massive_blight,end_combo,
@@ -500,7 +500,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,flg_necrosis,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,3,3,0.05,
 element_end
 element_start,flg_necrosis,ActorDataEffects
 performer_per_target_effects,heal_5pct,
@@ -525,7 +525,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_necrosis_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.1,
+add_stats,4,4,0.05,
 element_end
 element_start,flg_necrosis_u,ActorDataEffects
 performer_per_target_effects,heal_5pct,
@@ -587,7 +587,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,flg_act_out_enemy,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.1,
+add_stats,4,4,0.05,
 element_end
 element_start,flg_act_out_enemy,ActorDataEffects
 target_effects,skill_dot_very_small_blight,
@@ -606,7 +606,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,flg_act_out_friendly,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.1,
+add_stats,4,4,0.05,
 element_end
 element_start,flg_act_out_friendly,ActorDataEffects
 target_effects,skill_dot_very_small_blight,
@@ -626,7 +626,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,flg_punish_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,3,3,0.05,
 element_end
 element_start,flg_punish_p1,ActorDataEffects
 target_effects,move_knockback_1,skill_dot_small_blight,
@@ -648,7 +648,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_punish_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.2,
+add_stats,4,4,0.1,
 element_end
 element_start,flg_punish_p1_u,ActorDataEffects
 target_effects,move_knockback_2,skill_dot_small_blight,prime_combo,
@@ -673,7 +673,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,flg_acid_rain_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,1,0.1,
+add_stats,2,1,0.05,
 element_end
 element_start,flg_acid_rain_p1,ActorDataEffects
 target_effects,add_1_weak,
@@ -695,7 +695,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_acid_rain_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,1,0.2,
+add_stats,3,1,0.1,
 element_end
 element_start,flg_acid_rain_p1_u,ActorDataEffects
 target_effects,add_1_weak,prime_combo_33pct,
@@ -816,7 +816,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,flg_punish_p2,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.1,
+add_stats,3,3,0.05,
 element_end
 element_start,flg_punish_p2,ActorDataEffects
 target_effects,skill_dot_small_blight,end_combo,
@@ -840,7 +840,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_punish_p2_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.2,
+add_stats,4,4,0.1,
 element_end
 element_start,flg_punish_p2_u,ActorDataEffects
 target_effects,skill_dot_medium_blight,end_combo,
@@ -867,7 +867,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,flg_acid_rain_p2,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,1,0.1,
+add_stats,2,1,0.05,
 element_end
 element_start,flg_acid_rain_p2,ActorDataEffects
 target_effects,skill_dot_small_blight,end_combo,
@@ -891,7 +891,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_acid_rain_p2_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,1,0.2,
+add_stats,3,1,0.1,
 element_end
 element_start,flg_acid_rain_p2_u,ActorDataEffects
 target_effects,skill_dot_medium_blight,end_combo,
