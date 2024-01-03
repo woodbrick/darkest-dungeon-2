@@ -4530,13 +4530,13 @@ element_end
 element_start,performer_meets_heal_threshold_low,Condition
 m_ConditionType,health_percent,
 m_ConditionActorType,PERFORMER,
-m_ConditionNumber,0.25,
+m_ConditionNumber,0.33,
 m_ConditionNumberType,LESS_THAN,
 element_end
 element_start,performer_meets_heal_threshold_med,Condition
 m_ConditionType,health_percent,
 m_ConditionActorType,PERFORMER,
-m_ConditionNumber,0.66,
+m_ConditionNumber,0.5,
 m_ConditionNumberType,LESS_THAN,
 element_end
 element_start,performer_no_logic_temporary,Condition
@@ -8690,7 +8690,7 @@ element_end
 element_start,performer_meets_heal_threshold_high,Condition
 m_ConditionType,health_percent,
 m_ConditionActorType,PERFORMER,
-m_ConditionNumber,0.5,
+m_ConditionNumber,0.66,
 m_ConditionNumberType,LESS_THAN,
 element_end
 element_start,target_has_hot,Condition

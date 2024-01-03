@@ -381,7 +381,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_artemisia_u,ActorDataEffects
-performer_effects,heal_33pct_self_threshold_low,add_3_dodge_plus,add_1_speed,
+performer_effects,heal_33pct_self_threshold_med,add_3_dodge_plus,add_1_speed,
 element_end
 element_start,gr_artemisia_u,Unlock
 m_RequirementIds,gr_artemisia,
