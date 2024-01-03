@@ -1,0 +1,8 @@
+element_start,attack,ActorDataStats
+key_map,health_damage,health_damage_range,crit_chance,
+add_stats,8,2,0.1,
+element_end
+element_start,attack,ActorDataSkill
+m_IsFriendly,False,
+launch_ranks,2,3,4,
+target_ranks,1,2,3,

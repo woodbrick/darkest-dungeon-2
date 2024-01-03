@@ -268,7 +268,7 @@ target_effects,dot_medium_burn,
 element_end
 element_start,hwm_tracking_shot,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,1,2,3,4,
+launch_ranks,2,3,4,
 target_ranks,2,3,4,
 m_IsMultiHit,False,
 m_AverageRankIgnored,False,
@@ -278,6 +278,8 @@ m_Tags,ranged,hwm_tracking_shot,
 m_IsStallInvalidating,False,
 element_end
 element_start,hwm_tracking_shot,ActorDataStats
+key_map,health_damage,health_damage_range,crit_chance,
+add_stats,2,2,0.05,
 key_map,
 add_stats,
 element_end
@@ -286,7 +288,7 @@ target_effects,prime_combo,remove_all_dodge,remove_all_dodge_plus,remove_all_ste
 element_end
 element_start,hwm_tracking_shot_u,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,1,2,3,4,
+launch_ranks,2,3,4,
 target_ranks,2,3,4,
 m_IsMultiHit,False,
 m_AverageRankIgnored,False,
@@ -299,6 +301,8 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_tracking_shot_u,ActorDataStats
+key_map,health_damage,health_damage_range,crit_chance,
+add_stats,4,2,0.05,
 key_map,
 add_stats,
 element_end
@@ -480,7 +484,7 @@ element_start,hwm_highway_robbery,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,
-m_IsMultiHit,False,
+m_IsMultiHit,True,
 m_Cooldown,1,
 m_AllConditionIds,target_has_positive_tokens,
 m_AverageRankIgnored,False,
@@ -502,7 +506,7 @@ element_start,hwm_highway_robbery_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,
-m_IsMultiHit,False,
+m_IsMultiHit,True,
 m_Cooldown,1,
 m_AllConditionIds,target_has_positive_tokens,
 m_AverageRankIgnored,False,

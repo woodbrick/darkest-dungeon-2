@@ -95,7 +95,7 @@ element_end
 element_start,hel_wicked_hack,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,2,
-target_ranks,1,2,
+target_ranks,1,2,3,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -114,7 +114,7 @@ element_end
 element_start,hel_wicked_hack_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,2,
-target_ranks,1,2,
+target_ranks,1,2,3,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
