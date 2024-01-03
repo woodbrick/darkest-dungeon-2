@@ -140,7 +140,7 @@ element_end
 element_start,hel_iron_swan,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,
-target_ranks,3,4,
+target_ranks,4,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -155,7 +155,7 @@ element_end
 element_start,hel_iron_swan_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,
-target_ranks,3,4,
+target_ranks,4,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
