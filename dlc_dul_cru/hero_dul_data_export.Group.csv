@@ -245,7 +245,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,6,2,0.1,
 element_end
 element_start,dul_flick,ActorDataEffects
-target_effects,dul_flick_ignored_token_remove_1_dodge,dul_flick_ignored_token_remove_1_dodge_plus,dul_flick_ignored_token_remove_1_block,dul_flick_ignored_token_remove_1_block_plus,
+target_effects,skill_dot_small_bleed,dul_flick_ignored_token_remove_1_dodge,dul_flick_ignored_token_remove_1_dodge_plus,dul_flick_ignored_token_remove_1_block,dul_flick_ignored_token_remove_1_block_plus,
 performer_effects,add_1_dodge,
 element_end
 element_start,dul_flick_u,ActorDataSkill
@@ -269,8 +269,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,8,2,0.15,
 element_end
 element_start,dul_flick_u,ActorDataEffects
-target_effects,dul_flick_ignored_token_remove_1_dodge,dul_flick_ignored_token_remove_1_dodge_plus,dul_flick_ignored_token_remove_1_block,dul_flick_ignored_token_remove_1_block_plus,
-performer_effects,add_2_dodge,
+target_effects,skill_dot_medium_bleed,dul_flick_ignored_token_remove_1_dodge,dul_flick_ignored_token_remove_1_dodge_plus,dul_flick_ignored_token_remove_1_block,dul_flick_ignored_token_remove_1_block_plus,
 element_end
 element_start,dul_flick_u,Unlock
 m_RequirementIds,dul_flick,
@@ -445,8 +444,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,dul_again,ActorDataEffects
 target_effects,clear_skill_cooldowns,
-performer_effects,stress_heal_1,
-performer_after_target_effects,dul_clear_stance,
+performer_after_target_effects,dul_clear_stance_50pct,
 element_end
 element_start,dul_again,Unlock
 element_end
@@ -468,8 +466,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_again_u,ActorDataEffects
 target_effects,clear_skill_cooldowns,
-performer_effects,stress_heal_2,
-performer_after_target_effects,dul_clear_stance_50pct,
+performer_after_target_effects,
 element_end
 element_start,dul_again_u,Unlock
 m_RequirementIds,dul_again,
@@ -488,7 +485,8 @@ m_Tags,dul_ruthless_instruction,
 m_IsStallInvalidating,False,
 element_end
 element_start,dul_ruthless_instruction,ActorDataEffects
-target_effects,add_1_dodge,add_1_crit,
+target_effects,add_2_dodge,
+performer_after_target_effects,stress_heal_1,
 element_end
 element_start,dul_ruthless_instruction,Unlock
 element_end
@@ -508,7 +506,8 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_ruthless_instruction_u,ActorDataEffects
-target_effects,add_2_dodge_if_defensive,dul_ignore_blind_if_aggressive,add_1_crit,
+target_effects,add_2_dodge_if_defensive,dul_ignore_blind_if_aggressive,
+performer_after_target_effects,stress_heal_2,
 element_end
 element_start,dul_ruthless_instruction_u,Unlock
 m_RequirementIds,dul_ruthless_instruction,
@@ -526,9 +525,8 @@ m_Tags,dul_meditation,
 m_IsStallInvalidating,False,
 element_end
 element_start,dul_meditation,ActorDataEffects
-performer_effects,add_2_taunt_if_defensive,add_2_riposte_if_aggressive,
+performer_effects,add_2_taunt_if_defensive,add_2_riposte_if_aggressive,add_3_dodge,
 performer_after_target_effects,dul_set_stance_defensive,dul_set_stance_defensive_p1_hidden,dul_set_stance_defensive_p2_hidden,dul_set_stance_defensive_p3_hidden,
-target_effects,stress_heal_2,
 element_end
 element_start,dul_meditation,Unlock
 element_end
@@ -547,9 +545,8 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_meditation_u,ActorDataEffects
-performer_effects,add_2_taunt_if_defensive,add_2_riposte_if_aggressive,
+performer_effects,add_2_taunt_if_defensive,add_2_riposte_if_aggressive,add_3_dodge_plus,
 performer_after_target_effects,dul_set_stance_defensive,dul_set_stance_defensive_p1_hidden,dul_set_stance_defensive_p2_hidden,dul_set_stance_defensive_p3_hidden,end_combo,
-target_effects,stress_heal_3,
 element_end
 element_start,dul_meditation_u,Unlock
 m_RequirementIds,dul_meditation,
@@ -759,7 +756,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,dul_again_p1,ActorDataEffects
 target_effects,dul_again_p1_dmg_buff_e,
-performer_effects,stress_heal_1,
+performer_effects,add_1_strength,
 element_end
 element_start,dul_again_p1_u,ActorDataSkill
 m_IsFriendly,True,
@@ -778,7 +775,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_again_p1_u,ActorDataEffects
 target_effects,stress_damage_3_if_performer_defensive,dul_again_p1_extra_initiative_buff_e,dul_again_p1_dmg_buff_e,
-performer_effects,stress_heal_2,
+performer_effects,add_1_strength,
 element_end
 element_start,dul_again_p1_u,Unlock
 m_RequirementIds,dul_again_p1,
@@ -800,6 +797,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,dul_ruthless_instruction_p1,ActorDataEffects
 target_effects,stress_heal_2_if_performer_defensive,stress_damage_1_if_performer_aggressive,add_1_strength_if_performer_aggressive,
+performer_effects,add_1_strength,
 element_end
 element_start,dul_ruthless_instruction_p1_u,ActorDataSkill
 m_IsFriendly,True,
@@ -818,6 +816,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_ruthless_instruction_p1_u,ActorDataEffects
 target_effects,stress_heal_3_if_performer_defensive,clear_horror_if_performer_defensive,stress_damage_2_if_performer_aggressive,add_1_crit_if_performer_aggressive,
+performer_effects,add_2_strength,
 element_end
 element_start,dul_ruthless_instruction_p1_u,Unlock
 m_RequirementIds,dul_ruthless_instruction_p1,
