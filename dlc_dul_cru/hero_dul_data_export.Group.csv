@@ -199,7 +199,7 @@ element_end
 element_start,dul_disengage,ActorDataEffects
 target_effects,move_pull_1_if_defensive,move_knockback_1_if_aggressive,remove_1_riposte_hidden,
 performer_after_target_effects,dul_set_stance_defensive,add_2_dodge,
-performer_effects,move_backward_1,hot_heal_small,
+performer_effects,hot_heal_small,
 element_end
 element_start,dul_disengage_u,ActorDataSkill
 m_IsFriendly,False,
@@ -222,7 +222,7 @@ element_end
 element_start,dul_disengage_u,ActorDataEffects
 target_effects,move_pull_2_if_defensive,move_knockback_2_if_aggressive,remove_1_riposte_hidden,
 performer_after_target_effects,dul_set_stance_defensive,add_2_dodge_plus,
-performer_effects,move_backward_1,hot_heal_medium,
+performer_effects,hot_heal_medium,
 element_end
 element_start,dul_disengage_u,Unlock
 m_RequirementIds,dul_disengage,
@@ -700,6 +700,7 @@ m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 token_ignores,til_ignore_riposte_visible,til_ignore_block,
 m_Tags,melee,dul_disengage,
+performer_buffs,combo_crit_50pct,
 m_ConditionIdOverride,dul_disengage,
 m_SkillHistoryIdOverride,dul_disengage,
 m_IsStallInvalidating,True,
@@ -710,7 +711,7 @@ add_stats,4,2,0.05,
 element_end
 element_start,dul_disengage_p1,ActorDataEffects
 target_effects,remove_1_riposte_hidden,
-performer_after_target_effects,duelist_stance_invert,add_1_dodge,remove_all_combo_visible,
+performer_after_target_effects,duelist_stance_invert,add_1_dodge,
 performer_effects,move_backward_2,hot_heal_small,
 element_end
 element_start,dul_disengage_p1_u,ActorDataSkill
@@ -722,6 +723,7 @@ m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 token_ignores,til_ignore_riposte_visible,til_ignore_block,
 m_Tags,melee,dul_disengage,
+performer_buffs,combo_crit_50pct,
 m_ConditionIdOverride,dul_disengage,
 m_SkillHistoryIdOverride,dul_disengage,
 m_IsStallInvalidating,True,
@@ -733,8 +735,8 @@ add_stats,5,2,0.1,
 element_end
 element_start,dul_disengage_p1_u,ActorDataEffects
 target_effects,remove_1_riposte_hidden,
-performer_after_target_effects,duelist_stance_invert,add_1_dodge_plus,remove_all_combo_visible,
-performer_effects,move_backward_2,hot_heal_medium,
+performer_after_target_effects,duelist_stance_invert,add_1_dodge_plus,
+performer_effects,move_backward_2,
 element_end
 element_start,dul_disengage_p1_u,Unlock
 m_RequirementIds,dul_disengage_p1,
@@ -927,6 +929,7 @@ m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 token_ignores,til_ignore_riposte_visible,
 m_Tags,melee,sword,dul_disengage,
+performer_buffs,combo_crit_50pct,
 m_ConditionIdOverride,dul_disengage,
 m_SkillHistoryIdOverride,dul_disengage,
 m_IsStallInvalidating,True,
@@ -937,8 +940,8 @@ add_stats,5,2,0.05,
 element_end
 element_start,dul_disengage_p2,ActorDataEffects
 target_effects,prime_combo_if_performer_aggressive,remove_1_riposte_hidden,
-performer_after_target_effects,dul_set_stance_defensive_p2,add_1_dodge,remove_all_combo_visible,
-performer_effects,move_backward_1,hot_heal_small,
+performer_after_target_effects,dul_set_stance_defensive_p2,move_backward_1,add_1_dodge,
+performer_effects,hot_heal_small,
 element_end
 element_start,dul_disengage_p2_u,ActorDataSkill
 m_IsFriendly,False,
@@ -949,6 +952,7 @@ m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 token_ignores,til_ignore_riposte_visible,
 m_Tags,melee,sword,dul_disengage,
+performer_buffs,combo_crit_50pct,
 m_ConditionIdOverride,dul_disengage,
 m_SkillHistoryIdOverride,dul_disengage,
 m_IsStallInvalidating,True,
@@ -960,8 +964,7 @@ add_stats,7,2,0.1,
 element_end
 element_start,dul_disengage_p2_u,ActorDataEffects
 target_effects,combo_add_2_blind_if_performer_defensive,prime_combo_if_performer_aggressive,remove_1_riposte_hidden,end_combo_if_performer_defensive,
-performer_after_target_effects,dul_set_stance_defensive_p2,add_1_dodge_plus,remove_all_combo_visible,
-performer_effects,move_backward_1,hot_heal_medium,
+performer_after_target_effects,dul_set_stance_defensive_p2,move_backward_1,add_1_dodge_plus,
 element_end
 element_start,dul_disengage_p2_u,Unlock
 m_RequirementIds,dul_disengage_p2,
@@ -1172,6 +1175,7 @@ m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 token_ignores,til_ignore_riposte_visible,
 m_Tags,melee,dul_disengage,
+performer_buffs,combo_crit_50pct,
 m_ConditionIdOverride,dul_disengage,
 m_SkillHistoryIdOverride,dul_disengage,
 m_IsStallInvalidating,True,
@@ -1195,6 +1199,7 @@ m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
 token_ignores,til_ignore_riposte_visible,
 m_Tags,melee,dul_disengage,
+performer_buffs,combo_crit_50pct,
 m_ConditionIdOverride,dul_disengage,
 m_SkillHistoryIdOverride,dul_disengage,
 m_IsStallInvalidating,True,

@@ -93,7 +93,7 @@ element_end
 element_start,maa_crush,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,2,
-target_ranks,1,2,3,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -418,9 +418,8 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,6,3,0.2,
 element_end
 element_start,maa_hold_the_line_u,ActorDataEffects
-performer_effects,add_2_block,move_forward_3,
+performer_effects,add_2_block,move_forward_3,stress_heal_1,
 performer_after_target_effects,add_1_immobilize_nr,
-target_effects,combo_add_1_stun,end_combo,
 element_end
 element_start,maa_hold_the_line_u,Unlock
 m_RequirementIds,maa_hold_the_line,

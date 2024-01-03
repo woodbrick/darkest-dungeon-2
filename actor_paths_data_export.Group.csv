@@ -819,7 +819,7 @@ m_DurationType,infinite,
 element_end
 element_start,path_buff_maa_sergeant_dmg_down,ActorDataStats
 key_map,health_damage_dealt_percent,
-add_stats,-0.2,
+add_stats,-0.1,
 element_end
 element_start,path_buff_maa_sergeant_move_res_up,Buff
 m_DurationType,infinite,
