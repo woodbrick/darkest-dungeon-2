@@ -6752,7 +6752,7 @@ m_DurationAmount,3,
 m_Tags,debuff,
 element_end
 element_start,path_buff_hwy_yellowhand_bleed_res_debuff,ActorDataStats
-sub_stat,resistance,bleed,-0.1,
+sub_stat,resistance,bleed,-0.2,
 element_end
 element_start,path_buff_hwy_yellowhand_hp_up,Buff
 m_DurationType,infinite,

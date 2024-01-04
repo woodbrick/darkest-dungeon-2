@@ -8849,7 +8849,7 @@ element_end
 element_start,path_buff_hwy_yellowhand_steal,Effect
 m_Chance,1,
 m_TokenStealTags,positive,
-m_TokenStealAmount,99,
+m_TokenStealAmount,2,
 all_conditions,skill_has_yellowhand_steal_path_tag,
 element_end
 element_start,path_buff_jes_intermezzo_bleed,Effect
