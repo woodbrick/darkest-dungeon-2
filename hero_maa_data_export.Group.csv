@@ -438,6 +438,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,maa_stand_fast,ActorDataEffects
 performer_effects,add_2_block,maa_stand_fast_block_e,
+performer_after_target_effects,remove_all_vulnerable,
 element_end
 element_start,maa_stand_fast,Unlock
 element_end
@@ -457,7 +458,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_stand_fast_u,ActorDataEffects
 performer_effects,add_2_block_plus,
-performer_after_target_effects,remove_all_combo_visible,maa_stand_fast_block_u_e,
+performer_after_target_effects,maa_stand_fast_block_u_e,remove_all_combo_visible,remove_all_vulnerable,
 element_end
 element_start,maa_stand_fast_u,Unlock
 m_RequirementIds,maa_stand_fast,
