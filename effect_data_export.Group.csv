@@ -7864,7 +7864,7 @@ m_TokenAddAmount,1,
 m_ShowValue,False,
 element_end
 element_start,leper_self_blind_chance_u,Effect
-m_Chance,0.6,
+m_Chance,0.5,
 m_TokenAddId,blind,
 m_TokenAddAmount,1,
 m_ShowValue,False,
