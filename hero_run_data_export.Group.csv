@@ -573,6 +573,7 @@ key_map,
 add_stats,
 element_end
 element_start,run_hearthlight,ActorDataEffects
+performer_effects,stress_heal_1,
 target_effects,remove_all_stealth,
 friendly_team_effects,remove_all_blind,
 element_end
@@ -597,8 +598,9 @@ key_map,
 add_stats,
 element_end
 element_start,run_hearthlight_u,ActorDataEffects
+performer_effects,stress_heal_2,
 target_effects,remove_all_stealth,
-friendly_team_effects,remove_all_blind,stress_heal_1,
+friendly_team_effects,remove_all_blind,
 element_end
 element_start,run_hearthlight_u,Unlock
 m_RequirementIds,run_hearthlight,

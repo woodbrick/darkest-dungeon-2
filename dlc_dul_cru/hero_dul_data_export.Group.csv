@@ -486,7 +486,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,dul_ruthless_instruction,ActorDataEffects
 target_effects,add_2_dodge,
-performer_after_target_effects,stress_heal_1,
+performer_after_target_effects,stress_heal_2,
 element_end
 element_start,dul_ruthless_instruction,Unlock
 element_end
@@ -507,7 +507,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_ruthless_instruction_u,ActorDataEffects
 target_effects,add_2_dodge_if_defensive,dul_ignore_blind_if_aggressive,
-performer_after_target_effects,stress_heal_2,
+performer_after_target_effects,stress_heal_3,
 element_end
 element_start,dul_ruthless_instruction_u,Unlock
 m_RequirementIds,dul_ruthless_instruction,
