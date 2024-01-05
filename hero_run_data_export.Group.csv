@@ -152,7 +152,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,4,3,0.1,
 element_end
 element_start,run_ransack,ActorDataEffects
-target_effects,move_pull_1,end_combo,
+target_effects,move_pull_1,end_combo,destroy_1_positive_token,
 target_neighbor_random_effects,runaway_combo_fire_spread,
 performer_effects,move_forward_1,
 actor_effect_triggers,run_combo_neighbor_burn,
@@ -175,10 +175,10 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,run_ransack_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.3,
+add_stats,6,4,0.2,
 element_end
 element_start,run_ransack_u,ActorDataEffects
-target_effects,move_pull_1,end_combo,
+target_effects,move_pull_1,end_combo,destroy_2_positive_token,
 target_neighbor_random_effects,runaway_combo_fire_spread,
 performer_effects,move_forward_1,
 actor_effect_triggers,run_combo_neighbor_burn,
@@ -352,7 +352,7 @@ m_IsFriendlySelfTargetValid,True,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Limit,3,
+m_Limit,4,
 m_AllConditionIds,target_has_bleed_dot,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -381,7 +381,7 @@ m_Tags,run_run_and_hide,
 m_IsStallInvalidating,False,
 element_end
 element_start,run_run_and_hide,ActorDataEffects
-performer_effects,add_2_stealth,add_2_dodge,move_backward_1,
+performer_effects,hot_heal_small,add_2_stealth,add_2_dodge,move_backward_1,
 element_end
 element_start,run_run_and_hide_u,ActorDataSkill
 m_IsFriendly,True,
@@ -398,7 +398,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,run_run_and_hide_u,ActorDataEffects
-performer_effects,hot_heal_medium,add_2_stealth,add_2_dodge,move_backward_1,
+performer_effects,hot_heal_large,add_2_stealth,add_2_dodge,move_backward_1,
 element_end
 element_start,run_run_and_hide_u,Unlock
 m_RequirementIds,run_run_and_hide,

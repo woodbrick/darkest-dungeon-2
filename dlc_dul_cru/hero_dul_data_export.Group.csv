@@ -336,15 +336,16 @@ m_AllConditionIds,performer_has_aggressive_stance,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
+token_ignores,til_piercing,til_ignore_block,
 m_Tags,melee,dul_the_boot,
 m_IsStallInvalidating,True,
 element_end
 element_start,dul_the_boot,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.05,
+add_stats,4,3,0.05,
 element_end
 element_start,dul_the_boot,ActorDataEffects
-target_effects,add_1_weak,move_knockback_2,
+target_effects,prime_combo_33pct,move_knockback_2,
 element_end
 element_start,dul_the_boot,Unlock
 element_end
@@ -357,6 +358,7 @@ m_AllConditionIds,performer_has_aggressive_stance,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
+token_ignores,til_piercing,til_ignore_block,
 m_Tags,melee,dul_the_boot,
 m_ConditionIdOverride,dul_the_boot,
 m_SkillHistoryIdOverride,dul_the_boot,
@@ -365,10 +367,10 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_the_boot_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,3,0.15,
+add_stats,5,3,0.15,
 element_end
 element_start,dul_the_boot_u,ActorDataEffects
-target_effects,prime_combo,move_knockback_3,add_1_weak,
+target_effects,prime_combo,move_knockback_3,
 element_end
 element_start,dul_the_boot_u,Unlock
 m_RequirementIds,dul_the_boot,
@@ -983,7 +985,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,dul_the_boot_p2,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.05,
+add_stats,4,3,0.05,
 element_end
 element_start,dul_the_boot_p2,ActorDataEffects
 target_effects,move_knockback_2,combo_add_1_stun,end_combo,
@@ -1006,7 +1008,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_the_boot_p2_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,3,0.15,
+add_stats,5,3,0.15,
 element_end
 element_start,dul_the_boot_p2_u,ActorDataEffects
 target_effects,move_knockback_2,combo_add_1_stun_if_performer_defensive,prime_combo_if_performer_aggressive,end_combo_if_performer_defensive,
