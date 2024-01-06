@@ -1,0 +1,7 @@
+element_start,move,ActorDataSkill
+m_IsFriendly,True,
+m_IsFriendlySelfTargetValid,True,
+m_LaunchRanks,0,1,2,3,
+m_TargetRelativeRanks,-1,1,
+m_IsMoveToTarget,True,
+element_end

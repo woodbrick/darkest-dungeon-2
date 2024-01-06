@@ -1,0 +1,12 @@
+element_start,inventory,Rules
+m_goldId,gold,
+m_defaultSize,20,
+m_startingGold,40,
+m_lootInventoryIgnoresMaxQty,False,
+m_minItemsForLootNarration,8,
+m_minHeroPointsForLootNarration,1,
+m_minRelicsForLootNarration,24,
+m_minStagecoachUpgradesForLootNarration,1,
+m_minTrinketCountsForLootNarration,1,1,
+m_minCandlesForLootNarration,1,
+element_end

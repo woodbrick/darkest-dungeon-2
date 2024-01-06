@@ -1,0 +1,8 @@
+element_start,stage_coach,Rules
+m_GeneralNumberOfSlots,1,
+general_slot_unlocks,stagecoach_2,stagecoach_8,stagecoach_12,
+m_TrophyNumberOfSlots,1,
+trophy_slot_unlocks,
+m_PetNumberOfSlots,0,
+pet_slot_unlocks,pet_1,
+element_end

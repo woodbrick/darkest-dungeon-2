@@ -1,0 +1,6 @@
+element_start,run,Rules
+m_LogItemIds,gold,cave_dirt,city_books,farm_spoons,forest_medals,
+m_LogQuirkTags,positive,negative,disease,
+m_SkipValleyRunValues,torch,100,
+m_OptionalBiomeMinBiomeTypicalCount,1,
+element_end

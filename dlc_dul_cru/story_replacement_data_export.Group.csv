@@ -1,0 +1,8 @@
+element_start,crusader_assist_obtain_rumour_of_riches,DataStoryChoiceReplacements
+story_choice_replacements,assist_basic_to_sanctified_scroll,
+element_end
+element_start,assist_basic_to_sanctified_scroll,StoryChoiceReplacement
+m_FromDrawTags,assist_mandatory,
+m_ToDrawTags,assist_sanctified_scroll,
+m_RemoveDrawTags,assist_basic,
+element_end

@@ -1,0 +1,6 @@
+element_start,run_end_failure,NarrationType
+m_chance,1,
+element_end
+element_start,run_end_victory,NarrationType
+m_chance,1,
+element_end
