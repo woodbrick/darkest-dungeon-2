@@ -3885,7 +3885,7 @@ sub_stat,resistance,burn,0.2,
 element_end
 element_start,flg_more_more_on_damage_buff,Buff
 m_DurationType,performer_turn_end,
-m_DurationAmount,1,
+m_DurationAmount,2,
 m_Tags,buff,
 element_end
 element_start,flg_more_more_on_damage_buff,ActorDataEffects
@@ -3893,7 +3893,7 @@ combat_health_damage_effects,add_1_flagellant_pain_heal,
 element_end
 element_start,flg_more_more_on_damage_u_buff,Buff
 m_DurationType,performer_turn_end,
-m_DurationAmount,1,
+m_DurationAmount,2,
 m_Tags,buff,
 element_end
 element_start,flg_more_more_on_damage_u_buff,ActorDataEffects
