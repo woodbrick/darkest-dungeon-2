@@ -1,7 +1,7 @@
 element_start,affinity,Rules
-m_LeaningStart,9,
-m_LeaningStartReserve,7,
-m_LeaningMin,0,
+m_LeaningStart,12,
+m_LeaningStartReserve,10,
+m_LeaningMin,5,
 m_LeaningMax,20,
 leaning_affinity_tick_trigger_chance_modifier,-3,0,False,0,
 leaning_affinity_tick_trigger_chance_modifier,4,20,True,0,

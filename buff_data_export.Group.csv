@@ -4497,7 +4497,7 @@ m_Tags,buff,
 element_end
 element_start,hellion_bloodlust_u_damage_buff,ActorDataStats
 key_map,health_damage_dealt_percent,
-add_stats,0.3,
+add_stats,0.4,
 element_end
 element_start,hellion_damage_buff_tier_1,Buff
 m_DurationType,infinite,
@@ -5529,7 +5529,7 @@ m_DurationAmount,3,
 m_Tags,buff,
 element_end
 element_start,leper_reflection_debuff_res_buff,ActorDataStats
-sub_stat,resistance,debuff,0.2,
+sub_stat,resistance,debuff,0.3,
 element_end
 element_start,leper_revenge_crit,Buff
 m_DurationType,performer_turn_end,
@@ -6752,7 +6752,7 @@ m_DurationAmount,3,
 m_Tags,debuff,
 element_end
 element_start,path_buff_hwy_yellowhand_bleed_res_debuff,ActorDataStats
-sub_stat,resistance,bleed,-0.1,
+sub_stat,resistance,bleed,-0.2,
 element_end
 element_start,path_buff_hwy_yellowhand_hp_up,Buff
 m_DurationType,infinite,
@@ -6773,7 +6773,7 @@ m_ConditionId,skill_is_ranged,
 element_end
 element_start,path_buff_hwy_yellowhand_ranged_dmg_down,ActorDataStats
 key_map,health_damage_dealt_percent,
-add_stats,-0.75,
+add_stats,-0.25,
 element_end
 element_start,path_buff_jes_intermezzo_lasting_bleed,Buff
 m_DurationType,performer_turn_end,
@@ -7313,7 +7313,7 @@ m_DurationAmount,3,
 m_Tags,buff,
 element_end
 element_start,pd_ounce_of_prevention_disease_res_buff,ActorDataStats
-sub_stat,resistance,disease,0.15,
+sub_stat,resistance,disease,0.25,
 element_end
 element_start,pd_ounce_of_prevention_disease_res_buff_u,Buff
 m_DurationType,performer_turn_end,
@@ -7321,7 +7321,7 @@ m_DurationAmount,3,
 m_Tags,buff,
 element_end
 element_start,pd_ounce_of_prevention_disease_res_buff_u,ActorDataStats
-sub_stat,resistance,disease,0.3,
+sub_stat,resistance,disease,0.5,
 element_end
 element_start,pd_ounce_of_prevention_dot_res_buff,Buff
 m_DurationType,performer_turn_end,
@@ -7329,9 +7329,9 @@ m_DurationAmount,3,
 m_Tags,buff,
 element_end
 element_start,pd_ounce_of_prevention_dot_res_buff,ActorDataStats
-sub_stat,resistance,bleed,0.15,
-sub_stat,resistance,blight,0.15,
-sub_stat,resistance,burn,0.15,
+sub_stat,resistance,bleed,0.3,
+sub_stat,resistance,blight,0.3,
+sub_stat,resistance,burn,0.3,
 element_end
 element_start,pd_ounce_of_prevention_dot_res_buff_u,Buff
 m_DurationType,performer_turn_end,
@@ -7339,9 +7339,9 @@ m_DurationAmount,3,
 m_Tags,buff,
 element_end
 element_start,pd_ounce_of_prevention_dot_res_buff_u,ActorDataStats
-sub_stat,resistance,bleed,0.25,
-sub_stat,resistance,blight,0.25,
-sub_stat,resistance,burn,0.25,
+sub_stat,resistance,bleed,0.5,
+sub_stat,resistance,blight,0.5,
+sub_stat,resistance,burn,0.5,
 element_end
 element_start,pd_signature_item_buff,Buff
 m_DurationType,infinite,

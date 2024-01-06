@@ -42,7 +42,7 @@ m_EquippedCombatSkillLimit,5,
 element_end
 element_start,bounty_hunter,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,48,3,10,1,1,0.1,0.67,
+add_stats,53,4,10,1,1,0.1,0.67,
 sub_stat,resistance,stun,0.4,
 sub_stat,resistance,blight,0.3,
 sub_stat,resistance,bleed,0.3,
@@ -101,7 +101,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,bh_collect_bounty,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,4,0.05,
+add_stats,10,4,0.1,
 element_end
 element_start,bh_collect_bounty,ActorDataEffects
 target_effects,end_combo,
@@ -138,7 +138,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,bh_come_hither,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,2,0.1,
+add_stats,4,2,0.2,
 element_end
 element_start,bh_come_hither,ActorDataEffects
 target_effects,prime_combo,move_pull_2,
@@ -158,7 +158,7 @@ m_ProfileUnlockId,bounty_hunter_8,
 element_end
 element_start,bh_uppercut,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.05,
+add_stats,5,2,0.1,
 element_end
 element_start,bh_uppercut,ActorDataEffects
 target_effects,add_1_stun,move_knockback_1,
@@ -198,7 +198,7 @@ m_ProfileUnlockId,bounty_hunter_7,
 element_end
 element_start,bh_finish_him,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.1,
+add_stats,8,4,0.2,
 element_end
 element_start,bh_finish_him,ActorDataEffects
 target_effects,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
@@ -217,7 +217,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,bh_caltrops,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,2,0.05,
+add_stats,3,2,0.1,
 element_end
 element_start,bh_caltrops,ActorDataEffects
 target_effects,skill_dot_medium_bleed,bh_caltrops_move_res_down_e,bh_caltrops_speed_down_e,end_combo,
@@ -238,7 +238,7 @@ m_ProfileUnlockId,bounty_hunter_4,
 element_end
 element_start,bh_hurlbat,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.15,
+add_stats,8,4,0.3,
 element_end
 element_start,bh_hurlbat,ActorDataEffects
 target_effects,end_combo,ignored_token_remove_1_dodge_plus_if_target_combo,ignored_token_remove_1_dodge_if_target_combo,
@@ -281,7 +281,7 @@ m_ProfileUnlockId,bounty_hunter_5,
 element_end
 element_start,bh_no_escape,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,2,0.1,
+add_stats,4,2,0.2,
 element_end
 element_start,bh_no_escape,ActorDataEffects
 target_effects,add_1_stun,prime_combo,ignored_token_remove_1_dodge_plus,ignored_token_remove_1_dodge,

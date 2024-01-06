@@ -42,7 +42,7 @@ m_EquippedCombatSkillLimit,5,
 element_end
 element_start,grave_robber,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,29,5,10,1,1,0.1,0.67,
+add_stats,34,6,10,1,1,0.1,0.67,
 sub_stat,resistance,stun,0.2,
 sub_stat,resistance,blight,0.3,
 sub_stat,resistance,bleed,0.3,
@@ -105,7 +105,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_pick_to_the_face,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,3,0.1,
+add_stats,6,3,0.1,
 element_end
 element_start,gr_pick_to_the_face,ActorDataEffects
 target_effects,end_combo,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
@@ -128,7 +128,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_pick_to_the_face_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,6,0.15,
+add_stats,6,6,0.15,
 element_end
 element_start,gr_pick_to_the_face_u,ActorDataEffects
 target_effects,end_combo,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
@@ -151,7 +151,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_lunge,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,4,0.2,
+add_stats,6,4,0.2,
 element_end
 element_start,gr_lunge,ActorDataEffects
 performer_effects,move_forward_2,
@@ -176,7 +176,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_lunge_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,5,0.3,
+add_stats,8,5,0.3,
 element_end
 element_start,gr_lunge_u,ActorDataEffects
 performer_effects,move_forward_2,
@@ -199,7 +199,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_flashing_daggers,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,1,0.05,
+add_stats,4,1,0.05,
 element_end
 element_start,gr_flashing_daggers_u,ActorDataSkill
 m_IsFriendly,False,
@@ -217,7 +217,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_flashing_daggers_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.1,
+add_stats,6,2,0.1,
 element_end
 element_start,gr_flashing_daggers_u,Unlock
 m_RequirementIds,gr_flashing_daggers,
@@ -275,7 +275,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_thrown_dagger,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.15,
+add_stats,5,2,0.15,
 element_end
 element_start,gr_thrown_dagger,ActorDataEffects
 target_effects,end_combo,ignored_token_remove_1_dodge_plus_if_stealth,ignored_token_remove_1_dodge_if_stealth,ignored_token_remove_1_guard,
@@ -298,7 +298,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_thrown_dagger_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,3,0.3,
+add_stats,6,3,0.3,
 element_end
 element_start,gr_thrown_dagger_u,ActorDataEffects
 target_effects,end_combo,ignored_token_remove_1_dodge_plus_if_stealth,ignored_token_remove_1_dodge_if_stealth,ignored_token_remove_1_guard,
@@ -321,7 +321,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_poison_dart,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,2,0.05,
+add_stats,4,2,0.05,
 element_end
 element_start,gr_poison_dart,ActorDataEffects
 target_effects,skill_dot_small_blight,end_combo,
@@ -343,7 +343,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_poison_dart_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,3,0.1,
+add_stats,4,3,0.1,
 element_end
 element_start,gr_poison_dart_u,ActorDataEffects
 target_effects,skill_dot_large_blight,end_combo,
@@ -381,7 +381,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_artemisia_u,ActorDataEffects
-performer_effects,heal_33pct_self_threshold_low,add_3_dodge_plus,add_1_speed,
+performer_effects,heal_33pct_self_threshold_med,add_3_dodge_plus,add_1_speed,
 element_end
 element_start,gr_artemisia_u,Unlock
 m_RequirementIds,gr_artemisia,
@@ -401,7 +401,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_pirouette,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,3,0.1,
+add_stats,6,3,0.1,
 element_end
 element_start,gr_pirouette,ActorDataEffects
 performer_effects,add_1_dodge,add_1_daze_nr,move_backward_3,
@@ -425,7 +425,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_pirouette_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,2,0.15,
+add_stats,8,2,0.15,
 element_end
 element_start,gr_pirouette_u,ActorDataEffects
 performer_effects,add_1_dodge_plus,add_1_daze_nr,move_backward_3,
@@ -439,7 +439,7 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Cooldown,2,
+m_AllConditionIds,performer_has_stealth,
 m_AverageRankIgnored,True,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
 m_Tags,gr_repartee,
@@ -456,7 +456,7 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Cooldown,2,
+m_AllConditionIds,performer_has_stealth,
 m_AverageRankIgnored,True,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
 m_Tags,gr_repartee,
@@ -466,7 +466,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_repartee_u,ActorDataEffects
-performer_effects,add_3_dodge_plus,add_2_taunt_nr,gr_repartee_dodge_manager_e,
+performer_effects,add_3_dodge_plus,add_2_taunt_nr,
 performer_after_target_effects,remove_all_stealth,
 element_end
 element_start,gr_repartee_u,Unlock
@@ -488,7 +488,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_glint_in_the_dark,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.05,
+add_stats,6,2,0.05,
 element_end
 element_start,gr_glint_in_the_dark,ActorDataEffects
 target_effects,remove_all_stealth,
@@ -513,7 +513,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_glint_in_the_dark_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,2,0.1,
+add_stats,8,2,0.1,
 element_end
 element_start,gr_glint_in_the_dark_u,ActorDataEffects
 target_effects,remove_all_stealth,
@@ -589,7 +589,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,gr_act_out_enemy,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,3,0.2,
+add_stats,5,3,0.2,
 element_end
 element_start,gr_act_out_friendly,ActorDataSkill
 m_IsFriendly,True,
@@ -605,7 +605,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,gr_act_out_friendly,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,3,0.2,
+add_stats,5,3,0.2,
 element_end
 element_start,gr_pick_to_the_face_p1,ActorDataSkill
 m_IsFriendly,False,
@@ -624,7 +624,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_pick_to_the_face_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,1,0.1,
+add_stats,6,1,0.1,
 element_end
 element_start,gr_pick_to_the_face_p1,ActorDataEffects
 target_effects,end_combo,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
@@ -647,7 +647,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_pick_to_the_face_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,4,0.15,
+add_stats,6,4,0.15,
 element_end
 element_start,gr_pick_to_the_face_p1_u,ActorDataEffects
 target_effects,end_combo,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
@@ -672,7 +672,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_lunge_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.2,
+add_stats,6,2,0.2,
 element_end
 element_start,gr_lunge_p1,ActorDataEffects
 performer_effects,move_forward_2,
@@ -695,7 +695,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_lunge_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,5,0.3,
+add_stats,6,5,0.3,
 element_end
 element_start,gr_lunge_p1_u,ActorDataEffects
 performer_effects,move_forward_2,
@@ -720,7 +720,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_flashing_daggers_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,2,0.1,
+add_stats,4,2,0.1,
 element_end
 element_start,gr_flashing_daggers_p1_u,ActorDataSkill
 m_IsFriendly,False,
@@ -738,7 +738,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_flashing_daggers_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.15,
+add_stats,6,2,0.15,
 element_end
 element_start,gr_flashing_daggers_p1_u,Unlock
 m_RequirementIds,gr_flashing_daggers_p1,
@@ -761,7 +761,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_thrown_dagger_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.2,
+add_stats,6,2,0.2,
 element_end
 element_start,gr_thrown_dagger_p1,ActorDataEffects
 target_effects,end_combo,ignored_token_remove_1_dodge_plus_if_stealth,ignored_token_remove_1_dodge_if_stealth,ignored_token_remove_1_guard,
@@ -784,7 +784,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_thrown_dagger_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,3,0.35,
+add_stats,7,3,0.35,
 element_end
 element_start,gr_thrown_dagger_p1_u,ActorDataEffects
 target_effects,end_combo,ignored_token_remove_1_dodge_plus_if_stealth,ignored_token_remove_1_dodge_if_stealth,ignored_token_remove_1_guard,
@@ -809,7 +809,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_poison_dart_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,3,0.1,
+add_stats,4,3,0.1,
 element_end
 element_start,gr_poison_dart_p1,ActorDataEffects
 target_effects,skill_dot_small_blight,end_combo,
@@ -831,7 +831,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_poison_dart_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,3,0.15,
+add_stats,5,3,0.15,
 element_end
 element_start,gr_poison_dart_p1_u,ActorDataEffects
 target_effects,skill_dot_large_blight,end_combo,
@@ -856,7 +856,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_pirouette_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,6,0.15,
+add_stats,6,6,0.15,
 element_end
 element_start,gr_pirouette_p1,ActorDataEffects
 performer_effects,add_1_dodge,add_1_daze_nr,move_backward_3,
@@ -878,7 +878,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_pirouette_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,6,0.2,
+add_stats,8,6,0.2,
 element_end
 element_start,gr_pirouette_p1_u,ActorDataEffects
 performer_effects,add_1_dodge_plus,add_1_daze_nr,move_backward_3,
@@ -904,7 +904,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_glint_in_the_dark_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.1,
+add_stats,7,2,0.1,
 element_end
 element_start,gr_glint_in_the_dark_p1,ActorDataEffects
 target_effects,remove_all_stealth,
@@ -927,7 +927,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_glint_in_the_dark_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,3,0.15,
+add_stats,9,3,0.15,
 element_end
 element_start,gr_glint_in_the_dark_p1_u,ActorDataEffects
 target_effects,remove_all_stealth,
@@ -952,7 +952,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_lunge_p2,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,6,0.2,
+add_stats,7,6,0.2,
 element_end
 element_start,gr_lunge_p2,ActorDataEffects
 performer_effects,move_forward_2,
@@ -975,7 +975,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_lunge_p2_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,6,0.3,
+add_stats,9,6,0.3,
 element_end
 element_start,gr_lunge_p2_u,ActorDataEffects
 performer_effects,move_forward_2,
@@ -1001,7 +1001,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_pirouette_p2,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,6,0.1,
+add_stats,6,6,0.1,
 element_end
 element_start,gr_pirouette_p2,ActorDataEffects
 performer_effects,add_1_dodge,add_1_daze_nr,move_backward_3,
@@ -1023,7 +1023,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_pirouette_p2_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,6,0.15,
+add_stats,8,6,0.15,
 element_end
 element_start,gr_pirouette_p2_u,ActorDataEffects
 performer_effects,add_1_dodge_plus,add_1_daze_nr,move_backward_3,
@@ -1048,7 +1048,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_lunge_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,4,0.2,
+add_stats,6,4,0.2,
 element_end
 element_start,gr_lunge_p3,ActorDataEffects
 performer_effects,path_buff_grv_venomdrop_blight_chance_buff_e,move_forward_2,
@@ -1071,7 +1071,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_lunge_p3_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,5,0.3,
+add_stats,8,5,0.3,
 element_end
 element_start,gr_lunge_p3_u,ActorDataEffects
 performer_effects,path_buff_grv_venomdrop_blight_chance_buff_e,move_forward_2,
@@ -1096,7 +1096,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_flashing_daggers_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,1,0.05,
+add_stats,3,1,0.05,
 element_end
 element_start,gr_flashing_daggers_p3,ActorDataEffects
 target_effects,skill_dot_small_blight,
@@ -1117,7 +1117,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_flashing_daggers_p3_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,2,0.1,
+add_stats,4,2,0.1,
 element_end
 element_start,gr_flashing_daggers_p3_u,ActorDataEffects
 target_effects,skill_dot_large_blight,
@@ -1180,7 +1180,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_thrown_dagger_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,2,0.15,
+add_stats,4,2,0.15,
 element_end
 element_start,gr_thrown_dagger_p3,ActorDataEffects
 target_effects,end_combo,ignored_token_remove_1_dodge_plus_if_stealth,ignored_token_remove_1_dodge_if_stealth,ignored_token_remove_1_guard,
@@ -1203,7 +1203,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_thrown_dagger_p3_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.3,
+add_stats,5,2,0.3,
 element_end
 element_start,gr_thrown_dagger_p3_u,ActorDataEffects
 target_effects,end_combo,ignored_token_remove_1_dodge_plus_if_stealth,ignored_token_remove_1_dodge_if_stealth,ignored_token_remove_1_guard,
@@ -1228,7 +1228,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_poison_dart_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,2,0.05,
+add_stats,3,2,0.05,
 element_end
 element_start,gr_poison_dart_p3,ActorDataEffects
 target_effects,skill_dot_small_blight,end_combo,
@@ -1250,7 +1250,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_poison_dart_p3_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,3,0.1,
+add_stats,3,3,0.1,
 element_end
 element_start,gr_poison_dart_p3_u,ActorDataEffects
 target_effects,skill_dot_large_blight,end_combo,
@@ -1275,7 +1275,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_pirouette_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.1,
+add_stats,5,2,0.1,
 element_end
 element_start,gr_pirouette_p3,ActorDataEffects
 performer_effects,add_1_dodge,add_1_daze_nr,path_buff_grv_venomdrop_blight_chance_buff_e,move_backward_3,
@@ -1297,7 +1297,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_pirouette_p3_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,4,0.15,
+add_stats,5,4,0.15,
 element_end
 element_start,gr_pirouette_p3_u,ActorDataEffects
 performer_effects,add_1_dodge_plus,add_1_daze_nr,path_buff_grv_venomdrop_blight_chance_buff_e,move_backward_3,
@@ -1323,7 +1323,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_glint_in_the_dark_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.05,
+add_stats,5,2,0.05,
 element_end
 element_start,gr_glint_in_the_dark_p3,ActorDataEffects
 target_effects,remove_all_stealth,
@@ -1346,7 +1346,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_glint_in_the_dark_p3_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.1,
+add_stats,7,2,0.1,
 element_end
 element_start,gr_glint_in_the_dark_p3_u,ActorDataEffects
 target_effects,remove_all_stealth,
