@@ -371,7 +371,7 @@ m_Tags,flg_suffer,
 m_IsStallInvalidating,False,
 element_end
 element_start,flg_suffer,ActorDataEffects
-target_effects,steal_bleed_blight_burn_dot,
+target_effects,steal_bleed_blight_burn_dot,destroy_all_negative_tokens,
 performer_effects,flg_suffer_deathblow_res_buff_e,
 element_end
 element_start,flg_suffer,Unlock
@@ -411,7 +411,7 @@ m_Tags,heal,flg_more_more,
 m_IsStallInvalidating,False,
 element_end
 element_start,flg_more_more,ActorDataEffects
-performer_effects,flg_more_more_on_damage_buff_e,add_2_taunt_nr,
+performer_effects,flg_more_more_on_damage_buff_e,add_2_taunt_nr,add_1_block,
 element_end
 element_start,flg_more_more,Unlock
 element_end
@@ -430,7 +430,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_more_more_u,ActorDataEffects
-performer_effects,flg_more_more_on_damage_u_buff_e,add_2_taunt_nr,
+performer_effects,flg_more_more_on_damage_u_buff_e,add_2_taunt_nr,add_2_block,
 element_end
 element_start,flg_more_more_u,Unlock
 m_RequirementIds,flg_more_more,
