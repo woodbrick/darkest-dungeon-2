@@ -4439,6 +4439,11 @@ m_IgnoreResist,True,
 m_DotAddId,medium_blight_dot,
 m_DotAddAmount,1,
 element_end
+element_start,dot_large_burn,Effect
+m_Chance,1,
+m_DotAddId,large_burn_dot,
+m_DotAddAmount,1,
+element_end
 element_start,dot_medium_burn,Effect
 m_Chance,1,
 m_DotAddId,medium_burn_dot,
@@ -12323,7 +12328,7 @@ m_IsVisible,False,
 element_end
 element_start,ves_mantra_heal,Effect
 m_Chance,1,
-m_HealthHealPercent,0.1,
+m_HealthHealPercent,0.15,
 m_CritChance,0.05,
 m_CritMultiplier,0.5,
 element_end
