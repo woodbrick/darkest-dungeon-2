@@ -235,7 +235,7 @@ m_Tags,gr_shadow_fade,
 m_IsStallInvalidating,False,
 element_end
 element_start,gr_shadow_fade,ActorDataEffects
-performer_effects,add_2_stealth,move_backward_2,
+performer_effects,add_2_stealth,move_backward_2,stress_heal_1,
 element_end
 element_start,gr_shadow_fade,Unlock
 element_end
@@ -254,7 +254,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_shadow_fade_u,ActorDataEffects
-performer_effects,add_2_stealth,add_1_speed,move_backward_2,
+performer_effects,add_2_stealth,move_backward_2,stress_heal_2,
 element_end
 element_start,gr_shadow_fade_u,Unlock
 m_RequirementIds,gr_shadow_fade,
@@ -1140,7 +1140,7 @@ m_SkillHistoryIdOverride,gr_shadow_fade,
 m_IsStallInvalidating,False,
 element_end
 element_start,gr_shadow_fade_p3,ActorDataEffects
-performer_effects,add_2_stealth,path_buff_grv_venomdrop_blight_chance_buff_e,move_backward_2,
+performer_effects,add_2_stealth,path_buff_grv_venomdrop_blight_chance_buff_e,move_backward_2,stress_heal_1,
 element_end
 element_start,gr_shadow_fade_p3_u,ActorDataSkill
 m_IsFriendly,True,
@@ -1157,7 +1157,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_shadow_fade_p3_u,ActorDataEffects
-performer_effects,add_2_stealth,add_1_speed,path_buff_grv_venomdrop_blight_chance_buff_e,move_backward_2,
+performer_effects,add_2_stealth,path_buff_grv_venomdrop_blight_chance_buff_e,move_backward_2,stress_heal_2,
 element_end
 element_start,gr_shadow_fade_p3_u,Unlock
 m_RequirementIds,gr_shadow_fade_p3,
