@@ -5537,7 +5537,7 @@ m_DurationAmount,3,
 m_Tags,buff,
 element_end
 element_start,leper_revenge_crit,ActorDataEffects
-turn_start_effects,add_1_crit_15pct,
+turn_start_effects,add_1_crit_25pct,
 element_end
 element_start,leper_revenge_strength,Buff
 m_DurationType,performer_turn_end,
