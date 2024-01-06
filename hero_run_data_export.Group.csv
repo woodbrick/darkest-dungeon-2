@@ -381,7 +381,7 @@ m_Tags,run_run_and_hide,
 m_IsStallInvalidating,False,
 element_end
 element_start,run_run_and_hide,ActorDataEffects
-performer_effects,add_2_stealth,add_2_dodge,move_backward_1,
+performer_effects,hot_heal_small,add_2_stealth,add_2_dodge,move_backward_1,
 element_end
 element_start,run_run_and_hide_u,ActorDataSkill
 m_IsFriendly,True,
