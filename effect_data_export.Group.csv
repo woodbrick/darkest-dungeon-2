@@ -8950,7 +8950,7 @@ all_conditions,skill_has_physician_stress_path_tag,
 element_end
 element_start,path_buff_plg_physician_vapours,Effect
 m_Chance,1,
-m_TokenAddId,strength,
+m_TokenAddId,crit,
 m_TokenAddAmount,1,
 m_ShowValue,False,
 all_conditions,skill_has_physician_vapours_path_tag,

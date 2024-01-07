@@ -6709,7 +6709,7 @@ add_stats,0.5,
 element_end
 element_start,path_buff_grv_venomdrop_blight_chance_buff,Buff
 m_DurationType,performer_turn_end,
-m_DurationAmount,1,
+m_DurationAmount,2,
 m_Tags,buff,
 element_end
 element_start,path_buff_grv_venomdrop_blight_chance_buff,ActorDataStats
@@ -6905,14 +6905,14 @@ m_DurationType,infinite,
 m_ConditionId,skill_has_physician_bleed_path_tag,
 element_end
 element_start,path_buff_plg_physician_bleed_down,ActorDataStats
-sub_stat,dot_effect_value_dealt_change,bleed,-2,
+sub_stat,dot_effect_value_dealt_change,bleed,-1,
 element_end
 element_start,path_buff_plg_physician_blight_down,Buff
 m_DurationType,infinite,
 m_ConditionId,skill_has_physician_blight_path_tag,
 element_end
 element_start,path_buff_plg_physician_blight_down,ActorDataStats
-sub_stat,dot_effect_value_dealt_change,blight,-2,
+sub_stat,dot_effect_value_dealt_change,blight,-1,
 element_end
 element_start,path_buff_plg_physician_ounce_resist_up,Buff
 m_DurationType,performer_turn_end,
@@ -6927,7 +6927,7 @@ m_DurationType,infinite,
 m_ConditionId,skill_has_physician_blast_path_tag,
 element_end
 element_start,path_buff_plg_physician_stun_penetration,ActorDataStats
-sub_stat,resistance_ignore,stun,0.2,
+sub_stat,resistance_ignore,stun,0.5,
 element_end
 element_start,path_buff_run_orphan_hp_down,Buff
 m_DurationType,infinite,
