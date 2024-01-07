@@ -6807,7 +6807,7 @@ m_ConditionId,skill_has_monarch_path_tag,
 element_end
 element_start,path_buff_lep_monarch_chop_dmg_down,ActorDataStats
 key_map,health_damage_dealt_percent,
-add_stats,-0.75,
+add_stats,-0.2,
 element_end
 element_start,path_buff_lep_monarch_hp_cosmic_up,Buff
 m_DurationType,combat_end,
@@ -6823,7 +6823,7 @@ m_DurationType,infinite,
 element_end
 element_start,path_buff_lep_monarch_hp_down,ActorDataStats
 key_map,health_max,
-multiply_stats,-0.3,
+multiply_stats,-0.1,
 element_end
 element_start,path_buff_lep_monarch_speed_cosmic_up,Buff
 m_DurationType,combat_end,
@@ -6934,7 +6934,7 @@ m_DurationType,infinite,
 element_end
 element_start,path_buff_run_orphan_hp_down,ActorDataStats
 key_map,health_max,
-multiply_stats,-0.2,
+multiply_stats,-0.1,
 element_end
 element_start,path_buff_run_orphan_rank_1_burn_down,Buff
 m_DurationType,infinite,
@@ -7000,7 +7000,7 @@ element_start,path_buff_survivor_burn_chance_down,Buff
 m_DurationType,infinite,
 element_end
 element_start,path_buff_survivor_burn_chance_down,ActorDataStats
-sub_stat,resistance_ignore,burn,-0.2,
+sub_stat,resistance_ignore,burn,-0.1,
 element_end
 element_start,path_descriptor_flg_exanimate,Buff
 m_DurationType,infinite,
