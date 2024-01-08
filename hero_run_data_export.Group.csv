@@ -600,7 +600,7 @@ element_end
 element_start,run_hearthlight_u,ActorDataEffects
 performer_effects,stress_heal_2,
 target_effects,remove_all_stealth,
-friendly_team_effects,remove_all_blind,
+friendly_team_effects,remove_all_blind,stress_heal_1_50pct,
 element_end
 element_start,run_hearthlight_u,Unlock
 m_RequirementIds,run_hearthlight,
