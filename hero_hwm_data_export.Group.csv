@@ -279,7 +279,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,hwm_tracking_shot,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,2,0.05,
+add_stats,1,1,0.05,
 key_map,
 add_stats,
 element_end
@@ -302,7 +302,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_tracking_shot_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.05,
+add_stats,2,2,0.05,
 key_map,
 add_stats,
 element_end
@@ -485,7 +485,7 @@ m_IsFriendly,False,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,
 m_IsMultiHit,True,
-m_Cooldown,2,
+m_Cooldown,3,
 m_AllConditionIds,target_has_positive_tokens,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
@@ -507,7 +507,7 @@ m_IsFriendly,False,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,
 m_IsMultiHit,True,
-m_Cooldown,2,
+m_Cooldown,3,
 m_AllConditionIds,target_has_positive_tokens,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
@@ -542,7 +542,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,hwm_double_cross,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,2,0.05,
+add_stats,3,2,0.05,
 element_end
 element_start,hwm_double_cross,ActorDataEffects
 target_effects,add_1_vulnerable,
@@ -566,7 +566,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_double_cross_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,2,0.1,
+add_stats,4,2,0.1,
 element_end
 element_start,hwm_double_cross_u,ActorDataEffects
 target_effects,add_2_vulnerable,

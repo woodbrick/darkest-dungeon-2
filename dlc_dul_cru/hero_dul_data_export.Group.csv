@@ -42,8 +42,8 @@ m_EquippedCombatSkillLimit,5,
 element_end
 element_start,duelist,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,38,6,10,1,1,0.1,0.67,
-sub_stat,resistance,stun,0.2,
+add_stats,33,6,10,1,1,0.1,0.67,
+sub_stat,resistance,stun,0.1,
 sub_stat,resistance,blight,0.3,
 sub_stat,resistance,bleed,0.3,
 sub_stat,resistance,burn,0.3,
@@ -199,7 +199,7 @@ element_end
 element_start,dul_disengage,ActorDataEffects
 target_effects,move_pull_1_if_defensive,move_knockback_1_if_aggressive,remove_1_riposte_hidden,
 performer_after_target_effects,dul_set_stance_defensive,add_2_dodge,
-performer_effects,
+performer_effects,move_backward_1,
 element_end
 element_start,dul_disengage_u,ActorDataSkill
 m_IsFriendly,False,
@@ -222,7 +222,7 @@ element_end
 element_start,dul_disengage_u,ActorDataEffects
 target_effects,move_pull_2_if_defensive,move_knockback_2_if_aggressive,remove_1_riposte_hidden,
 performer_after_target_effects,dul_set_stance_defensive,add_2_dodge_plus,
-performer_effects,
+performer_effects,move_backward_1,
 element_end
 element_start,dul_disengage_u,Unlock
 m_RequirementIds,dul_disengage,
@@ -246,7 +246,6 @@ add_stats,6,2,0.1,
 element_end
 element_start,dul_flick,ActorDataEffects
 target_effects,skill_dot_small_bleed,dul_flick_ignored_token_remove_1_dodge,dul_flick_ignored_token_remove_1_dodge_plus,dul_flick_ignored_token_remove_1_block,dul_flick_ignored_token_remove_1_block_plus,
-performer_effects,add_1_dodge,
 element_end
 element_start,dul_flick_u,ActorDataSkill
 m_IsFriendly,False,
@@ -1034,7 +1033,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,dul_coup_de_grace_p2,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,2,0.05,
+add_stats,3,1,0.05,
 element_end
 element_start,dul_coup_de_grace_p2,ActorDataEffects
 target_effects,add_2_weak_if_performer_aggressive,add_2_vulnerable_if_performer_aggressive,
@@ -1057,7 +1056,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_coup_de_grace_p2_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,2,0.1,
+add_stats,5,2,0.1,
 element_end
 element_start,dul_coup_de_grace_p2_u,ActorDataEffects
 target_effects,add_1_stun_if_performer_defensive,add_2_weak,add_2_vulnerable,
