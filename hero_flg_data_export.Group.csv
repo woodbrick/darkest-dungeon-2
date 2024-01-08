@@ -296,7 +296,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,flg_redeem,ActorDataEffects
 target_effects,heal_25pct,
-performer_effects,health_damage_20pct,
+performer_effects,health_damage_10pct,
 element_end
 element_start,flg_redeem_u,ActorDataSkill
 m_IsFriendly,True,
@@ -315,7 +315,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_redeem_u,ActorDataEffects
 target_effects,heal_35pct,
-performer_effects,health_damage_20pct,
+performer_effects,health_damage_10pct,
 element_end
 element_start,flg_redeem_u,Unlock
 m_RequirementIds,flg_redeem,
@@ -333,8 +333,8 @@ m_Tags,stress_heal,flg_endure,
 m_IsStallInvalidating,False,
 element_end
 element_start,flg_endure,ActorDataEffects
-target_effects,stress_heal_2,
-performer_effects,stress_damage_2,
+target_effects,stress_heal_3,
+performer_effects,stress_damage_1,
 element_end
 element_start,flg_endure_u,ActorDataSkill
 m_IsFriendly,True,
@@ -351,8 +351,8 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_endure_u,ActorDataEffects
-target_effects,stress_heal_3,
-performer_effects,stress_damage_2,
+target_effects,stress_heal_3,destroy_all_negative_tokens,
+performer_effects,stress_damage_1,
 element_end
 element_start,flg_endure_u,Unlock
 m_RequirementIds,flg_endure,
@@ -371,7 +371,7 @@ m_Tags,flg_suffer,
 m_IsStallInvalidating,False,
 element_end
 element_start,flg_suffer,ActorDataEffects
-target_effects,steal_bleed_blight_burn_dot,
+target_effects,steal_bleed_blight_burn_dot,remove_all_combo_visible,
 performer_effects,flg_suffer_deathblow_res_buff_e,
 element_end
 element_start,flg_suffer,Unlock
@@ -392,7 +392,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_suffer_u,ActorDataEffects
-target_effects,steal_bleed_blight_burn_dot,
+target_effects,steal_bleed_blight_burn_dot,remove_all_combo_visible,
 performer_effects,flg_suffer_deathblow_res_buff_e,flg_suffer_clear_damage_dots_e,count_plus_1,
 element_end
 element_start,flg_suffer_u,Unlock
@@ -411,7 +411,7 @@ m_Tags,heal,flg_more_more,
 m_IsStallInvalidating,False,
 element_end
 element_start,flg_more_more,ActorDataEffects
-performer_effects,flg_more_more_on_damage_buff_e,add_2_taunt_nr,
+performer_effects,flg_more_more_on_damage_buff_e,add_2_taunt_nr,stress_heal_1,
 element_end
 element_start,flg_more_more,Unlock
 element_end
@@ -430,7 +430,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_more_more_u,ActorDataEffects
-performer_effects,flg_more_more_on_damage_u_buff_e,add_2_taunt_nr,
+performer_effects,flg_more_more_on_damage_u_buff_e,add_2_taunt_nr,stress_heal_2,
 element_end
 element_start,flg_more_more_u,Unlock
 m_RequirementIds,flg_more_more,
@@ -969,7 +969,7 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_AllConditionIds,performer_health_under_20pct,
+m_AllConditionIds,performer_health_under_25pct,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
 m_Tags,flg_lash_gift,
@@ -986,7 +986,7 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_AllConditionIds,performer_health_under_20pct,
+m_AllConditionIds,performer_health_under_33pct,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
 m_Tags,flg_lash_gift,

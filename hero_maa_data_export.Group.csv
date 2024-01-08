@@ -93,7 +93,7 @@ element_end
 element_start,maa_crush,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,2,
-target_ranks,1,2,3,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -103,7 +103,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,maa_crush,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.05,
+add_stats,5,3,0.1,
 element_end
 element_start,maa_crush,ActorDataEffects
 target_effects,end_combo,
@@ -112,7 +112,7 @@ element_end
 element_start,maa_crush_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,2,
-target_ranks,1,2,3,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -125,7 +125,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_crush_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.05,
+add_stats,6,4,0.2,
 element_end
 element_start,maa_crush_u,ActorDataEffects
 target_effects,end_combo,
@@ -240,7 +240,7 @@ m_Tags,maa_defender,
 m_IsStallInvalidating,False,
 element_end
 element_start,maa_defender,ActorDataEffects
-performer_effects,add_2_block,
+performer_effects,add_2_block,add_1_riposte,
 target_effects,add_2_guard,
 element_end
 element_start,maa_defender_u,ActorDataSkill
@@ -259,7 +259,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_defender_u,ActorDataEffects
-performer_effects,add_2_block_plus,
+performer_effects,add_2_block_plus,add_1_riposte,
 target_effects,add_3_guard,
 element_end
 element_start,maa_defender_u,Unlock
@@ -439,6 +439,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,maa_stand_fast,ActorDataEffects
 performer_effects,add_2_block,maa_stand_fast_block_e,
+performer_after_target_effects,remove_all_vulnerable,
 element_end
 element_start,maa_stand_fast,Unlock
 element_end
@@ -458,7 +459,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_stand_fast_u,ActorDataEffects
 performer_effects,add_2_block_plus,
-performer_after_target_effects,remove_all_combo_visible,maa_stand_fast_block_u_e,
+performer_after_target_effects,maa_stand_fast_block_u_e,remove_all_combo_visible,remove_all_vulnerable,
 element_end
 element_start,maa_stand_fast_u,Unlock
 m_RequirementIds,maa_stand_fast,
@@ -507,7 +508,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_courageous_abandon_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.2,
+add_stats,5,2,0.4,
 element_end
 element_start,maa_courageous_abandon_u,ActorDataEffects
 performer_after_target_effects,remove_all_block,remove_all_block_plus,add_1_vulnerable,
@@ -531,7 +532,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,maa_strategic_withdrawal,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,3,0.05,
+add_stats,3,3,0.1,
 element_end
 element_start,maa_strategic_withdrawal,ActorDataEffects
 target_effects,prime_combo,
@@ -556,7 +557,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_strategic_withdrawal_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,3,0.1,
+add_stats,4,3,0.2,
 element_end
 element_start,maa_strategic_withdrawal_u,ActorDataEffects
 target_effects,prime_combo,
@@ -581,7 +582,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,maa_riposte,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.05,
+add_stats,3,2,0.1,
 element_end
 element_start,maa_act_out_enemy,ActorDataSkill
 m_IsFriendly,False,
@@ -597,7 +598,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,maa_act_out_enemy,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,3,0.05,
+add_stats,3,3,0.1,
 element_end
 element_start,maa_act_out_enemy,ActorDataEffects
 target_effects,add_1_daze_33pct,
@@ -616,7 +617,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,maa_act_out_friendly,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,3,0.05,
+add_stats,3,3,0.1,
 element_end
 element_start,maa_act_out_friendly,ActorDataEffects
 target_effects,add_1_daze_33pct,

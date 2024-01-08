@@ -93,12 +93,13 @@ m_IsAlwaysEquipped,True,
 element_end
 element_start,run_searing_strike,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,1,2,
+launch_ranks,1,2,3,
 target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
+token_ignores,til_piercing,til_ignore_block,
 m_Tags,melee,arsonist,run_searing_strike,
 m_IsStallInvalidating,True,
 element_end
@@ -111,12 +112,13 @@ target_effects,combo_dot_large_burn,no_combo_dot_small_burn,end_combo,
 element_end
 element_start,run_searing_strike_u,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,1,2,
+launch_ranks,1,2,3,
 target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
+token_ignores,til_piercing,til_ignore_block,
 m_Tags,melee,arsonist,run_searing_strike,
 m_ConditionIdOverride,run_searing_strike,
 m_SkillHistoryIdOverride,run_searing_strike,
@@ -150,7 +152,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,3,3,0.05,
 element_end
 element_start,run_ransack,ActorDataEffects
-target_effects,move_pull_1,end_combo,
+target_effects,move_pull_1,end_combo,destroy_1_positive_token,
 target_neighbor_random_effects,runaway_combo_fire_spread,
 performer_effects,move_forward_1,
 actor_effect_triggers,run_combo_neighbor_burn,
@@ -176,7 +178,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,4,4,0.1,
 element_end
 element_start,run_ransack_u,ActorDataEffects
-target_effects,move_pull_2,end_combo,
+target_effects,move_pull_1,end_combo,destroy_2_positive_token,
 target_neighbor_random_effects,runaway_combo_fire_spread,
 performer_effects,move_forward_1,
 actor_effect_triggers,run_combo_neighbor_burn,
@@ -350,7 +352,7 @@ m_IsFriendlySelfTargetValid,True,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Limit,3,
+m_Limit,4,
 m_AllConditionIds,target_has_bleed_dot,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -379,7 +381,7 @@ m_Tags,run_run_and_hide,
 m_IsStallInvalidating,False,
 element_end
 element_start,run_run_and_hide,ActorDataEffects
-performer_effects,add_2_stealth,move_backward_1,
+performer_effects,hot_heal_small,add_2_stealth,move_backward_1,
 element_end
 element_start,run_run_and_hide_u,ActorDataSkill
 m_IsFriendly,True,
@@ -396,7 +398,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,run_run_and_hide_u,ActorDataEffects
-performer_effects,hot_heal_medium,add_2_stealth,move_backward_1,
+performer_effects,hot_heal_large,add_2_stealth,move_backward_1,
 element_end
 element_start,run_run_and_hide_u,Unlock
 m_RequirementIds,run_run_and_hide,
@@ -516,7 +518,7 @@ m_IsFriendlySelfTargetValid,False,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Limit,2,
+m_Limit,3,
 m_Cooldown,2,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
@@ -535,7 +537,7 @@ m_IsFriendlySelfTargetValid,False,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Limit,2,
+m_Limit,3,
 m_Cooldown,2,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
@@ -571,7 +573,9 @@ key_map,
 add_stats,
 element_end
 element_start,run_hearthlight,ActorDataEffects
+performer_effects,stress_heal_1,
 target_effects,remove_all_stealth,
+friendly_team_effects,remove_all_blind,
 element_end
 element_start,run_hearthlight_u,ActorDataSkill
 m_IsFriendly,False,
@@ -594,8 +598,9 @@ key_map,
 add_stats,
 element_end
 element_start,run_hearthlight_u,ActorDataEffects
+performer_effects,stress_heal_1,
 target_effects,remove_all_stealth,
-friendly_team_effects,remove_all_blind,
+friendly_team_effects,remove_all_blind,stress_heal_1_50pct,
 element_end
 element_start,run_hearthlight_u,Unlock
 m_RequirementIds,run_hearthlight,

@@ -382,7 +382,7 @@ m_Tags,intermezzo,intermezzo_ballad,jes_battle_ballad,
 m_IsStallInvalidating,False,
 element_end
 element_start,jes_battle_ballad,ActorDataEffects
-target_effects,move_forward_1,add_1_strength,
+target_effects,move_forward_1,add_2_strength,
 element_end
 element_start,jes_battle_ballad_u,ActorDataSkill
 m_IsFriendly,True,
@@ -400,7 +400,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_battle_ballad_u,ActorDataEffects
-target_effects,move_forward_1,add_1_strength,add_1_crit_15pct,remove_all_combo_visible,
+target_effects,move_forward_1,add_2_strength,add_1_crit,remove_all_combo_visible,
 element_end
 element_start,jes_battle_ballad_u,Unlock
 m_RequirementIds,jes_battle_ballad,
@@ -419,7 +419,7 @@ m_Tags,intermezzo,intermezzo_ballad,jes_play_me_out,
 m_IsStallInvalidating,False,
 element_end
 element_start,jes_play_me_out,ActorDataEffects
-target_effects,move_backward_1,add_1_block,
+target_effects,move_backward_1,add_2_block,
 element_end
 element_start,jes_play_me_out,Unlock
 element_end
@@ -439,7 +439,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_play_me_out_u,ActorDataEffects
-target_effects,move_backward_1,add_1_block_plus,remove_all_combo_visible,
+target_effects,move_backward_1,add_2_block_plus,remove_all_combo_visible,
 element_end
 element_start,jes_play_me_out_u,Unlock
 m_RequirementIds,jes_play_me_out,

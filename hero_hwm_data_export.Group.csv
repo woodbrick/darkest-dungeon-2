@@ -238,6 +238,9 @@ add_stats,2,2,0.05,
 element_end
 element_start,hwm_grapeshot_blast,Unlock
 element_end
+element_start,hwm_grapeshot_blast,ActorDataEffects
+target_effects,dot_small_burn,
+element_end
 element_start,hwm_grapeshot_blast_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
@@ -260,9 +263,12 @@ element_start,hwm_grapeshot_blast_u,Unlock
 m_RequirementIds,hwm_grapeshot_blast,
 m_CostId,hero_skill_upgrade,
 element_end
+element_start,hwm_grapeshot_blast_u,ActorDataEffects
+target_effects,dot_medium_burn,
+element_end
 element_start,hwm_tracking_shot,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,1,2,3,4,
+launch_ranks,2,3,4,
 target_ranks,2,3,4,
 m_IsMultiHit,False,
 m_AverageRankIgnored,False,
@@ -272,6 +278,8 @@ m_Tags,ranged,hwm_tracking_shot,
 m_IsStallInvalidating,False,
 element_end
 element_start,hwm_tracking_shot,ActorDataStats
+key_map,health_damage,health_damage_range,crit_chance,
+add_stats,1,1,0.05,
 key_map,
 add_stats,
 element_end
@@ -280,7 +288,7 @@ target_effects,prime_combo,remove_all_dodge,remove_all_dodge_plus,remove_all_ste
 element_end
 element_start,hwm_tracking_shot_u,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,1,2,3,4,
+launch_ranks,2,3,4,
 target_ranks,2,3,4,
 m_IsMultiHit,False,
 m_AverageRankIgnored,False,
@@ -293,6 +301,8 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_tracking_shot_u,ActorDataStats
+key_map,health_damage,health_damage_range,crit_chance,
+add_stats,2,2,0.05,
 key_map,
 add_stats,
 element_end
@@ -306,7 +316,7 @@ element_end
 element_start,hwm_duelists_advance,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
-target_ranks,1,2,3,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -324,7 +334,7 @@ element_end
 element_start,hwm_duelists_advance_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
-target_ranks,1,2,3,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -421,7 +431,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_take_aim_u,ActorDataEffects
-performer_effects,add_2_crit,add_1_dodge,
+performer_effects,add_2_crit,add_2_dodge,
 performer_after_target_effects,remove_all_blind,
 element_end
 element_start,hwm_take_aim_u,Unlock
@@ -474,8 +484,8 @@ element_start,hwm_highway_robbery,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,
-m_IsMultiHit,False,
-m_Cooldown,1,
+m_IsMultiHit,True,
+m_Cooldown,3,
 m_AllConditionIds,target_has_positive_tokens,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
@@ -496,8 +506,8 @@ element_start,hwm_highway_robbery_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,
-m_IsMultiHit,False,
-m_Cooldown,1,
+m_IsMultiHit,True,
+m_Cooldown,3,
 m_AllConditionIds,target_has_positive_tokens,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
@@ -532,7 +542,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,hwm_double_cross,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,2,0.05,
+add_stats,3,2,0.05,
 element_end
 element_start,hwm_double_cross,ActorDataEffects
 target_effects,add_1_vulnerable,
@@ -556,7 +566,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hwm_double_cross_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.05,
+add_stats,4,2,0.1,
 element_end
 element_start,hwm_double_cross_u,ActorDataEffects
 target_effects,add_2_vulnerable,
