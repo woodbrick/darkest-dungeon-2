@@ -469,6 +469,7 @@ m_Tags,hel_bloodlust,
 m_IsStallInvalidating,False,
 element_end
 element_start,hel_bloodlust,ActorDataEffects
+performer_effects,stress_heal_2,
 performer_after_target_effects,remove_all_winded,hellion_bloodlust_damage_buff_e,
 element_end
 element_start,hel_bloodlust,Unlock
@@ -488,6 +489,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,hel_bloodlust_u,ActorDataEffects
+performer_effects,stress_heal_2,
 performer_after_target_effects,remove_all_winded,hel_bloodlust_remove_execution,hellion_bloodlust_u_damage_buff_e,hel_bloodlust_execution_buff_e,
 element_end
 element_start,hel_bloodlust_u,Unlock

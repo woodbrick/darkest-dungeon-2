@@ -251,7 +251,7 @@ m_Tags,lep_revenge,
 m_IsStallInvalidating,False,
 element_end
 element_start,lep_revenge,ActorDataEffects
-performer_effects,add_2_vulnerable_nr,leper_revenge_strength_buff_e,
+performer_effects,add_1_vulnerable_nr,add_1_riposte,leper_revenge_strength_buff_e,
 element_end
 element_start,lep_revenge,Unlock
 element_end
@@ -271,7 +271,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_revenge_u,ActorDataEffects
-performer_effects,add_1_vulnerable_nr,
+performer_effects,add_1_vulnerable_nr,add_1_riposte,
 performer_after_target_effects,remove_all_weak,leper_revenge_strength_buff_e,leper_revenge_crit_buff_e,
 element_end
 element_start,lep_revenge_u,Unlock

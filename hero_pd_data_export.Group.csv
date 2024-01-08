@@ -104,7 +104,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,pd_noxious_blast,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,1,0.1,
+add_stats,3,1,0.1,
 element_end
 element_start,pd_noxious_blast,ActorDataEffects
 target_effects,skill_dot_large_blight,end_combo,
@@ -126,7 +126,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,pd_noxious_blast_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,1,0.1,
+add_stats,4,1,0.1,
 element_end
 element_start,pd_noxious_blast_u,ActorDataEffects
 target_effects,skill_dot_massive_blight,end_combo,
@@ -324,7 +324,7 @@ m_Tags,physician_vapours,pd_emboldening_vapours,
 m_IsStallInvalidating,False,
 element_end
 element_start,pd_emboldening_vapours,ActorDataEffects
-target_effects,add_1_strength,
+target_effects,add_1_strength,remove_all_weak,stress_heal_1_33pct,
 element_end
 element_start,pd_emboldening_vapours,Unlock
 element_end
@@ -334,6 +334,7 @@ m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,True,
+m_Cooldown,2,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -344,7 +345,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,pd_emboldening_vapours_u,ActorDataEffects
-target_effects,add_1_strength,add_1_speed,
+target_effects,add_1_strength,remove_all_weak,stress_heal_1_80pct,
 element_end
 element_start,pd_emboldening_vapours_u,Unlock
 m_RequirementIds,pd_emboldening_vapours,
@@ -366,7 +367,7 @@ key_map,
 add_stats,
 element_end
 element_start,pd_disorienting_blast,ActorDataEffects
-target_effects,move_shuffle,add_1_daze,add_1_weak_25pct,
+target_effects,move_shuffle,add_1_daze,add_1_weak,
 element_end
 element_start,pd_disorienting_blast,Unlock
 element_end
@@ -389,7 +390,7 @@ key_map,
 add_stats,
 element_end
 element_start,pd_disorienting_blast_u,ActorDataEffects
-target_effects,move_shuffle,combo_add_1_stun,add_1_daze,add_1_weak_25pct,end_combo,
+target_effects,move_shuffle,add_1_daze,add_1_weak,combo_add_1_stun,end_combo,
 element_end
 element_start,pd_disorienting_blast_u,Unlock
 m_RequirementIds,pd_disorienting_blast,
@@ -553,7 +554,7 @@ key_map,
 add_stats,
 element_end
 element_start,pd_magnesium_rain,ActorDataEffects
-target_effects,skill_dot_small_burn,
+target_effects,skill_dot_small_burn,prime_combo_25pct,
 target_team_effects,clear_corpse,
 element_end
 element_start,pd_magnesium_rain,Unlock
@@ -578,7 +579,7 @@ key_map,
 add_stats,
 element_end
 element_start,pd_magnesium_rain_u,ActorDataEffects
-target_effects,skill_dot_medium_burn,
+target_effects,skill_dot_medium_burn,prime_combo_33pct,
 target_team_effects,clear_corpse,
 element_end
 element_start,pd_magnesium_rain_u,Unlock

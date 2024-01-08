@@ -1351,7 +1351,7 @@ m_isConsumable,True,
 m_numberOfTargets,1,
 m_effectIds,rest_item_quirk_mop,item_effect_strength,item_effect_dodge,
 m_effectApplyLimit,1,
-m_applyLimitEffectIds,stress_heal_3,stress_heal_3,stress_damage_2,
+m_applyLimitEffectIds,stress_heal_3,stress_heal_3,stress_heal_3,stress_damage_2,
 m_buyCostId,mop_buy_cost,
 element_end
 element_start,mop_buy_cost,Cost
