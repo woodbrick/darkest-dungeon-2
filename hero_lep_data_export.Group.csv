@@ -43,7 +43,7 @@ m_EquippedCombatSkillLimit,5,
 element_end
 element_start,leper,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,49,3,10,1,1,0.1,0.67,
+add_stats,44,2,10,1,1,0.1,0.67,
 sub_stat,resistance,stun,0.4,
 sub_stat,resistance,blight,0.2,
 sub_stat,resistance,bleed,0.2,
@@ -129,7 +129,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_chop_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,10,8,0.1,
+add_stats,8,8,0.1,
 element_end
 element_start,lep_chop_u,ActorDataEffects
 performer_effects,leper_self_blind_chance_u,
@@ -154,7 +154,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_hew,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,4,0.1,
+add_stats,3,4,0.1,
 element_end
 element_start,lep_hew,ActorDataEffects
 performer_effects,leper_self_blind_chance,
@@ -180,7 +180,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_hew_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,5,0.1,
+add_stats,4,5,0.1,
 element_end
 element_start,lep_hew_u,ActorDataEffects
 performer_effects,leper_self_blind_chance_u,
@@ -228,7 +228,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_purge_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,2,0.1,
+add_stats,4,2,0.1,
 element_end
 element_start,lep_purge_u,ActorDataEffects
 target_team_effects,clear_corpse,
@@ -365,7 +365,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_intimidate,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,1,0.1,
+add_stats,1,1,0.1,
 element_end
 element_start,lep_intimidate,ActorDataEffects
 performer_effects,add_2_taunt_nr,
@@ -390,7 +390,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_intimidate_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,1,0.1,
+add_stats,2,1,0.1,
 element_end
 element_start,lep_intimidate_u,ActorDataEffects
 performer_effects,add_2_taunt_nr,
@@ -489,7 +489,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_break,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,3,0.1,
+add_stats,4,3,0.1,
 element_end
 element_start,lep_break,ActorDataEffects
 target_effects,remove_all_block_plus,remove_all_block,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
@@ -513,7 +513,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_break_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,6,0.2,
+add_stats,6,6,0.2,
 element_end
 element_start,lep_break_u,ActorDataEffects
 target_effects,remove_all_block_plus,remove_all_block,end_combo_if_blind,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
@@ -536,7 +536,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_stagger,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.1,
+add_stats,2,2,0.1,
 element_end
 element_start,lep_stagger,ActorDataEffects
 performer_effects,add_1_immobilize_nr,
@@ -560,7 +560,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_stagger_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.1,
+add_stats,3,2,0.1,
 element_end
 element_start,lep_stagger_u,ActorDataEffects
 performer_effects,add_1_immobilize_nr,
@@ -584,7 +584,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,lep_act_out_enemy,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.1,
+add_stats,4,4,0.1,
 element_end
 element_start,lep_act_out_friendly,ActorDataSkill
 m_IsFriendly,True,
@@ -600,5 +600,5 @@ m_IsStallInvalidating,False,
 element_end
 element_start,lep_act_out_friendly,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,4,0.1,
+add_stats,4,4,0.1,
 element_end

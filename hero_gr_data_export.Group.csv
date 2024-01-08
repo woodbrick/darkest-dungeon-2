@@ -139,8 +139,8 @@ m_CostId,hero_skill_upgrade,
 element_end
 element_start,gr_lunge,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,3,4,
-target_ranks,1,2,3,
+launch_ranks,2,3,4,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -161,8 +161,8 @@ element_start,gr_lunge,Unlock
 element_end
 element_start,gr_lunge_u,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,3,4,
-target_ranks,1,2,3,
+launch_ranks,2,3,4,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -341,7 +341,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_poison_dart_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,2,0.1,
+add_stats,3,2,0.1,
 element_end
 element_start,gr_poison_dart_u,ActorDataEffects
 target_effects,skill_dot_large_blight,prime_combo,
@@ -656,8 +656,8 @@ m_CostId,hero_skill_upgrade,
 element_end
 element_start,gr_lunge_p1,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,3,4,
-target_ranks,1,2,3,
+launch_ranks,2,3,4,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -678,8 +678,8 @@ target_effects,ignored_token_remove_1_dodge_plus_if_stealth,ignored_token_remove
 element_end
 element_start,gr_lunge_p1_u,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,3,4,
-target_ranks,1,2,3,
+launch_ranks,2,3,4,
+target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
@@ -693,7 +693,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_lunge_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,5,0.3,
+add_stats,5,4,0.3,
 element_end
 element_start,gr_lunge_p1_u,ActorDataEffects
 performer_effects,move_forward_2,
@@ -934,7 +934,7 @@ m_CostId,hero_skill_upgrade,
 element_end
 element_start,gr_lunge_p2,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,3,4,
+launch_ranks,2,3,4,
 target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
@@ -948,7 +948,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_lunge_p2,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,6,0.2,
+add_stats,6,5,0.2,
 element_end
 element_start,gr_lunge_p2,ActorDataEffects
 performer_effects,move_forward_2,
@@ -956,7 +956,7 @@ target_effects,ignored_token_remove_1_dodge_plus_if_stealth,ignored_token_remove
 element_end
 element_start,gr_lunge_p2_u,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,3,4,
+launch_ranks,2,3,4,
 target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
@@ -997,7 +997,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,gr_pirouette_p2,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,6,0.1,
+add_stats,6,4,0.1,
 element_end
 element_start,gr_pirouette_p2,ActorDataEffects
 performer_effects,add_1_dodge,add_1_daze_nr,move_backward_3,
@@ -1030,7 +1030,7 @@ m_CostId,hero_skill_upgrade,
 element_end
 element_start,gr_lunge_p3,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,3,4,
+launch_ranks,2,3,4,
 target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,
@@ -1052,7 +1052,7 @@ target_effects,ignored_token_remove_1_dodge_plus_if_stealth,ignored_token_remove
 element_end
 element_start,gr_lunge_p3_u,ActorDataSkill
 m_IsFriendly,False,
-launch_ranks,3,4,
+launch_ranks,2,3,4,
 target_ranks,1,2,
 m_IsMultiHit,False,
 m_CanBeRiposted,True,

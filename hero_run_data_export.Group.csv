@@ -381,7 +381,7 @@ m_Tags,run_run_and_hide,
 m_IsStallInvalidating,False,
 element_end
 element_start,run_run_and_hide,ActorDataEffects
-performer_effects,hot_heal_small,add_2_stealth,add_2_dodge,move_backward_1,
+performer_effects,hot_heal_small,add_2_stealth,move_backward_1,
 element_end
 element_start,run_run_and_hide_u,ActorDataSkill
 m_IsFriendly,True,
@@ -398,7 +398,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,run_run_and_hide_u,ActorDataEffects
-performer_effects,hot_heal_large,add_2_stealth,add_2_dodge,move_backward_1,
+performer_effects,hot_heal_large,add_2_stealth,move_backward_1,
 element_end
 element_start,run_run_and_hide_u,Unlock
 m_RequirementIds,run_run_and_hide,
@@ -598,7 +598,7 @@ key_map,
 add_stats,
 element_end
 element_start,run_hearthlight_u,ActorDataEffects
-performer_effects,stress_heal_2,
+performer_effects,stress_heal_1,
 target_effects,remove_all_stealth,
 friendly_team_effects,remove_all_blind,stress_heal_1_50pct,
 element_end

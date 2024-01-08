@@ -4497,7 +4497,7 @@ m_Tags,buff,
 element_end
 element_start,hellion_bloodlust_u_damage_buff,ActorDataStats
 key_map,health_damage_dealt_percent,
-add_stats,0.4,
+add_stats,0.5,
 element_end
 element_start,hellion_damage_buff_tier_1,Buff
 m_DurationType,infinite,
