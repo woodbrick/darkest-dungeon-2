@@ -44,7 +44,7 @@ m_QuirkContainerId,crusader_quirk_container,
 element_end
 element_start,crusader,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,50,3,10,1,1,0.1,0.67,
+add_stats,54,3,10,1,1,0.1,0.67,
 sub_stat,resistance,stun,0.3,
 sub_stat,resistance,blight,0.1,
 sub_stat,resistance,bleed,0.3,
