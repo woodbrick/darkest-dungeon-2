@@ -204,6 +204,7 @@ add_stats,
 element_end
 element_start,ves_illumination,ActorDataEffects
 target_effects,remove_all_dodge,remove_all_dodge_plus,remove_all_stealth,
+performer_effects,stress_heal_1,
 element_end
 element_start,ves_illumination_u,ActorDataSkill
 m_IsFriendly,False,
@@ -226,6 +227,7 @@ add_stats,
 element_end
 element_start,ves_illumination_u,ActorDataEffects
 target_effects,remove_all_dodge,remove_all_dodge_plus,remove_all_stealth,add_1_anti_dodge,remove_anti_dodge_debuff,anti_dodge_debuff_e,
+performer_effects,stress_heal_2,
 element_end
 element_start,ves_illumination_u,Unlock
 m_RequirementIds,ves_illumination,
