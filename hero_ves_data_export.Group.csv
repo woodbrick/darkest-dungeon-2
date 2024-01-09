@@ -436,7 +436,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,ves_blessing_of_fortitude_u,ActorDataEffects
-target_effects,add_1_blessing_of_fortitude_u,
+target_effects,add_1_blessing_of_fortitude_u,hot_heal_small,
 element_end
 element_start,ves_blessing_of_fortitude_u,Unlock
 m_RequirementIds,ves_blessing_of_fortitude,
@@ -477,7 +477,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,ves_blessing_of_light_u,ActorDataEffects
-target_effects,add_1_blessing_of_light_u,
+target_effects,add_1_blessing_of_light_u,hot_heal_small,
 element_end
 element_start,ves_blessing_of_light_u,Unlock
 m_RequirementIds,ves_blessing_of_light,
