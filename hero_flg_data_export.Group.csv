@@ -43,7 +43,7 @@ m_EquippedCombatSkillLimit,5,
 element_end
 element_start,flagellant,ActorDataStats
 key_map,health_max,speed,stress_max,deaths_door_chance,speed_number_of_turns,health_heal_percent_between_nodes,route_choice_chance,
-add_stats,55,4,10,1,1,0.1,0.67,
+add_stats,59,4,10,1,1,0.1,0.67,
 sub_stat,resistance,stun,0.3,
 sub_stat,resistance,blight,0.5,
 sub_stat,resistance,bleed,0.2,
