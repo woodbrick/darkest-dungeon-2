@@ -460,6 +460,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,jes_inspiring_tune,ActorDataEffects
 target_effects,stress_heal_2,
+performer_effects,stress_heal_1,
 element_end
 element_start,jes_inspiring_tune_u,ActorDataSkill
 m_IsFriendly,True,
@@ -479,6 +480,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_inspiring_tune_u,ActorDataEffects
 target_effects,stress_heal_3,remove_all_horror,
+performer_effects,stress_heal_1,
 element_end
 element_start,jes_inspiring_tune_u,Unlock
 m_RequirementIds,jes_inspiring_tune,

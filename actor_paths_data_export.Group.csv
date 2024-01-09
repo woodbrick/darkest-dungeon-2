@@ -1012,7 +1012,7 @@ m_DurationType,infinite,
 element_end
 element_start,path_buff_jes_soloist_hp_down,ActorDataStats
 key_map,health_max,
-multiply_stats,-0.2,
+multiply_stats,-0.1,
 element_end
 element_start,path_buff_jes_soloist_speed_down,Buff
 m_DurationType,infinite,
