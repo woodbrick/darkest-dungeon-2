@@ -290,7 +290,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,dul_fleche,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,66,2,0.1,
+add_stats,6,2,0.1,
 element_end
 element_start,dul_fleche,ActorDataEffects
 target_effects,combo_skill_dot_large_bleed,no_combo_skill_dot_small_bleed,end_combo,
@@ -304,6 +304,7 @@ m_IsFriendly,False,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,
 m_IsMultiHit,False,
+m_Cooldown,1,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
@@ -317,7 +318,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_fleche_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,77,3,0.2,
+add_stats,7,3,0.2,
 element_end
 element_start,dul_fleche_u,ActorDataEffects
 target_effects,combo_skill_dot_massive_bleed,no_combo_skill_dot_medium_bleed,end_combo,
@@ -333,6 +334,7 @@ m_IsFriendly,False,
 launch_ranks,1,2,3,
 target_ranks,1,2,
 m_IsMultiHit,False,
+m_Cooldown,1,
 m_AllConditionIds,performer_has_aggressive_stance,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
