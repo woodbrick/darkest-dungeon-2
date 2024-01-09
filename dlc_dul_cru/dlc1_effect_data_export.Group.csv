@@ -719,14 +719,14 @@ element_end
 element_start,add_1_strength_if_performer_aggressive,Effect
 m_Chance,1,
 m_TokenAddId,strength,
-m_TokenAddAmount,1,
+m_TokenAddAmount,2,
 m_ShowValue,False,
 all_conditions,performer_has_aggressive_stance,
 element_end
 element_start,add_1_crit_if_performer_aggressive,Effect
 m_Chance,1,
 m_TokenAddId,crit,
-m_TokenAddAmount,1,
+m_TokenAddAmount,2,
 m_ShowValue,False,
 all_conditions,performer_has_aggressive_stance,
 element_end
