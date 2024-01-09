@@ -242,7 +242,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,5,3,0.05,
 element_end
 element_start,jes_slice_off,ActorDataEffects
-target_effects,skill_dot_medium_bleed,
+target_effects,combo_skill_dot_large_bleed,no_combo_skill_dot_small_bleed,end_combo,
 element_end
 element_start,jes_slice_off_u,ActorDataSkill
 m_IsFriendly,False,
@@ -263,7 +263,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,6,3,0.1,
 element_end
 element_start,jes_slice_off_u,ActorDataEffects
-target_effects,skill_dot_medium_bleed,add_1_vulnerable,
+target_effects,combo_skill_dot_massive_bleed,no_combo_skill_dot_medium_bleed,end_combo,add_1_vulnerable,
 element_end
 element_start,jes_slice_off_u,Unlock
 m_RequirementIds,jes_slice_off,
