@@ -582,7 +582,7 @@ element_start,trinket_city_snappy_swig_01,Buff
 m_DurationType,infinite,
 element_end
 element_start,trinket_city_snappy_swig_01,ActorDataStats
-sub_stat,dot_effect_value_dealt_change,burn,1,
+sub_stat,dot_effect_value_dealt_change,burn,2,
 element_end
 element_start,trinket_city_snappy_swig_02,Buff
 m_DurationType,infinite,
@@ -715,7 +715,7 @@ element_start,trinket_coast_boss_sodden_sweater_02,Buff
 m_DurationType,infinite,
 element_end
 element_start,trinket_coast_boss_sodden_sweater_02,ActorDataStats
-sub_stat,resistance,move,0.5,
+sub_stat,resistance,burn,0.5,
 element_end
 element_start,trinket_farm_brilliant_brew_01,Buff
 m_DurationType,infinite,
