@@ -9177,7 +9177,7 @@ turn_start_effects,dot_medium_burn,
 element_end
 element_start,runaway_firestarter_burn_buff,Buff
 m_DurationType,performer_turn_end,
-m_DurationAmount,4,
+m_DurationAmount,3,
 m_Tags,buff,
 element_end
 element_start,runaway_firestarter_burn_buff,ActorDataEffects
@@ -9185,7 +9185,7 @@ on_hit_as_performer_to_target_effects,dot_medium_burn,
 element_end
 element_start,runaway_firestarter_u_burn_buff,Buff
 m_DurationType,performer_turn_end,
-m_DurationAmount,5,
+m_DurationAmount,3,
 m_Tags,buff,
 element_end
 element_start,runaway_firestarter_u_burn_buff,ActorDataEffects

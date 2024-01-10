@@ -476,7 +476,7 @@ key_map,
 add_stats,
 element_end
 element_start,run_backdraft,ActorDataEffects
-target_effects,fake_runaway_backdraft_tool_tip,
+target_effects,fake_runaway_backdraft_tool_tip,dot_medium_burn,
 element_end
 element_start,run_backdraft,Unlock
 element_end
@@ -506,7 +506,7 @@ key_map,
 add_stats,
 element_end
 element_start,run_backdraft_u,ActorDataEffects
-target_effects,fake_runaway_backdraft_u_tool_tip,
+target_effects,fake_runaway_backdraft_u_tool_tip,dot_large_burn,
 element_end
 element_start,run_backdraft_u,Unlock
 m_RequirementIds,run_backdraft,
@@ -517,7 +517,7 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,False,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
+m_IsMultiHit,True,
 m_Limit,3,
 m_Cooldown,2,
 m_AllConditionIds,target_is_not_corpse_hidden,
@@ -536,8 +536,8 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,False,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
-m_Limit,3,
+m_IsMultiHit,True,
+m_Limit,5,
 m_Cooldown,2,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
