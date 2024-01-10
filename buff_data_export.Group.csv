@@ -10526,7 +10526,7 @@ element_start,trinket_surgeon_appalling_apron_04,Buff
 m_DurationType,infinite,
 element_end
 element_start,trinket_surgeon_appalling_apron_04,ActorDataStats
-sub_stat,health_heal_received_percent,skill,-0.5,
+sub_stat,health_heal_received_percent,skill,-0.25,
 element_end
 element_start,trinket_surgeon_spiked_leather_cap_01,Buff
 m_DurationType,infinite,
