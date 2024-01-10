@@ -197,7 +197,7 @@ key_map,
 add_stats,
 element_end
 element_start,maa_bellow,ActorDataEffects
-target_effects,remove_all_riposte,maa_bellow_debuff_e,
+target_effects,remove_all_riposte,remove_1_block,maa_bellow_debuff_e,
 element_end
 element_start,maa_bellow,Unlock
 element_end
@@ -221,7 +221,7 @@ key_map,
 add_stats,
 element_end
 element_start,maa_bellow_u,ActorDataEffects
-target_effects,remove_all_riposte,remove_all_crit,maa_bellow_u_debuff_e,
+target_effects,remove_all_riposte,remove_all_crit,remove_all_block,maa_bellow_u_debuff_e,
 element_end
 element_start,maa_bellow_u,Unlock
 m_RequirementIds,maa_bellow,
@@ -297,7 +297,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_retribution_u,ActorDataEffects
-performer_effects,add_2_riposte,add_2_taunt_nr,
+performer_effects,add_3_riposte,add_3_taunt_nr,
 element_end
 element_start,maa_retribution_u,Unlock
 m_RequirementIds,maa_retribution,
@@ -307,7 +307,7 @@ element_start,maa_command,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
+m_IsMultiHit,True,
 m_Cooldown,1,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
@@ -324,7 +324,8 @@ element_start,maa_command_u,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
+m_IsMultiHit,True,
+m_Cooldown,1,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -335,7 +336,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_command_u,ActorDataEffects
-target_effects,add_1_strength,remove_all_blind,
+target_effects,add_1_strength,remove_all_blind,remove_all_weak,remove_all_vulnerable,
 element_end
 element_start,maa_command_u,Unlock
 m_RequirementIds,maa_command,
@@ -507,10 +508,10 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_courageous_abandon_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,5,2,0.4,
+add_stats,7,3,0.4,
 element_end
 element_start,maa_courageous_abandon_u,ActorDataEffects
-performer_after_target_effects,remove_all_block,remove_all_block_plus,add_1_vulnerable,
+performer_after_target_effects,remove_all_block,remove_all_block_plus,
 target_effects,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
 element_end
 element_start,maa_courageous_abandon_u,Unlock
@@ -535,6 +536,7 @@ add_stats,3,3,0.1,
 element_end
 element_start,maa_strategic_withdrawal,ActorDataEffects
 target_effects,prime_combo,
+performer_per_target_effects,heal_percent_small_self_hp_dd,
 performer_effects,move_backward_1,
 element_end
 element_start,maa_strategic_withdrawal,Unlock

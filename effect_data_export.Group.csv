@@ -5937,6 +5937,13 @@ m_CritChance,0.05,
 m_CritMultiplier,0.5,
 all_conditions,performer_on_deaths_door,
 element_end
+element_start,heal_percent_small_self_hp_dd,Effect
+m_Chance,1,
+m_HealthHealPercent,0.25,
+m_CritChance,0.05,
+m_CritMultiplier,0.5,
+all_conditions,performer_on_deaths_door,
+element_end
 element_start,heal_percent_medium_self_hp_low,Effect
 m_Chance,1,
 m_HealthHealPercent,0.25,
