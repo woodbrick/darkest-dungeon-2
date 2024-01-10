@@ -594,13 +594,13 @@ element_start,trinket_city_boss_charred_litany_01,Buff
 m_DurationType,infinite,
 element_end
 element_start,trinket_city_boss_charred_litany_01,ActorDataStats
-sub_stat,dot_effect_value_dealt_change,burn,3,
+sub_stat,dot_effect_value_dealt_change,burn,2,
 element_end
 element_start,trinket_city_boss_charred_litany_02,Buff
 m_DurationType,infinite,
 element_end
 element_start,trinket_city_boss_charred_litany_02,ActorDataStats
-sub_stat,dot_extra_duration_dealt,burn,-2,
+sub_stat,dot_extra_duration_dealt,burn,-1,
 element_end
 element_start,trinket_city_boss_smoldering_hymnal_01,Buff
 m_DurationType,infinite,

@@ -355,7 +355,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,maa_bolster,ActorDataEffects
 performer_after_target_effects,stress_heal_1_performer_at_threshold,add_1_block,
-target_effects,stress_heal_1_target_at_threshold,
+target_effects,stress_heal_1_target_at_threshold,remove_all_horror,
 element_end
 element_start,maa_bolster_u,ActorDataSkill
 m_IsFriendly,True,
@@ -374,7 +374,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,maa_bolster_u,ActorDataEffects
 performer_after_target_effects,stress_heal_2_performer_at_threshold,add_1_block_plus,
-target_effects,stress_heal_2_target_at_threshold,
+target_effects,stress_heal_2_target_at_threshold,remove_all_horror,
 element_end
 element_start,maa_bolster_u,Unlock
 m_RequirementIds,maa_bolster,

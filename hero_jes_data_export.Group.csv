@@ -545,7 +545,7 @@ key_map,
 add_stats,
 element_end
 element_start,jes_echoing_march,ActorDataEffects
-target_effects,move_pull_1,jes_echoing_march_pull_e,no_combo_add_1_daze,combo_add_1_stun,end_combo,
+target_effects,move_pull_1,jes_echoing_march_pull_e,combo_add_1_stun,
 element_end
 element_start,jes_echoing_march,Unlock
 element_end

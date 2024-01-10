@@ -545,7 +545,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,3,2,0.05,
 element_end
 element_start,hwm_double_cross,ActorDataEffects
-target_effects,add_1_vulnerable,
+target_effects,add_1_vulnerable,dot_small_burn,
 performer_effects,add_1_block,
 element_end
 element_start,hwm_double_cross,Unlock
@@ -569,7 +569,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,4,2,0.1,
 element_end
 element_start,hwm_double_cross_u,ActorDataEffects
-target_effects,add_2_vulnerable,
+target_effects,add_2_vulnerable,combo_dot_large_burn,no_combo_dot_small_burn,end_combo,
 performer_effects,add_1_block,
 element_end
 element_start,hwm_double_cross_u,Unlock
