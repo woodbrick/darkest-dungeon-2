@@ -517,7 +517,7 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,False,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,True,
+m_IsMultiHit,False,
 m_Limit,3,
 m_Cooldown,2,
 m_AllConditionIds,target_is_not_corpse_hidden,
@@ -527,7 +527,7 @@ m_Tags,orphan,run_firestarter,
 m_IsStallInvalidating,False,
 element_end
 element_start,run_firestarter,ActorDataEffects
-target_effects,runaway_firestarter_burn_buff_e,
+target_effects,runaway_firestarter_burn_buff_e,add_1_strength,
 element_end
 element_start,run_firestarter,Unlock
 element_end
@@ -536,8 +536,8 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,False,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,True,
-m_Limit,5,
+m_IsMultiHit,False,
+m_Limit,4,
 m_Cooldown,2,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
@@ -549,7 +549,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,run_firestarter_u,ActorDataEffects
-target_effects,runaway_firestarter_u_burn_buff_e,
+target_effects,runaway_firestarter_u_burn_buff_e,add_2_strength,
 element_end
 element_start,run_firestarter_u,Unlock
 m_RequirementIds,run_firestarter,

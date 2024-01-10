@@ -315,7 +315,7 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,True,
+m_IsMultiHit,False,
 m_Cooldown,2,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
@@ -324,7 +324,7 @@ m_Tags,physician_vapours,pd_emboldening_vapours,
 m_IsStallInvalidating,False,
 element_end
 element_start,pd_emboldening_vapours,ActorDataEffects
-target_effects,add_1_strength,remove_all_weak,stress_heal_1_33pct,
+target_effects,add_1_strength,remove_all_weak,stress_heal_1,
 element_end
 element_start,pd_emboldening_vapours,Unlock
 element_end
@@ -333,7 +333,7 @@ m_IsFriendly,True,
 m_IsFriendlySelfTargetValid,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,True,
+m_IsMultiHit,False,
 m_Cooldown,2,
 m_AllConditionIds,target_is_not_corpse_hidden,
 m_AverageRankIgnored,False,
@@ -345,7 +345,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,pd_emboldening_vapours_u,ActorDataEffects
-target_effects,add_1_strength,remove_all_weak,stress_heal_1_80pct,
+target_effects,add_1_strength,remove_all_weak,stress_heal_2,
 element_end
 element_start,pd_emboldening_vapours_u,Unlock
 m_RequirementIds,pd_emboldening_vapours,
