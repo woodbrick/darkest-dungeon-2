@@ -95,7 +95,7 @@ m_buyCostId,trinket_tiered_hale_draught_minor_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_hale_draught_minor,ActorDataExternalBuffs
-buffs,trinket_tiered_minor_hale_draught_01,trinket_tiered_minor_hale_draught_02,
+buffs,trinket_health_max_increase_10pct,trinket_crit_chance_reduce_5pct,
 element_end
 element_start,trinket_tiered_hale_draught_minor_buy_cost,Cost
 m_ItemTag,faction,
@@ -300,7 +300,7 @@ m_buyCostId,trinket_tiered_hale_draught_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_hale_draught,ActorDataExternalBuffs
-buffs,trinket_tiered_hale_draught_01,trinket_tiered_hale_draught_02,
+buffs,trinket_health_max_increase_20pct,trinket_crit_chance_reduce_10pct,
 element_end
 element_start,trinket_tiered_hale_draught_buy_cost,Cost
 m_ItemTag,faction,
@@ -505,7 +505,7 @@ m_buyCostId,trinket_tiered_hale_draught_greater_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_hale_draught_greater,ActorDataExternalBuffs
-buffs,trinket_tiered_greater_hale_draught_01,
+buffs,trinket_health_max_increase_30pct,trinket_crit_chance_reduce_15pct
 element_end
 element_start,trinket_tiered_hale_draught_greater_buy_cost,Cost
 m_ItemTag,faction,
@@ -3236,7 +3236,7 @@ m_DiscardGameScorePerQty,1,
 m_conditionIds,performer_has_stained_tag_equipped,
 element_end
 element_start,trinket_cultist_wounding_words,ActorDataExternalBuffs
-buffs,trinket_cultist_wounding_words_01,trinket_cultist_wounding_words_02,
+buffs,trinket_health_damage_increase_30pct,trinket_health_max_reduce_15pct,
 element_end
 element_start,trinket_cultist_wounding_words_buy_cost,Cost
 m_ItemTag,faction,
