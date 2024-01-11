@@ -62,7 +62,7 @@ element_start,trinket_tiered_clotting_cruor_01,Buff
 m_DurationType,infinite,
 element_end
 element_start,trinket_tiered_clotting_cruor_01,ActorDataStats
-sub_stat,resistance,bleed,0.33,
+sub_stat,resistance,bleed,0.5,
 element_end
 element_start,trinket_tiered_clotting_cruor_02,Buff
 m_DurationType,infinite,
@@ -1643,7 +1643,7 @@ m_DurationType,infinite,
 element_end
 element_start,trinket_cultist_spoken_sharply_02,ActorDataStats
 key_map,health_max,
-multiply_stats,-0.33,
+multiply_stats,-0.25,
 element_end
 element_start,trinket_cultist_temptation_01,Buff
 m_DurationType,infinite,
@@ -1663,14 +1663,14 @@ m_DurationType,infinite,
 element_end
 element_start,trinket_cultist_wounding_words_01,ActorDataStats
 key_map,health_damage_dealt_percent,
-add_stats,0.5,
+add_stats,0.25,
 element_end
 element_start,trinket_cultist_wounding_words_02,Buff
 m_DurationType,infinite,
 element_end
 element_start,trinket_cultist_wounding_words_02,ActorDataStats
 key_map,health_max,
-multiply_stats,-0.33,
+multiply_stats,-0.15,
 element_end
 element_start,add_debuff_resist_30pct_story,Buff
 m_DurationType,performer_turn_end,
