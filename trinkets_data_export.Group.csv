@@ -729,7 +729,7 @@ m_buyCostId,trinket_general_disarming_dagger_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_general_disarming_dagger,ActorDataExternalBuffs
-buffs,trinket_general_disarming_dagger_01,trinket_general_disarming_dagger_02,
+buffs,trinket_add_1_weak_33pct,trinket_add_1_strength_10pct,
 element_end
 element_start,trinket_general_disarming_dagger_buy_cost,Cost
 m_ItemTag,faction,
