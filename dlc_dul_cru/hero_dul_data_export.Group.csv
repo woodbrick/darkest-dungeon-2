@@ -481,8 +481,8 @@ element_start,dul_ruthless_instruction,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,True,
-m_Cooldown,2,
+m_IsMultiHit,False,
+m_Cooldown,1,
 m_AllConditionIds,performer_has_defensive_stance,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -499,8 +499,8 @@ element_start,dul_ruthless_instruction_u,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,True,
-m_Cooldown,2,
+m_IsMultiHit,False,
+m_Cooldown,1,
 m_AllConditionIds,performer_has_any_stance,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -570,7 +570,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,dul_preparation,ActorDataEffects
 performer_effects,add_1_strength,add_1_speed,
-target_effects,add_1_riposte,
+target_effects,add_1_dodge,
 performer_after_target_effects,dul_set_stance_aggressive,dul_set_stance_aggressive_p1_hidden,dul_set_stance_aggressive_p2_hidden,
 element_end
 element_start,dul_preparation_u,ActorDataSkill
@@ -590,7 +590,7 @@ element_end
 element_start,dul_preparation_u,ActorDataEffects
 performer_effects,add_1_strength,add_1_speed,dul_preparation_def_stance_buff_e,add_1_crit_if_aggressive,
 performer_after_target_effects,dul_set_stance_aggressive,dul_set_stance_aggressive_p1_hidden,dul_set_stance_aggressive_p2_hidden,
-target_effects,add_2_riposte,
+target_effects,add_2_dodge,
 element_end
 element_start,dul_preparation_u,Unlock
 m_RequirementIds,dul_preparation,
@@ -790,7 +790,7 @@ element_start,dul_ruthless_instruction_p1,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,True,
+m_IsMultiHit,False,
 m_Cooldown,1,
 m_AllConditionIds,performer_has_any_stance,
 m_AverageRankIgnored,False,
@@ -802,12 +802,13 @@ m_IsStallInvalidating,False,
 element_end
 element_start,dul_ruthless_instruction_p1,ActorDataEffects
 target_effects,stress_heal_2_if_performer_defensive,add_1_strength_if_performer_aggressive,
+performer_after_target_effects,add_2_block,
 element_end
 element_start,dul_ruthless_instruction_p1_u,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,True,
+m_IsMultiHit,False,
 m_Cooldown,1,
 m_AllConditionIds,performer_has_any_stance,
 m_AverageRankIgnored,False,
@@ -820,6 +821,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_ruthless_instruction_p1_u,ActorDataEffects
 target_effects,stress_heal_3_if_performer_defensive,clear_horror_if_performer_defensive,add_1_crit_if_performer_aggressive,
+performer_after_target_effects,add_2_block_plus,
 element_end
 element_start,dul_ruthless_instruction_p1_u,Unlock
 m_RequirementIds,dul_ruthless_instruction_p1,
@@ -1281,7 +1283,7 @@ element_end
 element_start,dul_preparation_p3,ActorDataEffects
 performer_effects,add_1_strength,add_1_speed,
 performer_after_target_effects,dul_set_stance_aggressive_p3,
-target_effects,add_1_crit_80pct,
+target_effects,add_1_dodge,
 element_end
 element_start,dul_preparation_p3_u,ActorDataSkill
 m_IsFriendly,True,
@@ -1300,7 +1302,7 @@ element_end
 element_start,dul_preparation_p3_u,ActorDataEffects
 performer_effects,add_1_strength,add_1_speed,remove_all_dots_if_performer_defensive,add_1_crit_if_aggressive,
 performer_after_target_effects,dul_set_stance_aggressive_p3,
-target_effects,add_1_crit,
+target_effects,add_2_dodge,
 element_end
 element_start,dul_preparation_p3_u,Unlock
 m_RequirementIds,dul_preparation_p3,
