@@ -8110,13 +8110,13 @@ element_end
 element_start,target_stress_over_40pct,Condition
 m_ConditionType,stress_percent,
 m_ConditionActorType,TARGET,
-m_ConditionNumber,0.5,
+m_ConditionNumber,0.4,
 m_ConditionNumberType,GREATER_THAN_OR_EQUAL,
 element_end
 element_start,target_stress_over_50pct,Condition
 m_ConditionType,stress_percent,
 m_ConditionActorType,TARGET,
-m_ConditionNumber,0.5,
+m_ConditionNumber,0.49,
 m_ConditionNumberType,GREATER_THAN,
 element_end
 element_start,test_actor_count_value,Condition

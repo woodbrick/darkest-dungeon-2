@@ -761,14 +761,14 @@ m_IsStallInvalidating,False,
 element_end
 element_start,dul_again_p1,ActorDataEffects
 target_effects,dul_again_p1_dmg_buff_e,
-performer_effects,add_1_riposte,
+performer_effects,stress_heal_1,
 element_end
 element_start,dul_again_p1_u,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Cooldown,3,
+m_Cooldown,2,
 m_AllConditionIds,performer_has_any_stance,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -780,7 +780,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_again_p1_u,ActorDataEffects
 target_effects,stress_damage_3_if_performer_defensive,dul_again_p1_extra_initiative_buff_e,dul_again_p1_dmg_buff_e,
-performer_effects,add_1_riposte,
+performer_effects,stress_heal_2,
 element_end
 element_start,dul_again_p1_u,Unlock
 m_RequirementIds,dul_again_p1,
