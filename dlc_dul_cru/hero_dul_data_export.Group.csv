@@ -481,8 +481,8 @@ element_start,dul_ruthless_instruction,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
-m_Cooldown,1,
+m_IsMultiHit,True,
+m_Cooldown,2,
 m_AllConditionIds,performer_has_defensive_stance,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -499,8 +499,8 @@ element_start,dul_ruthless_instruction_u,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
-m_Cooldown,1,
+m_IsMultiHit,True,
+m_Cooldown,2,
 m_AllConditionIds,performer_has_any_stance,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -570,7 +570,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,dul_preparation,ActorDataEffects
 performer_effects,add_1_strength,add_1_speed,
-target_effects,add_1_crit_80pct,
+target_effects,add_1_riposte,
 performer_after_target_effects,dul_set_stance_aggressive,dul_set_stance_aggressive_p1_hidden,dul_set_stance_aggressive_p2_hidden,
 element_end
 element_start,dul_preparation_u,ActorDataSkill
@@ -590,7 +590,7 @@ element_end
 element_start,dul_preparation_u,ActorDataEffects
 performer_effects,add_1_strength,add_1_speed,dul_preparation_def_stance_buff_e,add_1_crit_if_aggressive,
 performer_after_target_effects,dul_set_stance_aggressive,dul_set_stance_aggressive_p1_hidden,dul_set_stance_aggressive_p2_hidden,
-target_effects,add_1_crit,
+target_effects,add_2_riposte,
 element_end
 element_start,dul_preparation_u,Unlock
 m_RequirementIds,dul_preparation,
@@ -714,8 +714,8 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,4,2,0.05,
 element_end
 element_start,dul_disengage_p1,ActorDataEffects
-target_effects,remove_1_riposte_hidden,
-performer_after_target_effects,duelist_stance_invert,add_1_dodge,
+target_effects,remove_1_riposte_hidden,prime_combo_50pct,
+performer_after_target_effects,dul_set_stance_defensive,dul_set_stance_defensive_p1_hidden,
 performer_effects,move_backward_2,
 element_end
 element_start,dul_disengage_p1_u,ActorDataSkill
@@ -737,8 +737,8 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,6,2,0.1,
 element_end
 element_start,dul_disengage_p1_u,ActorDataEffects
-target_effects,remove_1_riposte_hidden,
-performer_after_target_effects,duelist_stance_invert,add_1_dodge_plus,
+target_effects,remove_1_riposte_hidden,prime_combo,
+performer_after_target_effects,dul_set_stance_defensive,dul_set_stance_defensive_p1_hidden,add_1_dodge_plus,
 performer_effects,move_backward_2,
 element_end
 element_start,dul_disengage_p1_u,Unlock
@@ -790,7 +790,7 @@ element_start,dul_ruthless_instruction_p1,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
+m_IsMultiHit,True,
 m_Cooldown,1,
 m_AllConditionIds,performer_has_any_stance,
 m_AverageRankIgnored,False,
@@ -802,13 +802,12 @@ m_IsStallInvalidating,False,
 element_end
 element_start,dul_ruthless_instruction_p1,ActorDataEffects
 target_effects,stress_heal_2_if_performer_defensive,add_1_strength_if_performer_aggressive,
-performer_after_target_effects,add_1_crit_80pct,
 element_end
 element_start,dul_ruthless_instruction_p1_u,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
+m_IsMultiHit,True,
 m_Cooldown,1,
 m_AllConditionIds,performer_has_any_stance,
 m_AverageRankIgnored,False,
@@ -821,7 +820,6 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,dul_ruthless_instruction_p1_u,ActorDataEffects
 target_effects,stress_heal_3_if_performer_defensive,clear_horror_if_performer_defensive,add_1_crit_if_performer_aggressive,
-performer_after_target_effects,add_1_crit,
 element_end
 element_start,dul_ruthless_instruction_p1_u,Unlock
 m_RequirementIds,dul_ruthless_instruction_p1,

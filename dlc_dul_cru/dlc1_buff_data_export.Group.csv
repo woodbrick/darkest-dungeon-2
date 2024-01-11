@@ -460,7 +460,7 @@ m_Tags,buff,
 element_end
 element_start,dul_again_p1_dmg_buff,ActorDataStats
 key_map,health_damage_dealt_percent,
-add_stats,0.1,
+add_stats,0.2,
 element_end
 element_start,dul_again_p1_extra_initiative_buff,Buff
 m_DurationType,round_start,
