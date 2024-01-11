@@ -714,9 +714,9 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,4,2,0.05,
 element_end
 element_start,dul_disengage_p1,ActorDataEffects
-target_effects,remove_1_riposte_hidden,prime_combo_50pct,
+target_effects,remove_1_riposte_hidden,
 performer_after_target_effects,dul_set_stance_defensive,dul_set_stance_defensive_p1_hidden,
-performer_effects,move_backward_2,
+performer_effects,move_backward_2,hot_heal_small,
 element_end
 element_start,dul_disengage_p1_u,ActorDataSkill
 m_IsFriendly,False,
@@ -737,9 +737,9 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,6,2,0.1,
 element_end
 element_start,dul_disengage_p1_u,ActorDataEffects
-target_effects,remove_1_riposte_hidden,prime_combo,
+target_effects,remove_1_riposte_hidden,
 performer_after_target_effects,dul_set_stance_defensive,dul_set_stance_defensive_p1_hidden,add_1_dodge_plus,
-performer_effects,move_backward_2,
+performer_effects,move_backward_2,hot_heal_medium,
 element_end
 element_start,dul_disengage_p1_u,Unlock
 m_RequirementIds,dul_disengage_p1,

@@ -312,7 +312,7 @@ key_map,crit_chance,
 add_stats,0.05,
 element_end
 element_start,occ_vulnerability_hex_u,ActorDataEffects
-target_effects,remove_all_block,remove_all_block_plus,remove_all_dodge,remove_all_dodge_plus,add_2_vulnerable,
+target_effects,remove_all_block,remove_all_block_plus,remove_all_dodge,remove_all_dodge_plus,add_2_vulnerable,add_1_blind,
 element_end
 element_start,occ_vulnerability_hex_u,Unlock
 m_RequirementIds,occ_vulnerability_hex,
