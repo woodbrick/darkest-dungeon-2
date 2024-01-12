@@ -129,7 +129,7 @@ m_buyCostId,trinket_tiered_heat_shield_minor_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_heat_shield_minor,ActorDataExternalBuffs
-buffs,trinket_burn_resistance_increase_30pct,trinket_blight_resistance_reduce_10pct,
+buffs,trinket_burn_resistance_increase_50pct,trinket_blight_resistance_reduce_20pct,
 element_end
 element_start,trinket_tiered_heat_shield_minor_buy_cost,Cost
 m_ItemTag,faction,
@@ -334,7 +334,7 @@ m_buyCostId,trinket_tiered_heat_shield_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_heat_shield,ActorDataExternalBuffs
-buffs,trinket_burn_resistance_increase_50pct,trinket_blight_resistance_reduce_10pct,
+buffs,trinket_burn_resistance_increase_70pct,trinket_blight_resistance_reduce_10pct,
 element_end
 element_start,trinket_tiered_heat_shield_buy_cost,Cost
 m_ItemTag,faction,
