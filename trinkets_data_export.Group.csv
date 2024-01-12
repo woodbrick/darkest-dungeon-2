@@ -112,7 +112,7 @@ m_buyCostId,trinket_tiered_heartseeker_minor_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_heartseeker_minor,ActorDataExternalBuffs
-buffs,trinket_tiered_minor_heartseeker_01,trinket_tiered_minor_heartseeker_02,
+buffs,trinket_crit_chance_increase_10pct,trinket_health_heal_received_reduce_10pct,
 element_end
 element_start,trinket_tiered_heartseeker_minor_buy_cost,Cost
 m_ItemTag,faction,
@@ -197,7 +197,7 @@ m_buyCostId,trinket_tiered_wolfsblood_minor_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_wolfsblood_minor,ActorDataExternalBuffs
-buffs,trinket_speed_increase_2,trinket_crit_chance_increase_10pct,trinket_health_max_reduce_5pct,
+buffs,trinket_speed_increase_2,trinket_health_damage_increase_5pct,trinket_health_max_reduce_5pct,
 element_end
 element_start,trinket_tiered_wolfsblood_minor_buy_cost,Cost
 m_ItemTag,faction,
@@ -317,7 +317,7 @@ m_buyCostId,trinket_tiered_heartseeker_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_heartseeker,ActorDataExternalBuffs
-buffs,trinket_tiered_heartseeker_01,trinket_tiered_heartseeker_02,
+buffs,trinket_crit_chance_increase_20pct,trinket_health_heal_received_reduce_20pct,
 element_end
 element_start,trinket_tiered_heartseeker_buy_cost,Cost
 m_ItemTag,faction,
@@ -402,7 +402,7 @@ m_buyCostId,trinket_tiered_wolfsblood_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_wolfsblood,ActorDataExternalBuffs
-buffs,trinket_speed_increase_3,trinket_crit_chance_increase_20pct,trinket_health_max_reduce_10pct,
+buffs,trinket_speed_increase_3,trinket_health_damage_increase_10pct,trinket_health_max_reduce_10pct,
 element_end
 element_start,trinket_tiered_wolfsblood_buy_cost,Cost
 m_ItemTag,faction,
@@ -522,7 +522,7 @@ m_buyCostId,trinket_tiered_heartseeker_greater_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_heartseeker_greater,ActorDataExternalBuffs
-buffs,trinket_tiered_greater_heartseeker_01,
+buffs,trinket_crit_chance_increase_30pct,trinket_health_heal_received_reduce_30pct,
 element_end
 element_start,trinket_tiered_heartseeker_greater_buy_cost,Cost
 m_ItemTag,faction,
@@ -607,7 +607,7 @@ m_buyCostId,trinket_tiered_wolfsblood_greater_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_wolfsblood_greater,ActorDataExternalBuffs
-buffs,trinket_speed_increase_4,trinket_crit_chance_increase_30pct,trinket_health_max_reduce_15pct,
+buffs,trinket_speed_increase_4,trinket_health_damage_increase_15pct,trinket_health_max_reduce_15pct,
 element_end
 element_start,trinket_tiered_wolfsblood_greater_buy_cost,Cost
 m_ItemTag,faction,

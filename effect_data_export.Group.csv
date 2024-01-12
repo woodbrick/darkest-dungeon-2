@@ -13013,14 +13013,10 @@ element_start,knight_b_dd_survive_spd_buff_e,Effect
 m_Chance,1,
 buffs,knight_b_dd_survive_spd_buff,
 element_end
-element_start,gen_debuff_debuff_res_10pct_e,Effect
-m_Chance,1,
-buffs,gen_debuff_debuff_res_10pct,
-element_end
 element_start,occ_binding_shadows_debuff_e,Effect
 m_Chance,1,
 m_IgnoreResist,True,
-buffs,gen_debuff_debuff_res_10pct,
+buffs,debuff_res_reduce_20pct,
 all_conditions,target_is_combo_primed,
 element_end
 element_start,add_1_unchecked_power_66pct,Effect
@@ -13032,7 +13028,7 @@ element_end
 element_start,occ_binding_shadows_u_debuff_e,Effect
 m_Chance,1,
 m_IgnoreResist,True,
-buffs,gen_debuff_debuff_res_15pct,
+buffs,debuff_res_reduce_40pct,
 all_conditions,target_is_combo_primed,
 element_end
 element_start,add_1_deaths_door_armor,Effect
