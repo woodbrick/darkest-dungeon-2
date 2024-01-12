@@ -27,7 +27,7 @@ m_buyCostId,trinket_tiered_bouncers_belt_minor_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_bouncers_belt_minor,ActorDataExternalBuffs
-buffs,trinket_tiered_minor_bouncers_belt_01,trinket_tiered_minor_bouncers_belt_02,
+buffs,trinket_health_heal_received_increase_10pct,trinket_move_resistance_increase_10pct,
 element_end
 element_start,trinket_tiered_bouncers_belt_minor_buy_cost,Cost
 m_ItemTag,faction,
@@ -232,7 +232,7 @@ m_buyCostId,trinket_tiered_bouncers_belt_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_bouncers_belt,ActorDataExternalBuffs
-buffs,trinket_tiered_bouncers_belt_01,trinket_tiered_bouncers_belt_02,
+buffs,trinket_health_heal_received_increase_20pct,trinket_move_resistance_increase_20pct,
 element_end
 element_start,trinket_tiered_bouncers_belt_buy_cost,Cost
 m_ItemTag,faction,
@@ -437,7 +437,7 @@ m_buyCostId,trinket_tiered_bouncers_belt_greater_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_bouncers_belt_greater,ActorDataExternalBuffs
-buffs,trinket_tiered_greater_bouncers_belt_01,
+buffs,trinket_health_heal_received_increase_30pct,trinket_move_resistance_increase_30pct,,
 element_end
 element_start,trinket_tiered_bouncers_belt_greater_buy_cost,Cost
 m_ItemTag,faction,
