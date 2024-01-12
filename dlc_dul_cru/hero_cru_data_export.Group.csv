@@ -153,7 +153,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,5,2,0.1,
 element_end
 element_start,cru_stunning_blow,ActorDataEffects
-target_effects,combo_add_1_stun,end_combo,
+target_effects,no_combo_add_1_daze,combo_add_1_stun,end_combo,
 element_end
 element_start,cru_stunning_blow_u,ActorDataSkill
 m_IsFriendly,False,
@@ -174,7 +174,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,6,2,0.2,
 element_end
 element_start,cru_stunning_blow_u,ActorDataEffects
-target_effects,combo_add_1_stun,remove_all_strength,remove_all_crit,end_combo,
+target_effects,remove_all_strength,remove_all_crit,no_combo_add_1_daze,combo_add_1_stun,end_combo,
 element_end
 element_start,cru_stunning_blow_u,Unlock
 m_RequirementIds,cru_stunning_blow,
