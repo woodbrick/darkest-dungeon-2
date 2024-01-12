@@ -129,7 +129,7 @@ m_buyCostId,trinket_tiered_heat_shield_minor_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_heat_shield_minor,ActorDataExternalBuffs
-buffs,trinket_tiered_minor_heat_shield_01,trinket_tiered_minor_heat_shield_02,
+buffs,trinket_burn_resistance_increase_30pct,trinket_blight_resistance_reduce_10pct,
 element_end
 element_start,trinket_tiered_heat_shield_minor_buy_cost,Cost
 m_ItemTag,faction,
@@ -334,7 +334,7 @@ m_buyCostId,trinket_tiered_heat_shield_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_heat_shield,ActorDataExternalBuffs
-buffs,trinket_tiered_heat_shield_01,trinket_tiered_heat_shield_02,
+buffs,trinket_burn_resistance_increase_50pct,trinket_blight_resistance_reduce_10pct,
 element_end
 element_start,trinket_tiered_heat_shield_buy_cost,Cost
 m_ItemTag,faction,
@@ -471,7 +471,7 @@ m_buyCostId,trinket_tiered_clotting_cruor_greater_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_clotting_cruor_greater,ActorDataExternalBuffs
-buffs,trinket_tiered_greater_clotting_cruor_01,trinket_tiered_greater_clotting_cruor_02,
+buffs,trinket_tiered_greater_clotting_cruor_01,trinket_on_bleed_res_stress_heal_1,
 element_end
 element_start,trinket_tiered_clotting_cruor_greater_buy_cost,Cost
 m_ItemTag,faction,
@@ -539,7 +539,7 @@ m_buyCostId,trinket_tiered_heat_shield_greater_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_heat_shield_greater,ActorDataExternalBuffs
-buffs,trinket_tiered_greater_heat_shield_01,
+buffs,trinket_burn_resistance_increase_70pct,trinket_on_burn_res_stress_heal_1,
 element_end
 element_start,trinket_tiered_heat_shield_greater_buy_cost,Cost
 m_ItemTag,faction,
