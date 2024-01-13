@@ -247,8 +247,8 @@ element_start,flg_reclaim,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
-m_Cooldown,1,
+m_IsMultiHit,True,
+m_Cooldown,2,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
 m_Tags,heal,flg_reclaim,
@@ -264,8 +264,8 @@ element_start,flg_reclaim_u,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
-m_Cooldown,1,
+m_IsMultiHit,True,
+m_Cooldown,2,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
 m_Tags,heal,flg_reclaim,
@@ -334,7 +334,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,flg_endure,ActorDataEffects
 target_effects,stress_heal_3,
-performer_effects,stress_damage_1,
+performer_effects,stress_damage_1,add_1_block,
 element_end
 element_start,flg_endure_u,ActorDataSkill
 m_IsFriendly,True,
@@ -352,7 +352,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_endure_u,ActorDataEffects
 target_effects,stress_heal_3,destroy_all_negative_tokens,
-performer_effects,stress_damage_1,
+performer_effects,stress_damage_1,add_1_block,
 element_end
 element_start,flg_endure_u,Unlock
 m_RequirementIds,flg_endure,
@@ -1024,8 +1024,8 @@ m_IgnoreDamageMultipliers,True,
 m_IsStallInvalidating,True,
 element_end
 element_start,flg_sepsis_p3,ActorDataStats
-key_map,
-add_stats,
+key_map,health_damage,health_damage_range,crit_chance,
+add_stats,4,2,0.1,
 element_end
 element_start,flg_sepsis_p3,ActorDataEffects
 target_effects,no_combo_remove_all_blight,end_combo,
@@ -1052,8 +1052,8 @@ m_IsStallInvalidating,True,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_sepsis_p3_u,ActorDataStats
-key_map,
-add_stats,
+key_map,health_damage,health_damage_range,crit_chance,
+add_stats,6,2,0.2,
 element_end
 element_start,flg_sepsis_p3_u,ActorDataEffects
 target_effects,no_combo_remove_all_blight,end_combo,
@@ -1086,7 +1086,7 @@ m_IsFriendly,True,
 launch_ranks,1,2,
 target_ranks,1,2,3,4,
 m_IsMultiHit,False,
-m_Limit,3,
+m_Limit,5,
 m_Cooldown,2,
 m_AllConditionIds,performer_health_under_50pct,target_health_under_100pct,
 m_AverageRankIgnored,False,
@@ -1109,8 +1109,8 @@ element_start,flg_suffer_p3,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
-m_Cooldown,1,
+m_IsMultiHit,True,
+m_Cooldown,2,
 m_AnyConditionIds,target_has_dmgdot,target_has_horror,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -1127,8 +1127,8 @@ element_start,flg_suffer_p3_u,ActorDataSkill
 m_IsFriendly,True,
 launch_ranks,1,2,3,4,
 target_ranks,1,2,3,4,
-m_IsMultiHit,False,
-m_Cooldown,1,
+m_IsMultiHit,True,
+m_Cooldown,2,
 m_AnyConditionIds,target_has_dmgdot,target_has_horror,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_block,
@@ -1161,6 +1161,7 @@ m_IsStallInvalidating,False,
 element_end
 element_start,flg_lash_gift_p3,ActorDataEffects
 performer_effects,dot_horror_large,remove_all_bleed,remove_all_blight,remove_all_burn,
+target_effects,add_1_crit,
 element_end
 element_start,flg_lash_gift_p3_u,ActorDataSkill
 m_IsFriendly,True,
@@ -1178,6 +1179,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,flg_lash_gift_p3_u,ActorDataEffects
 performer_effects,dot_horror_large,remove_all_bleed,remove_all_blight,remove_all_burn,
+target_effects,add_1_crit,add_1_block,
 performer_after_target_effects,flg_lash_gift_p3_bleed_res_buff_e,flg_lash_gift_p3_blight_res_buff_e,flg_lash_gift_p3_burn_res_buff_e,
 element_end
 element_start,flg_lash_gift_p3_u,Unlock

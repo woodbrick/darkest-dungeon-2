@@ -3820,7 +3820,7 @@ m_DurationAmount,3,
 m_Tags,buff,
 element_end
 element_start,flg_suffer_deathblow_res_buff,ActorDataStats
-sub_stat,resistance,death,0.1,
+sub_stat,resistance,death,0.5,
 element_end
 element_start,flg_toxic_blight_armor_level_1,Buff
 m_DurationType,infinite,
