@@ -146,7 +146,7 @@ m_buyCostId,trinket_tiered_protectorate_minor_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_protectorate_minor,ActorDataExternalBuffs
-buffs,trinket_tiered_minor_protectorate_01,trinket_tiered_minor_protectorate_02,
+buffs,trinket_heal_increase_15pct,trinket_health_damage_reduce_5pct,
 element_end
 element_start,trinket_tiered_protectorate_minor_buy_cost,Cost
 m_ItemTag,faction,
@@ -351,7 +351,7 @@ m_buyCostId,trinket_tiered_protectorate_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_protectorate,ActorDataExternalBuffs
-buffs,trinket_tiered_protectorate_01,trinket_tiered_protectorate_02,
+buffs,trinket_heal_increase_25pct,trinket_health_damage_reduce_10pct,
 element_end
 element_start,trinket_tiered_protectorate_buy_cost,Cost
 m_ItemTag,faction,
@@ -556,7 +556,7 @@ m_buyCostId,trinket_tiered_protectorate_greater_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_protectorate_greater,ActorDataExternalBuffs
-buffs,trinket_tiered_greater_protectorate_01,
+buffs,trinket_heal_increase_35pct,trinket_health_damage_reduce_10pct,
 element_end
 element_start,trinket_tiered_protectorate_greater_buy_cost,Cost
 m_ItemTag,faction,
