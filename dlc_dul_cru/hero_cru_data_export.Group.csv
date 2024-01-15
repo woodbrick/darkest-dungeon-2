@@ -264,7 +264,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,4,1,0.1,
 element_end
 element_start,cru_zealous_accusation_u,ActorDataEffects
-target_effects,skill_dot_medium_burn,prime_combo_33pct,
+target_effects,skill_dot_medium_burn,prime_combo_50pct,
 element_end
 element_start,cru_zealous_accusation_u,Unlock
 m_RequirementIds,cru_zealous_accusation,
@@ -739,7 +739,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,7,2,0.1,
 element_end
 element_start,cru_smite_p2,ActorDataEffects
-performer_per_target_effects,combo_stress_heal_1,
+performer_per_target_effects,combo_stress_heal_2,
 target_effects,end_combo,
 element_end
 element_start,cru_smite_p2_u,ActorDataSkill
@@ -761,7 +761,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,9,3,0.1,
 element_end
 element_start,cru_smite_p2_u,ActorDataEffects
-performer_per_target_effects,combo_stress_heal_2,
+performer_per_target_effects,combo_stress_heal_3,
 target_effects,end_combo,
 element_end
 element_start,cru_smite_p2_u,Unlock
@@ -952,7 +952,7 @@ m_SkillHistoryIdOverride,cru_rallying_cry,
 m_IsStallInvalidating,False,
 element_end
 element_start,cru_rallying_cry_p3,ActorDataEffects
-target_effects,add_1_immobilize_nr,
+target_effects,add_1_immobilize_nr,add_1_block,
 element_end
 element_start,cru_rallying_cry_p3_u,ActorDataSkill
 m_IsFriendly,True,
@@ -971,7 +971,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_rallying_cry_p3_u,ActorDataEffects
-target_effects,add_1_immobilize_nr,
+target_effects,add_1_immobilize_nr,add_2_block,
 element_end
 element_start,cru_rallying_cry_p3_u,Unlock
 m_RequirementIds,cru_rallying_cry_p3,
@@ -993,7 +993,7 @@ m_SkillHistoryIdOverride,cru_tenacity,
 m_IsStallInvalidating,False,
 element_end
 element_start,cru_tenacity_p3,ActorDataEffects
-target_effects,add_1_block,
+target_effects,add_1_crit_80pct,
 element_end
 element_start,cru_tenacity_p3_u,ActorDataSkill
 m_IsFriendly,True,
@@ -1012,7 +1012,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_tenacity_p3_u,ActorDataEffects
-target_effects,add_1_block,remove_all_stun_type_tokens,
+target_effects,add_1_crit_80pct,remove_all_stun_type_tokens,
 element_end
 element_start,cru_tenacity_p3_u,Unlock
 m_RequirementIds,cru_tenacity_p3,

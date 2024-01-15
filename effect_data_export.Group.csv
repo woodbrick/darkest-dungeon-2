@@ -600,6 +600,12 @@ m_TokenAddId,crit,
 m_TokenAddAmount,1,
 m_ShowValue,False,
 element_end
+element_start,add_1_crit_50pct,Effect
+m_Chance,0.5,
+m_TokenAddId,crit,
+m_TokenAddAmount,1,
+m_ShowValue,False,
+element_end
 element_start,add_1_crit_50pct_if_stealth,Effect
 m_Chance,0.5,
 m_TokenAddId,crit,
@@ -13138,6 +13144,11 @@ element_end
 element_start,combo_stress_heal_2,Effect
 m_Chance,1,
 m_StressHeal,2,
+all_conditions,target_is_combo_primed,
+element_end
+element_start,combo_stress_heal_3,Effect
+m_Chance,1,
+m_StressHeal,3,
 all_conditions,target_is_combo_primed,
 element_end
 element_start,combo_heal_10pct,Effect
