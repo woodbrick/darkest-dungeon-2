@@ -651,7 +651,7 @@ element_start,trinket_farm_galvanizing_goblet_01,Buff
 m_DurationType,infinite,
 element_end
 element_start,trinket_farm_galvanizing_goblet_01,ActorDataStats
-sub_stat,dot_effect_value_dealt_change,blight,1,
+sub_stat,dot_effect_value_dealt_change,blight,2,
 element_end
 element_start,trinket_farm_galvanizing_goblet_02,Buff
 m_DurationType,infinite,
@@ -12196,4 +12196,11 @@ element_end
 element_start,buff_health_damage_50_2t,ActorDataStats
 key_map,health_damage_dealt_percent,
 add_stats,0.50,
+element_end
+
+element_start,blight_resist_20pct,Buff
+m_DurationType,infinite,
+element_end
+element_start,blight_resist_20pct,ActorDataStats
+sub_stat,resistance,blight,0.2,
 element_end

@@ -1425,7 +1425,7 @@ m_buyCostId,trinket_farm_galvanizing_goblet_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_farm_galvanizing_goblet,ActorDataExternalBuffs
-buffs,trinket_farm_galvanizing_goblet_01,trinket_farm_galvanizing_goblet_02,
+buffs,trinket_farm_galvanizing_goblet_01,blight_resist_20pct,trinket_farm_galvanizing_goblet_02,
 element_end
 element_start,trinket_farm_galvanizing_goblet_buy_cost,Cost
 m_ItemTag,faction,

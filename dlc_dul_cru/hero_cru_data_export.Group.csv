@@ -642,11 +642,9 @@ m_IsMultiHit,True,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
-token_ignores,til_burning_execution_1,
 m_Tags,melee,cru_reap,
 m_ConditionIdOverride,cru_reap,
 m_SkillHistoryIdOverride,cru_reap,
-performer_buffs,execution_1_burn_tooltip,
 m_IsStallInvalidating,True,
 element_end
 element_start,cru_reap_p1,ActorDataStats
@@ -654,7 +652,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,6,1,0.1,
 element_end
 element_start,cru_reap_p1,ActorDataEffects
-target_effects,cru_reap_heal_debuff_e,
+target_effects,cru_reap_heal_debuff_e,combo_dot_large_burn,no_combo_dot_small_burn,end_combo,
 element_end
 element_start,cru_reap_p1_u,ActorDataSkill
 m_IsFriendly,False,
@@ -664,11 +662,9 @@ m_IsMultiHit,True,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
-token_ignores,til_burning_execution_1,
 m_Tags,melee,cru_reap,
 m_ConditionIdOverride,cru_reap,
 m_SkillHistoryIdOverride,cru_reap,
-performer_buffs,execution_1_burn_tooltip,
 m_IsStallInvalidating,True,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
@@ -677,7 +673,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,7,2,0.1,
 element_end
 element_start,cru_reap_p1_u,ActorDataEffects
-target_effects,cru_reap_u_heal_debuff_e,
+target_effects,cru_reap_u_heal_debuff_e,combo_dot_massive_burn,no_combo_dot_medium_burn,end_combo,
 on_kill_as_performer_to_performer_effects,add_1_strength,
 element_end
 element_start,cru_reap_p1_u,Unlock
