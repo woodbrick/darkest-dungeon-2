@@ -328,7 +328,6 @@ element_end
 element_start,cru_radiance_ranged_bonus,Buff
 m_DurationType,performer_turn_end,
 m_DurationAmount,4,
-m_ConditionId,skill_is_ranged,
 m_Tags,buff,
 element_end
 element_start,cru_radiance_ranged_bonus,ActorDataStats

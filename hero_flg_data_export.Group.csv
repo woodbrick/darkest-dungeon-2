@@ -811,7 +811,6 @@ m_Tags,melee,flg_punish,
 m_ConditionIdOverride,flg_punish,
 m_SkillHistoryIdOverride,flg_punish,
 performer_buffs,flg_exanimate_bonus_blight,
-target_buffs,combo_ignore_30pct_blight_resist,
 m_IsStallInvalidating,True,
 element_end
 element_start,flg_punish_p2,ActorDataStats
@@ -819,7 +818,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,5,3,0.1,
 element_end
 element_start,flg_punish_p2,ActorDataEffects
-target_effects,skill_dot_small_blight,end_combo,
+target_effects,skill_dot_small_blight,prime_combo_50pct,
 performer_effects,health_damage_10pct,
 element_end
 element_start,flg_punish_p2_u,ActorDataSkill
@@ -834,7 +833,6 @@ m_Tags,melee,flg_punish,
 m_ConditionIdOverride,flg_punish,
 m_SkillHistoryIdOverride,flg_punish,
 performer_buffs,flg_exanimate_bonus_blight,
-target_buffs,combo_ignore_30pct_blight_resist,
 m_IsStallInvalidating,True,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
@@ -843,7 +841,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,6,4,0.2,
 element_end
 element_start,flg_punish_p2_u,ActorDataEffects
-target_effects,skill_dot_medium_blight,end_combo,
+target_effects,skill_dot_medium_blight,prime_combo,
 performer_effects,health_damage_10pct,
 element_end
 element_start,flg_punish_p2_u,Unlock
@@ -906,7 +904,7 @@ m_IsFriendly,False,
 launch_ranks,1,2,
 target_ranks,1,2,3,
 m_IsMultiHit,False,
-m_Limit,2,
+m_Limit,4,
 m_Cooldown,2,
 m_AllConditionIds,target_has_blight_dot,performer_health_under_50pct,
 m_AverageRankIgnored,False,
@@ -927,7 +925,7 @@ key_map,
 add_stats,
 element_end
 element_start,flg_sepsis_p2,ActorDataEffects
-target_effects,remove_all_blight,
+target_effects,remove_all_blight,prime_combo_50pct,
 performer_after_target_effects,heal_up_to_45pct,
 element_end
 element_start,flg_sepsis_p2_u,ActorDataSkill
@@ -935,7 +933,7 @@ m_IsFriendly,False,
 launch_ranks,1,2,
 target_ranks,1,2,3,
 m_IsMultiHit,False,
-m_Limit,3,
+m_Limit,5,
 m_Cooldown,2,
 m_AllConditionIds,target_has_blight_dot,performer_health_under_50pct,
 m_AverageRankIgnored,False,
@@ -957,7 +955,7 @@ key_map,
 add_stats,
 element_end
 element_start,flg_sepsis_p2_u,ActorDataEffects
-target_effects,remove_all_blight,
+target_effects,remove_all_blight,prime_combo,
 performer_after_target_effects,heal_up_to_45pct,
 element_end
 element_start,flg_sepsis_p2_u,Unlock
