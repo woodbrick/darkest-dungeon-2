@@ -580,3 +580,13 @@ element_start,path_descriptor_dul_reserve,ActorDataStats
 key_map,crit_chance,
 add_stats,0,
 element_end
+
+element_start,buff_next_turn_extra_action_1,Buff
+m_DurationType,round_start,
+m_DurationAmount,1,
+m_Tags,buff,
+element_end
+element_start,buff_next_turn_extra_action_1,ActorDataStats
+key_map,speed_number_of_turns,
+add_stats,1,
+element_end

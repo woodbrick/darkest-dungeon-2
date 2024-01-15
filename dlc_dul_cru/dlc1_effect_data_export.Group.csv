@@ -1091,3 +1091,12 @@ m_TokenAddAmount,1,
 m_ShowValue,False,
 all_conditions,target_is_not_corpse_hidden,
 element_end
+
+element_start,add_buff_extra_action_50pct,Effect
+m_Chance,0.5,
+buffs,buff_next_turn_extra_action_1,
+element_end
+element_start,add_buff_extra_action_80pct,Effect
+m_Chance,0.8,
+buffs,buff_next_turn_extra_action_1,
+element_end
