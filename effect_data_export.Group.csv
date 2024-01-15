@@ -13232,3 +13232,9 @@ m_Chance,1,
 m_StressHeal,2,
 all_conditions,target_is_not_corpse_hidden,
 element_end
+
+
+element_start,effect_buff_health_damage_30_2t,Effect
+m_Chance,1,
+buffs,buff_health_damage_30_2t,
+element_end
