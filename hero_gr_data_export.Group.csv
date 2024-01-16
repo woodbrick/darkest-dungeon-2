@@ -255,6 +255,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_shadow_fade_u,ActorDataEffects
 performer_effects,add_2_stealth,move_backward_2,stress_heal_2,
+target_effects,remove_all_combo_visible,
 element_end
 element_start,gr_shadow_fade_u,Unlock
 m_RequirementIds,gr_shadow_fade,
@@ -1154,6 +1155,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,gr_shadow_fade_p3_u,ActorDataEffects
 performer_effects,add_2_stealth,path_buff_grv_venomdrop_blight_chance_buff_e,move_backward_2,stress_heal_2,
+target_effects,remove_all_combo_visible,
 element_end
 element_start,gr_shadow_fade_p3_u,Unlock
 m_RequirementIds,gr_shadow_fade_p3,

@@ -180,7 +180,7 @@ m_buyCostId,trinket_tiered_sharpness_charm_minor_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_sharpness_charm_minor,ActorDataExternalBuffs
-buffs,trinket_tiered_minor_sharpness_charm_01,trinket_tiered_minor_sharpness_charm_02,
+buffs,trinket_health_damage_increase_10pct,trinket_speed_reduce_1,
 element_end
 element_start,trinket_tiered_sharpness_charm_minor_buy_cost,Cost
 m_ItemTag,faction,
@@ -385,7 +385,7 @@ m_buyCostId,trinket_tiered_sharpness_charm_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_sharpness_charm,ActorDataExternalBuffs
-buffs,trinket_tiered_sharpness_charm_01,trinket_tiered_sharpness_charm_02,
+buffs,trinket_health_damage_increase_20pct,trinket_speed_reduce_2,
 element_end
 element_start,trinket_tiered_sharpness_charm_buy_cost,Cost
 m_ItemTag,faction,
@@ -590,7 +590,7 @@ m_buyCostId,trinket_tiered_sharpness_charm_greater_buy_cost,
 m_DiscardGameScorePerQty,1,
 element_end
 element_start,trinket_tiered_sharpness_charm_greater,ActorDataExternalBuffs
-buffs,trinket_tiered_greater_sharpness_charm_01,
+buffs,trinket_health_damage_increase_30pct,trinket_speed_reduce_3,
 element_end
 element_start,trinket_tiered_sharpness_charm_greater_buy_cost,Cost
 m_ItemTag,faction,
