@@ -649,10 +649,10 @@ m_IsStallInvalidating,True,
 element_end
 element_start,cru_reap_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,1,0.1,
+add_stats,4,1,0.1,
 element_end
 element_start,cru_reap_p1,ActorDataEffects
-target_effects,cru_reap_heal_debuff_e,combo_dot_large_burn,no_combo_dot_small_burn,end_combo,
+target_effects,cru_reap_heal_debuff_e,combo_dot_large_burn,end_combo,
 element_end
 element_start,cru_reap_p1_u,ActorDataSkill
 m_IsFriendly,False,
@@ -670,10 +670,10 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,cru_reap_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,2,0.1,
+add_stats,6,2,0.1,
 element_end
 element_start,cru_reap_p1_u,ActorDataEffects
-target_effects,cru_reap_u_heal_debuff_e,combo_dot_massive_burn,no_combo_dot_medium_burn,end_combo,
+target_effects,cru_reap_u_heal_debuff_e,combo_dot_large_burn,end_combo,
 on_kill_as_performer_to_performer_effects,add_1_strength,
 element_end
 element_start,cru_reap_p1_u,Unlock
