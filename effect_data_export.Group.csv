@@ -2467,6 +2467,12 @@ m_TokenAddId,immobilize,
 m_TokenAddAmount,2,
 m_ShowValue,True,
 element_end
+element_start,add_2_immobilize_66pct,Effect
+m_Chance,0.66,
+m_TokenAddId,immobilize,
+m_TokenAddAmount,2,
+m_ShowValue,True,
+element_end
 element_start,add_2_random_pos_trinket_token,Effect
 m_Chance,1,
 m_TokenAddTag,pos_trinket_token,

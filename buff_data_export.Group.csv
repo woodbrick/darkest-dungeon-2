@@ -219,7 +219,7 @@ element_start,trinket_general_strange_sapper_01,Buff
 m_DurationType,infinite,
 element_end
 element_start,trinket_general_strange_sapper_01,ActorDataEffects
-on_hit_as_performer_to_target_effects,add_1_vulnerable_15pct,
+on_hit_as_performer_to_target_effects,add_1_vulnerable_50pct,
 element_end
 element_start,trinket_general_strange_sapper_02,Buff
 m_DurationType,infinite,
@@ -231,7 +231,7 @@ element_start,trinket_general_strong_shackles_01,Buff
 m_DurationType,infinite,
 element_end
 element_start,trinket_general_strong_shackles_01,ActorDataEffects
-on_hit_as_performer_to_target_effects,add_2_immobilize_33pct,
+on_hit_as_performer_to_target_effects,add_2_immobilize_66pct,
 element_end
 element_start,trinket_general_strong_shackles_02,Buff
 m_DurationType,infinite,
@@ -255,7 +255,7 @@ element_start,trinket_general_distracting_dust_01,Buff
 m_DurationType,infinite,
 element_end
 element_start,trinket_general_distracting_dust_01,ActorDataEffects
-on_hit_as_performer_to_target_effects,add_1_blind_15pct,
+on_hit_as_performer_to_target_effects,add_1_blind_50pct,
 element_end
 element_start,trinket_general_distracting_dust_02,Buff
 m_DurationType,infinite,
@@ -7250,7 +7250,7 @@ m_Tags,buff,
 element_end
 element_start,pet_croc_dmg_buff,ActorDataStats
 key_map,health_damage_dealt_percent,
-add_stats,0.03,
+add_stats,0.1,
 element_end
 element_start,pet_croc_spd_debuff,Buff
 m_DurationType,combat_end,
