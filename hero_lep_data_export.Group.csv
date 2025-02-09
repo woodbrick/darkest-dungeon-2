@@ -105,7 +105,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_chop,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,5,0.05,
+add_stats,7,5,0.05,
 element_end
 element_start,lep_chop,ActorDataEffects
 performer_effects,leper_self_blind_chance,
@@ -129,7 +129,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_chop_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,8,0.1,
+add_stats,8,7,0.1,
 element_end
 element_start,lep_chop_u,ActorDataEffects
 performer_effects,leper_self_blind_chance_u,
@@ -180,7 +180,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_hew_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,5,0.1,
+add_stats,4,5,0.2,
 element_end
 element_start,lep_hew_u,ActorDataEffects
 performer_effects,leper_self_blind_chance_u,
@@ -209,7 +209,7 @@ add_stats,3,2,0.1,
 element_end
 element_start,lep_purge,ActorDataEffects
 target_team_effects,clear_corpse,
-target_effects,move_knockback_3,
+target_effects,move_knockback_3,add_1_weak,
 element_end
 element_start,lep_purge_u,ActorDataSkill
 m_IsFriendly,False,
@@ -232,7 +232,7 @@ add_stats,4,2,0.1,
 element_end
 element_start,lep_purge_u,ActorDataEffects
 target_team_effects,clear_corpse,
-target_effects,move_knockback_3,prime_combo,
+target_effects,move_knockback_3,add_1_weak,prime_combo,
 element_end
 element_start,lep_purge_u,Unlock
 m_RequirementIds,lep_purge,
@@ -355,8 +355,9 @@ element_end
 element_start,lep_intimidate,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,
-target_ranks,1,2,3,4,
-m_IsMultiHit,False,
+target_ranks,1,2,3,
+m_IsMultiHit,True,
+m_Cooldown,2,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
@@ -376,8 +377,9 @@ element_end
 element_start,lep_intimidate_u,ActorDataSkill
 m_IsFriendly,False,
 launch_ranks,1,
-target_ranks,1,2,3,4,
-m_IsMultiHit,False,
+target_ranks,1,2,3,
+m_IsMultiHit,True,
+m_Cooldown,2,
 m_CanBeRiposted,True,
 m_AverageRankIgnored,False,
 m_ValidActOutTypes,skill_before,skill_after,skill_additional,
@@ -489,7 +491,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_break,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,3,0.1,
+add_stats,6,3,0.1,
 element_end
 element_start,lep_break,ActorDataEffects
 target_effects,remove_all_block_plus,remove_all_block,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
@@ -513,7 +515,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_break_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,6,6,0.2,
+add_stats,8,6,0.2,
 element_end
 element_start,lep_break_u,ActorDataEffects
 target_effects,remove_all_block_plus,remove_all_block,end_combo_if_blind,ignored_token_remove_1_block_plus,ignored_token_remove_1_block,
@@ -536,7 +538,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_stagger,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,2,0.1,
+add_stats,4,2,0.1,
 element_end
 element_start,lep_stagger,ActorDataEffects
 performer_effects,add_1_immobilize_nr,
@@ -560,7 +562,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_stagger_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,2,0.1,
+add_stats,6,2,0.2,
 element_end
 element_start,lep_stagger_u,ActorDataEffects
 performer_effects,add_1_immobilize_nr,

@@ -310,10 +310,10 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_finale_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,12,3,0.2,
+add_stats,12,5,0.2,
 element_end
 element_start,jes_finale_u,ActorDataEffects
-performer_effects,add_1_vulnerable_nr,add_1_daze_nr,move_backward_3,
+performer_effects,add_1_daze_nr,move_backward_3,
 target_effects,end_combo,
 element_end
 element_start,jes_finale_u,Unlock
@@ -545,7 +545,7 @@ key_map,
 add_stats,
 element_end
 element_start,jes_echoing_march,ActorDataEffects
-target_effects,move_pull_1,jes_echoing_march_pull_e,combo_add_1_stun,
+target_effects,move_pull_1,jes_echoing_march_pull_e,prime_combo,
 element_end
 element_start,jes_echoing_march,Unlock
 element_end
@@ -570,7 +570,7 @@ key_map,
 add_stats,
 element_end
 element_start,jes_echoing_march_u,ActorDataEffects
-target_effects,move_pull_2,jes_echoing_march_pull_u_e,no_combo_add_1_daze,combo_add_1_stun,end_combo,
+target_effects,move_pull_2,jes_echoing_march_pull_u_e,prime_combo,add_2_vulnerable,
 performer_effects,add_1_speed,
 element_end
 element_start,jes_echoing_march_u,Unlock
