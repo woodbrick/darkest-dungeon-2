@@ -1,0 +1,99 @@
+英雄: 赫利俄斯 (Hellion)
+改动总览: 全面增强，提升伤害和功能性
+
+基础属性改动:
+  - 生命值: 35 → 40 (+5)
+  - 速度: 4 → 5 (+1)
+
+技能改动:
+
+  - 技能: 邪恶斩击 (Wicked Hack)
+      - 目标范围: 1, 2,  → 2, 3, 
+      - 伤害: 4-4 → 5-4 (+1)
+
+  - 技能: 邪恶斩击升级 (Wicked Hack Upgrade)
+      - 目标范围: 1, 2,  → 2, 3, 
+      - 伤害: 6-4 → 7-4 (+1)
+
+  - 技能: 铁天鹅 (Iron Swan)
+      - 目标范围: 4,  → 3, 4, 
+      - 伤害: 4-4 → 5-4 (+1)
+      - 新增效果: 33% 预备连击
+
+  - 技能: 铁天鹅升级 (Iron Swan Upgrade)
+      - 目标范围: 4,  → 3, 4, 
+      - 伤害: 6-4 → 8-4 (+2)
+
+  - 技能: 野蛮嚎叫 (Barbaric Yawp)
+      - 新增效果: 添加 1 眩晕
+
+  - 技能: 野蛮嚎叫升级 (Barbaric Yawp Upgrade)
+      - 新增效果: 添加 1 眩晕
+
+  - 技能: hel_if_it_bleeds
+      - 伤害: 3-3 → 4-3 (+1)
+
+  - 技能: hel_if_it_bleeds_u
+      - 伤害: 3-3 → 5-3 (+2)
+
+  - 技能: 突破 (Breakthrough)
+      - 伤害: 3-3 → 4-3 (+1)
+
+  - 技能: 突破升级 (Breakthrough Upgrade)
+      - 伤害: 4-3 → 5-3 (+1)
+
+  - 技能: 放血 (Bleed Out)
+      - 目标范围: 1,  → 1, 2, 
+      - 伤害: 4-4 → 6-4 (+2)
+
+  - 技能: 放血升级 (Bleed Out Upgrade)
+      - 目标范围: 1,  → 1, 2, 
+      - 伤害: 6-3 → 7-3 (+1)
+
+  - 技能: hel_toe_to_toe
+      - 伤害: 2-2 → 3-2 (+1)
+
+  - 技能: hel_toe_to_toe_u
+      - 伤害: 3-2 → 4-2 (+1)
+
+  - 技能: hel_act_out_enemy
+      - 伤害: 3-3 → 4-3 (+1)
+
+  - 技能: hel_act_out_friendly
+      - 伤害: 3-3 → 4-3 (+1)
+
+  - 技能: hel_if_it_bleeds_p1
+      - 伤害: 3-3 → 4-3 (+1)
+
+  - 技能: hel_if_it_bleeds_p1_u
+      - 伤害: 3-3 → 5-3 (+2)
+
+  - 技能: hel_bleed_out_p1
+      - 伤害: 4-4 → 5-4 (+1)
+
+  - 技能: hel_bleed_out_p1_u
+      - 伤害: 6-3 → 7-3 (+1)
+
+  - 技能: hel_if_it_bleeds_p2
+      - 伤害: 3-3 → 4-3 (+1)
+
+  - 技能: hel_if_it_bleeds_p2_u
+      - 伤害: 3-3 → 4-3 (+1)
+
+  - 技能: hel_bleed_out_p2
+      - 目标范围: 1,  → 1, 2, 
+
+  - 技能: hel_bleed_out_p2_u
+      - 目标范围: 1,  → 1, 2, 
+
+  - 技能: hel_wicked_hack_p3
+      - 目标范围: 1, 2,  → 2, 3, 
+
+  - 技能: hel_wicked_hack_p3_u
+      - 目标范围: 1, 2,  → 2, 3, 
+
+  - 技能: hel_barbaric_yawp_p3
+      - 新增效果: add_2_weak, 添加 1 眩晕
+
+  - 技能: hel_barbaric_yawp_p3_u
+      - 新增效果: 添加 1 眩晕
