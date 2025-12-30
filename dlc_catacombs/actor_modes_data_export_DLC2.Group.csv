@@ -1,0 +1,5 @@
+element_start,abm_mode_human,ActorDataMode
+element_end
+element_start,abm_mode_beast,ActorDataMode
+m_BarkOverrideKey,bark_abomination_beast,
+element_end

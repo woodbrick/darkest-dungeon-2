@@ -1,0 +1,16 @@
+element_start,tutorial,Rules
+m_academicViewCombatLimit,2,
+m_academicViewRoundLimit,2,
+m_affinityTutorialLimit,3,
+m_doomTutorialLimit,1,
+m_doomMaxTutorialLimit,4,
+m_drivingHealingPercentLimit,0.75,
+m_drivingInfoViewLimit,2,
+m_innIntroLimit,2,
+m_inventoryFullPercentLimit,0.9,
+m_stressTutorialLimit,5,
+m_torchBasicsTutorialLimit,60,
+m_lowTorchTutorialLimit,35,
+m_noTorchTutorialLimit,0,
+m_trophiesTutorialBiomeEnterLimit,3,
+element_end

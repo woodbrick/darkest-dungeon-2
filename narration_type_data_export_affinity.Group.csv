@@ -1,0 +1,6 @@
+element_start,affinity_leaning_change,NarrationType
+m_chance,0.1,
+element_end
+element_start,relationship_test,NarrationType
+m_chance,1,
+element_end

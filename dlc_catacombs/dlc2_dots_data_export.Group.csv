@@ -1,0 +1,7 @@
+element_start,abm_1_blight_dot,Dot
+m_Type,blight,
+m_Tags,blight,dot,
+m_DurationAmount,4,
+m_DurationType,performer_turn_start,
+effects,health_damage_2,
+element_end

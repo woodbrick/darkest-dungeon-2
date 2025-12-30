@@ -1,0 +1,12 @@
+element_start,roadevent_catacombs_pickup_01,RoadEvent
+m_RoadEventCategory,Objects,
+m_Chance,1,
+element_end
+element_start,roadevent_catacombs_pickup_02,RoadEvent
+m_RoadEventCategory,Objects,
+m_Chance,1,
+element_end
+element_start,roadevent_catacombs_pickup_03,RoadEvent
+m_RoadEventCategory,Objects,
+m_Chance,1,
+element_end

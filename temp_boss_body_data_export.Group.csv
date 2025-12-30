@@ -1,0 +1,10 @@
+element_start,invert_all_tokens,Effect
+m_Chance,1,
+m_TokenInvertIds,strength,weak,block,block_plus,vulnerable,dodge,dodge_plus,blind,speed,daze,stealth,taunt,crit,
+m_TokenInvertAmount,99,
+element_end
+element_start,invert_all_positive_tokens,Effect
+m_Chance,1,
+m_TokenInvertIds,strength,block,block_plus,dodge,dodge_plus,speed,stealth,crit,
+m_TokenInvertAmount,99,
+element_end

@@ -1,0 +1,12 @@
+element_start,kingdom_escalation_0,TorchLevelGroup
+torch_levels,beastmen_hero_76-100,beastmen_hero_51-75,beastmen_hero_26-50,beastmen_hero_1-25,beastmen_hero_0,beastmen_monster_76-100,beastmen_monster_51-75,beastmen_monster_26-50,beastmen_monster_1-25,beastmen_monster_0,
+element_end
+element_start,beastmen_escalation_1,TorchLevelGroup
+torch_levels,beastmen_hero_76-100,beastmen_hero_51-75,beastmen_hero_26-50,beastmen_hero_1-25,beastmen_hero_0,beastmen_monster_76-100,beastmen_monster_51-75,beastmen_monster_26-50,beastmen_monster_1-25,beastmen_monster_0,
+element_end
+element_start,beastmen_escalation_2,TorchLevelGroup
+torch_levels,beastmen_hero_76-100,beastmen_hero_51-75,beastmen_hero_26-50,beastmen_hero_1-25,beastmen_hero_0,beastmen_monster_76-100,beastmen_monster_51-75,beastmen_monster_26-50,beastmen_monster_1-25,beastmen_monster_0,
+element_end
+element_start,beastmen_escalation_3,TorchLevelGroup
+torch_levels,beastmen_hero_76-100,beastmen_hero_51-75,beastmen_hero_26-50,beastmen_hero_1-25,beastmen_hero_0,beastmen_monster_76-100,beastmen_monster_51-75,beastmen_monster_26-50,beastmen_monster_1-25,beastmen_monster_0,
+element_end

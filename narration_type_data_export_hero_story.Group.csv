@@ -1,0 +1,15 @@
+element_start,hero_story_failure,NarrationType
+m_chance,1,
+element_end
+element_start,hero_story_fight_reward,NarrationType
+m_chance,1,
+element_end
+element_start,hero_story_fight_start,NarrationType
+m_chance,1,
+element_end
+element_start,hero_story_slam,NarrationType
+m_chance,1,
+element_end
+element_start,hero_story_text,NarrationType
+m_chance,1,
+element_end

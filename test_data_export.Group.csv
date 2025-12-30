@@ -1,0 +1,13 @@
+element_start,skill_courageous_abandon_u_equipped,Condition
+m_ConditionType,skill_equipped,
+m_ConditionActorType,PERFORMER,
+m_ConditionString,maa_courageous_abandon_u,
+m_ConditionNumberType,BOOL,
+element_end
+element_start,skill_3_melee_equipped,Condition
+m_ConditionType,skill_equipped_tag,
+m_ConditionActorType,PERFORMER,
+m_ConditionString,melee,
+m_ConditionNumberType,EQUAL,
+m_ConditionNumber,3,
+element_end

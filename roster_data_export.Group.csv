@@ -1,0 +1,15 @@
+element_start,is_hire_replaced,Condition
+m_ConditionType,roster_status,
+m_ConditionNumberType,BOOL,
+m_ConditionString,hire_replaced,
+element_end
+element_start,hire_replaced_heal,Effect
+m_Chance,1,
+all_conditions,is_hire_replaced,
+m_HealthHealPercent,1,
+element_end
+element_start,hire_replaced_stress_heal,Effect
+m_Chance,1,
+all_conditions,is_hire_replaced,
+m_StressHeal,3,
+element_end

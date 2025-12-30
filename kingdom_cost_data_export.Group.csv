@@ -1,0 +1,12 @@
+element_start,kingdom_inn_change_actor_data_path,Cost
+m_ItemId,gold,
+m_ItemQty,24,
+element_end
+element_start,kingdom_inn_change_actor_data_path_discount_1,Cost
+m_ItemId,gold,
+m_ItemQty,24,
+element_end
+element_start,kingdom_inn_change_actor_data_path_discount_2,Cost
+m_ItemId,gold,
+m_ItemQty,16,
+element_end

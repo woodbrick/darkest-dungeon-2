@@ -1,0 +1,9 @@
+element_start,kingdom_title_factions,NarrationType
+m_chance,1,
+element_end
+element_start,kingdom_title_select_faction,NarrationType
+m_chance,1,
+element_end
+element_start,kingdom_title_quest,NarrationType
+m_chance,1,
+element_end

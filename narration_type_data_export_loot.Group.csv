@@ -1,0 +1,11 @@
+element_start,loot_inventory_full,NarrationType
+m_chance,0.5,
+m_occurrenceTypes,inn,node,
+m_maxOccurrences,1,1,
+element_end
+element_start,loot_open,NarrationType
+m_chance,0.5,
+element_end
+element_start,loot_open_unique,NarrationType
+m_chance,1,
+element_end

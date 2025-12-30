@@ -1,0 +1,6 @@
+element_start,story,Rules
+harmonious_effects,affinity_1_100pct_nocrit,
+harmonious_relationship_effects,affinity_1_100pct_nocrit,
+disharmonious_effects,affinity_neg2_100pct_nocrit,
+disharmonious_relationship_effects,affinity_neg2_100pct_nocrit,
+element_end

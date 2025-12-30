@@ -1,0 +1,8 @@
+element_start,test_rapid_iteration_condition,Condition
+m_ConditionType,token_amount,
+m_ConditionActorType,TARGET,
+m_ConditionString,crit,
+m_IsVisible,False,
+m_ConditionNumber,0,
+m_ConditionNumberType,EQUAL,
+element_end

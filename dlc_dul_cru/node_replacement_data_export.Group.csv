@@ -1,0 +1,10 @@
+element_start,quest_trophy_crusader_helmet_b,DataNodeReplacements
+node_replacements,guardian_to_warlord,
+element_end
+element_start,guardian_to_warlord,NodeReplacement
+m_FromNodeType,Guardian,
+m_ToNodeType,Warlord,
+m_NodeExitBarkOverrideNodeTypes,Gate,
+m_NodeExitBarkPreferredActorDataIds,highwayman,
+m_IsVisible,False,
+element_end

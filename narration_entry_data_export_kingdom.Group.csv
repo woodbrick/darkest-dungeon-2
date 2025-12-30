@@ -1,0 +1,15 @@
+element_start,kingdom_title_factions_menu_01,NarrationEntry
+m_type,kingdom_title_factions,
+m_audioEventId,event:/vo/kingdoms/general/faction_menu,
+element_end
+element_start,kingdom_title_select_faction_beastmen_01,NarrationEntry
+m_type,kingdom_title_select_faction,
+m_audioEventId,event:/vo/kingdoms/general/select_beast,
+m_allTags,beastmen,
+element_end
+element_start,kingdom_title_quest_beastmen_01,NarrationEntry
+m_type,kingdom_title_quest,
+m_audioEventId,event:/vo/kingdoms/general/start_beast,
+m_guaranteeType,always,
+m_allTags,beastmen,
+element_end

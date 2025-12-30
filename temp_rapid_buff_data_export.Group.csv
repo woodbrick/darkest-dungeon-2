@@ -1,0 +1,9 @@
+element_start,test_rapid_iteration_placeholder,Buff
+m_DurationType,skill_calculate,
+m_DurationAmount,1,
+m_ConditionId,always_return_false_hidden,
+element_end
+element_start,test_rapid_iteration_placeholder,ActorDataStats
+key_map,crit_chance,
+add_stats,0,
+element_end

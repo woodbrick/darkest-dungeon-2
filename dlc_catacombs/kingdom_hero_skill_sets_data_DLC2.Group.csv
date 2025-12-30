@@ -1,0 +1,16 @@
+element_start,abm_default_skill_kit_1,SkillSet
+m_IsDefault,True,
+skills,abm_transform,abm_revert,abm_manacles,abm_cuff,abm_absolution,abm_rake,abm_rage,
+element_end
+element_start,abm_skill_kit_1,SkillSet
+skills,abm_transform,abm_revert,abm_manacles,abm_beasts_bile,abm_rake,abm_slam,
+element_end
+element_start,abm_skill_kit_2,SkillSet
+skills,abm_transform,abm_revert,abm_manacles,abm_spit,abm_rage,abm_howl,
+element_end
+element_start,abm_skill_kit_3,SkillSet
+skills,abm_transform,abm_revert,abm_cuff,abm_beasts_bile,abm_rake,abm_howl,
+element_end
+element_start,abm_skill_kit_4,SkillSet
+skills,abm_transform,abm_revert,abm_cuff,abm_spit,abm_rage,abm_slam,
+element_end

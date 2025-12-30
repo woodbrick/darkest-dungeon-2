@@ -1,0 +1,15 @@
+element_start,default,InnTable
+m_chances,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+m_ids,default,goodquirk,badquirk,quirkcentral,superheal,stressheal,trinketshop,scupgradeshop,supplyshop,antipillager,antigaunt,anticultist,scoutbuff,helpscouted,mysteryscouted,fightscouted,stressfulrest,freestuff,thegoodplace,thebadplace,upgradecity,critcity,behealedchild,
+m_types,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,inn,
+element_end
+element_start,valley_intro,InnTable
+m_chances,1,
+m_ids,valley_intro,
+m_types,inn,
+element_end
+element_start,valley,InnTable
+m_chances,1,
+m_ids,valley,
+m_types,inn,
+element_end

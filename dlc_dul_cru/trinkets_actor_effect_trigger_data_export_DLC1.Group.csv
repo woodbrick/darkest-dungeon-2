@@ -1,0 +1,14 @@
+element_start,warlord_death_quirk,ActorEffectTrigger
+m_ActorEffectType,death,
+m_ActorEffectTriggerTargetType,enemy_team,
+m_ActorEffectTriggerSourceType,target,
+m_IncludeSourceActor,False,
+m_ActorCount,4,
+effects,add_1_quirk_warlord,
+element_end
+element_start,add_1_quirk_warlord,Effect
+m_Chance,1,
+m_QuirkAddTag,military,
+m_QuirkAddAmount,1,
+m_QuirkAddAmountRange,0,
+element_end

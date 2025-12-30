@@ -1,0 +1,11 @@
+element_start,tutorial,RunGoalCategory
+element_end
+element_start,easy,RunGoalCategory
+m_PrerequisiteRunGoalCategoryId,tutorial,
+element_end
+element_start,medium,RunGoalCategory
+m_PrerequisiteRunGoalCategoryId,tutorial,
+element_end
+element_start,hard,RunGoalCategory
+m_PrerequisiteRunGoalCategoryId,tutorial,
+element_end

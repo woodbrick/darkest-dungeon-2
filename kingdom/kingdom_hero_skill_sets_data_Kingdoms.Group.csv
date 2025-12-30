@@ -1,0 +1,12 @@
+element_start,bh_skill_kit_1,SkillSet
+skills,bh_collect_bounty,bh_mark_for_death,bh_come_hither,bh_flashbang,bh_staredown,
+element_end
+element_start,bh_skill_kit_2,SkillSet
+skills,bh_collect_bounty,bh_mark_for_death,bh_come_hither,bh_caltrops,bh_bodyguard,
+element_end
+element_start,bh_skill_kit_3,SkillSet
+skills,bh_collect_bounty,bh_mark_for_death,bh_uppercut,bh_flashbang,bh_bodyguard,
+element_end
+element_start,bh_skill_kit_4,SkillSet
+skills,bh_collect_bounty,bh_mark_for_death,bh_uppercut,bh_caltrops,bh_staredown,
+element_end

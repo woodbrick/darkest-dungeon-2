@@ -1,0 +1,10 @@
+element_start,affinity,Rules
+m_LeaningStart,10,
+m_LeaningStartReserve,10,
+m_LeaningMin,0,
+m_LeaningMax,20,
+m_LeaningDurationCompleteChangeToStart,3,
+m_StressPercentageThresholds,0,0.33,0.67,
+m_SkillModifierChanceBase,6,
+m_SkillModifierChancePerSkillUse,1,
+element_end
