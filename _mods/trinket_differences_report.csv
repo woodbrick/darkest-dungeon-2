@@ -1,0 +1,90 @@
+Comparison Report: Trinket Data Files Differences
+Generated Date: 2025-12-30
+External File: F:\Darkest Dungeon II\Darkest Dungeon II_Data\StreamingAssets\Excel\trinkets_data_export.Group.csv
+Internal File: g:\Darkest Dungeon II\Darkest Dungeon II_Data\StreamingAssets\Excel\trinkets_data_export.Group.csv
+
+,Difference Type,File Name,Line Number,Item/Trinket Name,External Value,Internal Value,Description
+
+1,Missing Property,trinkets_data_export.Group.csv,9-217,multiple trinkets,missing,exists,External file missing m_sellCostId for all items
+2,Cost Value,trinkets_data_export.Group.csv,17,multiple trinkets,m_ItemQty: 10,m_ItemQty: 5,Minor tiered trinket cost (5 vs 10)
+3,Cost Value,trinkets_data_export.Group.csv,35,multiple trinkets,m_ItemQty: 10,m_ItemQty: 5,Minor tiered trinket cost (5 vs 10)
+4,Cost Value,trinkets_data_export.Group.csv,53,multiple trinkets,m_ItemQty: 10,m_ItemQty: 5,Minor tiered trinket cost (5 vs 10)
+5,Cost Value,trinkets_data_export.Group.csv,71,multiple trinkets,m_ItemQty: 10,m_ItemQty: 5,Minor tiered trinket cost (5 vs 10)
+6,Cost Value,trinkets_data_export.Group.csv,89,multiple trinkets,m_ItemQty: 10,m_ItemQty: 5,Minor tiered trinket cost (5 vs 10)
+7,Cost Value,trinkets_data_export.Group.csv,107,multiple trinkets,m_ItemQty: 10,m_ItemQty: 5,Minor tiered trinket cost (5 vs 10)
+8,Cost Value,trinkets_data_export.Group.csv,125,multiple trinkets,m_ItemQty: 10,m_ItemQty: 5,Minor tiered trinket cost (5 vs 10)
+9,Cost Value,trinkets_data_export.Group.csv,143,multiple trinkets,m_ItemQty: 10,m_ItemQty: 5,Minor tiered trinket cost (5 vs 10)
+10,Cost Value,trinkets_data_export.Group.csv,161,multiple trinkets,m_ItemQty: 10,m_ItemQty: 5,Minor tiered trinket cost (5 vs 10)
+11,Cost Value,trinkets_data_export.Group.csv,196,multiple trinkets,m_ItemQty: 10,m_ItemQty: 5,Minor tiered trinket cost (5 vs 10)
+12,Cost Value,trinkets_data_export.Group.csv,213,multiple trinkets,m_ItemQty: 10,m_ItemQty: 5,Minor tiered trinket cost (5 vs 10)
+13,Cost Value,trinkets_data_export.Group.csv,233,multiple trinkets,m_ItemQty: 20,m_ItemQty: 20,Rare tiered trinket cost (consistent)
+14,Cost Value,trinkets_data_export.Group.csv,253,multiple trinkets,m_ItemQty: 20,m_ItemQty: 20,Rare tiered trinket cost (consistent)
+15,Cost Value,trinkets_data_export.Group.csv,271,multiple trinkets,m_ItemQty: 20,m_ItemQty: 20,Rare tiered trinket cost (consistent)
+16,Cost Value,trinkets_data_export.Group.csv,289,multiple trinkets,m_ItemQty: 20,m_ItemQty: 20,Rare tiered trinket cost (consistent)
+17,Cost Value,trinkets_data_export.Group.csv,307,multiple trinkets,m_ItemQty: 20,m_ItemQty: 20,Rare tiered trinket cost (consistent)
+18,Cost Value,trinkets_data_export.Group.csv,325,multiple trinkets,m_ItemQty: 20,m_ItemQty: 20,Rare tiered trinket cost (consistent)
+19,Cost Value,trinkets_data_export.Group.csv,343,multiple trinkets,m_ItemQty: 20,m_ItemQty: 20,Rare tiered trinket cost (consistent)
+20,Cost Value,trinkets_data_export.Group.csv,379,multiple trinkets,m_ItemQty: 20,m_ItemQty: 20,Rare tiered trinket cost (consistent)
+21,Cost Value,trinkets_data_export.Group.csv,397,multiple trinkets,m_ItemQty: 20,m_ItemQty: 20,Rare tiered trinket cost (consistent)
+22,Cost Value,trinkets_data_export.Group.csv,415,multiple trinkets,m_ItemQty: 20,m_ItemQty: 20,Rare tiered trinket cost (consistent)
+23,Cost Value,trinkets_data_export.Group.csv,433,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+24,Cost Value,trinkets_data_export.Group.csv,451,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+25,Cost Value,trinkets_data_export.Group.csv,469,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+26,Cost Value,trinkets_data_export.Group.csv,487,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+27,Cost Value,trinkets_data_export.Group.csv,505,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+28,Cost Value,trinkets_data_export.Group.csv,523,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+29,Cost Value,trinkets_data_export.Group.csv,541,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+30,Cost Value,trinkets_data_export.Group.csv,559,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+31,Cost Value,trinkets_data_export.Group.csv,577,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+32,Cost Value,trinkets_data_export.Group.csv,596,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+33,Cost Value,trinkets_data_export.Group.csv,614,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+34,Cost Value,trinkets_data_export.Group.csv,632,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+35,Cost Value,trinkets_data_export.Group.csv,650,multiple trinkets,m_ItemQty: 50,m_ItemQty: 65,Epic tiered trinket cost (65 vs 50)
+36,Cost Value,trinkets_data_export.Group.csv,979,multiple trinkets,m_ItemQty: 65,m_ItemQty: 65,Epic trinket cost (consistent)
+37,Cost Value,trinkets_data_export.Group.csv,998,multiple trinkets,m_ItemQty: 65,m_ItemQty: 65,Epic trinket cost (consistent)
+38,Cost Value,trinkets_data_export.Group.csv,1017,multiple trinkets,m_ItemQty: 65,m_ItemQty: 65,Epic trinket cost (consistent)
+39,Cost Value,trinkets_data_export.Group.csv,1034,multiple trinkets,m_ItemQty: 65,m_ItemQty: 65,Epic trinket cost (consistent)
+40,Cost Value,trinkets_data_export.Group.csv,1053,multiple trinkets,m_ItemQty: 65,m_ItemQty: 65,Epic trinket cost (consistent)
+41,Cost Value,trinkets_data_export.Group.csv,1071,multiple trinkets,m_ItemQty: 65,m_ItemQty: 65,Epic trinket cost (consistent)
+42,Cost Value,trinkets_data_export.Group.csv,1091,multiple trinkets,m_ItemQty: 30,m_ItemQty: 30,Rare trinket cost (consistent)
+43,Cost Value,trinkets_data_export.Group.csv,1110,multiple trinkets,m_ItemQty: 30,m_ItemQty: 30,Rare trinket cost (consistent)
+44,Cost Value,trinkets_data_export.Group.csv,1127,multiple trinkets,m_ItemQty: 30,m_ItemQty: 30,Rare trinket cost (consistent)
+45,Cost Value,trinkets_data_export.Group.csv,1146,multiple trinkets,m_ItemQty: 30,m_ItemQty: 30,Rare trinket cost (consistent)
+46,Cost Value,trinkets_data_export.Group.csv,1164,multiple trinkets,m_ItemQty: 30,m_ItemQty: 30,Rare trinket cost (consistent)
+47,Cost Value,trinkets_data_export.Group.csv,1183,multiple trinkets,m_ItemQty: 65,m_ItemQty: 65,Epic trinket cost (consistent)
+48,Cost Value,trinkets_data_export.Group.csv,1202,multiple trinkets,m_ItemQty: 65,m_ItemQty: 65,Epic trinket cost (consistent)
+49,Cost Value,trinkets_data_export.Group.csv,1221,multiple trinkets,m_ItemQty: 100,m_ItemQty: 100,Boss trinket cost (consistent)
+50,Cost Value,trinkets_data_export.Group.csv,1240,multiple trinkets,m_ItemQty: 100,m_ItemQty: 100,Boss trinket cost (consistent)
+51,Cost Value,trinkets_data_export.Group.csv,1258,multiple trinkets,m_ItemQty: 30,m_ItemQty: 30,Rare trinket cost (consistent)
+52,Cost Value,trinkets_data_export.Group.csv,1276,multiple trinkets,m_ItemQty: 30,m_ItemQty: 30,Rare trinket cost (consistent)
+53,Cost Value,trinkets_data_export.Group.csv,1293,multiple trinkets,m_ItemQty: 30,m_ItemQty: 30,Rare trinket cost (consistent)
+54,Cost Value,trinkets_data_export.Group.csv,1313,multiple trinkets,m_ItemQty: 30,m_ItemQty: 30,Rare trinket cost (consistent)
+55,Cost Value,trinkets_data_export.Group.csv,1332,multiple trinkets,m_ItemQty: 30,m_ItemQty: 30,Rare trinket cost (consistent)
+56,Cost Value,trinkets_data_export.Group.csv,1350,multiple trinkets,m_ItemQty: 65,m_ItemQty: 65,Epic trinket cost (consistent)
+57,Cost Value,trinkets_data_export.Group.csv,1368,multiple trinkets,m_ItemQty: 65,m_ItemQty: 65,Epic trinket cost (consistent)
+58,Cost Value,trinkets_data_export.Group.csv,1386,multiple trinkets,m_ItemQty: 100,m_ItemQty: 100,Boss trinket cost (consistent)
+59,Cost Value,trinkets_data_export.Group.csv,1405,multiple trinkets,m_ItemQty: 100,m_ItemQty: 100,Boss trinket cost (consistent)
+60,Buff Name,trinkets_data_export.Group.csv,13,multiple trinkets,trinket_tiered_minor_anchoring_charm_01,trinket_anchoring_charm_01,Minor tiered trinket buff name difference
+61,Buff Name,trinkets_data_export.Group.csv,32,multiple trinkets,trinket_tiered_minor_bouncers_belt_01,trinket_bouncers_belt_01,Minor tiered trinket buff name difference
+62,Buff Name,trinkets_data_export.Group.csv,50,multiple trinkets,trinket_tiered_minor_cleansing_censer_01,trinket_cleansing_censer_01,Minor tiered trinket buff name difference
+63,Buff Name,trinkets_data_export.Group.csv,68,multiple trinkets,trinket_tiered_minor_clotting_cruor_01,trinket_clotting_cruor_01,Minor tiered trinket buff name difference
+64,Buff Name,trinkets_data_export.Group.csv,86,multiple trinkets,trinket_tiered_minor_gilded_mind_01,trinket_gilded_mind_01,Minor tiered trinket buff name difference
+65,Buff Name,trinkets_data_export.Group.csv,104,multiple trinkets,trinket_tiered_minor_hale_draught_01,trinket_hale_draught_01,Minor tiered trinket buff name difference
+66,Buff Name,trinkets_data_export.Group.csv,122,multiple trinkets,trinket_tiered_minor_heartseeker_01,trinket_heartseeker_01,Minor tiered trinket buff name difference
+67,Buff Name,trinkets_data_export.Group.csv,140,multiple trinkets,trinket_tiered_minor_heat_shield_01,trinket_heat_shield_01,Minor tiered trinket buff name difference
+68,Buff Name,trinkets_data_export.Group.csv,158,multiple trinkets,trinket_tiered_minor_protectorate_01,trinket_protectorate_01,Minor tiered trinket buff name difference
+69,Buff Name,trinkets_data_export.Group.csv,176,multiple trinkets,trinket_tiered_minor_sacrificial_host_01,trinket_sacrificial_host_01,Minor tiered trinket buff name difference
+70,Buff Name,trinkets_data_export.Group.csv,194,multiple trinkets,trinket_tiered_minor_sharpness_charm_01,trinket_sharpness_charm_01,Minor tiered trinket buff name difference
+71,Buff Name,trinkets_data_export.Group.csv,212,multiple trinkets,trinket_tiered_minor_wolfsblood_01,trinket_wolfsblood_01,Minor tiered trinket buff name difference
+72,Buff Count,trinkets_data_export.Group.csv,13,multiple trinkets,3 buffs,2 buffs,External has one additional buff for minor trinkets
+73,Buff Count,trinkets_data_export.Group.csv,32,multiple trinkets,2 buffs,2 buffs,Consistent
+74,Buff Count,trinkets_data_export.Group.csv,50,multiple trinkets,3 buffs,2 buffs,External has one additional buff for minor trinkets
+75,Buff Count,trinkets_data_export.Group.csv,68,multiple trinkets,2 buffs,2 buffs,Consistent
+76,Buff Count,trinkets_data_export.Group.csv,86,multiple trinkets,3 buffs,2 buffs,External has one additional buff for minor trinkets
+77,Buff Count,trinkets_data_export.Group.csv,104,multiple trinkets,2 buffs,2 buffs,Consistent
+78,Buff Count,trinkets_data_export.Group.csv,122,multiple trinkets,2 buffs,2 buffs,Consistent
+79,Buff Count,trinkets_data_export.Group.csv,140,multiple trinkets,2 buffs,2 buffs,Consistent
+80,Buff Count,trinkets_data_export.Group.csv,158,multiple trinkets,2 buffs,2 buffs,Consistent
+81,Buff Count,trinkets_data_export.Group.csv,176,multiple trinkets,2 buffs,2 buffs,Consistent
+82,Buff Count,trinkets_data_export.Group.csv,194,multiple trinkets,2 buffs,2 buffs,Consistent
+83,Buff Count,trinkets_data_export.Group.csv,212,multiple trinkets,2 buffs,2 buffs,Consistent
