@@ -5,6 +5,15 @@
 
 **工作目录**: `_mods/`
 
+**工作规则**:
+- 禁止创建新文件，除非用户明确要求
+- 优先编辑现有文件
+- 数据输出到控制台或现有文档
+- 输出文档严格按MECE原则：相互独立、完全穷尽
+- 禁止重复内容
+- 语言极度凝练
+- 禁止示例
+
 ## 子代理
 
 ### 调研代理 (game-mechanics-researcher)
@@ -15,7 +24,10 @@
 | 整理效果 | 效果标记与DU价值 |
 | 调研饰品 | 属性修正与触发条件 |
 
-**核心文档**: [hero_file_rules.md](_mods/hero_file_rules.md) | [available_effects.md](_mods/available_effects.md) | [file_mapping.md](_mods/file_mapping.md)
+**核心文档**: 
+[hero_file_rules.md](_mods/hero_file_rules.md)
+[available_effects.md](_mods/available_effects.md) 
+[file_mapping.md](_mods/file_mapping.md)
 
 ### 实施代理 (implementation-agent)
 | 步骤 | 操作 |
