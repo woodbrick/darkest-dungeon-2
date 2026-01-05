@@ -47,8 +47,8 @@
 #### 路径3技能 (濒死爆发)
 | 技能 | 伤害价值 | 可用位置 | 打击位置 | 效果列表 | 总DU |
 |------|----------|----------|----------|----------|-------|
-| abm_howl_p3 | 0 | 1,2,3,4 | 2,3,4 | 偷取标记 目标压力4 | -5 |
-| abm_howl_p3_u | 0 | 1,2,3,4 | 2,3,4 | 偷取标记 目标压力4 | -5 |
+| abm_howl_p3 | 0 | 1,2,3,4 | 2,3,4 | 复制所有标记 自我压力4 | 4 |
+| abm_howl_p3_u | 0 | 1,2,3,4 | 2,3,4 | 偷取1标记 自我压力4 | 1 |
 | abm_rake_p3 | 4 | 1,2 | 1,2 | 压力治疗1 | 5 |
 | abm_rake_p3_u | 4 | 1,2 | 1,2 | 压力治疗1 | 5 |
 | abm_rage_p3 | 3 | 1,2 | 1,2,3 | 嘲讽 压力治疗2 | 8 |
@@ -176,21 +176,27 @@
 
 ## 3. 技能改进列表
 
+**设计原则**：用特殊效果替代纯伤害数值，增强游戏性
+
 ### 3.1 基础技能改进
 
 | 技能 | 当前DU | 修改方案 | 修改后DU | 提升 |
 |------|--------|----------|----------|------|
-| abm_rake | 2 | 伤害4→8(+4) | 6 | +4 |
-| abm_rake_u | 5 | 伤害4→9(+5), +combo_crit_100pct(+5) | 15 | +10 |
-| abm_rage | 4 | 伤害6→8(+2), 移除压力1(+2) | 8 | +4 |
-| abm_slam | 7.5 | 不修改 (已可接受) | 7.5 | 0 |
+| abm_rake | 2 | +skill_small_bleed_dot(2), 移除压力1(2) | 6 | +4 |
+| abm_rake_u | 5 | +skill_medium_bleed_dot(3.5), 移除压力1(2) | 10.5 | +5.5 |
+| abm_rage | 4 | 移除压力1(2), +add_1_vulnerable(3) | 9 | +5 |
+| abm_slam | 7.5 | 不修改 | 7.5 | 0 |
 
-**修改文件**：`dlc_catacombs/hero_abm_data_export.Group.csv`
+**修改效果说明**：
+- **abm_rake**：添加流血小DoT (总伤害6)，移除自我压力
+- **abm_rake_u**：流血中DoT (总伤害9)，升级版更强
+- **abm_rage**：移除自我压力，给敌人脆弱标记（配合下次攻击）
 
 **修改字段**：
-- `abm_rake/rake_u`: `key_map,health_damage,health_damage_range`
+- `abm_rake/rake_u`: `target_effects` (新增 skill_small_bleed_dot / skill_medium_bleed_dot)
+- `abm_rake/rake_u`: `performer_after_target_effects` (移除 stress_damage_1)
 - `abm_rage`: `performer_after_target_effects` (移除 stress_damage_1)
-- `abm_rake_u`: `performer_buffs` (combo_crit_50pct → combo_crit_100pct)
+- `abm_rage`: `target_effects` (新增 add_1_vulnerable)
 
 ---
 
@@ -198,14 +204,20 @@
 
 | 技能 | 当前DU | 修改方案 | 修改后DU | 提升 |
 |------|--------|----------|----------|------|
-| abm_howl_p1 | 3 | 伤害1→6(+5) | 8 | +5 |
-| abm_howl_p1_u | 12 | 不修改 (已优秀) | 12 | 0 |
-| abm_rake_p1 | 2 | 伤害4→8(+4) | 6 | +4 |
-| abm_rake_p1_u | 5 | 伤害4→9(+5) | 10 | +5 |
+| abm_howl_p1 | 3 | +prime_combo(3), 移除压力1(2) | 6 | +3 |
+| abm_howl_p1_u | 12 | 不修改 | 12 | 0 |
+| abm_rake_p1 | 2 | +combo_crit_50pct(3), 移除压力1(2) | 7 | +5 |
+| abm_rake_p1_u | 5 | +combo_crit_100pct(5), 移除压力1(2) | 12 | +7 |
+
+**修改效果说明**：
+- **abm_howl_p1**：添加连击准备，配合锁链技能
+- **abm_rake_p1**：对连击标记高暴击，路径1核心输出
 
 **修改字段**：
-- `abm_howl_p1`: `key_map,health_damage,health_damage_range`
-- `abm_rake_p1/rake_p1_u`: `key_map,health_damage,health_damage_range`
+- `abm_howl_p1`: `target_effects` (新增 prime_combo)
+- `abm_howl_p1`: `performer_after_target_effects` (移除 stress_damage_1)
+- `abm_rake_p1/p1_u`: `performer_buffs` (新增 combo_crit_50pct / combo_crit_100pct)
+- `abm_rake_p1/p1_u`: `performer_after_target_effects` (移除 stress_damage_1)
 
 ---
 
@@ -213,15 +225,21 @@
 
 | 技能 | 当前DU | 修改方案 | 修改后DU | 提升 |
 |------|--------|----------|----------|------|
-| abm_howl_p2 | -1 | 移除压力1, 改为压力治疗1 | 5 | +6 |
-| abm_howl_p2_u | 0.5 | 移除压力1, 伤害2→5(+3) | 8.5 | +8 |
-| abm_rake_p2 | 3 | 伤害4→8(+4) | 7 | +4 |
-| abm_rake_p2_u | 4 | 伤害5→9(+4) | 9 | +5 |
+| abm_howl_p2 | -1 | 移除压力1(2), 改压力治疗1(1) | 2 | +3 |
+| abm_howl_p2_u | 0.5 | 移除压力1(2), +heal_hot_medium(5) | 5.5 | +5 |
+| abm_rake_p2 | 3 | +skill_medium_bleed_dot(3.5), 移除压力1(2) | 8.5 | +5.5 |
+| abm_rake_p2_u | 4 | +skill_large_bleed_dot(5), 移除压力1(2) | 11 | +7 |
+
+**修改效果说明**：
+- **abm_howl_p2**：移除负面压力，改为压力治疗
+- **abm_howl_p2_u**：添加持续治疗HOT，每回合回复3点
+- **abm_rake_p2**：流血DoT增强 (总伤害9)，配合反击持续输出
 
 **修改字段**：
-- `abm_howl_p2/p2_u`: `performer_after_target_effects` (移除 stress_damage_1)
-- `abm_howl_p2_u`: `key_map,health_damage,health_damage_range`
-- `abm_rake_p2/p2_u`: `key_map,health_damage,health_damage_range`
+- `abm_howl_p2/p2_u`: `performer_after_target_effects` (stress_damage_1 → stress_heal_1)
+- `abm_howl_p2_u`: `performer_buffs` (新增 heal_hot_medium)
+- `abm_rake_p2/p2_u`: `target_effects` (skill_small_bleed_dot → skill_medium_bleed_dot / skill_large_bleed_dot)
+- `abm_rake_p2/p2_u`: `performer_after_target_effects` (移除 stress_damage_1)
 
 ---
 
@@ -229,14 +247,22 @@
 
 | 技能 | 当前DU | 修改方案 | 修改后DU | 提升 |
 |------|--------|----------|----------|------|
-| abm_howl_p3 | -10 | 改为伤害3×2(6), 移除压力4 | 6 | +16 |
-| abm_howl_p3_u | -10 | 改为伤害4×2(8), 移除压力4 | 8 | +18 |
-| abm_rake_p3 | 5 | 伤害4→7(+3) | 8 | +3 |
-| abm_rake_p3_u | 5.5 | 伤害4→8(+4) | 9.5 | +4 |
+| abm_howl_p3 | 4 | 压力4→压力1, +add_1_vulnerable(3)×2目标 | 9 | +5 |
+| abm_howl_p3_u | 1 | 不修改 (偷取1标记已足够强) | 1 | 0 |
+| abm_rake_p3 | 5 | +add_1_strength(3), 移除压力1(2) | 10 | +5 |
+| abm_rake_p3_u | 5 | +add_2_strength(5), 移除压力1(2) | 12 | +7 |
+
+**修改效果说明**：
+- **abm_howl_p3**：保留复制标记机制，减弱压力代价(4→1)，给2目标脆弱1层
+- **abm_howl_p3_u**：已足够强（偷取1标记=5 DU，压力4=-8 DU，净收益符合路径定位）
+- **abm_rake_p3**：濒死时获得力量1，爆发伤害
+- **abm_rake_p3_u**：濒死时获得力量2，升级版更强
 
 **修改字段**：
-- `abm_howl_p3/p3_u`: `key_map,health_damage,health_damage_range` (新增), `performer_after_target_effects` (移除 stress_damage_4)
-- `abm_rake_p3/p3_u`: `key_map,health_damage,health_damage_range`
+- `abm_howl_p3`: `performer_after_target_effects` (stress_damage_4 → stress_damage_1)
+- `abm_howl_p3`: `target_effects` (新增 add_1_vulnerable ×2)
+- `abm_rake_p3/p3_u`: `performer_buffs` (新增 add_1_strength / add_2_strength)
+- `abm_rake_p3/p3_u`: `performer_after_target_effects` (移除 stress_damage_1)
 
 ---
 
@@ -265,14 +291,30 @@
 ### 预期效果
 
 **利爪系列** (主要输出技能)：
-- 伤害从 4→8/9
-- DU 从 2/5 → 6/15
-- 达到1.5倍升级标准
+- 添加流血DoT (总伤害6-9)，移除自我压力
+- DU 从 2/5 → 6/10.5
+- 升级版流血更强，持续输出
 
-**路径咆哮**：
-- 路径1: 1→6伤害, DU 3→8
-- 路径2: 移除负面压力, DU -1→5
-- 路径3: 无伤害→3-4×2伤害, DU -10→6-8
+**狂怒基础版**：
+- 移除自我压力，添加脆弱标记
+- DU 从 4 → 9
+- 为下次攻击铺垫，战术价值提升
+
+**路径1 (连击爆发)**：
+- 咆哮添加连击准备，配合锁链
+- 利爪对连击标记高暴击
+- DU 从 2/5 → 7/12，符合1.5倍标准
+
+**路径2 (反击生存)**：
+- 咆哮改为压力治疗/持续回血
+- 利爪流血DoT增强 (总伤害9-12)
+- DU 从 3/4 → 8.5/11，反击续航提升
+
+**路径3 (濒死爆发)**：
+- 咆哮P3：保留复制标记机制(8 DU)，减弱压力代价(4→1)，给2目标脆弱
+- 咆哮P3_U：不修改，偷取1标记机制足够强
+- 利爪获得力量，移除自我压力，濒死爆发
+- DU 从 4/1 → 9/1，利爪从 5/5 → 10/12
 
 ---
 
@@ -313,4 +355,10 @@
 - move_pull_2: +2.5 DU
 
 ### DoT效果
-- skill_dot_small_bleed: +2 DU
+- skill_small_bleed_dot: +2 DU
+- skill_medium_bleed_dot: +3.5 DU
+- skill_large_bleed_dot: +5 DU
+
+### 标记操作效果
+- copy_all_pos_copy_steal_tag_tokens: +8 DU (复制所有可偷取标记)
+- steal_1_pos_copy_steal_tag_tokens: +5 DU (偷取1个标记，双重收益)
