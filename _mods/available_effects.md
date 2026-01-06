@@ -61,9 +61,12 @@
 ### 闪避 (Dodge)
 | 效果 | 价值 | 说明 |
 |------|------|------|
-| add_1_dodge | 2 | 约20%闪避，持续3回合 |
-| add_2_dodge | 3.5 | 高闪避率 |
-| add_3_dodge | 4.5 | 极高闪避 |
+| add_1_dodge | 2 | 下次受到攻击50%闪避 |
+| add_2_dodge | 4 | 持续2次受到攻击50%闪避 |
+| add_3_dodge | 7 | 持续3次受到攻击50%闪避 |
+| add_1_dodge_plus | 3 | 下次受到攻击75%闪避 |
+| add_2_dodge_plus | 6 | 持续2次受到攻击75%闪避 |
+| add_3_dodge_plus | 8 | 持续3次受到攻击75%闪避 |
 
 ### 隐身 (Stealth)
 | 效果 | 价值 | 说明 |
@@ -112,24 +115,24 @@
 ### 固定数值治疗
 | 效果 | 价值 | 说明 |
 |------|------|------|
-| heal_tiny | 0.5 | 恢复1点生命值 |
-| heal_very_small | 1 | 恢复3点生命值 |
-| heal_small | 1.5 | 恢复5点生命值 |
-| heal_medium | 2.5 | 恢复10点生命值 |
-| heal_large | 4 | 恢复16点生命值 |
-| heal_very_large | 6 | 恢复25点生命值 |
-| heal_massive | 8 | 恢复40点生命值 |
+| heal_tiny | 1 | 恢复1点生命值 |
+| heal_very_small | 3 | 恢复3点生命值 |
+| heal_small | 5 | 恢复5点生命值 |
+| heal_medium | 10 | 恢复10点生命值 |
+| heal_large | 16 | 恢复16点生命值 |
+| heal_very_large | 25 | 恢复25点生命值 |
+| heal_massive | 40 | 恢复40点生命值 |
 
 ### 血量阈值治疗 (低血量加成)
 | 效果 | 价值 | 说明 |
 |------|------|------|
-| heal_tiny_hp_low | 0.5 | 低血量时恢复1点 |
-| heal_very_small_hp_low | 1 | 低血量时恢复3点 |
-| heal_small_hp_low | 1.5 | 低血量时恢复5点 |
-| heal_medium_hp_low | 2.5 | 低血量时恢复10点 |
-| heal_large_hp_low | 4 | 低血量时恢复16点 |
-| heal_very_large_hp_low | 6 | 低血量时恢复25点 |
-| heal_massive_hp_low | 8 | 低血量时恢复40点 |
+| heal_tiny_hp_low | 0.5 | 低血量时恢复1点 (条件限制，50%折扣) |
+| heal_very_small_hp_low | 1.5 | 低血量时恢复3点 (条件限制，50%折扣) |
+| heal_small_hp_low | 2.5 | 低血量时恢复5点 (条件限制，50%折扣) |
+| heal_medium_hp_low | 5 | 低血量时恢复10点 (条件限制，50%折扣) |
+| heal_large_hp_low | 8 | 低血量时恢复16点 (条件限制，50%折扣) |
+| heal_very_large_hp_low | 12.5 | 低血量时恢复25点 (条件限制，50%折扣) |
+| heal_massive_hp_low | 20 | 低血量时恢复40点 (条件限制，50%折扣) |
 
 **注意**:
 - 所有治疗效果有5%暴击几率，暴击时治疗量x0.5
@@ -138,34 +141,34 @@
 ### 百分比治疗
 | 效果 | 价值 | 说明 |
 |------|------|------|
-| heal_5pct | 1 | 恢复5%生命值 (约2点，回血价值高) |
-| heal_10pct | 2 | 恢复10%生命值 (约4点) |
-| heal_15pct | 3 | 恢复15%生命值 (约6点) |
-| heal_20pct | 4 | 恢复20%生命值 (约8点) |
-| heal_25pct | 5 | 恢复25%生命值 (约10点) |
-| heal_30pct | 6 | 恢复30%生命值 (约12点) |
-| heal_33pct | 6.5 | 恢复33%生命值 (约13点) |
-| heal_35pct | 7 | 恢复35%生命值 (约14点) |
-| heal_40pct | 8 | 恢复40%生命值 (约16点) |
-| heal_50pct | 10 | 恢复50%生命值 (约20点) |
-| heal_60pct | 12 | 恢复60%生命值 (约24点) |
-| heal_67pct | 13.5 | 恢复67%生命值 (约27点) |
-| heal_70pct | 14 | 恢复70%生命值 (约28点) |
-| heal_75pct | 15 | 恢复75%生命值 (约30点) |
-| heal_80pct | 16 | 恢复80%生命值 (约32点) |
-| heal_90pct | 18 | 恢复90%生命值 (约36点) |
-| heal_100pct | 20 | 完全恢复生命值 (约40点) |
+| heal_5pct | 2 | 恢复5%生命值 (约2点，回血价值高) |
+| heal_10pct | 4 | 恢复10%生命值 (约4点) |
+| heal_15pct | 6 | 恢复15%生命值 (约6点) |
+| heal_20pct | 8 | 恢复20%生命值 (约8点) |
+| heal_25pct | 10 | 恢复25%生命值 (约10点) |
+| heal_30pct | 12 | 恢复30%生命值 (约12点) |
+| heal_33pct | 13 | 恢复33%生命值 (约13点) |
+| heal_35pct | 14 | 恢复35%生命值 (约14点) |
+| heal_40pct | 16 | 恢复40%生命值 (约16点) |
+| heal_50pct | 20 | 恢复50%生命值 (约20点) |
+| heal_60pct | 24 | 恢复60%生命值 (约24点) |
+| heal_67pct | 27 | 恢复67%生命值 (约27点) |
+| heal_70pct | 28 | 恢复70%生命值 (约28点) |
+| heal_75pct | 30 | 恢复75%生命值 (约30点) |
+| heal_80pct | 32 | 恢复80%生命值 (约32点) |
+| heal_90pct | 36 | 恢复90%生命值 (约36点) |
+| heal_100pct | 40 | 完全恢复生命值 (约40点)，最高价值 |
 
 ### 阈值治疗 (Threshold Healing)
 | 效果 | 价值 | 说明 |
 |------|------|------|
-| heal_20pct_self_threshold_med | 2 | 中等血量阈值时自愈20% (约8点，条件限制大) |
-| heal_33pct_self_threshold_high | 3 | 高血量阈值时自愈33% (约13点，条件限制) |
-| heal_33pct_self_threshold_low | 1.6 | 低血量(33%)阈值时自愈33%，角色可能快速死亡 |
-| heal_33pct_self_threshold_med | 2.5 | 中等血量阈值时自愈33% (约13点，条件限制) |
-| heal_50pct_self_threshold_high | 6 | 高血量(50%+)时自愈50% (约20点，条件限制) |
-| heal_50pct_self_threshold_med | 4 | 中等血量(50%)时自愈50% (约20点，低血量角色易死) |
-| heal_75pct_self_threshold_med | 6 | 中等血量时自愈75% (约30点，条件限制) |
+| heal_20pct_self_threshold_med | 4 | 中等血量阈值时自愈20% (约8点，条件限制大) |
+| heal_33pct_self_threshold_high | 6 | 高血量阈值时自愈33% (约13点，条件限制) |
+| heal_33pct_self_threshold_low | 3.2 | 低血量(33%)阈值时自愈33%，角色可能快速死亡 |
+| heal_33pct_self_threshold_med | 5 | 中等血量阈值时自愈33% (约13点，条件限制) |
+| heal_50pct_self_threshold_high | 12 | 高血量(50%+)时自愈50% (约20点，条件限制) |
+| heal_50pct_self_threshold_med | 8 | 中等血量(50%)时自愈50% (约20点，低血量角色易死) |
+| heal_75pct_self_threshold_med | 12 | 中等血量时自愈75% (约30点，条件限制) |
 
 ---
 
@@ -176,13 +179,13 @@
 
 | 效果 | 价值 | 说明 |
 |------|------|------|
-| heal_hot_very_small | 1 | 持续3回合，每回合回复1点 (总约3点) |
-| heal_hot_small | 2 | 持续3回合，每回合回复2点 (总约6点) |
-| heal_hot_medium | 5 | 持续3回合，每回合回复3点 (总约9点) |
-| heal_hot_large | 8 | 持续3回合，每回合回复4点 (总约12点) |
-| heal_hot_very_large | 12 | 持续3回合，每回合回复5点 (总约15点) |
-| heal_hot_massive | 16 | 持续3回合，每回合回复6点 (总约18点) |
-| heal_hot_super_massive | 20 | 持续3回合，每回合回复10点 (总约30点，忽略友好伤害修正) |
+| heal_hot_very_small | 2 | 持续3回合，每回合回复1点 (总约3点) |
+| heal_hot_small | 4 | 持续3回合，每回合回复2点 (总约6点) |
+| heal_hot_medium | 10 | 持续3回合，每回合回复3点 (总约9点) |
+| heal_hot_large | 16 | 持续3回合，每回合回复4点 (总约12点) |
+| heal_hot_very_large | 24 | 持续3回合，每回合回复5点 (总约15点) |
+| heal_hot_massive | 32 | 持续3回合，每回合回复6点 (总约18点) |
+| heal_hot_super_massive | 40 | 持续3回合，每回合回复10点 (总约30点，忽略友好伤害修正) |
 
 **注意**:
 - 所有HOT效果在 `performer_turn_start` (施法者回合开始) 时触发
