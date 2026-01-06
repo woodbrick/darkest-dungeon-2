@@ -109,7 +109,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,3,3,0.1,
 element_end
 element_start,jes_razors_wit,ActorDataEffects
-target_effects,prime_combo,
+target_effects,prime_combo,add_1_vulnerable,
 performer_effects,move_forward_1,
 element_end
 element_start,jes_razors_wit_u,ActorDataSkill
@@ -132,7 +132,7 @@ add_stats,4,3,0.15,
 element_end
 element_start,jes_razors_wit_u,ActorDataEffects
 performer_effects,add_1_dodge,move_forward_1,
-target_effects,prime_combo,
+target_effects,prime_combo,add_2_vulnerable,
 element_end
 element_start,jes_razors_wit_u,Unlock
 m_RequirementIds,jes_razors_wit,
@@ -154,7 +154,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,3,3,0.1,
 element_end
 element_start,jes_fade_to_black,ActorDataEffects
-target_effects,add_1_blind,
+target_effects,add_2_blind,
 performer_effects,move_backward_1,
 element_end
 element_start,jes_fade_to_black_u,ActorDataSkill
@@ -176,7 +176,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,4,3,0.15,
 element_end
 element_start,jes_fade_to_black_u,ActorDataEffects
-target_effects,prime_combo,add_1_blind,
+target_effects,prime_combo,add_2_blind,
 performer_effects,move_backward_1,
 element_end
 element_start,jes_fade_to_black_u,Unlock
@@ -200,7 +200,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,2,2,0.05,
 element_end
 element_start,jes_harvest,ActorDataEffects
-target_effects,skill_dot_small_bleed,prime_combo_25pct,
+target_effects,skill_dot_medium_bleed,prime_combo_25pct,
 element_end
 element_start,jes_harvest_u,ActorDataSkill
 m_IsFriendly,False,
@@ -221,7 +221,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,3,1,0.1,
 element_end
 element_start,jes_harvest_u,ActorDataEffects
-target_effects,skill_dot_medium_bleed,prime_combo_33pct,
+target_effects,skill_dot_large_bleed,prime_combo_33pct,
 element_end
 element_start,jes_harvest_u,Unlock
 m_RequirementIds,jes_harvest,
@@ -426,7 +426,7 @@ m_IsStallInvalidating,False,
 m_ProfileUnlockId,herostory_JES_01,
 element_end
 element_start,jes_play_me_out,ActorDataEffects
-target_effects,move_backward_1,add_1_block,
+target_effects,move_backward_1,add_1_block_plus,
 element_end
 element_start,jes_play_me_out_u,ActorDataSkill
 m_IsFriendly,True,
@@ -444,7 +444,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_play_me_out_u,ActorDataEffects
-target_effects,move_backward_2,add_1_block_plus,remove_all_combo_visible,
+target_effects,move_backward_2,add_2_block_plus,remove_all_combo_visible,
 element_end
 element_start,jes_play_me_out_u,Unlock
 m_RequirementIds,jes_play_me_out,
@@ -464,7 +464,7 @@ m_Tags,stress_heal,jes_inspiring_tune,
 m_IsStallInvalidating,False,
 element_end
 element_start,jes_inspiring_tune,ActorDataEffects
-target_effects,stress_heal_2,
+target_effects,stress_heal_3,
 element_end
 element_start,jes_inspiring_tune_u,ActorDataSkill
 m_IsFriendly,True,
@@ -483,7 +483,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_inspiring_tune_u,ActorDataEffects
-target_effects,stress_heal_3,remove_all_horror,
+target_effects,stress_heal_4,remove_all_horror,
 element_end
 element_start,jes_inspiring_tune_u,Unlock
 m_RequirementIds,jes_inspiring_tune,
@@ -684,7 +684,7 @@ element_start,jes_solo_p1,ActorDataEffects
 performer_effects,add_2_dodge,add_1_speed,jes_virtuoso_solo_p1_next_encore_e,move_forward_2,
 target_apply_limit_effects,jes_virtuoso_solo_p1_weak,jes_virtuoso_solo_p1_vuln,jes_virtuoso_solo_p1_blind,jes_virtuoso_solo_p1_daze,jes_virtuoso_solo_p1_stun,
 target_apply_limit,1,
-target_effects,end_combo,
+target_effects,end_combo,add_1_strength,
 element_end
 element_start,jes_solo_p1_u,ActorDataSkill
 m_IsFriendly,False,
@@ -709,7 +709,7 @@ element_start,jes_solo_p1_u,ActorDataEffects
 performer_effects,add_2_dodge,add_1_speed,jes_virtuoso_solo_p1_u_next_encore_e,move_forward_2,
 target_apply_limit_effects,jes_virtuoso_solo_p1_weak,jes_virtuoso_solo_p1_vuln,jes_virtuoso_solo_p1_blind,jes_virtuoso_solo_p1_daze,jes_virtuoso_solo_p1_stun,
 target_apply_limit,1,
-target_effects,end_combo,prime_combo,
+target_effects,end_combo,prime_combo,add_2_strength,
 element_end
 element_start,jes_solo_p1_u,Unlock
 m_RequirementIds,jes_solo_p1,
@@ -903,7 +903,7 @@ key_map,crit_chance,
 add_stats,0.05,
 element_end
 element_start,jes_echoing_march_p1,ActorDataEffects
-target_effects,move_knockback_1,jes_virtuoso_echoing_march_knockback_e,
+target_effects,move_knockback_1,jes_virtuoso_echoing_march_knockback_e,add_1_vulnerable,
 performer_effects,jes_virtuoso_echoing_march_p1_next_encore_e,
 element_end
 element_start,jes_echoing_march_p1_u,ActorDataSkill
@@ -927,7 +927,7 @@ key_map,crit_chance,
 add_stats,0.1,
 element_end
 element_start,jes_echoing_march_p1_u,ActorDataEffects
-target_effects,move_knockback_2,jes_virtuoso_echoing_march_knockback_e,
+target_effects,move_knockback_2,jes_virtuoso_echoing_march_knockback_e,add_2_vulnerable,
 performer_effects,jes_virtuoso_echoing_march_p1_u_next_encore_e,
 element_end
 element_start,jes_echoing_march_p1_u,Unlock
@@ -1276,7 +1276,7 @@ key_map,crit_chance,
 add_stats,0.05,
 element_end
 element_start,jes_solo_p3,ActorDataEffects
-performer_effects,add_2_dodge,move_forward_3,
+performer_effects,add_2_dodge,move_forward_3,add_1_strength,
 target_effects,prime_combo,path_buff_jes_intermezzo_bleed,
 element_end
 element_start,jes_solo_p3_u,ActorDataSkill
@@ -1299,7 +1299,7 @@ key_map,crit_chance,
 add_stats,0.05,
 element_end
 element_start,jes_solo_p3_u,ActorDataEffects
-performer_effects,add_2_dodge_plus,move_forward_3,
+performer_effects,add_2_dodge_plus,move_forward_3,add_2_strength,
 target_effects,prime_combo,path_buff_jes_intermezzo_bleed,
 element_end
 element_start,jes_solo_p3_u,Unlock
@@ -1321,7 +1321,7 @@ m_SkillHistoryIdOverride,jes_battle_ballad,
 m_IsStallInvalidating,False,
 element_end
 element_start,jes_battle_ballad_p3,ActorDataEffects
-target_effects,move_forward_1,add_1_strength,path_buff_jes_intermezzo_bleed,
+target_effects,move_forward_1,add_2_strength,path_buff_jes_intermezzo_bleed,
 target_apply_limit_effects,jes_intermezzo_battle_ballad_p1_strength,jes_intermezzo_battle_ballad_p1_crit,jes_intermezzo_battle_ballad_p1_speed,
 target_apply_limit,1,
 element_end
@@ -1341,7 +1341,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_battle_ballad_p3_u,ActorDataEffects
-target_effects,move_forward_1,add_1_strength,add_1_crit_15pct,path_buff_jes_intermezzo_bleed,
+target_effects,move_forward_1,add_2_strength,add_1_crit_15pct,path_buff_jes_intermezzo_bleed,
 target_apply_limit_effects,jes_intermezzo_battle_ballad_p1_u_strength,jes_intermezzo_battle_ballad_p1_u_crit,jes_intermezzo_battle_ballad_p1_u_speed,jes_intermezzo_battle_ballad_p1_u_action,
 target_apply_limit,1,
 element_end
@@ -1364,7 +1364,7 @@ m_SkillHistoryIdOverride,jes_play_me_out,
 m_IsStallInvalidating,False,
 element_end
 element_start,jes_play_me_out_p3,ActorDataEffects
-target_effects,move_backward_1,add_1_block,path_buff_jes_intermezzo_bleed,
+target_effects,move_backward_1,add_1_block_plus,path_buff_jes_intermezzo_bleed,
 target_apply_limit_effects,jes_intermezzo_play_out_p1_block,jes_intermezzo_play_out_p1_dodge,jes_intermezzo_play_out_p1_speed,
 target_apply_limit,1,
 element_end
@@ -1384,7 +1384,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_play_me_out_p3_u,ActorDataEffects
-target_effects,move_backward_1,add_1_block_plus,path_buff_jes_intermezzo_bleed,
+target_effects,move_backward_1,add_2_block_plus,path_buff_jes_intermezzo_bleed,
 target_apply_limit_effects,jes_intermezzo_play_out_p1_u_block_plus,jes_intermezzo_play_out_p1_u_dodge_plus,jes_intermezzo_play_out_p1_u_speed,jes_intermezzo_play_out_p1_u_heal,
 target_apply_limit,1,
 element_end
@@ -1408,7 +1408,7 @@ m_SkillHistoryIdOverride,jes_inspiring_tune,
 m_IsStallInvalidating,False,
 element_end
 element_start,jes_inspiring_tune_p3,ActorDataEffects
-target_effects,stress_heal_1,stress_heal_1_if_target_has_bleed_dot,skill_dot_very_small_bleed,
+target_effects,stress_heal_2,stress_heal_1_if_target_has_bleed_dot,skill_dot_very_small_bleed,
 element_end
 element_start,jes_inspiring_tune_p3_u,ActorDataSkill
 m_IsFriendly,True,
@@ -1427,7 +1427,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,jes_inspiring_tune_p3_u,ActorDataEffects
-target_effects,stress_heal_1_target_at_threshold,stress_heal_1_if_target_has_bleed_dot,skill_dot_very_small_bleed,
+target_effects,stress_heal_3_target_at_threshold,stress_heal_1_if_target_has_bleed_dot,skill_dot_very_small_bleed,
 element_end
 element_start,jes_inspiring_tune_p3_u,Unlock
 m_RequirementIds,jes_inspiring_tune_p3,
