@@ -479,6 +479,7 @@ add_stats,4,2,0.05,
 element_end
 element_start,abm_rake,ActorDataEffects
 performer_effects,abm_rake_dmg_buff_e,
+target_effects,skill_small_bleed_dot,
 element_end
 element_start,abm_rake_u,ActorDataSkill
 m_IsFriendly,False,
@@ -501,6 +502,7 @@ add_stats,4,3,0.1,
 element_end
 element_start,abm_rake_u,ActorDataEffects
 performer_effects,abm_rake_u_dmg_buff_e,
+target_effects,skill_medium_bleed_dot,
 performer_buffs,combo_crit_50pct,
 performer_apply_limit_effects,abm_rake_u_crit_buff_e,
 performer_apply_limit,1,
@@ -528,6 +530,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,6,3,0.1,
 element_end
 element_start,abm_rage,ActorDataEffects
+target_effects,add_1_vulnerable,
 element_end
 element_start,abm_rage_u,ActorDataSkill
 m_IsFriendly,False,
@@ -1143,7 +1146,7 @@ element_end
 element_start,abm_howl_p1_u,ActorDataEffects
 target_effects,remove_all_block,remove_all_block_plus,add_1_vulnerable,
 on_crit_as_performer_to_target_effects,prime_combo,
-performer_after_target_effects,stress_damage_1,
+performer_buffs,add_2_strength,
 element_end
 element_start,abm_howl_p1_u,Unlock
 m_RequirementIds,abm_howl_p1,
@@ -1220,8 +1223,7 @@ add_stats,4,2,0.05,
 element_end
 element_start,abm_rake_p2,ActorDataEffects
 performer_effects,abm_rake_p2_bleed_buff_e,
-target_effects,skill_dot_small_bleed,
-performer_after_target_effects,stress_damage_1,
+target_effects,skill_medium_bleed_dot,
 element_end
 element_start,abm_rake_p2_u,ActorDataSkill
 m_IsFriendly,False,
@@ -1244,8 +1246,7 @@ add_stats,5,2,0.1,
 element_end
 element_start,abm_rake_p2_u,ActorDataEffects
 performer_effects,abm_rake_p2_u_bleed_buff_e,
-target_effects,skill_dot_small_bleed,
-performer_after_target_effects,stress_damage_1,
+target_effects,skill_large_bleed_dot,
 element_end
 element_start,abm_rake_p2_u,Unlock
 m_RequirementIds,abm_rake_p2,
@@ -1325,6 +1326,7 @@ element_end
 element_start,abm_howl_p2,ActorDataEffects
 target_effects,move_shuffle,
 on_hit_as_performer_to_performer_effects,stress_heal_1,
+performer_buffs,hot_heal_medium,
 element_end
 element_start,abm_howl_p2_u,ActorDataSkill
 m_IsFriendly,False,
@@ -1350,6 +1352,7 @@ element_end
 element_start,abm_howl_p2_u,ActorDataEffects
 target_effects,move_shuffle,
 on_hit_as_performer_to_performer_effects,stress_heal_1,stress_heal_1_50pct,
+performer_buffs,hot_heal_medium,
 element_end
 element_start,abm_howl_p2_u,Unlock
 m_RequirementIds,abm_howl_p2,
@@ -1478,6 +1481,7 @@ element_end
 element_start,abm_rake_p3,ActorDataEffects
 performer_effects,abm_rake_dmg_buff_e,abm_rake_p3_extra_buff_chance,
 on_hit_as_performer_to_performer_effects,stress_heal_1,
+performer_buffs,add_1_strength,
 element_end
 element_start,abm_rake_p3_u,ActorDataSkill
 m_IsFriendly,False,
@@ -1503,6 +1507,7 @@ element_end
 element_start,abm_rake_p3_u,ActorDataEffects
 performer_effects,abm_rake_u_dmg_buff_e,abm_rake_p3_u_extra_buff_chance,
 on_hit_as_performer_to_performer_effects,stress_heal_1,
+performer_buffs,add_2_strength,
 element_end
 element_start,abm_rake_p3_u,Unlock
 m_RequirementIds,abm_rake_p3,
@@ -1636,8 +1641,8 @@ key_map,
 add_stats,
 element_end
 element_start,abm_howl_p3,ActorDataEffects
-performer_effects,stress_damage_4,
-target_effects,copy_1_pos_copy_steal_tag_tokens,
+performer_effects,stress_damage_1,
+target_effects,steal_1_pos_copy_steal_tag_tokens,
 element_end
 element_start,abm_howl_p3_u,ActorDataSkill
 m_IsFriendly,False,
@@ -1660,8 +1665,8 @@ key_map,
 add_stats,
 element_end
 element_start,abm_howl_p3_u,ActorDataEffects
-performer_effects,stress_damage_4,
-target_effects,steal_1_pos_copy_steal_tag_tokens,
+performer_effects,stress_damage_2,
+target_effects,add_1_vulnerable,add_1_vulnerable,
 element_end
 element_start,abm_howl_p3_u,Unlock
 m_RequirementIds,abm_howl_p3,
