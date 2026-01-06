@@ -47,8 +47,8 @@
 #### 路径3技能 (濒死爆发)
 | 技能 | 伤害价值 | 可用位置 | 打击位置 | 效果列表 | 总DU |
 |------|----------|----------|----------|----------|-------|
-| abm_howl_p3 | 0 | 1,2,3,4 | 2,3,4 | 复制所有标记 自我压力4 | 4 |
-| abm_howl_p3_u | 0 | 1,2,3,4 | 2,3,4 | 偷取1标记 自我压力4 | 1 |
+| abm_howl_p3 | 0 | 1,2,3,4 | 2,3,4 | 复制1标记到敌人 自我压力4 | -4 |
+| abm_howl_p3_u | 0 | 1,2,3,4 | 2,3,4 | 偷取1标记到己方 自我压力4 | 1 |
 | abm_rake_p3 | 4 | 1,2 | 1,2 | 压力治疗1 | 5 |
 | abm_rake_p3_u | 4 | 1,2 | 1,2 | 压力治疗1 | 5 |
 | abm_rage_p3 | 3 | 1,2 | 1,2,3 | 嘲讽 压力治疗2 | 8 |
@@ -247,20 +247,22 @@
 
 | 技能 | 当前DU | 修改方案 | 修改后DU | 提升 |
 |------|--------|----------|----------|------|
-| abm_howl_p3 | 4 | 压力4→压力1, +add_1_vulnerable(3)×2目标 | 9 | +5 |
-| abm_howl_p3_u | 1 | 不修改 (偷取1标记已足够强) | 1 | 0 |
+| abm_howl_p3 | -4 | 移除复制标记(改为无), 压力4→压力1, +steal_1_pos_copy_steal_tag_tokens(5) | 6 | +10 |
+| abm_howl_p3_u | 1 | 压力4→压力2, +add_1_vulnerable(3)×2目标 | 7 | +6 |
 | abm_rake_p3 | 5 | +add_1_strength(3), 移除压力1(2) | 10 | +5 |
 | abm_rake_p3_u | 5 | +add_2_strength(5), 移除压力1(2) | 12 | +7 |
 
 **修改效果说明**：
-- **abm_howl_p3**：保留复制标记机制，减弱压力代价(4→1)，给2目标脆弱1层
-- **abm_howl_p3_u**：已足够强（偷取1标记=5 DU，压力4=-8 DU，净收益符合路径定位）
+- **abm_howl_p3**：移除负面复制标记效果(给敌人标记)，改为偷取1标记，减弱压力代价(4→1)
+- **abm_howl_p3_u**：保留偷取标记机制，减弱压力代价(4→2)，给2目标脆弱1层
 - **abm_rake_p3**：濒死时获得力量1，爆发伤害
 - **abm_rake_p3_u**：濒死时获得力量2，升级版更强
 
 **修改字段**：
-- `abm_howl_p3`: `performer_after_target_effects` (stress_damage_4 → stress_damage_1)
-- `abm_howl_p3`: `target_effects` (新增 add_1_vulnerable ×2)
+- `abm_howl_p3`: `target_effects` (移除 copy_1_pos_copy_steal_tag_tokens，新增 steal_1_pos_copy_steal_tag_tokens)
+- `abm_howl_p3`: `performer_effects` (stress_damage_4 → stress_damage_1)
+- `abm_howl_p3_u`: `performer_effects` (stress_damage_4 → stress_damage_2)
+- `abm_howl_p3_u`: `target_effects` (新增 add_1_vulnerable ×2)
 - `abm_rake_p3/p3_u`: `performer_buffs` (新增 add_1_strength / add_2_strength)
 - `abm_rake_p3/p3_u`: `performer_after_target_effects` (移除 stress_damage_1)
 
@@ -311,15 +313,16 @@
 - DU 从 3/4 → 8.5/11，反击续航提升
 
 **路径3 (濒死爆发)**：
-- 咆哮P3：保留复制标记机制(8 DU)，减弱压力代价(4→1)，给2目标脆弱
-- 咆哮P3_U：不修改，偷取1标记机制足够强
+- 咆哮P3：移除负面复制标记效果，改为偷取1标记，减弱压力代价(4→1)
+- 咆哮P3_U：保留偷取标记机制，减弱压力代价(4→2)，给2目标脆弱
 - 利爪获得力量，移除自我压力，濒死爆发
-- DU 从 4/1 → 9/1，利爪从 5/5 → 10/12
+- DU 咆哮从 -4/1 → 6/7，利爪从 5/5 → 10/12
 
 ---
 
 ## 5. 效果参考
 
+所有DU价值评估基于 [available_effects.md](available_effects.md)，包括：
 所有DU价值评估基于 [available_effects.md](available_effects.md)，包括：
 
 ### 增益效果 (add_*)
@@ -337,6 +340,7 @@
 ### 压力效果 (stress_*)
 - stress_damage_1: -2 DU
 - stress_damage_2: -4 DU
+- stress_damage_4: -8 DU
 - stress_heal_1: +1 DU
 - stress_heal_2: +2 DU
 
@@ -360,5 +364,6 @@
 - skill_large_bleed_dot: +5 DU
 
 ### 标记操作效果
-- copy_all_pos_copy_steal_tag_tokens: +8 DU (复制所有可偷取标记)
-- steal_1_pos_copy_steal_tag_tokens: +5 DU (偷取1个标记，双重收益)
+- copy_1_pos_copy_steal_tag_tokens: -4 DU (复制己方1个标记到敌人，负面效果)
+- steal_1_pos_copy_steal_tag_tokens: +5 DU (偷取敌人1个标记，双重收益)
+- steal_all_pos_copy_steal_tag_tokens: +12 DU (偷取所有标记，极高控制价值)

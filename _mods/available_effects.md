@@ -355,12 +355,12 @@
 ## 标记操作效果 (Token Operations)
 
 ### 标记复制
-*机制：复制敌人标记到己方，敌人保留原标记*
+*机制：复制己方标记到敌人，敌人获得标记（对敌人有利）*
 
 | 效果 | 价值 | 说明 |
 |------|------|------|
-| copy_all_pos_copy_steal_tag_tokens | 8 | 复制敌人所有可偷取标记(block/crit/dodge等) |
-| copy_1_pos_copy_steal_tag_tokens | 4 | 复制敌人1个可偷取标记 |
+| copy_all_pos_copy_steal_tag_tokens | 8 | 复制己方所有可偷取标记到敌人 |
+| copy_1_pos_copy_steal_tag_tokens | -4 | 复制己方1个可偷取标记到敌人（负面效果） |
 
 **可偷取标记类型**：
 - block (格挡, 2.5 DU)
@@ -371,12 +371,12 @@
 - guard (护卫) **不可偷取**
 
 ### 标记偷取
-*机制：从敌人处偷取标记，敌人失去该标记（双重收益）*
+*机制：从敌人处偷取标记到己方，敌人失去该标记（双重收益）*
 
 | 效果 | 价值 | 说明 |
 |------|------|------|
-| steal_1_pos_copy_steal_tag_tokens | 5 | 偷取1个标记，己方获得+敌方失去 |
-| steal_all_pos_copy_steal_tag_tokens | 12 | 偷取所有可偷取标记，极高控制价值 |
+| steal_1_pos_copy_steal_tag_tokens | 5 | 偷取敌人1个可偷取标记，己方获得+敌方失去 |
+| steal_all_pos_copy_steal_tag_tokens | 12 | 偷取敌人所有可偷取标记，极高控制价值 |
 
 ---
 
