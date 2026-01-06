@@ -1117,7 +1117,7 @@ element_end
 element_start,abm_howl_p1,ActorDataEffects
 target_effects,add_1_vulnerable,
 on_crit_as_performer_to_target_effects,prime_combo,
-performer_after_target_effects,stress_damage_1,
+performer_buffs,add_1_strength,
 element_end
 element_start,abm_howl_p1_u,ActorDataSkill
 m_IsFriendly,False,
