@@ -19,13 +19,19 @@
 
 ## 文档索引
 
-### 核心方法论
+### 游戏规则
 | 文档 | 用途 |
 |------|------|
-| [AGENTS.md](AGENTS.md) | 技能修改详细教程 |
-| [available_effects.md](available_effects.md) | 效果标记与DU价值 |
-| [file_mapping.md](file_mapping.md) | 文件映射表 |
+| [rules.md](rules.md) | 游戏规则与机制 |
+
+### 数据结构
+| 文档 | 用途 |
+|------|------|
+| [data_skills.md](data_skills.md) | 技能数据字段说明 |
+| [data_effects.md](data_effects.md) | 效果数据字段说明 |
 | [hero_file_rules.md](hero_file_rules.md) | CSV结构规则 |
+| [available_effects.md](available_effects.md) | 效果标记完整清单 |
+| [file_mapping.md](file_mapping.md) | 文件映射表 |
 
 ### 英雄改动方案
 | 英雄 | 方案文档 | YAML配置 |
@@ -46,24 +52,7 @@
 - 升级版是否使用升级效果标记(`add_2_`而非`add_1_`)？
 - 升级版DU是否为基础版的1.5倍左右？
 
-### DU价值体系
-
-**基础**: 1 DU = 1点基础伤害等价价值
-
-**效果DU**:
-| 力量 | 脆弱 | 格挡 | 闪避 | 晕眩 | 反击 |
-|------|------|------|------|------|------|
-| 1级:3 | 1级:3 | 1级:2.5 | 1级:4 | 1级:4 | 1级:3 |
-| 2级:5 | 2级:5 | 强格挡:3.5 | | 2级:7 | 2级:5 |
-
-**评估标准**:
-- DU < 9: 弱势，需增强
-- DU 9-13: 可接受
-- DU > 13: 优秀
-
-### 路径差异化
-
-三条路径必须有明确不同的玩法定位
+详细规则见: [rules.md](rules.md)
 
 ---
 
