@@ -1,0 +1,729 @@
+# 火枪手 (Jester) 完整技能数据
+
+## jes_act_out_enemy
+
+- **技能ID**: jes_act_out_enemy
+- **可用位置**: 1, 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **伤害**: 3±3 (修正: 0.1)
+
+---
+
+## jes_act_out_friendly
+
+- **技能ID**: jes_act_out_friendly
+- **可用位置**: 1, 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **伤害**: 3±3 (修正: 0.1)
+
+---
+
+## jes_battle_ballad
+
+- **技能ID**: jes_battle_ballad
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_forward_1
+  - add_1_strength
+  - add_1_dodge
+
+---
+
+## jes_battle_ballad_p1
+
+- **技能ID**: jes_battle_ballad_p1
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_forward_1
+  - add_1_strength
+
+---
+
+## jes_battle_ballad_p1_u
+
+- **技能ID**: jes_battle_ballad_p1_u
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_forward_1
+  - add_1_strength
+
+---
+
+## jes_battle_ballad_p2
+
+- **技能ID**: jes_battle_ballad_p2
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_forward_1
+  - add_1_strength
+
+---
+
+## jes_battle_ballad_p2_u
+
+- **技能ID**: jes_battle_ballad_p2_u
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_forward_1
+  - add_1_strength
+
+---
+
+## jes_battle_ballad_p3
+
+- **技能ID**: jes_battle_ballad_p3
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 2, 3, 4, 
+- **目标效果**:
+  - move_forward_1
+  - add_1_strength
+  - path_buff_jes_intermezzo_bleed
+
+---
+
+## jes_battle_ballad_p3_u
+
+- **技能ID**: jes_battle_ballad_p3_u
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 2, 3, 4, 
+- **目标效果**:
+  - move_forward_1
+  - add_1_strength
+  - add_1_crit_15pct
+  - path_buff_jes_intermezzo_bleed
+
+---
+
+## jes_battle_ballad_u
+
+- **技能ID**: jes_battle_ballad_u
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_forward_2
+  - add_1_strength
+  - add_1_dodge
+
+---
+
+## jes_echoing_march
+
+- **技能ID**: jes_echoing_march
+- **可用位置**: 3, 4, 
+- **目标位置**: 2, 3, 4, 
+- **目标效果**:
+  - move_pull_1
+  - jes_echoing_march_pull_e
+
+---
+
+## jes_echoing_march_p1
+
+- **技能ID**: jes_echoing_march_p1
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 
+- **目标效果**:
+  - move_knockback_1
+  - jes_virtuoso_echoing_march_knockback_e
+
+---
+
+## jes_echoing_march_p1_u
+
+- **技能ID**: jes_echoing_march_p1_u
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 
+- **目标效果**:
+  - move_knockback_2
+  - jes_virtuoso_echoing_march_knockback_e
+
+---
+
+## jes_echoing_march_p3
+
+- **技能ID**: jes_echoing_march_p3
+- **可用位置**: 3, 4, 
+- **目标位置**: 2, 3, 4, 
+- **目标效果**:
+  - move_pull_1
+  - path_buff_jes_intermezzo_bleed
+  - jes_echoing_march_pull_e
+
+---
+
+## jes_echoing_march_p3_u
+
+- **技能ID**: jes_echoing_march_p3_u
+- **可用位置**: 3, 4, 
+- **目标位置**: 2, 3, 4, 
+- **目标效果**:
+  - move_pull_1
+  - path_buff_jes_intermezzo_bleed
+  - jes_intermezzo_echoing_march_p3_debuff_bundle
+
+---
+
+## jes_echoing_march_u
+
+- **技能ID**: jes_echoing_march_u
+- **可用位置**: 3, 4, 
+- **目标位置**: 2, 3, 4, 
+- **目标效果**:
+  - move_pull_2
+  - jes_echoing_march_pull_u_e
+
+---
+
+## jes_encore_p1
+
+- **技能ID**: jes_encore_p1
+- **可用位置**: 1, 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+
+---
+
+## jes_encore_p1_u
+
+- **技能ID**: jes_encore_p1_u
+- **可用位置**: 1, 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+
+---
+
+## jes_encore_p2
+
+- **技能ID**: jes_encore_p2
+- **可用位置**: 1, 2, 3, 4, 
+- **施法者(目标后)效果**:
+  - jes_soloist_encore_restore_damage_1
+  - jes_soloist_encore_restore_damage_2
+  - jes_soloist_encore_restore_damage_3
+  - jes_soloist_encore_restore_finale_damage_1
+  - jes_soloist_encore_restore_finale_damage_2
+  - jes_soloist_encore_restore_finale_damage_3
+  - remove_all_last_finale_buffs
+
+---
+
+## jes_encore_p2_u
+
+- **技能ID**: jes_encore_p2_u
+- **可用位置**: 1, 2, 3, 4, 
+- **施法者(目标后)效果**:
+  - jes_soloist_encore_restore_damage_1
+  - jes_soloist_encore_restore_damage_2
+  - jes_soloist_encore_restore_damage_3
+  - jes_soloist_encore_restore_finale_damage_1
+  - jes_soloist_encore_restore_finale_damage_2
+  - jes_soloist_encore_restore_finale_damage_3
+  - remove_all_last_finale_buffs
+  - add_1_speed
+
+---
+
+## jes_fade_to_black
+
+- **技能ID**: jes_fade_to_black
+- **可用位置**: 1, 2, 3, 
+- **目标位置**: 1, 2, 3, 
+- **伤害**: 3±3 (修正: 0.1)
+- **目标效果**:
+  - add_1_blind
+
+---
+
+## jes_fade_to_black_u
+
+- **技能ID**: jes_fade_to_black_u
+- **可用位置**: 1, 2, 3, 
+- **目标位置**: 1, 2, 3, 
+- **伤害**: 4±3 (修正: 0.15)
+- **目标效果**:
+  - prime_combo
+  - add_1_blind
+
+---
+
+## jes_finale
+
+- **技能ID**: jes_finale
+- **可用位置**: 1, 2, 
+- **目标位置**: 1, 2, 3, 4, 
+- **伤害**: 6±6 (修正: 0.1)
+- **目标效果**:
+  - end_combo
+- **施法者增益**:
+  - combo_damage_boost_50pct
+
+---
+
+## jes_finale_p1
+
+- **技能ID**: jes_finale_p1
+- **可用位置**: 1, 2, 
+- **目标位置**: 1, 2, 3, 4, 
+- **伤害**: 6±6 (修正: 0.1)
+- **目标效果**:
+  - end_combo
+- **施法者增益**:
+  - combo_damage_boost_50pct
+
+---
+
+## jes_finale_p1_u
+
+- **技能ID**: jes_finale_p1_u
+- **可用位置**: 1, 2, 
+- **目标位置**: 1, 2, 3, 4, 
+- **伤害**: 10±3 (修正: 0.2)
+- **目标效果**:
+  - end_combo
+- **施法者增益**:
+  - combo_damage_boost_50pct
+
+---
+
+## jes_finale_p2
+
+- **技能ID**: jes_finale_p2
+- **可用位置**: 1, 2, 
+- **目标位置**: 1, 2, 3, 4, 
+- **伤害**: 6±6 (修正: 0.1)
+- **目标效果**:
+  - end_combo
+- **施法者增益**:
+  - combo_damage_boost_50pct
+- **施法者(目标后)效果**:
+  - add_1_vulnerable_nr
+  - add_1_daze_nr
+  - jes_soloist_play_out_p2_last_finale
+  - jes_soloist_play_out_p2_u_last_finale
+  - jes_soloist_damage_tracker_1
+  - jes_soloist_damage_tracker_2
+  - jes_soloist_damage_tracker_3
+  - jes_remove_all_finale_buffs
+
+---
+
+## jes_finale_p2_u
+
+- **技能ID**: jes_finale_p2_u
+- **可用位置**: 1, 2, 
+- **目标位置**: 1, 2, 3, 4, 
+- **伤害**: 10±3 (修正: 0.2)
+- **目标效果**:
+  - end_combo
+- **施法者增益**:
+  - combo_damage_boost_50pct
+- **施法者(目标后)效果**:
+  - add_1_vulnerable_nr
+  - add_1_daze_nr
+  - jes_soloist_play_out_p2_last_finale
+  - jes_soloist_play_out_p2_u_last_finale
+  - jes_soloist_damage_tracker_1
+  - jes_soloist_damage_tracker_2
+  - jes_soloist_damage_tracker_3
+  - jes_remove_all_finale_buffs
+
+---
+
+## jes_finale_p3
+
+- **技能ID**: jes_finale_p3
+- **可用位置**: 1, 2, 
+- **目标位置**: 1, 2, 3, 4, 
+- **伤害**: 6±6 (修正: 0.1)
+- **目标效果**:
+  - end_combo
+- **施法者增益**:
+  - combo_damage_boost_50pct
+
+---
+
+## jes_finale_p3_u
+
+- **技能ID**: jes_finale_p3_u
+- **可用位置**: 1, 2, 
+- **目标位置**: 1, 2, 3, 4, 
+- **伤害**: 10±3 (修正: 0.2)
+- **目标效果**:
+  - end_combo
+- **施法者增益**:
+  - combo_damage_boost_50pct
+  - damage_boost_vs_bleed_50pct
+
+---
+
+## jes_finale_u
+
+- **技能ID**: jes_finale_u
+- **可用位置**: 1, 2, 
+- **目标位置**: 1, 2, 3, 4, 
+- **伤害**: 10±3 (修正: 0.2)
+- **目标效果**:
+  - end_combo
+- **施法者增益**:
+  - execution_1_tooltip
+  - combo_damage_boost_50pct
+
+---
+
+## jes_harvest
+
+- **技能ID**: jes_harvest
+- **可用位置**: 2, 3, 
+- **目标位置**: 2, 3, 
+- **伤害**: 2±2 (修正: 0.05)
+- **目标效果**:
+  - skill_dot_small_bleed
+  - prime_combo_25pct
+
+---
+
+## jes_harvest_p2
+
+- **技能ID**: jes_harvest_p2
+- **可用位置**: 1, 2, 3, 
+- **目标位置**: 2, 3, 
+- **伤害**: 3±2 (修正: 0.05)
+- **目标效果**:
+  - prime_combo_25pct
+
+---
+
+## jes_harvest_p2_u
+
+- **技能ID**: jes_harvest_p2_u
+- **可用位置**: 1, 2, 3, 
+- **目标位置**: 2, 3, 
+- **伤害**: 4±2 (修正: 0.1)
+- **目标效果**:
+  - prime_combo_33pct
+
+---
+
+## jes_harvest_u
+
+- **技能ID**: jes_harvest_u
+- **可用位置**: 2, 3, 
+- **目标位置**: 2, 3, 
+- **伤害**: 3±1 (修正: 0.1)
+- **目标效果**:
+  - skill_dot_medium_bleed
+  - prime_combo_33pct
+
+---
+
+## jes_inspiring_tune
+
+- **技能ID**: jes_inspiring_tune
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - stress_heal_2
+
+---
+
+## jes_inspiring_tune_p1
+
+- **技能ID**: jes_inspiring_tune_p1
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - stress_heal_2
+
+---
+
+## jes_inspiring_tune_p1_u
+
+- **技能ID**: jes_inspiring_tune_p1_u
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - stress_heal_3
+  - jes_virtuoso_inspiring_tune_p1_u_stress_res
+
+---
+
+## jes_inspiring_tune_p3
+
+- **技能ID**: jes_inspiring_tune_p3
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - stress_heal_1
+  - stress_heal_1_if_target_has_bleed_dot
+  - skill_dot_very_small_bleed
+
+---
+
+## jes_inspiring_tune_p3_u
+
+- **技能ID**: jes_inspiring_tune_p3_u
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - stress_heal_1_target_at_threshold
+  - stress_heal_1_if_target_has_bleed_dot
+  - skill_dot_very_small_bleed
+
+---
+
+## jes_inspiring_tune_u
+
+- **技能ID**: jes_inspiring_tune_u
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - stress_heal_3
+  - remove_all_horror
+
+---
+
+## jes_move
+
+- **技能ID**: jes_move
+
+---
+
+## jes_play_me_out
+
+- **技能ID**: jes_play_me_out
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_backward_1
+  - add_1_block
+
+---
+
+## jes_play_me_out_p1
+
+- **技能ID**: jes_play_me_out_p1
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_backward_1
+  - add_1_block
+
+---
+
+## jes_play_me_out_p1_u
+
+- **技能ID**: jes_play_me_out_p1_u
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_backward_1
+  - add_1_block_plus
+  - remove_all_combo_visible
+
+---
+
+## jes_play_me_out_p2
+
+- **技能ID**: jes_play_me_out_p2
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_backward_1
+  - add_1_block
+
+---
+
+## jes_play_me_out_p2_u
+
+- **技能ID**: jes_play_me_out_p2_u
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_backward_1
+  - add_1_block_plus
+  - remove_all_combo_visible
+
+---
+
+## jes_play_me_out_p3
+
+- **技能ID**: jes_play_me_out_p3
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 
+- **目标效果**:
+  - move_backward_1
+  - add_1_block
+  - path_buff_jes_intermezzo_bleed
+
+---
+
+## jes_play_me_out_p3_u
+
+- **技能ID**: jes_play_me_out_p3_u
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 
+- **目标效果**:
+  - move_backward_1
+  - add_1_block_plus
+  - path_buff_jes_intermezzo_bleed
+
+---
+
+## jes_play_me_out_u
+
+- **技能ID**: jes_play_me_out_u
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - move_backward_2
+  - add_1_block_plus
+  - remove_all_combo_visible
+
+---
+
+## jes_razors_wit
+
+- **技能ID**: jes_razors_wit
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 
+- **伤害**: 3±3 (修正: 0.1)
+- **目标效果**:
+  - prime_combo
+
+---
+
+## jes_razors_wit_u
+
+- **技能ID**: jes_razors_wit_u
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 
+- **伤害**: 4±3 (修正: 0.15)
+- **目标效果**:
+  - prime_combo
+
+---
+
+## jes_slice_off
+
+- **技能ID**: jes_slice_off
+- **可用位置**: 2, 3, 
+- **目标位置**: 2, 3, 
+- **伤害**: 3±3 (修正: 0.05)
+- **目标效果**:
+  - skill_dot_medium_bleed
+
+---
+
+## jes_slice_off_u
+
+- **技能ID**: jes_slice_off_u
+- **可用位置**: 2, 3, 
+- **目标位置**: 2, 3, 
+- **伤害**: 4±3 (修正: 0.1)
+- **目标效果**:
+  - skill_dot_medium_bleed
+  - add_1_vulnerable
+
+---
+
+## jes_solo
+
+- **技能ID**: jes_solo
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - prime_combo
+
+---
+
+## jes_solo_p1
+
+- **技能ID**: jes_solo_p1
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - end_combo
+
+---
+
+## jes_solo_p1_u
+
+- **技能ID**: jes_solo_p1_u
+- **可用位置**: 2, 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - end_combo
+  - prime_combo
+
+---
+
+## jes_solo_p2
+
+- **技能ID**: jes_solo_p2
+- **可用位置**: 2, 3, 4, 
+
+---
+
+## jes_solo_p2_u
+
+- **技能ID**: jes_solo_p2_u
+- **可用位置**: 2, 3, 4, 
+
+---
+
+## jes_solo_p3
+
+- **技能ID**: jes_solo_p3
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - prime_combo
+  - path_buff_jes_intermezzo_bleed
+
+---
+
+## jes_solo_p3_u
+
+- **技能ID**: jes_solo_p3_u
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - prime_combo
+  - path_buff_jes_intermezzo_bleed
+
+---
+
+## jes_solo_u
+
+- **技能ID**: jes_solo_u
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - prime_combo
+
+---
+
+## jes_the_last_laugh
+
+- **技能ID**: jes_the_last_laugh
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - extra_action
+  - skill_dot_small_bleed
+
+---
+
+## jes_the_last_laugh_u
+
+- **技能ID**: jes_the_last_laugh_u
+- **可用位置**: 3, 4, 
+- **目标位置**: 1, 2, 3, 4, 
+- **目标效果**:
+  - extra_action
+  - skill_dot_small_bleed
+
+---
