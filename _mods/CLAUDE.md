@@ -28,10 +28,8 @@
 | 文档 | 用途 |
 |------|------|
 | [data_skills.md](data_skills.md) | 技能数据字段说明 |
-| [data_effects.md](data_effects.md) | 效果数据字段说明 |
 | [hero_file_rules.md](hero_file_rules.md) | CSV结构规则 |
 | [available_effects.md](available_effects.md) | 效果标记完整清单 |
-| [file_mapping.md](file_mapping.md) | 文件映射表 |
 
 ### 英雄改动方案
 | 英雄 | 方案文档 | YAML配置 |
@@ -58,17 +56,7 @@
 
 ## 英雄速查
 
-### 英雄代码
-
-**基础英雄**: flg, gr, hel, hwm, jes, lep, maa, occ, pd, run, ves
-**DLC1**: cru, dul
-**DLC2**: abm
-
-### 文件路径
-
-**基础**: `hero_{代码}_data_export.Group.csv`
-**DLC1**: `dlc_dul_cru/hero_{代码}_data_export.Group.csv`
-**DLC2**: `dlc_catacombs/hero_{代码}_data_export.Group.csv`
+详细英雄代码/文件路径/饰品文件见: [rules.md](rules.md)
 
 ---
 

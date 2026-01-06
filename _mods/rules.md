@@ -29,6 +29,39 @@
 - 升级版是否使用升级效果标记(`add_2_`而非`add_1_`)？
 - 升级版DU是否为基础版的1.5倍左右？
 
+## 英雄代码
+
+| 代码 | 英雄 | 类型 |
+|-----|------|-----|
+| flg | Flagellant | 基础 |
+| gr | Grave Robber | 基础 |
+| hel | Hellion | 基础 |
+| hwm | Highwayman | 基础 |
+| jes | Jester | 基础 |
+| lep | Leper | 基础 |
+| maa | Man-at-Arms | 基础 |
+| occ | Occultist | 基础 |
+| pd | Plague Doctor | 基础 |
+| run | Runaway | 基础 |
+| ves | Vestal | 基础 |
+| cru | Crusader | DLC1 |
+| dul | Duelist | DLC1 |
+| abm | Alchemist | DLC2 |
+
+## 文件路径
+
+**基础**: `hero_{代码}_data_export.Group.csv`
+**DLC1**: `dlc_dul_cru/hero_{代码}_data_export.Group.csv`
+**DLC2**: `dlc_catacombs/hero_{代码}_data_export.Group.csv`
+
+## 饰品文件
+
+| 文件 | 路径 |
+|------|------|
+| `trinkets_data_export.Group.csv` | 主目录 |
+| `trinkets_data_export_DLC1.Group.csv` | dlc_dul_cru/ |
+| `trinkets_data_export_DLC2.Group.csv` | dlc_catacombs/ |
+
 ## 技能命名规则
 
 | 类型 | 格式 | 示例 |
