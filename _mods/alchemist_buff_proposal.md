@@ -29,8 +29,8 @@
 #### 路径1技能 (连击爆发)
 | 技能 | 伤害 | 可用位置 | 打击位置 | 效果列表 | 计算DU | 状态 |
 |------|------|----------|----------|----------|---------|------|
-| abm_howl_p1 | 1±1 | 2,3,4 | 1,2,3,4 | 脆弱1 暴击连击 压力1 腐蚀条件 | 3 | ❌ 弱势 |
-| abm_howl_p1_u | 2±1 | 2,3,4 | 1,2,3,4 | 移除格挡x2 脆弱1 暴击连击 压力1 腐蚀条件 | 12 | ⚠️ 可接受 |
+| abm_howl_p1 | 1±1×目标(条件) | 2,3,4 | 1,2,3,4 | 脆弱1×目标 暴击连击 压力1×目标 腐蚀条件 | 4 | ⚠️ 可接受 |
+| abm_howl_p1_u | 2±1×目标(条件) | 2,3,4 | 1,2,3,4 | 移除格挡x2 脆弱1×目标 暴击连击 压力1×目标 腐蚀条件 | 6 | ❌ 弱势 |
 | abm_rake_p1 | 4±2 | 1,2 | 1,2 | 压力1 | 2 | ❌ 弱势 |
 | abm_rake_p1_u | 4±3 | 1,2 | 1,2 | 连击暴击50% 压力1 | 5 | ❌ 弱势 |
 
@@ -204,18 +204,19 @@
 
 | 技能 | 当前DU | 修改方案 | 修改后DU | 提升 |
 |------|--------|----------|----------|------|
-| abm_howl_p1 | 3 | +prime_combo(3), 移除压力1(2) | 6 | +3 |
-| abm_howl_p1_u | 12 | 不修改 | 12 | 0 |
+| abm_howl_p1 | 4 | 轻微加强：压力伤害减半(×0.5) | 6 | +2 |
+| abm_howl_p1_u | 6 | 移除压力1(2), 改为压力0.5×目标 | 8 | +2 |
 | abm_rake_p1 | 2 | +combo_crit_50pct(3), 移除压力1(2) | 7 | +5 |
 | abm_rake_p1_u | 5 | +combo_crit_100pct(5), 移除压力1(2) | 12 | +7 |
 
 **修改效果说明**：
-- **abm_howl_p1**：添加连击准备，配合锁链技能
+- **abm_howl_p1**：腐蚀条件限制实际命中，压力反冲减半提高可用性
+- **abm_howl_p1_u**：移除自我压力，轻微提升群体价值
 - **abm_rake_p1**：对连击标记高暴击，路径1核心输出
 
 **修改字段**：
-- `abm_howl_p1`: `target_effects` (新增 prime_combo)
-- `abm_howl_p1`: `performer_after_target_effects` (移除 stress_damage_1)
+- `abm_howl_p1`: `performer_after_target_effects` (stress_damage_1 → stress_damage_1_50pct)
+- `abm_howl_p1_u`: `performer_after_target_effects` (移除 stress_damage_1)
 - `abm_rake_p1/p1_u`: `performer_buffs` (新增 combo_crit_50pct / combo_crit_100pct)
 - `abm_rake_p1/p1_u`: `performer_after_target_effects` (移除 stress_damage_1)
 
@@ -284,7 +285,6 @@
 - abm_howl / abm_howl_u (12.5 / 15.5)
 - abm_rage_u (17)
 - abm_slam / abm_slam_u (7.5 / 10.5)
-- abm_howl_p1_u (12)
 - abm_rage_p2 / abm_rage_p2_u (7.5 / 9.5)
 - abm_rage_p3_u (10.75)
 - 所有变身技能 (已可接受)
@@ -303,9 +303,10 @@
 - 为下次攻击铺垫，战术价值提升
 
 **路径1 (连击爆发)**：
-- 咆哮添加连击准备，配合锁链
+- 咆哮P1：压力反冲减半，提高群体可用性
+- 咆哮P1_U：移除自我压力，轻微提升
 - 利爪对连击标记高暴击
-- DU 从 2/5 → 7/12，符合1.5倍标准
+- DU 咆哮从 4/6 → 6/8，利爪从 2/5 → 7/12
 
 **路径2 (反击生存)**：
 - 咆哮改为压力治疗/持续回血
