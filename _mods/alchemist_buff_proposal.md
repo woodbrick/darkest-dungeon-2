@@ -204,19 +204,21 @@
 
 | 技能 | 当前DU | 修改方案 | 修改后DU | 提升 |
 |------|--------|----------|----------|------|
-| abm_howl_p1 | 4 | 轻微加强：压力伤害减半(×0.5) | 6 | +2 |
-| abm_howl_p1_u | 6 | 移除压力1(2), 改为压力0.5×目标 | 8 | +2 |
+| abm_howl_p1 | 4 | 移除压力反冲, +add_1_strength(3) | 10 | +6 |
+| abm_howl_p1_u | 6 | 移除压力反冲, +add_2_strength(5) | 15 | +9 |
 | abm_rake_p1 | 2 | +combo_crit_50pct(3), 移除压力1(2) | 7 | +5 |
 | abm_rake_p1_u | 5 | +combo_crit_100pct(5), 移除压力1(2) | 12 | +7 |
 
 **修改效果说明**：
-- **abm_howl_p1**：腐蚀条件限制实际命中，压力反冲减半提高可用性
-- **abm_howl_p1_u**：移除自我压力，轻微提升群体价值
+- **abm_howl_p1**：完全移除压力反冲，获得力量1（群体×腐蚀条件，高价值）
+- **abm_howl_p1_u**：完全移除压力反冲，获得力量2（升级版更强）
 - **abm_rake_p1**：对连击标记高暴击，路径1核心输出
 
 **修改字段**：
-- `abm_howl_p1`: `performer_after_target_effects` (stress_damage_1 → stress_damage_1_50pct)
+- `abm_howl_p1`: `performer_after_target_effects` (移除 stress_damage_1)
+- `abm_howl_p1`: `performer_buffs` (新增 add_1_strength)
 - `abm_howl_p1_u`: `performer_after_target_effects` (移除 stress_damage_1)
+- `abm_howl_p1_u`: `performer_buffs` (新增 add_2_strength)
 - `abm_rake_p1/p1_u`: `performer_buffs` (新增 combo_crit_50pct / combo_crit_100pct)
 - `abm_rake_p1/p1_u`: `performer_after_target_effects` (移除 stress_damage_1)
 
@@ -303,10 +305,10 @@
 - 为下次攻击铺垫，战术价值提升
 
 **路径1 (连击爆发)**：
-- 咆哮P1：压力反冲减半，提高群体可用性
-- 咆哮P1_U：移除自我压力，轻微提升
+- 咆哮P1：完全移除压力反冲，获得力量1
+- 咆哮P1_U：完全移除压力反冲，获得力量2
 - 利爪对连击标记高暴击
-- DU 咆哮从 4/6 → 6/8，利爪从 2/5 → 7/12
+- DU 咆哮从 4/6 → 10/15，利爪从 2/5 → 7/12
 
 **路径2 (反击生存)**：
 - 咆哮改为压力治疗/持续回血
