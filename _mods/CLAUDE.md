@@ -17,25 +17,46 @@
 
 ---
 
+## 文件结构规范
+
+```
+_mods/
+├── CLAUDE.md                    # 主工作台文档(本文件)
+├── scripts/                     # 通用工具脚本
+│   ├── parse_universal.py      # 技能解析评估
+│   ├── apply_universal.py      # 技能更新应用
+│   └── scan_effects.py         # 效果扫描工具
+├── rules/                       # 规则索引和数据记录
+│   ├── rules.md                # 游戏规则与机制(DU体系/铁律/英雄代码)
+│   ├── data_skills.md          # 技能数据字段说明
+│   ├── hero_file_rules.md      # CSV结构规则
+│   └── available_effects.md    # 效果标记完整清单
+├── *_buff_proposal.md          # 英雄改进方案文档
+└── *_changes_complete.yml      # 技能修改配置文件
+```
+
+**目录用途**:
+- `scripts/`: 存放所有Python工具脚本(禁止特定英雄脚本)
+- `rules/`: 存放游戏规则、数据结构、效果标记等参考文档
+- 根目录: 工作台配置、英雄改动方案、YAML配置文件
+
+---
+
 ## 文档索引
 
-### 游戏规则
+### 规则文档 (rules/)
 | 文档 | 用途 |
 |------|------|
-| [rules.md](rules.md) | 游戏规则与机制 |
-
-### 数据结构
-| 文档 | 用途 |
-|------|------|
-| [data_skills.md](data_skills.md) | 技能数据字段说明 |
-| [hero_file_rules.md](hero_file_rules.md) | CSV结构规则 |
-| [available_effects.md](available_effects.md) | 效果标记完整清单 |
+| [rules/rules.md](rules/rules.md) | 游戏规则与机制 |
+| [rules/data_skills.md](rules/data_skills.md) | 技能数据字段说明 |
+| [rules/hero_file_rules.md](rules/hero_file_rules.md) | CSV结构规则 |
+| [rules/available_effects.md](rules/available_effects.md) | 效果标记完整清单 |
 
 ### 英雄改动方案
 | 英雄 | 方案文档 | YAML配置 |
 |------|----------|----------|
 | 小丑 (Jester) | [jester_buff_proposal.md](jester_buff_proposal.md) | [hero_jes_changes_complete.yml](hero_jes_changes_complete.yml) |
-| 炼金术士 (Alchemist) | [alchemist_buff_proposal.md](alchemist_buff_proposal.md) - |
+| 炼金术士 (Alchemist) | [alchemist_buff_proposal.md](alchemist_buff_proposal.md) | - |
 
 ---
 
@@ -50,13 +71,13 @@
 - 升级版是否使用升级效果标记(`add_2_`而非`add_1_`)？
 - 升级版DU是否为基础版的1.5倍左右？
 
-详细规则见: [rules.md](rules.md)
+详细规则见: [rules/rules.md](rules/rules.md)
 
 ---
 
 ## 英雄速查
 
-详细英雄代码/文件路径/饰品文件见: [rules.md](rules.md)
+详细英雄代码/文件路径/饰品文件见: [rules/rules.md](rules/rules.md)
 
 ---
 
@@ -73,7 +94,7 @@
 
 ### 技能解析评估
 ```bash
-cd _mods && python parse_universal.py {英雄代码}
+cd _mods/scripts && python parse_universal.py {英雄代码}
 ```
 **功能**:
 - 解析英雄所有技能数据
@@ -83,7 +104,7 @@ cd _mods && python parse_universal.py {英雄代码}
 
 ### 技能更新应用
 ```bash
-cd _mods && python apply_universal.py {英雄代码} {配置文件.yml}
+cd _mods/scripts && python apply_universal.py ../{配置文件.yml}
 ```
 **功能**:
 - 读取YAML配置文件
