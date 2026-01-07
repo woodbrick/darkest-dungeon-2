@@ -1,234 +1,96 @@
 ---
 name: 英雄平衡性优化
 description: "暗黑地牢2英雄技能平衡性优化全流程。协调调研代理收集数据，分析制定增强方案，协调实施代理修改CSV并提交Git。"
-allowed-tools: [Task, Read, Grep, Glob, Write, Edit, Bash]
+allowed-tools: [Task, Read, Write, Edit, Bash]
 ---
 
 # 英雄平衡性优化技能
 
-## 指令
+## 使用场景
 
-当您需要优化暗黑地牢2英雄技能平衡性时，使用此技能完成全流程工作。此技能遵循"数据驱动、流程标准化"原则：
+当需要优化暗黑地牢2英雄技能平衡性时，使用此技能完成标准化流程。
 
-1. **数据收集阶段** - 调用调研代理收集客观数据
-2. **方案制定阶段** - 基于DU评估分析弱势技能，设计增强方案
-3. **实施修改阶段** - 调用实施代理精确修改CSV数据
-4. **验证提交阶段** - 验证格式并提交Git
+## 工作流程
 
-## 使用步骤
+```
+阶段1: 数据收集 → game-mechanics-researcher
+阶段2: 方案制定 → 生成方案文档
+阶段3: 实施修改 → csv-balance-implementer
+阶段4: 验证提交 → Git提交
+```
+
+## 标准流程
 
 ### 阶段1：数据收集
 
-调用 `game-mechanics-researcher` 代理收集英雄数据：
+调用 `game-mechanics-researcher` 代理：
 
-```yaml
-英雄代码: {英雄英文代码}
-任务范围:
-  - 基础技能数据 (伤害/位置/效果/连击/DoT)
-  - 路径技能数据 (3条路径所有技能)
-  - 效果标记DU价值 (从available_effects.md)
-  - 机制交互关系 (连击/标记/协同)
+```
+英雄代码: {代码}
+任务: 收集技能数据、效果标记、DU价值、机制关系
 ```
 
-**调研代理输出**：
-- 技能数据表格 (伤害/位置/范围/效果)
-- DU价值计算结果
-- 机制关系说明
+**输出**：技能数据表格、DU计算、机制说明
 
 ### 阶段2：方案制定
 
-基于调研数据，使用 `Write` 工具生成增强方案文档：
+基于调研数据生成方案：
 
-**文件路径**：`_mods/{英雄代码}_buff_proposal.md`
-
-**使用模板**：[`_mods/templates/hero_buff_proposal_template.md`](../_mods/templates/hero_buff_proposal_template.md)
-
-**DU评估标准**：
-- **优秀** (>15 DU): 无需修改
-- **可接受** (10-15 DU): 可选优化
-- **弱势** (<10 DU): 必须增强
-
-**设计原则**：
-1. **强化核心机制** - 提升英雄特色系统效率
-2. **概率转确定** - 连击预备从概率(25%/33%)改为确定(100%)
-3. **添加生存** - 移动/位移技能添加闪避
-4. **路径差异** - 三路径有明确定位
-
-**方案文档结构**：
-```markdown
-# {英雄中文名}技能改进
-
-## 1. 弱势技能评估
-### 当前技能 DU 评估
-#### 基础技能
-#### 路径1/2/3技能
-### 弱势技能汇总
-
-## 2. 机制流派设计
-### 设计原则
-### 路径1/2/3设计
-### 流派对比
-
-## 3. 技能改进列表
-### 3.1 基础技能改进
-### 3.2 路径1/2/3技能改进
 ```
+模板: assets/hero_buff_proposal_template.md
+输出: ../../_mods/{代码}_buff_proposal.md
+```
+
+**参考案例**：
+- `references/jester_buff_proposal.md`
+- `references/runaway_buff_proposal.md`
+
+**DU评估**：
+- 优秀 (>15 DU): 不修改
+- 可接受 (10-15 DU): 可选
+- 弱势 (<10 DU): 必须增强
 
 ### 阶段3：实施修改
 
-调用 `csv-balance-implementer` 代理执行CSV修改：
+调用 `csv-balance-implementer` 代理：
 
-```yaml
-方案文件: _mods/{英雄代码}_buff_proposal.md
-修改目标: 方案文档第3章节的改进列表
+```
+方案: ../../_mods/{代码}_buff_proposal.md
+目标: 修改 ../../hero_{代码}_data_export.Group.csv
 ```
 
-**实施代理执行**：
-1. 定位CSV文件 (基础英雄: `hero_{代码}_data_export.Group.csv`)
-2. 使用 `element_start` 定位技能块
-3. 精确修改字段值 (UTF-8编码)
-4. 验证CSV格式
-5. Git提交变更
+### 阶段4：验证提交
 
-### 阶段4：验证输出
+```
+验证CSV格式 → Git提交 → 完成确认
+```
 
-完成确认清单：
-- [ ] 所有DU < 10的技能已增强
-- [ ] CSV格式验证通过
-- [ ] Git提交完成
-- [ ] 方案文档已归档
+## 依赖关系
 
-## 最佳实践示例
+### 内部文件 (skill目录内)
+- `references/hero_file_rules.md` - CSV结构说明
+- `references/available_effects.md` - 效果DU价值表
+- `references/rules.md` - 工作规则
+- `references/jester_buff_proposal.md` - 小丑案例
+- `references/runaway_buff_proposal.md` - 逃离者案例
+- `assets/hero_buff_proposal_template.md` - 方案模板
 
-### 小丑增强方案 (推荐参考)
+### 外部依赖 (工作目录)
+- `../../_mods/{代码}_buff_proposal.md` - 输出方案文档
+- `../../hero_{代码}_data_export.Group.csv` - 修改目标
+- `.claude/agents/game-mechanics-researcher` - 调研代理
+- `.claude/agents/csv-balance-implementer` - 实施代理
 
-**文件**：[`_mods/jester_buff_proposal.md`](../_mods/jester_buff_proposal.md)
+## 英雄代码
 
-**核心设计**：
-- **连击控制流** (路径1 Virtuoso): 击退+晕眩控制
-- **连击续航流** (路径2 Soloist): 伤害追踪刷新
-- **流血治疗流** (路径3 Intermezzo): 流血协同治疗
+```
+基础: flg/gr/hel/hwm/jes/lep/maa/occ/pd/run/ves
+DLC: cru/dul/abm
+```
 
-**关键改进**：
-- 连击预备: 25%/33% → 100% 确定
-- 移动技能: 添加闪避1
-- 流血DoT: 提升等级 (小→中→大)
+## 代理路由
 
-### 逃离者增强方案 (推荐参考)
-
-**文件**：[`_mods/runaway_buff_proposal.md`](../_mods/runaway_buff_proposal.md)
-
-**核心设计**：
-- **燃烧积累流** (路径1 Survivor): 燃烧叠加转化
-- **隐身刺客流** (路径2 Blaster): 隐身爆发偷取
-- **纯连击流** (路径3 Skirmisher): 确定性连击
-
-**关键改进**：
-- 概率连击: 25%/33% → 100% 确定
-- 移动技能: 添加闪避
-- 燃烧DoT: 提升基础伤害
-
-## 核心原则
-
-### ✅ 优先采用的原则
-- **数据驱动**: 无数据不决策，必须先调用调研代理
-- **方案优先**: 有方案才实施，必须先生成方案文档
-- **验证后提交**: 确认CSV格式正确才提交
-- **保持客观**: 数据驱动，不凭空想象
-
-### ❌ 避免的做法
-- 跳过数据收集直接制定方案
-- 修改方案文档外的技能
-- 未验证格式就提交Git
-- 修改英雄核心特色机制
-
-### ⚠️ 注意事项
-- 大文件(>1000行)禁止直接读取，使用脚本解析
-- 保持CSV UTF-8编码
-- 只修改指定字段，不改动结构
-- Git提交信息清晰描述变更
-
-### 🛠️ 验证清单
-- [ ] 调研代理数据收集完整
-- [ ] 方案文档符合模板格式
-- [ ] 所有DU < 10的技能已改进
-- [ ] CSV格式有效且UTF-8编码
-- [ ] Git diff仅含预期变更
-- [ ] 方案文档已归档到 `_mods/`
-
-## 参考文档
-
-| 文档 | 路径 | 用途 |
+| 阶段 | 代理 | 用途 |
 |------|------|------|
-| 英雄文件规则 | `_mods/rules/hero_file_rules.md` | CSV结构说明 |
-| 可用效果清单 | `_mods/rules/available_effects.md` | 效果DU价值表 |
-| 文件映射表 | `_mods/rules/file_mapping.md` | 文件路径索引 |
-| 方案模板 | `_mods/templates/hero_buff_proposal_template.md` | 方案文档模板 |
-| 小丑案例 | `_mods/jester_buff_proposal.md` | 完整增强方案 |
-| 逃离者案例 | `_mods/runaway_buff_proposal.md` | 完整增强方案 |
-
-## 英雄代码速查
-
-### 基础英雄
-```
-flg - 盗贼 (Flagellant)
-gr  - 药剂师 (Plague Doctor)
-hel - 地牢男爵 (Hellion)
-hwm - 钩手 (Highwayman)
-jes - 小丑 (Jester)
-lep - 麻风病人 (Leper)
-maa - 十字军 (Crusader)
-occ - 玄学家 (Occultist)
-pd  - 女巫 (Vestal)
-run - 逃离者 (Runaway)
-ves - 强盗 (Grave Robber)
-```
-
-### DLC英雄
-```
-cru - 十字军DLC (Crusader)
-dul - 猎人DLC (Duelist)
-abm - 铁匠DLC (Blacksmith)
-```
-
-## 支持的工具
-
-此技能允许使用以下工具：
-- **Task**: 调用调研代理(game-mechanics-researcher)和实施代理(csv-balance-implementer)
-- **Read**: 查看CSV文件和参考文档
-- **Grep**: 搜索技能数据和效果标记
-- **Glob**: 查找英雄CSV文件
-- **Write**: 创建增强方案文档
-- **Edit**: 修改方案文档
-- **Bash**: 执行Git操作和格式验证
-
-## 输出格式
-
-```
-【阶段1：数据收集】
-- 调研代理报告: {摘要}
-- 技能数量: {数量}
-- 弱势技能: {数量}
-
-【阶段2：方案制定】
-- 方案文件: _mods/{代码}_buff_proposal.md
-- 弱势技能: {列表}
-- 设计流派: {三路径定位}
-
-【阶段3：实施修改】
-- 修改技能: {数量}
-- CSV文件: {路径}
-- Git提交: {commit_id}
-
-【阶段4：验证完成】
-- 验证结果: ✅ 通过
-- 方案归档: _mods/{代码}_buff_proposal.md
-```
-
-## 版本历史
-
-- **v1.0.0** (2026-01-07): 初始版本
-  - 基于小丑和逃离者增强经验
-  - 建立标准化工作流程
-  - 定义DU评估标准
-  - 整合调研和实施代理
+| 数据收集 | game-mechanics-researcher | 收集客观数据 |
+| 实施修改 | csv-balance-implementer | 修改CSV提交 |
