@@ -7,8 +7,14 @@
 """
 
 import sys
+import io
 import yaml
 from pathlib import Path
+
+# 修复Windows控制台中文乱码
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
 def get_dlc_path(hero_code):
     """获取英雄CSV路径"""

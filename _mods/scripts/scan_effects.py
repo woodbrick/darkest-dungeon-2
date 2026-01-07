@@ -6,8 +6,15 @@
 
 import csv
 import re
+import sys
+import io
 from collections import defaultdict
 from pathlib import Path
+
+# 修复Windows控制台中文乱码
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
 # 文件路径
 EFFECT_FILE = Path("g:/Darkest Dungeon II/Darkest Dungeon II_Data/StreamingAssets/Excel/effect_data_export.Group.csv")

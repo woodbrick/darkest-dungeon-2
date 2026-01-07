@@ -8,7 +8,13 @@
 
 import csv
 import sys
+import io
 from pathlib import Path
+
+# 修复Windows控制台中文乱码
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
 # 效果DU价值表
 EFFECT_DU = {
@@ -81,40 +87,101 @@ def get_dlc_path(hero_code):
     else:
         raise ValueError(f'未知英雄代码: {hero_code}')
 
-def parse_skill_block(lines, start_idx):
-    """解析单个技能块"""
-    skill = {}
+def parse_hero_skills(hero_code):
+    """解析英雄所有技能，合并多个element块"""
+    csv_path = get_dlc_path(hero_code)
 
-    for i in range(start_idx, len(lines)):
-        line = lines[i].strip()
+    # 尝试从多个可能的位置查找文件
+    possible_paths = [
+        Path(csv_path),  # 当前目录
+        Path('..') / csv_path,  # 上级目录
+        Path('../..') / csv_path,  # 上上级目录
+        Path('../..') / 'dlc_dul_cru' / Path(csv_path).name,  # DLC1目录
+        Path('../..') / 'dlc_catacombs' / Path(csv_path).name,  # DLC2目录
+    ]
 
+    actual_path = None
+    for p in possible_paths:
+        if p.exists():
+            actual_path = p
+            break
+
+    if not actual_path:
+        print(f'错误: 文件不存在 {csv_path}')
+        return []
+
+    with open(actual_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+
+    # 按技能ID合并数据
+    skills_data = {}
+    current_skill_id = None
+    current_element_type = None
+
+    for line in lines:
+        line = line.strip()
         if not line or line.startswith('#'):
             continue
 
         if line.startswith('element_start'):
-            if skill:  # 已有技能数据，返回
-                return skill, i
-            skill['name'] = line.split(',', 1)[1].strip() if ',' in line else ''
+            parts = line.split(',')
+            if len(parts) >= 3:
+                current_skill_id = parts[1].strip()
+                current_element_type = parts[2].strip()
+
+                if current_skill_id not in skills_data:
+                    skills_data[current_skill_id] = {
+                        'id': current_skill_id,
+                        'name': current_skill_id
+                    }
             continue
 
-        if 'element_start' in line and i > start_idx:
-            return skill, i
+        if line == 'element_end':
+            current_skill_id = None
+            current_element_type = None
+            continue
 
-        if ',' not in line:
+        if current_skill_id is None or ',' not in line:
             continue
 
         key, value = [x.strip() for x in line.split(',', 1)]
 
-        if key in ['id', 'damage_min', 'damage_max', 'target_ranks', 'usable_ranks']:
-            skill[key] = value
-        elif key == 'target_effects':
-            skill['target_effects'] = value
-        elif key == 'performer_effects':
-            skill['performer_effects'] = value
-        elif key == 'target_apply_limit_effects':
-            skill['target_apply_limit_effects'] = value
+        # 解析伤害数据
+        if current_element_type == 'ActorDataStats':
+            if key == 'add_stats' and current_skill_id:
+                stats = [x.strip() for x in value.split(',')]
+                if len(stats) >= 2:
+                    try:
+                        skills_data[current_skill_id]['damage_min'] = stats[0]
+                        skills_data[current_skill_id]['damage_max'] = str(float(stats[0]) + float(stats[1]))
+                    except:
+                        pass
 
-    return skill, len(lines)
+        # 解析技能和效果数据
+        if current_element_type in ['ActorDataSkill', 'ActorDataEffects']:
+            if key in ['target_ranks', 'launch_ranks']:
+                skills_data[current_skill_id][key] = value
+            elif key in ['target_effects', 'performer_effects', 'target_apply_limit_effects']:
+                # 效果字段用逗号分隔多个效果，需要用|重新连接以便后续处理
+                effects = [x.strip() for x in value.split(',') if x.strip()]
+                if key in skills_data[current_skill_id]:
+                    # 已存在，追加
+                    existing = skills_data[current_skill_id][key].split('|')
+                    all_effects = existing + effects
+                    skills_data[current_skill_id][key] = '|'.join(all_effects)
+                else:
+                    skills_data[current_skill_id][key] = '|'.join(effects)
+
+    # 计算DU并过滤
+    skills = []
+    for skill_id, skill_data in skills_data.items():
+        # 只保留 jes_ 开头的技能
+        if not skill_id.startswith('jes_'):
+            continue
+        skill_data['du'] = calculate_du(skill_data)
+        skills.append(skill_data)
+
+    return skills
 
 def calculate_du(skill):
     """计算技能DU价值"""
@@ -144,31 +211,6 @@ def calculate_du(skill):
                 du += EFFECT_DU[effect]
 
     return round(du, 2)
-
-def parse_hero_skills(hero_code):
-    """解析英雄所有技能"""
-    csv_path = get_dlc_path(hero_code)
-
-    if not Path(csv_path).exists():
-        print(f'错误: 文件不存在 {csv_path}')
-        return []
-
-    with open(csv_path, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
-
-    skills = []
-    i = 0
-
-    while i < len(lines):
-        if 'element_start' in lines[i]:
-            skill, i = parse_skill_block(lines, i)
-            if skill and 'id' in skill:
-                skill['du'] = calculate_du(skill)
-                skills.append(skill)
-        else:
-            i += 1
-
-    return skills
 
 def print_skill_table(skills):
     """输出技能表格"""
