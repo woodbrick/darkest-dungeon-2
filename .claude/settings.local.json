@@ -3,5 +3,6 @@
     "allow": [
       "Bash(cp:*)"
     ]
-  }
+  },
+  "outputStyle": "研发工作流"
 }
