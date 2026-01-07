@@ -1,0 +1,386 @@
+# 暗黑地牢2 - 技能索引表
+# 记录所有技能的元数据: 名称、位置、效果
+# DU值通过 effects_du.yml 动态计算,不在此存储
+
+# ============== 地狱火 (Hellion) ==============
+hel_wicked_hack:
+  name: 邪恶劈砍
+  file: hero_hel_data_export.Group.csv
+  line: 97
+  type: attack
+  effects:
+    damage: 4-8
+    performer_buffs: combo_damage_boost_50pct
+    target_effects: end_combo
+
+hel_wicked_hack_u:
+  name: 邪恶劈砍(升级)
+  file: hero_hel_data_export.Group.csv
+  line: 116
+  type: attack
+  effects:
+    damage: 6-10
+    performer_buffs: combo_damage_boost_50pct
+    target_effects: end_combo
+
+hel_iron_swan:
+  name: 铁天鹅
+  file: hero_hel_data_export.Group.csv
+  line: 142
+  type: attack
+  effects:
+    damage: 4-8
+    range: 1→4
+
+hel_iron_swan_u:
+  name: 铁天鹅(升级)
+  file: hero_hel_data_export.Group.csv
+  line: 157
+  type: attack
+  effects:
+    damage: 6-10
+    range: 1→4
+    target_effects: prime_combo
+
+hel_barbaric_yawp:
+  name: 野蛮咆哮
+  file: hero_hel_data_export.Group.csv
+  line: 182
+  type: control
+  cooldown: 1
+  effects:
+    range: 1,2→1,2
+    target_effects: [add_1_weak, add_1_vulnerable, remove_all_stealth]
+    performer_effects: add_1_winded
+
+hel_barbaric_yawp_u:
+  name: 野蛮咆哮(升级)
+  file: hero_hel_data_export.Group.csv
+  line: 202
+  type: control
+  cooldown: 1
+  effects:
+    range: 1,2→1,2
+    target_effects: [combo_add_1_stun, add_2_weak, remove_all_stealth, end_combo]
+    performer_effects: add_1_winded
+
+hel_if_it_bleeds:
+  name: 见血封喉
+  file: hero_hel_data_export.Group.csv
+  line: 229
+  type: attack_dot
+  effects:
+    damage: 4-7
+    range: 2,3→2,3
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_small_bleed, end_combo]
+
+hel_if_it_bleeds_u:
+  name: 见血封喉(升级)
+  file: hero_hel_data_export.Group.csv
+  line: 248
+  type: attack_dot
+  effects:
+    damage: 3-6
+    range: 2,3→2,3
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_large_bleed, end_combo]
+
+hel_breakthrough:
+  name: 突破
+  file: hero_hel_data_export.Group.csv
+  line: 274
+  type: attack_utility
+  cooldown: 1
+  effects:
+    damage: 4-7
+    range: 2,3,4→1,2,3
+    target_effects: [remove_all_guard, ignored_token_remove_1_guard]
+    performer_effects: [add_1_winded, move_forward_2]
+
+hel_breakthrough_u:
+  name: 突破(升级)
+  file: hero_hel_data_export.Group.csv
+  line: 296
+  type: attack_utility
+  cooldown: 1
+  effects:
+    damage: 6-9
+    range: 2,3,4→1,2,3
+    target_effects: [remove_all_guard, remove_anti_block_debuff, anti_block_2_rounds_e, ignored_token_remove_1_guard]
+    performer_effects: [add_1_winded, move_forward_2]
+
+hel_bleed_out:
+  name: 放血
+  file: hero_hel_data_export.Group.csv
+  line: 366
+  type: attack_dot
+  effects:
+    damage: 4-8
+    range: 1→1
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_large_bleed, end_combo]
+    performer_effects: add_1_winded
+
+hel_bleed_out_u:
+  name: 放血(升级)
+  file: hero_hel_data_export.Group.csv
+  line: 387
+  type: attack_dot
+  effects:
+    damage: 6-9
+    range: 1→1
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_massive_bleed, end_combo]
+    performer_effects: add_1_winded
+
+hel_toe_to_toe:
+  name: 硬碰硬
+  file: hero_hel_data_export.Group.csv
+  line: 414
+  type: tank
+  effects:
+    damage: 3-6
+    range: 1,2,3→1,2
+    performer_effects: [add_2_taunt_nr, move_forward_1]
+    performer_after_target_effects: add_1_immobilize_nr
+
+hel_toe_to_toe_u:
+  name: 硬碰硬(升级)
+  file: hero_hel_data_export.Group.csv
+  line: 433
+  type: tank
+  effects:
+    damage: 5-8
+    range: 1,2,3→1,2
+    performer_effects: [add_2_taunt_nr, move_forward_1]
+    performer_after_target_effects: [add_1_immobilize_nr, remove_all_winded]
+
+hel_howling_end:
+  name: 哀号之终
+  file: hero_hel_data_export.Group.csv
+  line: 495
+  type: attack_nuke
+  cooldown: 3
+  effects:
+    damage: 8-14
+    range: 1,2→1,2
+    performer_effects: [add_1_winded, move_backward_1]
+
+hel_howling_end_u:
+  name: 哀号之终(升级)
+  file: hero_hel_data_export.Group.csv
+  line: 515
+  type: attack_nuke
+  cooldown: 2
+  effects:
+    damage: 10-18
+    range: 1,2→1,2
+    performer_effects: [add_1_winded, move_backward_1]
+
+hel_adrenaline_rush:
+  name: 肾上腺素激增
+  file: hero_hel_data_export.Group.csv
+  line: 324
+  type: heal
+  cooldown: 3
+  limit: 2
+  effects:
+    performer_effects: [heal_percent_very_small, remove_all_bleed]
+    performer_after_target_effects: [remove_all_winded, hellion_adrenaline_heal_hit_buff_e]
+
+hel_adrenaline_rush_u:
+  name: 肾上腺素激增(升级)
+  file: hero_hel_data_export.Group.csv
+  line: 342
+  type: heal
+  cooldown: 3
+  limit: 2
+  effects:
+    performer_effects: [heal_percent_small, remove_all_bleed, remove_all_blight, remove_all_burn]
+    performer_after_target_effects: [remove_all_winded, hellion_adrenaline_heal_hit_buff_e]
+
+hel_bloodlust:
+  name: 嗜血
+  file: hero_hel_data_export.Group.csv
+  line: 459
+  type: buff
+  cooldown: 2
+  effects:
+    performer_after_target_effects: [remove_all_winded, hellion_bloodlust_damage_buff_e]
+
+hel_bloodlust_u:
+  name: 嗜血(升级)
+  file: hero_hel_data_export.Group.csv
+  line: 474
+  type: buff
+  cooldown: 2
+  effects:
+    performer_after_target_effects: [remove_all_winded, hel_bloodlust_remove_execution, hellion_bloodlust_u_damage_buff_e, hel_bloodlust_execution_buff_e]
+
+hel_raucous_revelry:
+  name: 狂欢
+  file: hero_hel_data_export.Group.csv
+  line: 541
+  type: heal_stress
+  cooldown: 1
+  effects:
+    performer_effects: [heal_20pct_self_threshold_med, stress_heal_2_performer_at_threshold, add_1_winded, remove_all_horror]
+    performer_team_others_effects: stress_heal_1_target_at_threshold
+
+hel_raucous_revelry_u:
+  name: 狂欢(升级)
+  file: hero_hel_data_export.Group.csv
+  line: 557
+  type: heal_stress
+  cooldown: 1
+  effects:
+    performer_effects: [heal_25pct_self_threshold_med, stress_heal_3_performer_at_threshold, add_1_winded, remove_all_horror, hellion_revelry_deathblow_resist_e]
+    performer_team_others_effects: stress_heal_1_target_at_threshold
+
+# ============== 路径1: 暴食者 (Ravager) ==============
+hel_if_it_bleeds_p1:
+  name: 见血封喉(暴食者)
+  file: hero_hel_data_export.Group.csv
+  line: 617
+  type: attack_dot
+  effects:
+    damage: 3-6
+    range: 2,3→2,3
+    performer_buffs: path_buff_hel_ravager_bleed_chance_down
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_small_bleed, end_combo]
+
+hel_if_it_bleeds_p1_u:
+  name: 见血封喉(暴食者升级)
+  file: hero_hel_data_export.Group.csv
+  line: 639
+  type: attack_dot
+  effects:
+    damage: 3-6
+    range: 2,3→2,3
+    performer_buffs: path_buff_hel_ravager_bleed_chance_down
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_large_bleed, end_combo]
+
+hel_bleed_out_p1:
+  name: 放血(暴食者)
+  file: hero_hel_data_export.Group.csv
+  line: 666
+  type: attack_dot
+  effects:
+    damage: 4-8
+    range: 1→1
+    performer_buffs: path_buff_hel_ravager_bleed_chance_down
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_large_bleed, end_combo]
+    performer_effects: add_1_winded
+
+hel_bleed_out_p1_u:
+  name: 放血(暴食者升级)
+  file: hero_hel_data_export.Group.csv
+  line: 689
+  type: attack_dot
+  effects:
+    damage: 6-9
+    range: 1→1
+    performer_buffs: path_buff_hel_ravager_bleed_chance_down
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_massive_bleed, end_combo]
+    performer_effects: add_1_winded
+
+# ============== 路径2: 狂战士 (Berserker) ==============
+hel_if_it_bleeds_p2:
+  name: 见血封喉(狂战士)
+  file: hero_hel_data_export.Group.csv
+  line: 717
+  type: attack_dot
+  effects:
+    damage: 3-6
+    range: 2,3→2,3
+    performer_buffs: path_buff_hel_berserker_bleed_chance_up
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_small_bleed, end_combo]
+
+hel_if_it_bleeds_p2_u:
+  name: 见血封喉(狂战士升级)
+  file: hero_hel_data_export.Group.csv
+  line: 739
+  type: attack_dot
+  effects:
+    damage: 3-6
+    range: 2,3→2,3
+    performer_buffs: path_buff_hel_berserker_bleed_chance_up
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_large_bleed, end_combo]
+
+hel_bleed_out_p2:
+  name: 放血(狂战士)
+  file: hero_hel_data_export.Group.csv
+  line: 766
+  type: attack_dot
+  effects:
+    damage: 4-8
+    range: 1→1
+    performer_buffs: path_buff_hel_berserker_bleed_chance_up
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_large_bleed, end_combo]
+    performer_effects: add_1_winded
+
+hel_bleed_out_p2_u:
+  name: 放血(狂战士升级)
+  file: hero_hel_data_export.Group.csv
+  line: 789
+  type: attack_dot
+  effects:
+    damage: 6-9
+    range: 1→1
+    performer_buffs: path_buff_hel_berserker_bleed_chance_up
+    target_buffs: combo_ignore_30pct_bleed_resist
+    target_effects: [skill_dot_massive_bleed, end_combo]
+    performer_effects: add_1_winded
+
+# ============== 路径3: 征服者 (Vanquisher) ==============
+hel_wicked_hack_p3:
+  name: 邪恶劈砍(征服者)
+  file: hero_hel_data_export.Group.csv
+  line: 817
+  type: attack
+  effects:
+    damage: 4-8
+    range: 1,2→1,2
+    performer_buffs: combo_damage_boost_50pct
+    target_effects: [remove_all_block, remove_all_block_plus, end_combo]
+
+hel_wicked_hack_p3_u:
+  name: 邪恶劈砍(征服者升级)
+  file: hero_hel_data_export.Group.csv
+  line: 838
+  type: attack
+  effects:
+    damage: 6-10
+    range: 1,2→1,2
+    performer_buffs: combo_damage_boost_50pct
+    target_effects: [remove_all_block, remove_all_block_plus, end_combo]
+
+hel_barbaric_yawp_p3:
+  name: 野蛮咆哮(征服者)
+  file: hero_hel_data_export.Group.csv
+  line: 864
+  type: control_tank
+  cooldown: 1
+  effects:
+    range: 1,2→1,2
+    target_effects: [add_1_weak, remove_all_stealth]
+    performer_effects: [add_1_winded, add_2_taunt_nr]
+
+hel_barbaric_yawp_p3_u:
+  name: 野蛮咆哮(征服者升级)
+  file: hero_hel_data_export.Group.csv
+  line: 886
+  type: control_tank
+  cooldown: 1
+  effects:
+    range: 1,2→1,2
+    target_effects: [combo_add_1_stun, add_2_weak, remove_all_stealth, end_combo]
+    performer_effects: [add_1_winded, add_2_taunt_nr]

@@ -54,6 +54,8 @@ _mods/
 | [rules/data_skills.md](rules/data_skills.md) | 技能数据字段说明 |
 | [rules/hero_file_rules.md](rules/hero_file_rules.md) | CSV结构规则 |
 | [rules/available_effects.md](rules/available_effects.md) | 效果标记完整清单 |
+| [rules/effects_du.yml](rules/effects_du.yml) | **效果索引表** - 名称/描述/位置/DU ⚠️ 唯一DU数据源 |
+| [rules/skills_index.yml](rules/skills_index.yml) | **技能索引表** - 名称/位置/效果元数据 |
 
 ### 英雄改动方案
 | 英雄 | 方案文档 | YAML配置 |
@@ -89,7 +91,7 @@ _mods/
 1. **数据收集**: Task工具 + game-mechanics-researcher代理
 2. **分析决策**: 识别弱势技能(DU<9)，设计改进方案
 3. **规划任务**: 输出`{英雄}_buff_proposal.md`
-4. **协调实施**: 生成`{英雄}_changes_complete.yml`，使用csv-balance-implementer代理
+4. **协调实施**: 生成`{英雄}_changes_complete.yml`，使用general-purpose代理执行修改
 
 ---
 
@@ -124,9 +126,16 @@ skill_id:
 ```
 
 ### 禁止事项
-- ❌ 禁止创建特定英雄的专用脚本
-- ❌ 禁止重复实现已有功能
-- ✅ 必须使用通用脚本处理所有英雄
+- ❌ **禁止创建新脚本** - 只能使用现有通用脚本
+- ❌ **禁止编写特定英雄代码** - 所有脚本必须通用化
+- ❌ **禁止绕过工具直接修改** - 必须使用Edit工具
+- ✅ **必须使用通用脚本** - parse_universal.py / apply_universal.py
+
+**🚨 铁律 - 单一事实原则**:
+- **效果DU值**: 唯一定义在 `rules/effects_du.yml`
+- **技能元数据**: 存储在 `rules/skills_index.yml` (名称/位置/效果)
+- **技能DU值**: 不存储,动态计算 = 伤害 + Σ(效果DU)
+- 修改数据只需编辑YAML,无需改代码
 
 ---
 

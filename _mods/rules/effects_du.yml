@@ -1,0 +1,670 @@
+# 暗黑地牢2 - 效果索引表
+# 记录所有效果的完整元数据: 名称、描述、文件位置、DU价值
+
+# ============== 力量/脆弱 ==============
+add_1_strength:
+  name: 力量+1
+  desc: 下次攻击+50%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+add_2_strength:
+  name: 力量+2
+  desc: 2次攻击+50%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+add_3_strength:
+  name: 力量+3
+  desc: 3次攻击+50%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 7
+
+add_1_vulnerable:
+  name: 脆弱+1
+  desc: 受击+50%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+add_2_vulnerable:
+  name: 脆弱+2
+  desc: 2次受击+50%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+add_3_vulnerable:
+  name: 脆弱+3
+  desc: 3次受击+50%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 7
+
+# ============== 格挡 ==============
+add_1_block:
+  name: 格挡+1
+  desc: 吸收1次攻击50%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+add_2_block:
+  name: 格挡+2
+  desc: 吸收2次攻击50%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+add_3_block:
+  name: 格挡+3
+  desc: 吸收3次攻击50%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4.5
+
+add_1_block_plus:
+  name: 强力格挡+1
+  desc: 吸收1次攻击75%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+add_2_block_plus:
+  name: 强力格挡+2
+  desc: 吸收2次攻击75%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5.5
+
+add_3_block_plus:
+  name: 强力格挡+3
+  desc: 吸收3次攻击75%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 6.5
+
+# ============== 闪避 ==============
+add_1_dodge:
+  name: 闪避+1
+  desc: 躲避1次攻击
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+add_2_dodge:
+  name: 闪避+2
+  desc: 躲避2次攻击
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 6
+
+add_1_dodge_plus:
+  name: 强力闪避+1
+  desc: 高优先级闪避1次攻击
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 6
+
+add_2_dodge_plus:
+  name: 强力闪避+2
+  desc: 高优先级闪避2次攻击
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 8
+
+# ============== 晕眩/致盲 ==============
+add_1_stun:
+  name: 晕眩+1
+  desc: 跳过1回合
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+add_2_stun:
+  name: 晕眩+2
+  desc: 跳过2回合
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 7
+
+add_1_blind:
+  name: 致盲+1
+  desc: 下次攻击偏离
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+add_2_blind:
+  name: 致盲+2
+  desc: 下2次攻击偏离
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 6
+
+# ============== 反击 ==============
+add_1_riposte:
+  name: 反击+1
+  desc: 受击时反击1次
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+add_2_riposte:
+  name: 反击+2
+  desc: 受击时反击2次
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# ============== 移动/位移 ==============
+move_forward_1:
+  name: 前进1格
+  desc: 向前移动1位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+move_forward_2:
+  name: 前进2格
+  desc: 向前移动2位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+move_backward_1:
+  name: 后退1格
+  desc: 向后移动1位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+move_backward_2:
+  name: 后退2格
+  desc: 向后移动2位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+move_pull_1:
+  name: 拉拽1格
+  desc: 将敌人向前拉1位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+move_pull_2:
+  name: 拉拽2格
+  desc: 将敌人向前拉2位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+move_knockback_1:
+  name: 击退1格
+  desc: 将敌人向后推1位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+move_knockback_2:
+  name: 击退2格
+  desc: 将敌人向后推2位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+move_swap:
+  name: 交换位置
+  desc: 与目标交换位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+# ============== 流血/腐蚀/燃烧 ==============
+skill_dot_small_bleed:
+  name: 小流血
+  desc: 每回合少量流血伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+skill_dot_medium_bleed:
+  name: 中流血
+  desc: 每回合中量流血伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+skill_dot_large_bleed:
+  name: 大流血
+  desc: 每回合大量流血伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+skill_dot_massive_bleed:
+  name: 巨量流血
+  desc: 每回合巨量流血伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 7
+
+skill_dot_small_blight:
+  name: 小腐蚀
+  desc: 每回合少量腐蚀伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+skill_dot_medium_blight:
+  name: 中腐蚀
+  desc: 每回合中量腐蚀伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+skill_dot_large_blight:
+  name: 大腐蚀
+  desc: 每回合大量腐蚀伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+skill_dot_small_burn:
+  name: 小燃烧
+  desc: 每回合少量燃烧伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+skill_dot_medium_burn:
+  name: 中燃烧
+  desc: 每回合中量燃烧伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+skill_dot_large_burn:
+  name: 大燃烧
+  desc: 每回合大量燃烧伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# ============== 压力治疗 ==============
+stress_heal_1:
+  name: 压力治疗1
+  desc: 减少1点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+stress_heal_2:
+  name: 压力治疗2
+  desc: 减少2点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+stress_heal_3:
+  name: 压力治疗3
+  desc: 减少3点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+stress_heal_4:
+  name: 压力治疗4
+  desc: 减少4点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+stress_heal_5:
+  name: 压力治疗5
+  desc: 减少5点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# ============== 治疗 ==============
+heal_percent_very_small:
+  name: 极小治疗
+  desc: 恢复少量生命百分比
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+heal_percent_small:
+  name: 小治疗
+  desc: 恢复小量生命百分比
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+heal_percent_medium:
+  name: 中治疗
+  desc: 恢复中量生命百分比
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# ============== 连击 ==============
+prime_combo:
+  name: 启动连击
+  desc: 允许使用连击技能
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+end_combo:
+  name: 结束连击
+  desc: 终止连击状态
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0
+
+combo_damage_boost_50pct:
+  name: 连击伤害加成50%
+  desc: 连击期间+50%伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+# ============== 状态效果 ==============
+add_1_weak:
+  name: 虚弱+1
+  desc: 降低伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+add_2_weak:
+  name: 虚弱+2
+  desc: 降低伤害(2层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+add_1_winded:
+  name: 疲劳+1
+  desc: 负面状态
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: -1
+
+remove_all_winded:
+  name: 移除疲劳
+  desc: 清除疲劳状态
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+add_1_taunt_nr:
+  name: 嘲讽+1
+  desc: 强制敌人攻击自己
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+add_2_taunt_nr:
+  name: 嘲讽+2
+  desc: 强制敌人攻击自己(2层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+add_1_immobilize_nr:
+  name: 定身+1
+  desc: 无法移动
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+add_2_immobilize_nr:
+  name: 定身+2
+  desc: 无法移动(2层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# ============== 护卫/破护卫 ==============
+remove_all_guard:
+  name: 移除护卫
+  desc: 清除目标护卫状态
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+remove_all_block:
+  name: 移除格挡
+  desc: 清除目标格挡
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+remove_all_block_plus:
+  name: 移除强力格挡
+  desc: 清除目标强力格挡
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+# ============== 隐身 ==============
+remove_all_stealth:
+  name: 移除隐身
+  desc: 强制目标现身
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0.5
+
+# ============== 暴击加成 ==============
+add_1_crit:
+  name: 暴击+1
+  desc: 下次攻击必暴击
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.8
+
+add_2_crit:
+  name: 暴击+2
+  desc: 下2次攻击必暴击
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+# ============== 速度 ==============
+add_1_speed:
+  name: 速度+1
+  desc: 提升行动速度
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+add_2_speed:
+  name: 速度+2
+  desc: 提升行动速度(2层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+# ============== 标记 ==============
+add_1_mark:
+  name: 标记+1
+  desc: 标记目标
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+add_2_mark:
+  name: 标记+2
+  desc: 标记目标(2层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+# ============== 抗性 ==============
+add_1_debuff_resist:
+  name: 减益抗性+1
+  desc: 提升减益抗性
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+add_2_debuff_resist:
+  name: 减益抗性+2
+  desc: 提升减益抗性(2层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+# ============== DOT移除 ==============
+remove_all_bleed:
+  name: 移除流血
+  desc: 清除所有流血
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+remove_all_blight:
+  name: 移除腐蚀
+  desc: 清除所有腐蚀
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+remove_all_burn:
+  name: 移除燃烧
+  desc: 清除所有燃烧
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+# ============== 恐惧 ==============
+remove_all_horror:
+  name: 移除恐惧
+  desc: 清除恐惧状态
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+# ============== 保护 ==============
+add_1_protect:
+  name: 保护+1
+  desc: 保护队友
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+add_2_protect:
+  name: 保护+2
+  desc: 保护队友(2层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# ============== 献祭 ==============
+add_1_guard:
+  name: 献祭+1
+  desc: 承担队友伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+add_2_guard:
+  name: 献祭+2
+  desc: 承担队友伤害(2层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+add_3_guard:
+  name: 献祭+3
+  desc: 承担队友伤害(3层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+add_1_multi_guard:
+  name: 多重献祭+1
+  desc: 同时保护多个队友
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+# ============== 状态转移 ==============
+combo_ignore_30pct_bleed_resist:
+  name: "连击: 忽略30%流血抗性"
+  desc: 流血抗性-30%
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+combo_ignore_30pct_blight_resist:
+  name: "连击: 忽略30%腐蚀抗性"
+  desc: 腐蚀抗性-30%
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+combo_ignore_30pct_burn_resist:
+  name: "连击: 忽略30%燃烧抗性"
+  desc: 燃烧抗性-30%
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+# ============== 特殊标记 ==============
+combo_add_1_stun:
+  name: "连击: 晕眩+1"
+  desc: 连击结束时施加晕眩
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+combo_add_1_blind:
+  name: "连击: 致盲+1"
+  desc: 连击结束时施加致盲
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+combo_add_1_dodge:
+  name: "连击: 闪避+1"
+  desc: 连击结束时施加闪避
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+combo_add_1_block:
+  name: "连击: 格挡+1"
+  desc: 连击结束时施加格挡
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+# ============== 其他效果 ==============
+anti_block_2_rounds_e:
+  name: 禁止格挡2回合
+  desc: 2回合内无法格挡
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+ignored_token_remove_1_guard:
+  name: 忽略护卫移除
+  desc: 破护卫时的附加效果
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0.5
+
+remove_anti_block_debuff:
+  name: 移除禁格挡
+  desc: 清除禁止格挡状态
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0.5

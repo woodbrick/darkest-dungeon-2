@@ -9,6 +9,7 @@
 import csv
 import sys
 import io
+import yaml
 from pathlib import Path
 
 # 修复Windows控制台中文乱码
@@ -16,61 +17,22 @@ if sys.platform == 'win32':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
-# 效果DU价值表
-EFFECT_DU = {
-    # 力量/脆弱
-    'add_1_strength': 3,
-    'add_2_strength': 5,
-    'add_1_vulnerable': 3,
-    'add_2_vulnerable': 5,
+# 加载效果DU配置(唯一DU数据源)
+def load_effects_du():
+    """从YAML文件加载效果DU价值 - 单一事实来源"""
+    config_path = Path(__file__).parent.parent / 'rules' / 'effects_du.yml'
 
-    # 格挡
-    'add_1_block': 2.5,
-    'add_1_block_plus': 3.5,
-    'add_2_block_plus': 5.5,
+    if not config_path.exists():
+        print(f'警告: DU配置文件不存在 {config_path}')
+        return {}
 
-    # 闪避
-    'add_1_dodge': 4,
-    'add_1_dodge_plus': 6,
-    'add_2_dodge': 6,
-    'add_2_dodge_plus': 8,
+    with open(config_path, 'r', encoding='utf-8') as f:
+        data = yaml.safe_load(f) or {}
+        # 新格式: {effect_id: {name, desc, file, line, du}}
+        # 转换为: {effect_id: du}
+        return {k: v.get('du', 0) for k, v in data.items()} if isinstance(data, dict) else {}
 
-    # 晕眩/致盲
-    'add_1_stun': 4,
-    'add_2_stun': 7,
-    'add_1_blind': 4,
-    'add_2_blind': 6,
-
-    # 反击
-    'add_1_riposte': 3,
-    'add_2_riposte': 5,
-
-    # 移动/位移
-    'move_forward_1': 1.5,
-    'move_backward_1': 1.5,
-    'move_pull_1': 1.5,
-    'move_pull_2': 2.5,
-    'move_knockback_1': 1.5,
-    'move_knockback_2': 2.5,
-
-    # 流血
-    'skill_dot_small_bleed': 2,
-    'skill_dot_medium_bleed': 3.5,
-    'skill_dot_large_bleed': 5,
-
-    # 压力治疗
-    'stress_heal_1': 1,
-    'stress_heal_2': 2,
-    'stress_heal_3': 3,
-    'stress_heal_4': 4,
-
-    # 连击
-    'prime_combo': 3,
-
-    # 暴击
-    'add_1_crit': 1.8,
-    'add_2_crit': 3,
-}
+EFFECT_DU = load_effects_du()
 
 def get_dlc_path(hero_code):
     """获取英雄CSV路径"""
@@ -175,8 +137,12 @@ def parse_hero_skills(hero_code):
     # 计算DU并过滤
     skills = []
     for skill_id, skill_data in skills_data.items():
-        # 过滤掉非技能数据（如路径技能 Mastery/Technique 等）
-        if not (skill_id.startswith('run_') and '_' in skill_id[4:]):
+        # 过滤技能: 必须以hero_开头且包含技能标识
+        # 排除: move技能、尸体数据、act_out技能
+        if (skill_id.endswith('_move') or
+            skill_id.endswith('_corpse') or
+            skill_id.startswith('act_out_') or
+            'move' in skill_id.lower()):
             continue
         skill_data['du'] = calculate_du(skill_data)
         skills.append(skill_data)
