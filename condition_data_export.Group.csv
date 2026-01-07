@@ -9920,6 +9920,12 @@ m_ConditionActorType,TARGET,
 m_ConditionNumber,0.3,
 m_ConditionNumberType,LESS_THAN_OR_EQUAL,
 element_end
+element_start,target_stress_over_30pct,Condition
+m_ConditionType,stress_percent,
+m_ConditionActorType,TARGET,
+m_ConditionNumber,0.3,
+m_ConditionNumberType,GREATER_THAN_OR_EQUAL,
+element_end
 element_start,target_stress_over_40pct,Condition
 m_ConditionType,stress_percent,
 m_ConditionActorType,TARGET,

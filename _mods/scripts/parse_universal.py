@@ -175,8 +175,8 @@ def parse_hero_skills(hero_code):
     # 计算DU并过滤
     skills = []
     for skill_id, skill_data in skills_data.items():
-        # 只保留 jes_ 开头的技能
-        if not skill_id.startswith('jes_'):
+        # 过滤掉非技能数据（如路径技能 Mastery/Technique 等）
+        if not (skill_id.startswith('run_') and '_' in skill_id[4:]):
             continue
         skill_data['du'] = calculate_du(skill_data)
         skills.append(skill_data)
