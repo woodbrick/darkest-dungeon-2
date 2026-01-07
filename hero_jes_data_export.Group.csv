@@ -548,7 +548,7 @@ key_map,crit_chance,
 add_stats,0.05,
 element_end
 element_start,jes_echoing_march,ActorDataEffects
-target_effects,move_pull_1,jes_echoing_march_pull_e,
+target_effects,move_pull_1,jes_echoing_march_pull_e,add_1_vulnerable,
 element_end
 element_start,jes_echoing_march_u,ActorDataSkill
 m_IsFriendly,False,
@@ -571,7 +571,7 @@ key_map,crit_chance,
 add_stats,0.1,
 element_end
 element_start,jes_echoing_march_u,ActorDataEffects
-target_effects,move_pull_2,jes_echoing_march_pull_u_e,
+target_effects,move_pull_2,jes_echoing_march_pull_u_e,add_2_vulnerable,
 element_end
 element_start,jes_echoing_march_u,Unlock
 m_RequirementIds,jes_echoing_march,
