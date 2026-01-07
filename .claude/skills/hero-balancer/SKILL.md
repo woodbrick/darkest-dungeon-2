@@ -31,6 +31,10 @@ allowed-tools: [Task, Read, Write, Edit, Bash]
 
 **输出**: 技能数据表格、DU计算、机制说明
 
+**⚠️ 调研铁律**:
+- DU < 5 的技能必然存在**效果疏漏**或**解读错误**
+- 必须检查所有作用效果: 伤害/DoT/增益/减益/连击/移动/条件触发
+
 ### 阶段2：方案制定
 
 **模板**: `assets/hero_buff_proposal_template.md`
