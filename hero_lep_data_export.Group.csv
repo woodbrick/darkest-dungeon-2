@@ -158,7 +158,7 @@ m_ProfileUnlockId,herostory_LEP_04,
 element_end
 element_start,lep_hew,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,3,4,0.05,
+add_stats,4,7,0.05,
 element_end
 element_start,lep_hew,ActorDataEffects
 performer_effects,leper_self_blind_chance,
@@ -182,7 +182,7 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_hew_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,4,5,0.05,
+add_stats,5,8,0.05,
 element_end
 element_start,lep_hew_u,ActorDataEffects
 performer_effects,leper_self_blind_chance_u,
@@ -207,7 +207,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_purge,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,2,0.05,
+add_stats,4,3,0.05,
 element_end
 element_start,lep_purge,ActorDataEffects
 target_team_effects,clear_corpse,
@@ -365,7 +365,7 @@ m_ProfileUnlockId,herostory_LEP_03,
 element_end
 element_start,lep_intimidate,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,1,0.05,
+add_stats,3,3,0.05,
 element_end
 element_start,lep_intimidate,ActorDataEffects
 performer_effects,add_2_taunt_nr,
@@ -430,7 +430,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_ruin_u,ActorDataEffects
-performer_effects,dot_small_bleed_nr,leper_ruin_damage_buff_manager_e,leper_ruin_damage_buff_listener_e,
+performer_effects,dot_small_bleed_nr,leper_ruin_damage_buff_manager_u_e,leper_ruin_damage_buff_listener_u_e,
 element_end
 element_start,lep_ruin_u,Unlock
 m_RequirementIds,lep_ruin,
@@ -448,7 +448,7 @@ m_Tags,stress_heal,lep_reflection,
 m_IsStallInvalidating,False,
 element_end
 element_start,lep_reflection,ActorDataEffects
-performer_effects,stress_heal_1,
+performer_effects,stress_heal_3,add_1_block,
 performer_after_target_effects,remove_all_blind,remove_all_combo_visible,
 element_end
 element_start,lep_reflection_u,ActorDataSkill
@@ -465,7 +465,7 @@ m_IsStallInvalidating,False,
 m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_reflection_u,ActorDataEffects
-performer_effects,stress_heal_2,
+performer_effects,stress_heal_4,add_1_block_plus,add_1_block_plus,
 performer_after_target_effects,remove_all_blind,remove_all_combo_visible,leper_reflection_debuff_res_buff_e,
 element_end
 element_start,lep_reflection_u,Unlock
@@ -616,7 +616,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_chop_p1,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,7,8,0.05,
+add_stats,10,10,0.07,
 element_end
 element_start,lep_chop_p1,ActorDataEffects
 performer_effects,leper_self_blind_chance,
@@ -640,10 +640,10 @@ m_SkillModifierChanceModifiers,curse,3,
 element_end
 element_start,lep_chop_p1_u,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,8,10,0.05,
+add_stats,12,10,0.07,
 element_end
 element_start,lep_chop_p1_u,ActorDataEffects
-performer_effects,leper_self_blind_chance_u,
+performer_effects,leper_self_blind_chance_u,add_1_strength,
 target_effects,end_combo_if_blind,
 performer_per_target_effects,ignored_token_remove_1_blind_if_target_combo,
 element_end
@@ -954,7 +954,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_chop_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,6,0.05,
+add_stats,3,6,0.05,
 element_end
 element_start,lep_chop_p3,ActorDataEffects
 performer_effects,leper_self_blind_chance,
@@ -1006,7 +1006,7 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_purge_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,2,2,0.05,
+add_stats,4,4,0.05,
 element_end
 element_start,lep_purge_p3,ActorDataEffects
 target_team_effects,clear_corpse,
@@ -1054,11 +1054,11 @@ m_IsStallInvalidating,True,
 element_end
 element_start,lep_intimidate_p3,ActorDataStats
 key_map,health_damage,health_damage_range,crit_chance,
-add_stats,1,1,0.05,
+add_stats,3,3,0.05,
 element_end
 element_start,lep_intimidate_p3,ActorDataEffects
 performer_effects,add_2_taunt_nr,
-target_effects,add_2_weak,add_1_vulnerable,
+target_effects,add_2_weak,add_2_vulnerable,
 element_end
 element_start,lep_intimidate_p3_u,ActorDataSkill
 m_IsFriendly,False,
