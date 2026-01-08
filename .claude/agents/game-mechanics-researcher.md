@@ -17,7 +17,7 @@ color: blue
 
 ## 工作流程
 
-1. **确定数据源** - 使用 file_mapping.md 定位CSV文件
+1. **确定数据源** - 使用 hero_file_rules.md 定位CSV文件结构
 2. **解析结构** - 使用 hero_file_rules.md 理解字段含义
 3. **提取数据** - 读取数值、效果标记、触发条件、交互关系
 4. **记录机制** - 描述触发条件、数值效果、交互关系、限制条件
@@ -53,4 +53,3 @@ color: blue
 
 - `_mods/hero_file_rules.md` - CSV结构
 - `_mods/available_effects.md` - 效果与DU值
-- `_mods/file_mapping.md` - 文件映射

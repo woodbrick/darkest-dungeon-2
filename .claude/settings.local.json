@@ -5,7 +5,10 @@
       "Read(G:\\Darkest Dungeon II\\Darkest Dungeon II_Data\\StreamingAssets\\Excel\\CLAUDE.md)",
       "Bash(dir:*)",
       "Bash(cd:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Edit",
+      "SlashCommand(/commit --type=feat)",
+      "SlashCommand(/commit:*)"
     ]
   },
   "outputStyle": "研发工作流"

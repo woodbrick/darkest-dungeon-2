@@ -33,7 +33,6 @@
 **核心文档**: 
 [hero_file_rules.md](_mods/hero_file_rules.md)
 [available_effects.md](_mods/available_effects.md) 
-[file_mapping.md](_mods/file_mapping.md)
 
 ### 实施代理 (implementation-agent)
 | 步骤 | 操作 |
@@ -103,7 +102,6 @@ git commit -m "feat: 平衡性调整"
 - [英雄文件规则](_mods/hero_file_rules.md) - CSV结构
 - [效果DU定义](_mods/rules/effects_du.yml) - 效果价值单一数据源
 - [缺失效果清单](_mods/MISSING_EFFECTS_TODO.md) - 效果字段遗漏案例
-- [文件映射表](_mods/file_mapping.md) - 文件索引
 - [技能修改指南](_mods/AGENTS.md) - 详细教程
 - [英雄改动总览](_mods/all_heroes_changes_overview.md) - 历史记录
 - **问题追踪** (_mods/issues/) - 流程缺陷记录和优化方案
