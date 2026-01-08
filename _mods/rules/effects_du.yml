@@ -1046,3 +1046,215 @@ heal_25pct_self_threshold_med:
   file: effect_data_export.Group.csv
   line: TBD
   du: 4.5
+
+# ============== 麻风剑客专属效果 ==============
+# ============== 状态效果 ==============
+add_1_daze:
+  name: 眩晕+1
+  desc: 下次攻击有几率偏离(眩晕状态)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+add_1_immobilize:
+  name: 定身+1
+  desc: 无法移动位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+# ============== 脆弱标记(持久) ==============
+add_1_vulnerable_nr:
+  name: 脆弱+1(持久)
+  desc: 受击+50%伤害(不可移除)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+add_2_vulnerable_nr:
+  name: 脆弱+2(持久)
+  desc: 2次受击+50%伤害(不可移除)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 6
+
+# ============== 流血(持久) ==============
+dot_small_bleed_nr:
+  name: 小流血(持久)
+  desc: 每回合少量流血伤害(不可移除)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+# ============== 连击条件 ==============
+end_combo_if_blind:
+  name: 连击结束(若致盲)
+  desc: 处于致盲状态时结束连击
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0.5
+
+# ============== 阈值触发治疗 ==============
+heal_33pct_self_threshold_med:
+  name: 阈值触发自我治疗33%
+  desc: 压力阈值触发时自我恢复33%生命
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 6
+
+heal_50pct_self_threshold_med:
+  name: 阈值触发自我治疗50%
+  desc: 压力阈值触发时自我恢复50%生命
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 8
+
+heal_75pct_self_threshold_med:
+  name: 阈值触发自我治疗75%
+  desc: 压力阈值触发时自我恢复75%生命
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 11
+
+# ============== 麻风剑客专属Buff ==============
+# 伤害相关
+leper_revenge_strength_buff_e:
+  name: 复仇力量buff
+  desc: 复仇技能获得力量标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+leper_revenge_crit_buff_e:
+  name: 复仇暴击buff
+  desc: 复仇技能获得暴击标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+leper_ruin_damage_buff_listener_e:
+  name: 废墟伤害buff监听器
+  desc: 废墟技能伤害加成监听
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+leper_ruin_damage_buff_manager_e:
+  name: 废墟伤害buff管理器
+  desc: 废墟技能伤害加成管理
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+# 自我致盲机制
+leper_self_blind_chance:
+  name: 自我致盲几率
+  desc: 攻击后有几率致盲自己
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: -1
+
+leper_self_blind_chance_u:
+  name: 自我致盲几率(升级)
+  desc: 攻击后有几率致盲自己(升级版)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: -0.5
+
+# 坚守相关
+leper_withstand_block_buff_e:
+  name: 坚守格挡buff
+  desc: 坚守技能获得格挡标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+leper_withstand_dot_resist_buff_e:
+  name: 坚守DoT抗性buff
+  desc: 坚守提升DoT抗性
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+leper_withstand_dot_resist_buff_u_e:
+  name: 坚守DoT抗性buff(升级)
+  desc: 坚守提升DoT抗性(升级版)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+leper_withstand_move_resist_buff_e:
+  name: 坚守移动抗性buff
+  desc: 坚守提升移动抗性
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+leper_withstand_move_resist_buff_u_e:
+  name: 坚守移动抗性buff(升级)
+  desc: 坚守提升移动抗性(升级版)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+# 反思相关
+leper_reflection_debuff_res_buff_e:
+  name: 反思减益抗性buff
+  desc: 反思提升减益抗性
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+# ============== 移动效果 ==============
+move_knockback_3:
+  name: 击退3格
+  desc: 将敌人向后推3位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+# ============== 状态移除 ==============
+remove_all_blind:
+  name: 移除所有致盲
+  desc: 清除所有致盲状态
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+remove_all_combo_visible:
+  name: 移除连击可见性
+  desc: 清除连击可见性标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0.5
+
+remove_all_weak:
+  name: 移除所有虚弱
+  desc: 清除所有虚弱状态
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+# ============== 路径专属Buff ==============
+# 路径3: 君王
+lep_monarch_chop_dmg_vs_cosmic:
+  name: 君王劈砍对宇宙伤害加成
+  desc: 君王路径劈砍对宇宙敌人伤害加成
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+# ============== 破护卫特殊效果 ==============
+ignored_token_remove_1_block:
+  name: 忽略格挡移除
+  desc: 破格挡时的附加效果
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0.5
+
+ignored_token_remove_1_block_plus:
+  name: 忽略强力格挡移除
+  desc: 破强力格挡时的附加效果
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0.5
