@@ -1,7 +1,87 @@
 # 缺失效果调研清单
 
-> 本文档记录 `effects_du.yml` 中缺失的效果标记
-> 这些效果在英雄技能CSV中被使用，但尚未定义DU价值和元数据
+> 本文档记录两类缺失问题：
+> 1. **效果DU定义缺失** - `effects_du.yml` 中未定义的效果
+> 2. **效果字段遗漏** - 调研时遗漏的CSV字段
+
+---
+
+## 第一部分：效果字段遗漏（新增）
+
+### 易遗漏字段清单
+
+| 字段名 | 用途 | 典型案例 | 影响 |
+|--------|------|----------|------|
+| `performer_after_target_effects` | 施放者后续效果 | hel_adrenaline_rush: 移除疲惫、攻击治疗buff | DU低估1-2 |
+| `performer_team_others_effects` | 队友效果 | hel_raucous_revelry: 队友压力治疗 | DU低估0.25-1 |
+| `target_buffs` | 目标buff标记 | 连击相关buff | DU完全忽略 |
+| `performer_buffs` | 施放者buff标记 | 路径专属buff | DU完全忽略 |
+| **群攻倍率** | 多目标效果计算 | hel_barbaric_yawp: 群攻×2 | DU低估50%+ |
+
+### 已发现字段遗漏案例
+
+#### hel_adrenaline_rush (地狱犬)
+- **遗漏字段**: `performer_after_target_effects`
+- **遗漏效果**:
+  - `remove_all_winded` (0.5 DU)
+  - `hellion_adrenaline_heal_hit_buff_e` (0.5 DU)
+- **影响**: DU 3.0 → 5.0 (+66%)
+- **日期**: 2026-01-07
+- **教训**: 必须检查所有 `*_effects` 字段，不仅仅是 `target_effects` 和 `performer_effects`
+
+#### hel_raucous_revelry / hel_raucous_revelry_u (地狱犬)
+- **遗漏字段**: `performer_team_others_effects`
+- **遗漏效果**:
+  - `stress_heal_1_target_at_threshold` (0.25 DU/人)
+- **影响**: DU 0.5 → 6.25/8.0 (+1150%/+1500%)
+- **日期**: 2026-01-07
+- **教训**: 团队技能必须检查 `performer_team_others_effects`
+
+#### hel_barbaric_yawp / hel_barbaric_yawp_u (地狱犬)
+- **遗漏问题**: 群攻倍率未应用
+- **错误计算**: add_1_weak(2 DU) + remove_all_stealth(0.5 DU) = 2.5 DU
+- **正确计算**: add_1_weak(2 DU × 2) + remove_all_stealth(0.5 DU × 2) = 5 DU
+- **影响**: DU 1.05/6.1 → 4.5/9.5 (+329%/+56%)
+- **日期**: 2026-01-07
+- **教训**: 群攻技能(m_IsMultiHit:True)的效果DU必须×目标数量
+
+### 效果字段检查清单（DU计算前必做）
+
+```
+□ 读取完整技能块 (element_start 到 element_end)
+□ 检查 m_IsMultiHit 或 target_ranks 确认目标数量 ⚠️ 群攻倍率
+□ 检查 target_effects
+□ 检查 performer_effects
+□ 检查 performer_after_target_effects ⚠️ 高风险
+□ 检查 performer_team_others_effects ⚠️ 高风险
+□ 检查 target_buffs
+□ 检查 performer_buffs
+□ 验证 DU < 5 的技能（必然有疏漏）
+□ 计算总 DU 并对比阈值
+```
+
+### 调研铁律（更新版）
+
+**DU < 5 的技能必然存在效果疏漏**
+
+必须检查的6个字段（按优先级）:
+1. `target_effects` - 目标效果
+2. `performer_effects` - 施放者效果
+3. `performer_after_target_effects` - **施放者后续效果** ⚠️ 易遗漏
+4. `performer_team_others_effects` - **队友效果** ⚠️ 易遗漏
+5. `target_buffs` - 目标buff
+6. `performer_buffs` - 施放者buff
+
+**群攻倍率规则**：
+- 群攻技能的效果DU需×目标数量
+- 检查 `m_IsMultiHit: True` 或 `target_ranks` 确认目标数量
+- 案例：hel_barbaric_yawp (target_ranks=1,2)
+  - 错误计算：add_1_weak(2 DU) + remove_all_stealth(0.5 DU) = 2.5 DU
+  - 正确计算：add_1_weak(2 DU × 2) + remove_all_stealth(0.5 DU × 2) = 5 DU
+
+---
+
+## 第二部分：效果DU定义缺失
 
 ## 统计
 

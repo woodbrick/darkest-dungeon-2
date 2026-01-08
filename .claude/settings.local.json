@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Read(G:\\Darkest Dungeon II\\Darkest Dungeon II_Data\\StreamingAssets\\Excel\\CLAUDE.md)",
+      "Bash(dir:*)",
+      "Bash(cd:*)",
+      "Bash(python:*)"
     ]
   },
   "outputStyle": "研发工作流"

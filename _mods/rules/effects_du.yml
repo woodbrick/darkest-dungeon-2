@@ -116,6 +116,28 @@ add_2_dodge_plus:
   line: TBD
   du: 8
 
+# ============== 闪避移除 ==============
+remove_all_dodge:
+  name: 移除所有闪避
+  desc: 清除目标所有闪避标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+remove_all_dodge_plus:
+  name: 移除所有强力闪避
+  desc: 清除目标所有强力闪避标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+remove_anti_dodge_debuff:
+  name: 移除禁闪避减益
+  desc: 清除禁止闪避状态
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0.5
+
 # ============== 晕眩/致盲 ==============
 add_1_stun:
   name: 晕眩+1
@@ -668,3 +690,359 @@ remove_anti_block_debuff:
   file: effect_data_export.Group.csv
   line: TBD
   du: 0.5
+
+# ============== 修女专属效果 ==============
+# ============== 信念机制 ==============
+conviction:
+  name: 信念标记
+  desc: 修女资源标记,最多3层,每层强化技能效果
+  file: token_data_export.Group.csv
+  line: 532-697
+  du: 1.5
+
+ves_pay_conviction_cost:
+  name: 支付信念成本
+  desc: 消耗所有信念层以释放强化技能(代价)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: -0.5
+
+ves_blessing_add_1_conviction:
+  name: 祝福+1信念
+  desc: 回合开始时获得1层信念(炽天使路径)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+# ============== 祝福Buff ==============
+add_1_blessing_of_fortitude:
+  name: 勇气祝福+1
+  desc: 回合开始随机获得格挡或闪避(持续3回合)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+add_1_blessing_of_fortitude_u:
+  name: 勇气祝福升级+1
+  desc: 回合开始随机获得强力格挡或强力闪避(持续3回合)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5.5
+
+add_1_blessing_of_fortitude_p2:
+  name: 勇气祝福P2+1
+  desc: 回合开始+格挡/闪避,同时+1信念(持续5回合,炽天使路径)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+add_1_blessing_of_light:
+  name: 光明祝福+1
+  desc: 回合开始获得力量(持续3回合)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+add_1_blessing_of_light_u:
+  name: 光明祝福升级+1
+  desc: 回合开始75%力量或25%暴击(持续3回合)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+add_1_blessing_of_light_p2:
+  name: 光明祝福P2+1
+  desc: 回合开始+力量,同时+1信念(持续5回合,炽天使路径)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# ============== 修女治疗 ==============
+# 神圣恩典系列
+ves_divine_grace_heal:
+  name: 神圣恩典基础治疗
+  desc: 恢复20%生命值(无信念时)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+ves_divine_grace_heal_u:
+  name: 神圣恩典升级治疗
+  desc: 恢复30%生命值(无信念时)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+ves_divine_grace_conviction_heal_2:
+  name: 神圣恩典2层治疗
+  desc: 恢复30%生命值+5%暴击(2层信念)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+ves_divine_grace_conviction_heal_2_u:
+  name: 神圣恩典2层升级治疗
+  desc: 恢复40%生命值+5%暴击(2层信念)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 6
+
+ves_divine_grace_conviction_heal_3:
+  name: 神圣恩典3层治疗
+  desc: 恢复40%生命值+5%暴击(3层信念)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 6
+
+ves_divine_grace_conviction_heal_3_u:
+  name: 神圣恩典3层升级治疗
+  desc: 恢复50%生命值+15%暴击(3层信念)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 7.5
+
+# 真言系列
+ves_mantra_heal:
+  name: 真言基础治疗
+  desc: 恢复10%生命值(无信念时)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+ves_mantra_heal_u:
+  name: 真言升级治疗
+  desc: 恢复10%生命值(无信念时,升级版)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+ves_mantra_heal_2_conviction:
+  name: 真言2层治疗
+  desc: 恢复20%生命值(2层信念)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+ves_mantra_heal_3_conviction:
+  name: 真言3层治疗
+  desc: 恢复30%生命值(3层信念)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+ves_mantra_heal_conviction_u:
+  name: 真言升级2层治疗
+  desc: 恢复30%生命值(2+层信念)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# 炽天使真言
+ves_seraph_mantra_heal:
+  name: 炽天使真言治疗
+  desc: 恢复30%生命值(炽天使路径)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+ves_seraph_mantra_heal_u:
+  name: 炽天使真言升级治疗
+  desc: 恢复50%生命值(炽天使路径升级)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 7
+
+# 持续治疗
+hot_heal_small:
+  name: 小持续治疗
+  desc: 每回合恢复少量生命值(HoT)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+hot_heal_medium:
+  name: 中持续治疗
+  desc: 每回合恢复中量生命值(HoT)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+hot_heal_large:
+  name: 大持续治疗
+  desc: 每回合恢复大量生命值(HoT)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# ============== 审判燃烧 ==============
+ves_judgement_burn:
+  name: 审判燃烧
+  desc: 施加中燃烧(3层信念)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+ves_judgement_burn_u:
+  name: 审判燃烧升级
+  desc: 施加大燃烧(3层信念)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# ============== 抗性Buff ==============
+ves_ministration_bleed_res_buff_e:
+  name: 流血抗性buff
+  desc: +30%流血抗性(3回合)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+ves_ministration_blight_res_buff_e:
+  name: 腐蚀抗性buff
+  desc: +30%腐蚀抗性(3回合)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+ves_ministration_burn_res_buff_e:
+  name: 燃烧抗性buff
+  desc: +30%燃烧抗性(3回合)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+ves_ministration_debuff_res_buff_e:
+  name: 减益抗性buff
+  desc: +30%减益抗性(3回合)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+ves_ministration_stun_res_buff_e:
+  name: 眩晕抗性buff
+  desc: +30%眩晕抗性(3回合)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+# ============== 状态移除 ==============
+remove_all_blessings:
+  name: 移除所有祝福
+  desc: 清除所有修女祝福标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0.5
+
+remove_all_dots:
+  name: 移除所有DoT
+  desc: 清除所有持续伤害效果
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+remove_all_stun:
+  name: 移除所有眩晕
+  desc: 清除眩晕状态
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+remove_all_stun_type_tokens:
+  name: 移除眩晕类标记
+  desc: 清除眩晕、致盲等眩晕类标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+# ============== 标记销毁 ==============
+destroy_1_positive_token:
+  name: 销毁1个正面标记
+  desc: 移除目标1个正面标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0.5
+
+destroy_1_positive_token_30_pct:
+  name: 30%几率销毁1个正面标记
+  desc: 30%几率移除目标1个正面标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0.15
+
+destroy_2_positive_token:
+  name: 销毁2个正面标记
+  desc: 移除目标2个正面标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+destroy_3_positive_token:
+  name: 销毁3个正面标记
+  desc: 移除目标3个正面标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+destroy_all_positive_tokens:
+  name: 销毁所有正面标记
+  desc: 移除目标所有正面标记
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+# ============== 阈值触发治疗 ==============
+stress_heal_1_performer_at_threshold:
+  name: 施法者阈值压力治疗1
+  desc: 压力阈值触发时施法者减少1点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+stress_heal_1_target_at_threshold:
+  name: 目标阈值压力治疗1
+  desc: 压力阈值触发时目标减少1点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1
+
+stress_heal_2_performer_at_threshold:
+  name: 施法者阈值压力治疗2
+  desc: 压力阈值触发时施法者减少2点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+stress_heal_2_target_at_threshold:
+  name: 目标阈值压力治疗2
+  desc: 压力阈值触发时目标减少2点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+stress_heal_3_performer_at_threshold:
+  name: 施法者阈值压力治疗3
+  desc: 压力阈值触发时施法者减少3点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+stress_heal_3_target_at_threshold:
+  name: 目标阈值压力治疗3
+  desc: 压力阈值触发时目标减少3点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+heal_20pct_self_threshold_med:
+  name: 阈值触发自我治疗20%
+  desc: 压力阈值触发时自我恢复20%生命
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+heal_25pct_self_threshold_med:
+  name: 阈值触发自我治疗25%
+  desc: 压力阈值触发时自我恢复25%生命
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4.5

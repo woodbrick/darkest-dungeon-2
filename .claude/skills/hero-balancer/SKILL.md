@@ -33,7 +33,16 @@ allowed-tools: [Task, Read, Write, Edit, Bash]
 
 **⚠️ 调研铁律**:
 - DU < 5 的技能必然存在**效果疏漏**或**解读错误**
-- 必须检查所有作用效果: 伤害/DoT/增益/减益/连击/移动/条件触发
+- 必须检查所有效果字段（按优先级排序）:
+  1. `target_effects` - 目标效果
+  2. `performer_effects` - 施放者效果
+  3. `performer_after_target_effects` - **施放者后续效果** ⚠️ 易遗漏
+  4. `performer_team_others_effects` - 队友效果
+  5. `target_buffs` - 目标buff
+  6. `performer_buffs` - 施放者buff
+- **群攻倍率规则**: 群攻技能的效果DU需×目标数量
+  - 检查 `m_IsMultiHit` 或 `target_ranks` 确认目标数量
+  - 例如：target_ranks=1,2 则效果DU × 2
 - 发现缺失效果时记录到 `_mods/MISSING_EFFECTS_TODO.md` 供后续补充
 
 **🚫 绝对禁止**:

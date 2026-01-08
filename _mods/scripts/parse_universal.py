@@ -123,7 +123,9 @@ def parse_hero_skills(hero_code):
         if current_element_type in ['ActorDataSkill', 'ActorDataEffects']:
             if key in ['target_ranks', 'launch_ranks']:
                 skills_data[current_skill_id][key] = value
-            elif key in ['target_effects', 'performer_effects', 'target_apply_limit_effects']:
+            elif key in ['target_effects', 'performer_effects', 'performer_after_target_effects',
+                        'performer_team_others_effects', 'target_apply_limit_effects',
+                        'target_buffs', 'performer_buffs']:
                 # 效果字段用逗号分隔多个效果，需要用|重新连接以便后续处理
                 effects = [x.strip() for x in value.split(',') if x.strip()]
                 if key in skills_data[current_skill_id]:
@@ -150,8 +152,19 @@ def parse_hero_skills(hero_code):
     return skills
 
 def calculate_du(skill):
-    """计算技能DU价值"""
+    """计算技能DU价值 - 完整7字段检查"""
     du = 0.0
+
+    # 定义需要检查的所有效果字段
+    effect_fields = [
+        'target_effects',
+        'performer_effects',
+        'performer_after_target_effects',
+        'performer_team_others_effects',
+        'target_apply_limit_effects',
+        'target_buffs',
+        'performer_buffs'
+    ]
 
     # 基础伤害
     if 'damage_min' in skill and 'damage_max' in skill:
@@ -162,21 +175,42 @@ def calculate_du(skill):
         except:
             pass
 
-    # 目标效果
-    if 'target_effects' in skill:
-        effects = [e.strip() for e in skill['target_effects'].split('|') if e.strip()]
-        for effect in effects:
-            if effect in EFFECT_DU:
-                du += EFFECT_DU[effect]
-
-    # 施放者效果
-    if 'performer_effects' in skill:
-        effects = [e.strip() for e in skill['performer_effects'].split('|') if e.strip()]
-        for effect in effects:
-            if effect in EFFECT_DU:
-                du += EFFECT_DU[effect]
+    # 遍历所有效果字段
+    for field in effect_fields:
+        if field in skill:
+            effects = [e.strip() for e in skill[field].split('|') if e.strip()]
+            for effect in effects:
+                if effect in EFFECT_DU:
+                    du += EFFECT_DU[effect]
 
     return round(du, 2)
+
+def find_missing_effects(skill):
+    """查找技能中未定义的效果 - 返回缺失效果列表"""
+    missing = []
+
+    effect_fields = [
+        'target_effects',
+        'performer_effects',
+        'performer_after_target_effects',
+        'performer_team_others_effects',
+        'target_apply_limit_effects',
+        'target_buffs',
+        'performer_buffs'
+    ]
+
+    for field in effect_fields:
+        if field in skill:
+            effects = [e.strip() for e in skill[field].split('|') if e.strip()]
+            for effect in effects:
+                if effect not in EFFECT_DU:
+                    missing.append({
+                        'effect': effect,
+                        'field': field,
+                        'skill': skill['id']
+                    })
+
+    return missing
 
 def print_skill_table(skills):
     """输出技能表格"""
@@ -241,6 +275,93 @@ def print_skill_table(skills):
             status = '❌ 弱势' if du < 9 else ('⚠️ 可接受' if du < 13 else '✅ 优秀')
             print(f"{skill['id']:<30} {damage:<10} {target:<15} {du:<8.2f} {status}")
 
+def print_missing_effects_report(skills):
+    """输出缺失效果报告"""
+    all_missing = []
+
+    for skill in skills:
+        missing = find_missing_effects(skill)
+        all_missing.extend(missing)
+
+    if not all_missing:
+        print('\n✅ 所有效果均已定义')
+        return
+
+    print(f'\n⚠️  发现 {len(all_missing)} 个未定义效果:')
+    print('=' * 80)
+    print(f"{'效果ID':<40} {'字段':<30} {'来源技能'}")
+    print('-' * 80)
+
+    # 按效果去重
+    unique_effects = {}
+    for m in all_missing:
+        key = m['effect']
+        if key not in unique_effects:
+            unique_effects[key] = []
+        unique_effects[key].append(m)
+
+    for effect, items in sorted(unique_effects.items()):
+        first = items[0]
+        skills_list = ', '.join(set([i['skill'] for i in items]))
+        print(f"{effect:<40} {first['field']:<30} {skills_list}")
+
+    print('\n建议: 将上述效果添加到 _mods/rules/effects_du.yml')
+    print_coverage_stats(skills, len(unique_effects))
+
+def print_coverage_stats(skills, missing_count):
+    """输出效果覆盖度统计"""
+    # 统计总效果数
+    total_effects = 0
+    for skill in skills:
+        effect_fields = [
+            'target_effects',
+            'performer_effects',
+            'performer_after_target_effects',
+            'performer_team_others_effects',
+            'target_apply_limit_effects',
+            'target_buffs',
+            'performer_buffs'
+        ]
+        for field in effect_fields:
+            if field in skill:
+                effects = [e.strip() for e in skill[field].split('|') if e.strip()]
+                total_effects += len(effects)
+
+    # 去重统计
+    unique_effects = set()
+    for skill in skills:
+        effect_fields = [
+            'target_effects',
+            'performer_effects',
+            'performer_after_target_effects',
+            'performer_team_others_effects',
+            'target_apply_limit_effects',
+            'target_buffs',
+            'performer_buffs'
+        ]
+        for field in effect_fields:
+            if field in skill:
+                effects = [e.strip() for e in skill[field].split('|') if e.strip()]
+                unique_effects.update(effects)
+
+    defined_count = len(unique_effects) - missing_count
+    coverage_rate = (defined_count / len(unique_effects) * 100) if unique_effects else 100
+
+    print('\n📊 效果覆盖度统计:')
+    print('-' * 40)
+    print(f"总效果数 (含重复): {total_effects}")
+    print(f"唯一效果数: {len(unique_effects)}")
+    print(f"已定义: {defined_count}")
+    print(f"缺失: {missing_count}")
+    print(f"覆盖率: {coverage_rate:.1f}%")
+
+    if coverage_rate < 90:
+        print(f'\n⚠️  警告: 覆盖率低于90%，建议补充缺失效果')
+    elif coverage_rate < 100:
+        print(f'\n✓ 覆盖率良好，仍有提升空间')
+    else:
+        print(f'\n✅ 完美覆盖！')
+
 def main():
     if len(sys.argv) < 2:
         print('用法: python parse_universal.py <英雄代码>')
@@ -256,6 +377,7 @@ def main():
 
     print(f'\n=== {hero_code.upper()} 技能评估 ===')
     print_skill_table(skills)
+    print_missing_effects_report(skills)
 
 if __name__ == '__main__':
     main()
