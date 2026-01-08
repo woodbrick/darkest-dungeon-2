@@ -155,7 +155,7 @@ key_map,health_damage,health_damage_range,crit_chance,
 add_stats,5,4,0.05,
 element_end
 element_start,hel_iron_swan,ActorDataEffects
-target_effects,prime_combo,
+target_effects,prime_combo_50pct,
 element_end
 element_start,hel_iron_swan_u,ActorDataSkill
 m_IsFriendly,False,
