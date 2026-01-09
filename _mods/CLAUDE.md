@@ -28,12 +28,17 @@ _mods/
 ├── scripts/                     # 通用工具脚本
 │   ├── parse_universal.py      # 技能解析评估
 │   ├── apply_universal.py      # 技能更新应用
-│   └── scan_effects.py         # 效果扫描工具
+│   ├── scan_effects.py         # 效果扫描工具
+│   └── po_manager.py           # 翻译PO文件管理器
 ├── rules/                       # 规则索引和数据记录
 │   ├── rules.md                # 游戏规则与机制(DU体系/铁律/英雄代码)
 │   ├── data_skills.md          # 技能数据字段说明
 │   ├── hero_file_rules.md      # CSV结构规则
-│   └── available_effects.md    # 效果标记完整清单
+│   ├── available_effects.md    # 效果标记完整清单
+│   ├── localization_index.md   # 本地化文件索引
+│   └── po_manager_guide.md     # PO管理器使用指南
+├── logs/                        # 变更日志目录
+│   └── localization_changes.json # 翻译修改历史
 ├── *_buff_proposal.md          # 英雄改进方案文档
 └── *_changes_complete.yml      # 技能修改配置文件
 ```
@@ -56,6 +61,8 @@ _mods/
 | [rules/available_effects.md](rules/available_effects.md) | 效果标记完整清单 |
 | [rules/effects_du.yml](rules/effects_du.yml) | **效果索引表** - 名称/描述/位置/DU ⚠️ 唯一DU数据源 |
 | [rules/skills_index.yml](rules/skills_index.yml) | **技能索引表** - 名称/位置/效果元数据 |
+| [rules/localization_index.md](rules/localization_index.md) | 本地化文件索引 |
+| [rules/po_manager_guide.md](rules/po_manager_guide.md) | PO文件管理器使用指南 |
 
 ### 英雄改动方案
 | 英雄 | 方案文档 | YAML配置 |
@@ -125,11 +132,54 @@ skill_id:
     new: add_1_block_plus
 ```
 
+---
+
+## 翻译管理
+
+### PO文件管理器 (po_manager.py)
+
+**功能**: 读取/搜索/导出/回写翻译文件，自动记录变更历史
+
+**基本用法**:
+```bash
+cd _mods/scripts
+
+# 查看翻译统计
+python po_manager.py stats Poedit/zh_CN.po
+
+# 搜索特定条目
+python po_manager.py read Poedit/zh_CN.po "skill_name"
+
+# 导出为JSON
+python po_manager.py export Poedit/zh_CN.po output.json
+
+# 从JSON回写（自动记录变更）
+python po_manager.py write Poedit/zh_CN.po modified.json
+
+# 查看修改历史
+python po_manager.py log --last 5
+```
+
+**工作流**:
+1. 导出PO文件为JSON
+2. 编辑JSON中的msgstr字段
+3. 回写修改（自动备份+记录日志）
+4. 查看变更历史验证
+
+**安全机制**:
+- ✅ 自动备份原文件为`.po.bak`
+- ✅ 记录完整变更历史到`logs/localization_changes.json`
+- ✅ 只更新匹配的条目
+
+详细文档: [rules/po_manager_guide.md](rules/po_manager_guide.md)
+
+---
+
 ### 禁止事项
 - ❌ **禁止创建新脚本** - 只能使用现有通用脚本
 - ❌ **禁止编写特定英雄代码** - 所有脚本必须通用化
 - ❌ **禁止绕过工具直接修改** - 必须使用Edit工具
-- ✅ **必须使用通用脚本** - parse_universal.py / apply_universal.py
+- ✅ **必须使用通用脚本** - parse_universal.py / apply_universal.py / po_manager.py
 
 **🚨 铁律 - 单一事实原则**:
 - **效果DU值**: 唯一定义在 `rules/effects_du.yml`
