@@ -41,7 +41,7 @@ cd _mods/scripts && python parse_universal.py <hero_code>
 
 if 覆盖率 < 90%:
     进入 SUPPLEMENTING_EFFECTS
-    补充 _mods/rules/effects_du.yml
+    补充 _mods/effects/{英雄代码}_effects.md
     重新运行 parse_universal.py
 
 if 覆盖率 ≥ 90%:

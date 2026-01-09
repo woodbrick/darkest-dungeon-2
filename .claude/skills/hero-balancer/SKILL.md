@@ -30,7 +30,7 @@ allowed-tools: [Task, Read, Write, Edit, Bash]
 cd _mods/scripts && python parse_universal.py <hero_code>
 
 # 3. 检查覆盖率（必须≥90%）
-# 如果<90%，补充缺失效果到 _mods/rules/effects_du.yml
+# 如果<90%，补充缺失效果到 _mods/effects/ 对应英雄文档
 
 # 4. 生成方案
 # 基于数据手动创建 _mods/<hero_code>_buff_proposal.md
@@ -56,7 +56,7 @@ git add . && git commit -m "balance(<code>): enhance weak skills"
 | **IDLE** | 初始化/恢复点 |
 | **COLLECTING** | 调用parse_universal.py收集数据 |
 | **ANALYZING** | DU评估/覆盖率检查 |
-| **SUPPLEMENTING_EFFECTS** | 补充effects_du.yml缺失效果 |
+| **SUPPLEMENTING_EFFECTS** | 补充effects/缺失效果 |
 | **PROPOSING** | 编写proposal.md方案 |
 | **AWAITING_CONFIRMATION** | **必须暂停等待用户确认** |
 | **IMPLEMENTING** | 调用csv-balance-implementer修改CSV |
@@ -154,10 +154,10 @@ git add . && git commit -m "balance(code): message"
 - [proposal_creation.md](core/proposal_creation.md) - 方案制定详解
 - [safety_mechanisms.md](core/safety_mechanisms.md) - 安全机制详解
 
-### 游戏规则（_mods/rules/）
-- [du_evaluation.md](_mods/rules/du_evaluation.md) - DU价值体系
-- [csv_structure.md](_mods/rules/csv_structure.md) - CSV结构说明
-- [effects_du.yml](_mods/rules/effects_du.yml) - 效果DU定义
+### 游戏规则（_mods/）
+- [effects/index.md](_mods/effects/index.md) - 效果DU索引
+- [rules/du_evaluation.md](_mods/rules/du_evaluation.md) - DU价值体系
+- [rules/csv_structure.md](_mods/rules/csv_structure.md) - CSV结构说明
 
 ### 案例示例（examples/）
 - [runaway_buff_proposal.md](examples/runaway_buff_proposal.md) - 逃离者方案
