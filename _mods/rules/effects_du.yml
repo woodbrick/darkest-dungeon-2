@@ -1306,3 +1306,182 @@ ignored_token_remove_1_block_plus:
   file: effect_data_export.Group.csv
   line: TBD
   du: 0.5
+
+# ============== 地狱犬专属效果 ==============
+# ============== 状态效果 ==============
+add_3_weak:
+  name: 虚弱+3
+  desc: 降低伤害(3层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+add_3_taunt_nr:
+  name: 嘲讽+3
+  desc: 强制敌人攻击自己(3层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+add_1_immobilize_plus_nr:
+  name: 强化定身+1
+  desc: 无法移动(不可移除)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+add_3_speed:
+  name: 速度+3
+  desc: 提升行动速度(3层)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3.5
+
+# ============== 连击 ==============
+prime_combo_50pct:
+  name: 50%几率启动连击
+  desc: 50%几率允许使用连击技能
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+# ============== DoT ==============
+dot_small_bleed:
+  name: 小流血DoT
+  desc: 每回合少量流血伤害
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+# ============== 晕眩 ==============
+daze:
+  name: 眩晕
+  desc: 下次攻击有几率偏离(眩晕状态)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2.5
+
+stun_2_rounds_e:
+  name: 晕眩2回合
+  desc: 跳过2回合
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 7
+
+# ============== 抗性修正 ==============
+stat_sub_resist_bleed_2_rounds_e:
+  name: 流血抗性-2(2回合)
+  desc: 2回合内流血抗性降低
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+stat_add_resist_bleed_2_rounds_e:
+  name: 流血抗性+2(2回合)
+  desc: 2回合内流血抗性提升
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+# ============== 治疗效果 ==============
+heal_30pct_self_threshold_med:
+  name: 阈值触发自我治疗30%
+  desc: 压力阈值触发时自我恢复30%生命
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# ============== 压力治疗 ==============
+stress_heal_4_performer_at_threshold:
+  name: 施法者阈值压力治疗4
+  desc: 压力阈值触发时施法者减少4点压力
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
+
+# ============== 再部署 ==============
+redeploy_1_round_e:
+  name: 再部署1回合
+  desc: 死亡后1回合内复活
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 3
+
+redeploy_2_rounds_e:
+  name: 再部署2回合
+  desc: 死亡后2回合内复活
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+# ============== 路径专属Buff ==============
+path_buff_hel_ravager_bleed_chance_down:
+  name: 劫掠者流血抗性削弱
+  desc: 降低敌人流血抗性(劫掠者路径)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+path_buff_hel_berserker_bleed_chance_up:
+  name: 狂战士流血抗性穿透
+  desc: 忽略敌人流血抗性(狂战士路径)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+# ============== 地狱犬专属Buff ==============
+hellion_bloodlust_damage_buff_e:
+  name: 嗜血伤害buff
+  desc: 嗜血技能伤害加成
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 7
+
+hellion_bloodlust_u_damage_buff_e:
+  name: 嗜血伤害buff(升级)
+  desc: 嗜血技能伤害加成(升级版)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 9
+
+hellion_bloodlust_remove_execution:
+  name: 嗜血处决移除
+  desc: 移除嗜血buff(机制实现)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0
+
+hel_bloodlust_remove_execution:
+  name: 嗜血处决移除(别名)
+  desc: 移除嗜血buff(机制实现)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0
+
+hellion_bloodlust_execution_buff_e:
+  name: 嗜血处决buff
+  desc: 嗜血触发时的增伤buff
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+hel_bloodlust_execution_buff_e:
+  name: 嗜血处决buff(别名)
+  desc: 嗜血触发时的增伤buff
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 5
+
+hellion_revelry_deathblow_resist_plus_e:
+  name: 狂欢死亡抵抗+buff
+  desc: 狂欢提供的死亡抵抗加成
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
+
+hellion_adrenaline_heal_hit_buff_e:
+  name: 肾上腺素攻击治疗buff
+  desc: 攻击时回复生命的buff
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 4
