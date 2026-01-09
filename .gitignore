@@ -1,2 +1,10 @@
 # Auto Claude data directory
 .auto-claude/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
