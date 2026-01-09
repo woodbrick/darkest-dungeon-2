@@ -246,6 +246,13 @@ move_swap:
   line: TBD
   du: 2
 
+move_shuffle:
+  name: 洗牌移动
+  desc: 随机改变位置
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
 # ============== 流血/腐蚀/燃烧 ==============
 skill_dot_small_bleed:
   name: 小流血
@@ -1306,6 +1313,21 @@ ignored_token_remove_1_block_plus:
   file: effect_data_export.Group.csv
   line: TBD
   du: 0.5
+
+# ============== 破闪避特殊效果 ==============
+ignored_token_remove_1_dodge:
+  name: 忽略闪避移除
+  desc: 破闪避时的附加效果
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 1.5
+
+ignored_token_remove_1_dodge_plus:
+  name: 忽略强力闪避移除
+  desc: 破强力闪避时的附加效果
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 2
 
 # ============== 地狱犬专属效果 ==============
 # ============== 状态效果 ==============

@@ -8,7 +8,8 @@
       "Bash(python:*)",
       "Edit",
       "SlashCommand(/commit --type=feat)",
-      "SlashCommand(/commit:*)"
+      "SlashCommand(/commit:*)",
+      "Skill(hero-balancer)"
     ]
   },
   "outputStyle": "研发工作流"

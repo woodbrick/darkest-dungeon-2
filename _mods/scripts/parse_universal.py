@@ -37,11 +37,14 @@ EFFECT_DU = load_effects_du()
 def get_dlc_path(hero_code):
     """获取英雄CSV路径"""
     base_heroes = ['flg', 'gr', 'hel', 'hwm', 'jes', 'lep', 'maa', 'occ', 'pd', 'run', 'ves']
-    dlc1_heroes = ['cru', 'dul']
-    dlc2_heroes = ['abm']
+    expedition_heroes = ['bh']  # Bounty Hunter - DLC1单独英雄
+    dlc1_heroes = ['cru', 'dul']  # Crusader, Duelist - DLC1
+    dlc2_heroes = ['abm']  # Alchemist - DLC2
 
     if hero_code in base_heroes:
         return f'hero_{hero_code}_data_export.Group.csv'
+    elif hero_code in expedition_heroes:
+        return f'expedition/hero_{hero_code}_data_export.Group.csv'
     elif hero_code in dlc1_heroes:
         return f'dlc_dul_cru/hero_{hero_code}_data_export.Group.csv'
     elif hero_code in dlc2_heroes:
@@ -58,6 +61,7 @@ def parse_hero_skills(hero_code):
         Path(csv_path),  # 当前目录
         Path('..') / csv_path,  # 上级目录
         Path('../..') / csv_path,  # 上上级目录
+        Path('../..') / 'expedition' / Path(csv_path).name,  # Expedition目录
         Path('../..') / 'dlc_dul_cru' / Path(csv_path).name,  # DLC1目录
         Path('../..') / 'dlc_catacombs' / Path(csv_path).name,  # DLC2目录
     ]

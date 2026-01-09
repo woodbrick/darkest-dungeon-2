@@ -1,0 +1,10 @@
+{
+  "metadata": {},
+  "entries": [
+    {
+      "msgctxt": "buff_desc_path_descriptor_lep_tempest_override",
+      "msgid": "A role that trades health & speed for focused power and resistance.\n\n<color=#{buff}>+33% <sprite name={q}icon_debuff{q}>\n+100% <sprite name={q}icon_disease{q}></color>\n<color=#{debuff}>-25% Max <sprite name={q}icon_health_v2{q}>\n-3 <sprite name={q}icon_speed{q}></color>",
+      "msgstr": "牺牲生命与速度换取威力和抗性的角色。\n\n<color=#{buff}>+33%<sprite name={q}icon_debuff{q}>\n+100%<sprite name={q}icon_disease{q}></color>\n<color=#{debuff}>-10%最大<sprite name={q}icon_health_v2{q}>\n-3<sprite name={q}icon_speed{q}></color>"
+    }
+  ]
+}
