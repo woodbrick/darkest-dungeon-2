@@ -1,21 +1,15 @@
 [
   {
-    "timestamp": "2026-01-09T10:05:39.292340",
-    "file": "test_zh_CN.po",
-    "source": "test_log.json",
-    "count": 2,
+    "timestamp": "2026-01-09T11:05:00",
+    "file": "zh_CN.po",
+    "source": "lep_tempest_hp_change",
+    "count": 1,
     "changes": [
       {
-        "msgid": "Back",
-        "msgctxt": "Button_Back",
-        "old_msgstr": "返回",
-        "new_msgstr": "返回[已测试]"
-      },
-      {
-        "msgid": "The Mountain",
-        "msgctxt": "Mountain",
-        "old_msgstr": "山峰",
-        "new_msgstr": "巅峰[修改]"
+        "msgid": "A role that trades health & speed for focused power and resistance.\\n\\n<color=#{buff}>+33% <sprite name={q}icon_debuff{q}>\\n+100% <sprite name={q}icon_disease{q}></color>\\n<color=#{debuff}>-25% Max <sprite name={q}icon_health_v2{q}>\\n-3 <sprite name={q}icon_speed{q}></color>",
+        "msgctxt": "buff_desc_path_descriptor_lep_tempest_override",
+        "old_msgstr": "牺牲生命与速度换取威力和抗性的角色。\\n\\n<color=#{buff}>+33%<sprite name={q}icon_debuff{q}>\\n+100%<sprite name={q}icon_disease{q}></color>\\n<color=#{debuff}>-25%最大<sprite name={q}icon_health_v2{q}>\\n-3<sprite name={q}icon_speed{q}></color>",
+        "new_msgstr": "牺牲生命与速度换取威力和抗性的角色。\\n\\n<color=#{buff}>+33%<sprite name={q}icon_debuff{q}>\\n+100%<sprite name={q}icon_disease{q}></color>\\n<color=#{debuff}>-10%最大<sprite name={q}icon_health_v2{q}>\\n-3<sprite name={q}icon_speed{q}></color>"
       }
     ]
   }

@@ -1928,7 +1928,7 @@ m_IsVisible,False,
 element_end
 element_start,path_buff_lep_tempest_hp_down,ActorDataStats
 key_map,health_max,
-multiply_stats,-0.25,
+multiply_stats,-0.10,
 element_end
 element_start,path_buff_lep_tempest_speed_down,Buff
 m_DurationType,infinite,
