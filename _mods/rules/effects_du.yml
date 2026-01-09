@@ -1084,7 +1084,7 @@ dot_small_bleed_nr:
   desc: 每回合少量流血伤害(不可移除)
   file: effect_data_export.Group.csv
   line: TBD
-  du: 2.5
+  du: -2.5
 
 # ============== 连击条件 ==============
 end_combo_if_blind:
@@ -1120,31 +1120,79 @@ heal_75pct_self_threshold_med:
 # 伤害相关
 leper_revenge_strength_buff_e:
   name: 复仇力量buff
-  desc: 复仇技能获得力量标记
+  desc: 3回合内每回合开始获得力量+1(下次攻击+50%伤害)
   file: effect_data_export.Group.csv
   line: TBD
   du: 2
 
 leper_revenge_crit_buff_e:
   name: 复仇暴击buff
-  desc: 复仇技能获得暴击标记
+  desc: 3回合内每回合开始获得暴击+1(15%暴击率)
   file: effect_data_export.Group.csv
   line: TBD
   du: 2
 
-leper_ruin_damage_buff_listener_e:
-  name: 废墟伤害buff监听器
-  desc: 废墟技能伤害加成监听
+# ============== 废墟技能 ==============
+# 废墟技能机制: 施放后获得manager，3回合内造成伤害时触发增伤buff
+# 增伤buff持续3回合，listener在3回合结束后移除buff(机制实现)
+# DU评估考虑实战难度：难以保持3回合持续输出，理论值打折
+
+leper_ruin_damage_buff:
+  name: 废墟增伤
+  desc: 造成伤害+30%，持续3回合(实战评估，难满3回合)
+  file: buff_data_export.Group.csv
+  line: 5222
+  du: 7
+
+leper_ruin_damage_buff_u:
+  name: 废墟增伤(升级)
+  desc: 造成伤害+40%，持续3回合(实战评估，难满3回合)
+  file: buff_data_export.Group.csv
+  line: 5249
+  du: 9
+
+# Effect触发器（CSV中使用）
+leper_ruin_damage_buff_e:
+  name: 废墟增伤触发
+  desc: 触发获得废墟增伤buff(+30%伤害)
+  file: effect_data_export.Group.csv
+  line: 9997
+  du: 7
+
+leper_ruin_damage_buff_u_e:
+  name: 废墟增伤触发(升级)
+  desc: 触发获得废墟增伤buff(+40%伤害)
   file: effect_data_export.Group.csv
   line: TBD
-  du: 1.5
+  du: 9
 
 leper_ruin_damage_buff_manager_e:
-  name: 废墟伤害buff管理器
-  desc: 废墟技能伤害加成管理
+  name: 废墟增伤触发器
+  desc: 触发废墟增伤(+30%伤害，持续3回合)
+  file: effect_data_export.Group.csv
+  line: 10006
+  du: 7
+
+leper_ruin_damage_buff_manager_u_e:
+  name: 废墟增伤触发器(升级)
+  desc: 触发废墟增伤(+40%伤害，持续3回合)
   file: effect_data_export.Group.csv
   line: TBD
-  du: 1.5
+  du: 9
+
+leper_ruin_damage_buff_listener_e:
+  name: 废墟增伤移除器
+  desc: 3回合结束后移除废墟增伤buff(机制实现，DU为0)
+  file: effect_data_export.Group.csv
+  line: 10001
+  du: 0
+
+leper_ruin_damage_buff_listener_u_e:
+  name: 废墟增伤移除器(升级)
+  desc: 3回合结束后移除废墟增伤buff(机制实现，DU为0)
+  file: effect_data_export.Group.csv
+  line: TBD
+  du: 0
 
 # 自我致盲机制
 leper_self_blind_chance:
